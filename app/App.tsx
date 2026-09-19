@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { WorkspaceProvider, useWorkspace } from './workspace.tsx';
 import { reset } from './api.ts';
 import { Report } from './Report.tsx';
@@ -24,6 +24,17 @@ function Shell() {
   // and no surface keeps showing a session or a draft that no longer exists.
   const [generation, setGeneration] = useState(0);
   const active = SURFACES.find((s) => s.id === surface) ?? SURFACES[0]!;
+  // The report opens only once the model has read the newest session, so it
+  // is never read ahead of the session just worked on. [OURS: owner decision
+  // 2026-09-18]
+  const newest = state?.sessions.reduce<(typeof state.sessions)[number] | undefined>(
+    (latest, s) => (latest === undefined || s.session_index > latest.session_index ? s : latest),
+    undefined,
+  );
+  const reportReady = newest?.modelled === true;
+  useEffect(() => {
+    if (!reportReady && surface === 'report') setSurface('annotate');
+  }, [reportReady, surface]);
 
   const onReset = async () => {
     if (
@@ -48,20 +59,27 @@ function Shell() {
     <div className="min-h-screen">
       <header className="border-b px-8 py-4" style={{ borderColor: 'var(--rule)' }}>
         <div className="mx-auto flex max-w-[1400px] flex-wrap items-center gap-3">
-          {SURFACES.map((s) => (
-            <button
-              key={s.id}
-              onClick={() => setSurface(s.id)}
-              className="rounded-lg px-5 py-2.5 text-base transition-colors"
-              style={{
-                background: surface === s.id ? 'var(--ink)' : 'transparent',
-                color: surface === s.id ? 'var(--paper)' : 'var(--ink)',
-                border: `1px solid ${surface === s.id ? 'var(--ink)' : 'var(--rule)'}`,
-              }}
-            >
-              {s.label}
-            </button>
-          ))}
+          {SURFACES.map((s) => {
+            const locked = s.id === 'report' && !reportReady;
+            return (
+              <button
+                key={s.id}
+                onClick={() => setSurface(s.id)}
+                disabled={locked}
+                title={locked ? `Opens once the model has read session ${newest?.session_index ?? ''}` : undefined}
+                className="rounded-lg px-5 py-2.5 text-base transition-colors"
+                style={{
+                  background: surface === s.id ? 'var(--ink)' : 'transparent',
+                  color: locked ? 'var(--muted)' : surface === s.id ? 'var(--paper)' : 'var(--ink)',
+                  border: `1px solid ${surface === s.id ? 'var(--ink)' : 'var(--rule)'}`,
+                  cursor: locked ? 'not-allowed' : 'pointer',
+                  opacity: locked ? 0.6 : 1,
+                }}
+              >
+                {s.label}
+              </button>
+            );
+          })}
           <span className="ml-4 text-sm" style={{ color: 'var(--muted)' }}>
             {active.note}
           </span>

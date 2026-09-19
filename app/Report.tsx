@@ -624,7 +624,9 @@ function LiveReport({ state, refresh }: { state: WorkspaceState; refresh: () => 
   const reportable = new Set(report.session_gate.sessions.filter((s) => s.reportable).map((s) => s.session_id));
   const sessions = [...report.sessions]
     .filter((s) => reportable.has(s.session_id))
-    .sort((a, b) => a.session_index - b.session_index);
+    // Most recent first: the session just worked on is the one a family opens
+    // the report to read. [OURS: owner decision 2026-09-18]
+    .sort((a, b) => b.session_index - a.session_index);
 
   const codesUsed = [
     ...new Set(sessions.flatMap((s) => shownEpisodes(s, report.source_run_id).map((e) => e.EPISODE))),
@@ -655,7 +657,7 @@ function LiveReport({ state, refresh }: { state: WorkspaceState; refresh: () => 
           {/* The held-back states draw no session, so the line says so. */}
           <p className="text-sm" style={{ color: 'var(--muted)' }}>
             {sessions.length} session{sessions.length === 1 ? '' : 's'}
-            {shown ? ', in order.' : ', held back for the reason below.'}
+            {shown ? ', most recent first.' : ', held back for the reason below.'}
           </p>
         </div>
         {freshness.state !== 'changed' && (
