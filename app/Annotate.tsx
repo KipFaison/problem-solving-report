@@ -611,7 +611,6 @@ export function Annotate() {
                   moves={moves}
                   draft={movesDraft}
                   figure={movesFigure}
-                  model={model}
                   session={session}
                   notice={movesNotice && movesNotice.sessionId === session.session_id ? movesNotice : null}
                   classifying={classifying === session.session_id}
@@ -769,8 +768,7 @@ export function Annotate() {
           )}
           {movesShown && movesToMark.length > 0 && (
             <p className="mb-4 text-sm" style={{ color: 'var(--muted)' }}>
-              Tutor moves: {movesToMark.length} tutor turn{movesToMark.length === 1 ? '' : 's'} to mark, each the turn
-              before an episode that opens on a student&rsquo;s turn, below the transcript.{' '}
+              Tutor moves: {movesToMark.length} turn{movesToMark.length === 1 ? '' : 's'} to mark below.{' '}
               <button
                 type="button"
                 className="underline"
@@ -902,7 +900,6 @@ export function Annotate() {
                   moves={moves}
                   draft={movesDraft}
                   figure={movesFigure}
-                  model={model}
                   session={session}
                   notice={movesNotice && movesNotice.sessionId === session.session_id ? movesNotice : null}
                   classifying={classifying === session.session_id}
@@ -1415,7 +1412,6 @@ function TutorMoves({
   moves,
   draft,
   figure,
-  model,
   session,
   notice,
   classifying,
@@ -1433,7 +1429,6 @@ function TutorMoves({
   moves: SessionMoves;
   draft: Record<string, string>;
   figure: Figure | null;
-  model: NonNullable<SessionDetail['llm']>;
   session: SessionOutline;
   notice: Notice | null;
   classifying: boolean;
@@ -1450,7 +1445,6 @@ function TutorMoves({
   onTurn?: (index: number) => void;
 }) {
   const turnIndex = new Map(session.turns.map((t, i) => [t.turn_id, i] as const));
-  const episodeCode = new Map(model.episodes.map((e) => [e.episode_id, e.EPISODE] as const));
   const toMark = moves.items.filter((i) => i.classifiable);
   const others = moves.items.length - toMark.length;
   const marked = toMark.filter((i) => draft[i.preceding_turn_id] !== undefined).length;
@@ -1473,15 +1467,9 @@ function TutorMoves({
       className="mt-8 rounded-xl border p-4"
       style={{ borderColor: MOVES_ACCENT, borderLeftWidth: '5px', background: '#f3f8fa' }}
     >
-      <p className="mb-1 text-xs uppercase tracking-widest" style={{ color: MOVES_ACCENT }}>
-        Tutor moves · a separate layer · codebook {moves.codebook_version}
-      </p>
-      <h3 className="mb-2 text-xl">The tutor turn before each episode that opens on a student&rsquo;s turn</h3>
+      <h3 className="mb-1 text-xl">Tutor moves</h3>
       <p className="mb-3 text-sm" style={{ color: 'var(--muted)' }}>
-        Each item is a problem-solving episode in the model&rsquo;s reading that opens on a student&rsquo;s turn,
-        with the one turn before it. Mark what that tutor turn does with one of the five codes; hover a code to read
-        its meaning in the codebook panel. These marks, their codebook and their agreement figure are kept apart from the
-        episode annotation above and are never combined with it.
+        What does each tutor turn do? Hover a code for its meaning.
       </p>
 
       {moves.items.length === 0 ? (
@@ -1525,13 +1513,8 @@ function TutorMoves({
               </button>
             )}
             <span className="text-sm" style={{ color: 'var(--muted)' }}>
-              {marked} of {toMark.length} marked · {dirty ? 'unsaved changes' : moves.marks ? 'saved' : 'not saved yet'}
-              {' · '}
-              {!moves.classified
-                ? 'the model has not classified these turns'
-                : stale
-                  ? `the model’s codes were made under codebook ${moves.model_codebook_version ?? 'unknown'}`
-                  : 'the model has classified these turns'}
+              {marked} of {toMark.length} marked{dirty ? ' · unsaved' : moves.marks ? ' · saved' : ''}
+              {stale ? ' · the model’s codes are from an older codebook' : ''}
             </span>
           </div>
 
@@ -1562,12 +1545,12 @@ function TutorMoves({
                   No figure for this session: {figure?.refusal?.detail || 'the server gave no reason'}.
                 </p>
               )}
-              <p className="mb-2 text-xs" style={{ color: 'var(--muted)' }}>
-                Cohen&rsquo;s kappa between the saved marks and the model&rsquo;s codes
-                {figure?.n_turns ? `, over ${figure.n_turns} tutor turns` : ''}, each in one of this layer&rsquo;s five
-                codes. This layer&rsquo;s own figure, separate from the episode agreement above.
-                {dirty ? ' Unsaved changes are not in the figure until saved.' : ''}
-              </p>
+              {(figure?.n_turns || dirty) && (
+                <p className="mb-2 text-xs" style={{ color: 'var(--muted)' }}>
+                  {figure?.n_turns ? `Over ${figure.n_turns} tutor turns.` : ''}
+                  {dirty ? ' Save to update.' : ''}
+                </p>
+              )}
               <p className="text-xs" style={{ color: differing.length > 0 ? DIFFER : 'var(--muted)' }}>
                 The saved marks and the model&rsquo;s codes differ on {differing.length} of {toMark.length} tutor turn
                 {toMark.length === 1 ? '' : 's'}
@@ -1587,7 +1570,6 @@ function TutorMoves({
           <ol className="space-y-3">
             {toMark.map((item, n) => {
               const at = turnIndex.get(item.preceding_turn_id);
-              const kind = episodeCode.get(item.episode_id);
               const mark = draft[item.preceding_turn_id];
               const saved = item.tutor_mark;
               // The model's code is shown only once a mark for this turn is saved.
@@ -1600,22 +1582,17 @@ function TutorMoves({
                   className="rounded-lg border p-3"
                   style={{ borderColor: differs ? DIFFER : 'var(--rule)', background: '#fff' }}
                 >
-                  <p className="mb-2 text-xs uppercase tracking-widest" style={{ color: 'var(--muted)' }}>
-                    Item {n + 1}
-                    {at !== undefined && (
-                      <>
-                        {' · '}
-                        {onTurn ? (
-                          <button type="button" className="uppercase tracking-widest underline" onClick={() => onTurn(at)}>
-                            turn {at + 1}
-                          </button>
-                        ) : (
-                          `turn ${at + 1}`
-                        )}
-                      </>
-                    )}
-                    {kind ? ` · before ${/^[AEIOU]/i.test(codeName(kind)) ? 'an' : 'a'} ${codeName(kind)} episode` : ''}
-                  </p>
+                  {at !== undefined && (
+                    <p className="mb-2 text-xs uppercase tracking-widest" style={{ color: 'var(--muted)' }}>
+                      {onTurn ? (
+                        <button type="button" className="uppercase tracking-widest underline" onClick={() => onTurn(at)}>
+                          turn {at + 1}
+                        </button>
+                      ) : (
+                        `turn ${at + 1}`
+                      )}
+                    </p>
+                  )}
                   <MoveTurn label={speakerName(item.preceding_speaker, session)} text={item.preceding_text} strong />
                   <MoveTurn label={speakerName(item.following_speaker, session)} text={item.following_text} />
                   <div className="mt-3 flex flex-wrap gap-1.5" role="group" aria-label={`Code for the tutor turn in item ${n + 1}`}>
@@ -1641,22 +1618,12 @@ function TutorMoves({
                       </button>
                     ))}
                   </div>
-                  <p className="mt-2 text-xs" style={{ color: 'var(--muted)' }}>
-                    Mark: {mark ? moveName(mark) : 'not marked'}
-                    {mark !== undefined && mark !== (saved ?? undefined) ? ' (not saved)' : ''}
-                    {' · '}Model:{' '}
-                    {item.model_move === null
-                      ? 'not classified yet'
-                      : revealed
-                        ? moveName(item.model_move)
-                        : 'hidden until the marks are saved'}
-                    {differs && (
-                      <span style={{ color: DIFFER }} title="The saved mark and the model’s code differ">
-                        {' '}
-                        ≠ the saved mark
-                      </span>
-                    )}
-                  </p>
+                  {revealed && item.model_move !== null && (
+                    <p className="mt-2 text-xs" style={{ color: differs ? DIFFER : 'var(--muted)' }}>
+                      Model: {moveName(item.model_move)}
+                      {differs ? ' · differs from the saved mark' : ''}
+                    </p>
+                  )}
                 </li>
               );
             })}
