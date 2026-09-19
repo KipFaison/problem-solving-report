@@ -1,0 +1,520 @@
+{
+  "session_id": "demo-b-s04",
+  "student_id": "stu-demo-b",
+  "session_index": 4,
+  "session_date": "2026-02-03",
+  "session_topic": "Solving a linear equation with variables on both sides",
+  "has_timestamps": true,
+  "transcript_scope": "full",
+  "problems": [
+    {
+      "problem_id": "demo-b-s04-p01",
+      "topic": "Solving a linear equation with variables on both sides",
+      "start_turn_id": "demo-b-s04-t001",
+      "end_turn_id": "demo-b-s04-t050"
+    }
+  ],
+  "turns": [
+    {
+      "_id": "0",
+      "session_id": "demo-b-s04",
+      "sequence_id": 1,
+      "role": "TUTOR",
+      "content": "Let's look at this equation: 5 times the quantity x minus 3, equals 2x plus 9. We need to find x.",
+      "turn_id": "demo-b-s04-t001",
+      "start_time": "2026-02-03T16:00:00.000Z",
+      "end_time": "2026-02-03T16:00:50.000Z"
+    },
+    {
+      "_id": "1",
+      "session_id": "demo-b-s04",
+      "sequence_id": 2,
+      "role": "STUDENT_1",
+      "content": "So we have 5(x - 3) = 2x + 9, and we're solving for x.",
+      "turn_id": "demo-b-s04-t002",
+      "start_time": "2026-02-03T16:00:52.000Z",
+      "end_time": "2026-02-03T16:01:20.000Z"
+    },
+    {
+      "_id": "2",
+      "session_id": "demo-b-s04",
+      "sequence_id": 3,
+      "role": "TUTOR",
+      "content": "Right, that's the equation we're working with — got it clearly in mind now.",
+      "turn_id": "demo-b-s04-t003",
+      "start_time": "2026-02-03T16:01:27.000Z",
+      "end_time": "2026-02-03T16:01:53.000Z"
+    },
+    {
+      "_id": "3",
+      "session_id": "demo-b-s04",
+      "sequence_id": 4,
+      "role": "STUDENT_1",
+      "content": "Okay, so... what should we do first with that parenthesis?",
+      "turn_id": "demo-b-s04-t004",
+      "start_time": "2026-02-03T16:02:00.000Z",
+      "end_time": "2026-02-03T16:02:21.000Z"
+    },
+    {
+      "_id": "4",
+      "session_id": "demo-b-s04",
+      "sequence_id": 5,
+      "role": "TUTOR",
+      "content": "Good question — think about what we need to do before we can combine like terms.",
+      "turn_id": "demo-b-s04-t005",
+      "start_time": "2026-02-03T16:02:22.000Z",
+      "end_time": "2026-02-03T16:02:37.000Z"
+    },
+    {
+      "_id": "5",
+      "session_id": "demo-b-s04",
+      "sequence_id": 6,
+      "role": "STUDENT_1",
+      "content": "We probably need to distribute the 5 into the parentheses first.",
+      "turn_id": "demo-b-s04-t006",
+      "start_time": "2026-02-03T16:02:37.000Z",
+      "end_time": "2026-02-03T16:02:58.000Z"
+    },
+    {
+      "_id": "6",
+      "session_id": "demo-b-s04",
+      "sequence_id": 7,
+      "role": "TUTOR",
+      "content": "Right. And after that, what's our goal with the x terms?",
+      "turn_id": "demo-b-s04-t007",
+      "start_time": "2026-02-03T16:03:04.000Z",
+      "end_time": "2026-02-03T16:04:14.000Z"
+    },
+    {
+      "_id": "7",
+      "session_id": "demo-b-s04",
+      "sequence_id": 8,
+      "role": "STUDENT_1",
+      "content": "We want to get all the x's on one side, so I'd move the 2x over.",
+      "turn_id": "demo-b-s04-t008",
+      "start_time": "2026-02-03T16:04:16.000Z",
+      "end_time": "2026-02-03T16:05:24.000Z"
+    },
+    {
+      "_id": "8",
+      "session_id": "demo-b-s04",
+      "sequence_id": 9,
+      "role": "TUTOR",
+      "content": "Exactly — then once the x terms are together, what's left to do?",
+      "turn_id": "demo-b-s04-t009",
+      "start_time": "2026-02-03T16:05:27.000Z",
+      "end_time": "2026-02-03T16:05:41.000Z"
+    },
+    {
+      "_id": "9",
+      "session_id": "demo-b-s04",
+      "sequence_id": 10,
+      "role": "STUDENT_1",
+      "content": "Then we just divide to get x by itself.",
+      "turn_id": "demo-b-s04-t010",
+      "start_time": "2026-02-03T16:05:42.000Z",
+      "end_time": "2026-02-03T16:06:13.000Z"
+    },
+    {
+      "_id": "10",
+      "session_id": "demo-b-s04",
+      "sequence_id": 11,
+      "role": "TUTOR",
+      "content": "That's the plan: expand, collect the x terms, then isolate x. Let's put it into action.",
+      "turn_id": "demo-b-s04-t011",
+      "start_time": "2026-02-03T16:06:21.000Z",
+      "end_time": "2026-02-03T16:06:36.000Z"
+    },
+    {
+      "_id": "11",
+      "session_id": "demo-b-s04",
+      "sequence_id": 12,
+      "role": "STUDENT_1",
+      "content": "Alright, let me expand the left side: 5 times x is 5x, and 5 times -3 is -15.",
+      "turn_id": "demo-b-s04-t012",
+      "start_time": "2026-02-03T16:06:40.000Z",
+      "end_time": "2026-02-03T16:07:08.000Z"
+    },
+    {
+      "_id": "12",
+      "session_id": "demo-b-s04",
+      "sequence_id": 13,
+      "role": "TUTOR",
+      "content": "Good — so now the equation reads 5x - 15 = 2x + 9.",
+      "turn_id": "demo-b-s04-t013",
+      "start_time": "2026-02-03T16:07:14.000Z",
+      "end_time": "2026-02-03T16:07:33.000Z"
+    },
+    {
+      "_id": "13",
+      "session_id": "demo-b-s04",
+      "sequence_id": 14,
+      "role": "STUDENT_1",
+      "content": "Now I'll subtract 2x from both sides: 5x minus 2x is 3x, so 3x - 15 = 9.",
+      "turn_id": "demo-b-s04-t014",
+      "start_time": "2026-02-03T16:07:41.000Z",
+      "end_time": "2026-02-03T16:08:46.000Z"
+    },
+    {
+      "_id": "14",
+      "session_id": "demo-b-s04",
+      "sequence_id": 15,
+      "role": "TUTOR",
+      "content": "Nice. Now add 15 to both sides to get the x term alone.",
+      "turn_id": "demo-b-s04-t015",
+      "start_time": "2026-02-03T16:08:48.000Z",
+      "end_time": "2026-02-03T16:09:52.000Z"
+    },
+    {
+      "_id": "15",
+      "session_id": "demo-b-s04",
+      "sequence_id": 16,
+      "role": "STUDENT_1",
+      "content": "That gives 3x = 24.",
+      "turn_id": "demo-b-s04-t016",
+      "start_time": "2026-02-03T16:09:57.000Z",
+      "end_time": "2026-02-03T16:10:55.000Z"
+    },
+    {
+      "_id": "16",
+      "session_id": "demo-b-s04",
+      "sequence_id": 17,
+      "role": "TUTOR",
+      "content": "And now it's just one more move to finish — divide both sides by 3.",
+      "turn_id": "demo-b-s04-t017",
+      "start_time": "2026-02-03T16:10:55.000Z",
+      "end_time": "2026-02-03T16:11:33.000Z"
+    },
+    {
+      "_id": "17",
+      "session_id": "demo-b-s04",
+      "sequence_id": 18,
+      "role": "STUDENT_1",
+      "content": "Wait, would it work if I moved the 2x first instead of subtracting it at that stage?",
+      "turn_id": "demo-b-s04-t018",
+      "start_time": "2026-02-03T16:11:40.000Z",
+      "end_time": "2026-02-03T16:12:16.000Z"
+    },
+    {
+      "_id": "18",
+      "session_id": "demo-b-s04",
+      "sequence_id": 19,
+      "role": "TUTOR",
+      "content": "Sure, try it that way and see where it leads.",
+      "turn_id": "demo-b-s04-t019",
+      "start_time": "2026-02-03T16:12:22.000Z",
+      "end_time": "2026-02-03T16:13:26.000Z"
+    },
+    {
+      "_id": "19",
+      "session_id": "demo-b-s04",
+      "sequence_id": 20,
+      "role": "STUDENT_1",
+      "content": "So starting from 5x - 15 = 2x + 9, I'd subtract 5x from both sides instead: -15 = -3x + 9.",
+      "turn_id": "demo-b-s04-t020",
+      "start_time": "2026-02-03T16:13:26.000Z",
+      "end_time": "2026-02-03T16:14:14.000Z"
+    },
+    {
+      "_id": "20",
+      "session_id": "demo-b-s04",
+      "sequence_id": 21,
+      "role": "TUTOR",
+      "content": "Okay, keep going and see if you land on the same value for x.",
+      "turn_id": "demo-b-s04-t021",
+      "start_time": "2026-02-03T16:14:19.000Z",
+      "end_time": "2026-02-03T16:14:52.000Z"
+    },
+    {
+      "_id": "21",
+      "session_id": "demo-b-s04",
+      "sequence_id": 22,
+      "role": "STUDENT_1",
+      "content": "Subtracting 9 gives -24 = -3x, and dividing by -3 gives x = 8 — same answer either way.",
+      "turn_id": "demo-b-s04-t022",
+      "start_time": "2026-02-03T16:14:54.000Z",
+      "end_time": "2026-02-03T16:15:50.000Z"
+    },
+    {
+      "_id": "22",
+      "session_id": "demo-b-s04",
+      "sequence_id": 23,
+      "role": "TUTOR",
+      "content": "Good work — can you write that final line down clearly so we have it on record?",
+      "turn_id": "demo-b-s04-t023",
+      "start_time": "2026-02-03T16:15:58.000Z",
+      "end_time": "2026-02-03T16:16:13.000Z"
+    },
+    {
+      "_id": "23",
+      "session_id": "demo-b-s04",
+      "sequence_id": 24,
+      "role": "STUDENT_1",
+      "content": "Sure, I'll jot down x = 8 as the solution.",
+      "turn_id": "demo-b-s04-t024",
+      "start_time": "2026-02-03T16:16:17.000Z",
+      "end_time": "2026-02-03T16:16:46.000Z"
+    },
+    {
+      "_id": "24",
+      "session_id": "demo-b-s04",
+      "sequence_id": 25,
+      "role": "TUTOR",
+      "content": "Let's just go back and reread the original problem to make sure we've matched it.",
+      "turn_id": "demo-b-s04-t025",
+      "start_time": "2026-02-03T16:16:48.000Z",
+      "end_time": "2026-02-03T16:17:42.000Z"
+    },
+    {
+      "_id": "25",
+      "session_id": "demo-b-s04",
+      "sequence_id": 26,
+      "role": "STUDENT_1",
+      "content": "It says solve 5(x - 3) = 2x + 9 for x.",
+      "turn_id": "demo-b-s04-t026",
+      "start_time": "2026-02-03T16:17:46.000Z",
+      "end_time": "2026-02-03T16:18:22.000Z"
+    },
+    {
+      "_id": "26",
+      "session_id": "demo-b-s04",
+      "sequence_id": 27,
+      "role": "TUTOR",
+      "content": "Right, and we're checking that our value of x actually satisfies that equation.",
+      "turn_id": "demo-b-s04-t027",
+      "start_time": "2026-02-03T16:18:25.000Z",
+      "end_time": "2026-02-03T16:19:32.000Z"
+    },
+    {
+      "_id": "27",
+      "session_id": "demo-b-s04",
+      "sequence_id": 28,
+      "role": "STUDENT_1",
+      "content": "So we want to plug x = 8 back into both sides and see if they match.",
+      "turn_id": "demo-b-s04-t028",
+      "start_time": "2026-02-03T16:19:33.000Z",
+      "end_time": "2026-02-03T16:19:58.000Z"
+    },
+    {
+      "_id": "28",
+      "session_id": "demo-b-s04",
+      "sequence_id": 29,
+      "role": "TUTOR",
+      "content": "Hmm, let's think for a second before we substitute.",
+      "turn_id": "demo-b-s04-t029",
+      "start_time": "2026-02-03T16:20:06.000Z",
+      "end_time": "2026-02-03T16:21:00.000Z"
+    },
+    {
+      "_id": "29",
+      "session_id": "demo-b-s04",
+      "sequence_id": 30,
+      "role": "STUDENT_1",
+      "content": "Yeah, hold on, let me get the numbers straight in my head.",
+      "turn_id": "demo-b-s04-t030",
+      "start_time": "2026-02-03T16:21:00.000Z",
+      "end_time": "2026-02-03T16:21:51.000Z"
+    },
+    {
+      "_id": "30",
+      "session_id": "demo-b-s04",
+      "sequence_id": 31,
+      "role": "TUTOR",
+      "content": "Take your time.",
+      "turn_id": "demo-b-s04-t031",
+      "start_time": "2026-02-03T16:21:59.000Z",
+      "end_time": "2026-02-03T16:22:56.000Z"
+    },
+    {
+      "_id": "31",
+      "session_id": "demo-b-s04",
+      "sequence_id": 32,
+      "role": "STUDENT_1",
+      "content": "Okay, I think I'm ready to plug it in now.",
+      "turn_id": "demo-b-s04-t032",
+      "start_time": "2026-02-03T16:23:03.000Z",
+      "end_time": "2026-02-03T16:23:48.000Z"
+    },
+    {
+      "_id": "32",
+      "session_id": "demo-b-s04",
+      "sequence_id": 33,
+      "role": "TUTOR",
+      "content": "Great, go ahead and write out the check step by step.",
+      "turn_id": "demo-b-s04-t033",
+      "start_time": "2026-02-03T16:23:48.000Z",
+      "end_time": "2026-02-03T16:24:52.000Z"
+    },
+    {
+      "_id": "33",
+      "session_id": "demo-b-s04",
+      "sequence_id": 34,
+      "role": "STUDENT_1",
+      "content": "So 5 times (8 - 3) is 5 times 5, which is 25.",
+      "turn_id": "demo-b-s04-t034",
+      "start_time": "2026-02-03T16:24:55.000Z",
+      "end_time": "2026-02-03T16:25:12.000Z"
+    },
+    {
+      "_id": "34",
+      "session_id": "demo-b-s04",
+      "sequence_id": 35,
+      "role": "TUTOR",
+      "content": "Good, now do the same for the right side.",
+      "turn_id": "demo-b-s04-t035",
+      "start_time": "2026-02-03T16:25:13.000Z",
+      "end_time": "2026-02-03T16:26:20.000Z"
+    },
+    {
+      "_id": "35",
+      "session_id": "demo-b-s04",
+      "sequence_id": 36,
+      "role": "STUDENT_1",
+      "content": "2 times 8 is 16, plus 9 is 25.",
+      "turn_id": "demo-b-s04-t036",
+      "start_time": "2026-02-03T16:26:27.000Z",
+      "end_time": "2026-02-03T16:26:56.000Z"
+    },
+    {
+      "_id": "36",
+      "session_id": "demo-b-s04",
+      "sequence_id": 37,
+      "role": "TUTOR",
+      "content": "So both sides equal 25 — the two sides match exactly.",
+      "turn_id": "demo-b-s04-t037",
+      "start_time": "2026-02-03T16:26:57.000Z",
+      "end_time": "2026-02-03T16:27:51.000Z"
+    },
+    {
+      "_id": "37",
+      "session_id": "demo-b-s04",
+      "sequence_id": 38,
+      "role": "STUDENT_1",
+      "content": "That confirms x = 8 is correct for this equation.",
+      "turn_id": "demo-b-s04-t038",
+      "start_time": "2026-02-03T16:27:58.000Z",
+      "end_time": "2026-02-03T16:28:55.000Z"
+    },
+    {
+      "_id": "38",
+      "session_id": "demo-b-s04",
+      "sequence_id": 39,
+      "role": "TUTOR",
+      "content": "So the final answer is x = 8, and we've checked it against both sides.",
+      "turn_id": "demo-b-s04-t039",
+      "start_time": "2026-02-03T16:29:01.000Z",
+      "end_time": "2026-02-03T16:30:00.000Z"
+    },
+    {
+      "_id": "39",
+      "session_id": "demo-b-s04",
+      "sequence_id": 40,
+      "role": "STUDENT_1",
+      "content": "Should I write that as the final answer now?",
+      "turn_id": "demo-b-s04-t040",
+      "start_time": "2026-02-03T16:30:04.000Z",
+      "end_time": "2026-02-03T16:30:57.000Z"
+    },
+    {
+      "_id": "40",
+      "session_id": "demo-b-s04",
+      "sequence_id": 41,
+      "role": "TUTOR",
+      "content": "Yes, go ahead and record x = 8 as your solution.",
+      "turn_id": "demo-b-s04-t041",
+      "start_time": "2026-02-03T16:30:57.000Z",
+      "end_time": "2026-02-03T16:31:46.000Z"
+    },
+    {
+      "_id": "41",
+      "session_id": "demo-b-s04",
+      "sequence_id": 42,
+      "role": "STUDENT_1",
+      "content": "Okay, writing it down: x = 8.",
+      "turn_id": "demo-b-s04-t042",
+      "start_time": "2026-02-03T16:31:53.000Z",
+      "end_time": "2026-02-03T16:32:10.000Z"
+    },
+    {
+      "_id": "42",
+      "session_id": "demo-b-s04",
+      "sequence_id": 43,
+      "role": "TUTOR",
+      "content": "Perfect, that's saved. Anything else you want on the page before we move on?",
+      "turn_id": "demo-b-s04-t043",
+      "start_time": "2026-02-03T16:32:16.000Z",
+      "end_time": "2026-02-03T16:32:57.000Z"
+    },
+    {
+      "_id": "43",
+      "session_id": "demo-b-s04",
+      "sequence_id": 44,
+      "role": "STUDENT_1",
+      "content": "No, I think that's all we need for this one.",
+      "turn_id": "demo-b-s04-t044",
+      "start_time": "2026-02-03T16:33:02.000Z",
+      "end_time": "2026-02-03T16:33:35.000Z"
+    },
+    {
+      "_id": "44",
+      "session_id": "demo-b-s04",
+      "sequence_id": 45,
+      "role": "TUTOR",
+      "content": "Alright, that's noted then.",
+      "turn_id": "demo-b-s04-t045",
+      "start_time": "2026-02-03T16:33:37.000Z",
+      "end_time": "2026-02-03T16:34:19.000Z"
+    },
+    {
+      "_id": "45",
+      "session_id": "demo-b-s04",
+      "sequence_id": 46,
+      "role": "STUDENT_1",
+      "content": "Wait, actually that felt pretty smooth once we got moving.",
+      "turn_id": "demo-b-s04-t046",
+      "start_time": "2026-02-03T16:34:27.000Z",
+      "end_time": "2026-02-03T16:35:08.000Z"
+    },
+    {
+      "_id": "46",
+      "session_id": "demo-b-s04",
+      "sequence_id": 47,
+      "role": "TUTOR",
+      "content": "Yeah, it did — nice steady pace through that one.",
+      "turn_id": "demo-b-s04-t047",
+      "start_time": "2026-02-03T16:35:09.000Z",
+      "end_time": "2026-02-03T16:35:34.000Z"
+    },
+    {
+      "_id": "47",
+      "session_id": "demo-b-s04",
+      "sequence_id": 48,
+      "role": "STUDENT_1",
+      "content": "Hmm, I was worried about the negative signs at first.",
+      "turn_id": "demo-b-s04-t048",
+      "start_time": "2026-02-03T16:35:41.000Z",
+      "end_time": "2026-02-03T16:36:50.000Z"
+    },
+    {
+      "_id": "48",
+      "session_id": "demo-b-s04",
+      "sequence_id": 49,
+      "role": "TUTOR",
+      "content": "That's a common spot to trip up, but you handled it fine here.",
+      "turn_id": "demo-b-s04-t049",
+      "start_time": "2026-02-03T16:36:58.000Z",
+      "end_time": "2026-02-03T16:37:30.000Z"
+    },
+    {
+      "_id": "49",
+      "session_id": "demo-b-s04",
+      "sequence_id": 50,
+      "role": "STUDENT_1",
+      "content": "Okay, good, feeling solid about it now.",
+      "turn_id": "demo-b-s04-t050",
+      "start_time": "2026-02-03T16:37:36.000Z",
+      "end_time": "2026-02-03T16:38:10.000Z"
+    }
+  ],
+  "lead_role": "TUTOR"
+}

@@ -1,0 +1,234 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://reasoning-trajectory.local/schema/run.schema.json",
+  "title": "Labelling run",
+  "description": "One labelling source over a student's sessions. Gate 0 produces two kinds, llm and human, with the same shape, because either can be the source a report is built from (docs/SPEC-gate0.md §5.3, D12).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "run_id",
+    "kind",
+    "simulated",
+    "model",
+    "prompt_hash",
+    "annotator_id",
+    "codebook_version",
+    "domain",
+    "created_at"
+  ],
+  "properties": {
+    "run_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "kind": {
+      "enum": [
+        "llm",
+        "human"
+      ]
+    },
+    "simulated": {
+      "type": "boolean",
+      "$comment": "[SOURCE: docs/SPEC-gate0.md §5.3 — simulated status lives on the run, never on the episode.]"
+    },
+    "model": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "$comment": "llm runs only; null on a human run."
+    },
+    "prompt_hash": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "annotator_id": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "$comment": "human runs only, never a name (§5.3)."
+    },
+    "codebook_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "domain": {
+      "type": "string",
+      "minLength": 1
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "stand_in": {
+      "description": "Set when this run's episodes were not produced by the thing its kind names. Used by the generated stand-in that lets the interface be tested before a model has run; model must be null when it is present. See src/contract/types.ts.",
+      "type": [
+        "object",
+        "null"
+      ],
+      "additionalProperties": false,
+      "required": [
+        "reason"
+      ],
+      "properties": {
+        "reason": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "usage": {
+      "$ref": "#/definitions/usage",
+      "$comment": "[OURS: token counts and cache hits recorded per call, README next steps 4 and 5 and PLAN-gate0.md S7. Not part of §5.3; optional, and nothing in the contract depends on it.]"
+    },
+    "episodes": {
+      "type": "array",
+      "items": {
+        "$ref": "https://reasoning-trajectory.local/schema/transcript.schema.json#/definitions/episode"
+      },
+      "$comment": "[OURS: §5.3 says where episodes are stored inside a report — the session's annotations[] array — not how a run is written to its own file before it is merged into one. A standalone run file may carry the tiling set it produced. The cross-cutting episode rules of §9.1 run over reports, where sessions and episodes sit together.]"
+    },
+    "merged_adjacent": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Touching pieces of the model's output with the same code, joined into one episode. Changes no turn's label."
+    },
+    "shown": {
+      "description": "On an annotation run, the turns the tutor was shown when marking it. Agreement compares these turns and no others. Absent or null means the whole session was shown, which is how every run saved before it existed reads.",
+      "$comment": "[OURS: INTENT.md, 'What a tutor is shown'; docs/SPEC-gate0.md D18. See src/contract/types.ts RunShown.]",
+      "type": [
+        "object",
+        "null"
+      ],
+      "additionalProperties": false,
+      "required": [
+        "mode",
+        "turn_ids",
+        "problem_ids",
+        "sampling"
+      ],
+      "properties": {
+        "mode": {
+          "enum": [
+            "sample",
+            "whole_session"
+          ]
+        },
+        "turn_ids": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "problem_ids": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "sampling": {
+          "type": [
+            "object",
+            "null"
+          ],
+          "additionalProperties": false,
+          "required": [
+            "problems_per_session",
+            "seed"
+          ],
+          "properties": {
+            "problems_per_session": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "seed": {
+              "type": "integer"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "call_usage": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "input_tokens",
+        "output_tokens",
+        "cache_creation_input_tokens",
+        "cache_read_input_tokens"
+      ],
+      "properties": {
+        "input_tokens": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "output_tokens": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "cache_creation_input_tokens": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "cache_read_input_tokens": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "purpose": {
+          "enum": [
+            "segment",
+            "summarise",
+            "moves"
+          ]
+        },
+        "session_id": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "usage": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "calls",
+        "totals",
+        "per_call"
+      ],
+      "properties": {
+        "calls": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "totals": {
+          "$ref": "#/definitions/call_usage"
+        },
+        "per_call": {
+          "type": "array",
+          "items": {
+            "allOf": [
+              {
+                "$ref": "#/definitions/call_usage"
+              },
+              {
+                "required": [
+                  "purpose"
+                ]
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

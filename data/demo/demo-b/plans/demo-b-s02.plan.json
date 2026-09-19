@@ -1,0 +1,447 @@
+{
+  "$comment": "The planted episode plan this session was generated from. It is not a labelling run, nothing is scored against it, and no report reads it (SPEC-gate0 §8). It is here so a reader can see what the transcript was built to contain.",
+  "set_id": "demo-b",
+  "session_id": "demo-b-s02",
+  "seed": 20260106,
+  "turn_count": 48,
+  "episodes": [
+    {
+      "ordinal": 1,
+      "code": "reading",
+      "turns": 3
+    },
+    {
+      "ordinal": 2,
+      "code": "analysis",
+      "turns": 6
+    },
+    {
+      "ordinal": 3,
+      "code": "implementation",
+      "turns": 8
+    },
+    {
+      "ordinal": 4,
+      "code": "planning",
+      "turns": 6
+    },
+    {
+      "ordinal": 5,
+      "code": "organization",
+      "turns": 2
+    },
+    {
+      "ordinal": 6,
+      "code": "planning",
+      "turns": 4
+    },
+    {
+      "ordinal": 7,
+      "code": "exploration",
+      "turns": 4
+    },
+    {
+      "ordinal": 8,
+      "code": "analysis",
+      "turns": 8
+    },
+    {
+      "ordinal": 9,
+      "code": "verification",
+      "turns": 2
+    },
+    {
+      "ordinal": 10,
+      "code": "monitor",
+      "turns": 5
+    }
+  ],
+  "$comment_schedule": "[OURS] The same plan turn by turn: speaker, planted code, boundary cue and problem. scripts/write-dialogue.ts writes the session's lines from it, and schedule_hash (sha256 of its canonical JSON) ties the stored lines at src/generator/dialogue/demo-b-s02.json to it.",
+  "schedule_hash": "0c3209ca9062f70bfc13119da80f19a8b2d53c1601943a508b08327b74d9d570",
+  "schedule": [
+    {
+      "index": 0,
+      "turn_id": "demo-b-s02-t001",
+      "role": "TUTOR",
+      "code": "reading",
+      "cue": null,
+      "problem_topic": "Solving a linear equation with variables on both sides"
+    },
+    {
+      "index": 1,
+      "turn_id": "demo-b-s02-t002",
+      "role": "STUDENT_1",
+      "code": "reading",
+      "cue": null,
+      "problem_topic": "Solving a linear equation with variables on both sides"
+    },
+    {
+      "index": 2,
+      "turn_id": "demo-b-s02-t003",
+      "role": "TUTOR",
+      "code": "reading",
+      "cue": "handoff",
+      "problem_topic": "Solving a linear equation with variables on both sides"
+    },
+    {
+      "index": 3,
+      "turn_id": "demo-b-s02-t004",
+      "role": "STUDENT_1",
+      "code": "analysis",
+      "cue": "opening",
+      "problem_topic": "Solving a linear equation with variables on both sides"
+    },
+    {
+      "index": 4,
+      "turn_id": "demo-b-s02-t005",
+      "role": "TUTOR",
+      "code": "analysis",
+      "cue": "follow",
+      "problem_topic": "Solving a linear equation with variables on both sides"
+    },
+    {
+      "index": 5,
+      "turn_id": "demo-b-s02-t006",
+      "role": "STUDENT_1",
+      "code": "analysis",
+      "cue": null,
+      "problem_topic": "Solving a linear equation with variables on both sides"
+    },
+    {
+      "index": 6,
+      "turn_id": "demo-b-s02-t007",
+      "role": "TUTOR",
+      "code": "analysis",
+      "cue": null,
+      "problem_topic": "Solving a linear equation with variables on both sides"
+    },
+    {
+      "index": 7,
+      "turn_id": "demo-b-s02-t008",
+      "role": "STUDENT_1",
+      "code": "analysis",
+      "cue": null,
+      "problem_topic": "Solving a linear equation with variables on both sides"
+    },
+    {
+      "index": 8,
+      "turn_id": "demo-b-s02-t009",
+      "role": "TUTOR",
+      "code": "analysis",
+      "cue": "handoff",
+      "problem_topic": "Solving a linear equation with variables on both sides"
+    },
+    {
+      "index": 9,
+      "turn_id": "demo-b-s02-t010",
+      "role": "STUDENT_1",
+      "code": "implementation",
+      "cue": "opening",
+      "problem_topic": "Solving a linear equation with variables on both sides"
+    },
+    {
+      "index": 10,
+      "turn_id": "demo-b-s02-t011",
+      "role": "TUTOR",
+      "code": "implementation",
+      "cue": "follow",
+      "problem_topic": "Solving a linear equation with variables on both sides"
+    },
+    {
+      "index": 11,
+      "turn_id": "demo-b-s02-t012",
+      "role": "STUDENT_1",
+      "code": "implementation",
+      "cue": null,
+      "problem_topic": "Solving a linear equation with variables on both sides"
+    },
+    {
+      "index": 12,
+      "turn_id": "demo-b-s02-t013",
+      "role": "TUTOR",
+      "code": "implementation",
+      "cue": null,
+      "problem_topic": "Solving a linear equation with variables on both sides"
+    },
+    {
+      "index": 13,
+      "turn_id": "demo-b-s02-t014",
+      "role": "STUDENT_1",
+      "code": "implementation",
+      "cue": null,
+      "problem_topic": "Solving a linear equation with variables on both sides"
+    },
+    {
+      "index": 14,
+      "turn_id": "demo-b-s02-t015",
+      "role": "TUTOR",
+      "code": "implementation",
+      "cue": null,
+      "problem_topic": "Solving a linear equation with variables on both sides"
+    },
+    {
+      "index": 15,
+      "turn_id": "demo-b-s02-t016",
+      "role": "STUDENT_1",
+      "code": "implementation",
+      "cue": null,
+      "problem_topic": "Solving a linear equation with variables on both sides"
+    },
+    {
+      "index": 16,
+      "turn_id": "demo-b-s02-t017",
+      "role": "TUTOR",
+      "code": "implementation",
+      "cue": "handoff",
+      "problem_topic": "Solving a linear equation with variables on both sides"
+    },
+    {
+      "index": 17,
+      "turn_id": "demo-b-s02-t018",
+      "role": "STUDENT_1",
+      "code": "planning",
+      "cue": "opening",
+      "problem_topic": "Solving a linear equation with variables on both sides"
+    },
+    {
+      "index": 18,
+      "turn_id": "demo-b-s02-t019",
+      "role": "TUTOR",
+      "code": "planning",
+      "cue": "follow",
+      "problem_topic": "Solving a linear equation with variables on both sides"
+    },
+    {
+      "index": 19,
+      "turn_id": "demo-b-s02-t020",
+      "role": "STUDENT_1",
+      "code": "planning",
+      "cue": null,
+      "problem_topic": "Solving a linear equation with variables on both sides"
+    },
+    {
+      "index": 20,
+      "turn_id": "demo-b-s02-t021",
+      "role": "TUTOR",
+      "code": "planning",
+      "cue": null,
+      "problem_topic": "Solving a linear equation with variables on both sides"
+    },
+    {
+      "index": 21,
+      "turn_id": "demo-b-s02-t022",
+      "role": "STUDENT_1",
+      "code": "planning",
+      "cue": null,
+      "problem_topic": "Solving a linear equation with variables on both sides"
+    },
+    {
+      "index": 22,
+      "turn_id": "demo-b-s02-t023",
+      "role": "TUTOR",
+      "code": "planning",
+      "cue": null,
+      "problem_topic": "Solving a linear equation with variables on both sides"
+    },
+    {
+      "index": 23,
+      "turn_id": "demo-b-s02-t024",
+      "role": "STUDENT_1",
+      "code": "organization",
+      "cue": null,
+      "problem_topic": "Solving a linear equation with variables on both sides"
+    },
+    {
+      "index": 24,
+      "turn_id": "demo-b-s02-t025",
+      "role": "TUTOR",
+      "code": "organization",
+      "cue": "handoff",
+      "problem_topic": "Solving a linear equation with variables on both sides"
+    },
+    {
+      "index": 25,
+      "turn_id": "demo-b-s02-t026",
+      "role": "STUDENT_1",
+      "code": "planning",
+      "cue": "opening",
+      "problem_topic": "Solving a linear equation with variables on both sides"
+    },
+    {
+      "index": 26,
+      "turn_id": "demo-b-s02-t027",
+      "role": "TUTOR",
+      "code": "planning",
+      "cue": "follow",
+      "problem_topic": "Solving a linear equation with variables on both sides"
+    },
+    {
+      "index": 27,
+      "turn_id": "demo-b-s02-t028",
+      "role": "STUDENT_1",
+      "code": "planning",
+      "cue": null,
+      "problem_topic": "Solving a linear equation with variables on both sides"
+    },
+    {
+      "index": 28,
+      "turn_id": "demo-b-s02-t029",
+      "role": "TUTOR",
+      "code": "planning",
+      "cue": "handoff",
+      "problem_topic": "Solving a linear equation with variables on both sides"
+    },
+    {
+      "index": 29,
+      "turn_id": "demo-b-s02-t030",
+      "role": "STUDENT_1",
+      "code": "exploration",
+      "cue": "opening",
+      "problem_topic": "Solving a linear equation with variables on both sides"
+    },
+    {
+      "index": 30,
+      "turn_id": "demo-b-s02-t031",
+      "role": "TUTOR",
+      "code": "exploration",
+      "cue": "follow",
+      "problem_topic": "Solving a linear equation with variables on both sides"
+    },
+    {
+      "index": 31,
+      "turn_id": "demo-b-s02-t032",
+      "role": "STUDENT_1",
+      "code": "exploration",
+      "cue": null,
+      "problem_topic": "Solving a linear equation with variables on both sides"
+    },
+    {
+      "index": 32,
+      "turn_id": "demo-b-s02-t033",
+      "role": "TUTOR",
+      "code": "exploration",
+      "cue": "handoff",
+      "problem_topic": "Solving a linear equation with variables on both sides"
+    },
+    {
+      "index": 33,
+      "turn_id": "demo-b-s02-t034",
+      "role": "STUDENT_1",
+      "code": "analysis",
+      "cue": "opening",
+      "problem_topic": "Solving a linear equation with variables on both sides"
+    },
+    {
+      "index": 34,
+      "turn_id": "demo-b-s02-t035",
+      "role": "TUTOR",
+      "code": "analysis",
+      "cue": "follow",
+      "problem_topic": "Solving a linear equation with variables on both sides"
+    },
+    {
+      "index": 35,
+      "turn_id": "demo-b-s02-t036",
+      "role": "STUDENT_1",
+      "code": "analysis",
+      "cue": null,
+      "problem_topic": "Solving a linear equation with variables on both sides"
+    },
+    {
+      "index": 36,
+      "turn_id": "demo-b-s02-t037",
+      "role": "TUTOR",
+      "code": "analysis",
+      "cue": null,
+      "problem_topic": "Solving a linear equation with variables on both sides"
+    },
+    {
+      "index": 37,
+      "turn_id": "demo-b-s02-t038",
+      "role": "STUDENT_1",
+      "code": "analysis",
+      "cue": null,
+      "problem_topic": "Solving a linear equation with variables on both sides"
+    },
+    {
+      "index": 38,
+      "turn_id": "demo-b-s02-t039",
+      "role": "TUTOR",
+      "code": "analysis",
+      "cue": null,
+      "problem_topic": "Solving a linear equation with variables on both sides"
+    },
+    {
+      "index": 39,
+      "turn_id": "demo-b-s02-t040",
+      "role": "STUDENT_1",
+      "code": "analysis",
+      "cue": null,
+      "problem_topic": "Solving a linear equation with variables on both sides"
+    },
+    {
+      "index": 40,
+      "turn_id": "demo-b-s02-t041",
+      "role": "TUTOR",
+      "code": "analysis",
+      "cue": "handoff",
+      "problem_topic": "Solving a linear equation with variables on both sides"
+    },
+    {
+      "index": 41,
+      "turn_id": "demo-b-s02-t042",
+      "role": "STUDENT_1",
+      "code": "verification",
+      "cue": null,
+      "problem_topic": "Solving a linear equation with variables on both sides"
+    },
+    {
+      "index": 42,
+      "turn_id": "demo-b-s02-t043",
+      "role": "TUTOR",
+      "code": "verification",
+      "cue": null,
+      "problem_topic": "Solving a linear equation with variables on both sides"
+    },
+    {
+      "index": 43,
+      "turn_id": "demo-b-s02-t044",
+      "role": "STUDENT_1",
+      "code": "monitor",
+      "cue": null,
+      "problem_topic": "Solving a linear equation with variables on both sides"
+    },
+    {
+      "index": 44,
+      "turn_id": "demo-b-s02-t045",
+      "role": "TUTOR",
+      "code": "monitor",
+      "cue": null,
+      "problem_topic": "Solving a linear equation with variables on both sides"
+    },
+    {
+      "index": 45,
+      "turn_id": "demo-b-s02-t046",
+      "role": "STUDENT_1",
+      "code": "monitor",
+      "cue": null,
+      "problem_topic": "Solving a linear equation with variables on both sides"
+    },
+    {
+      "index": 46,
+      "turn_id": "demo-b-s02-t047",
+      "role": "TUTOR",
+      "code": "monitor",
+      "cue": null,
+      "problem_topic": "Solving a linear equation with variables on both sides"
+    },
+    {
+      "index": 47,
+      "turn_id": "demo-b-s02-t048",
+      "role": "STUDENT_1",
+      "code": "monitor",
+      "cue": null,
+      "problem_topic": "Solving a linear equation with variables on both sides"
+    }
+  ]
+}

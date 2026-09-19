@@ -1,0 +1,32 @@
+{
+  "$comment": "[OURS: model-written demo dialogue, simulated and not from any real session. Written by scripts/write-dialogue.ts in one call from the planted per-turn schedule in data/demo/demo-c/plans/demo-c-s02.plan.json, and used by src/generator/sets.ts only while schedule_hash matches that schedule. The writer was told each turn's planted code; nothing checks that a line fits it (docs/DEVIATIONS.md D-034).]",
+  "session_id": "demo-c-s02",
+  "schedule_hash": "75c9e95bb8bbb295442966ce975b3fe5f726a0a10d6e661c217d43d4624c2158",
+  "model": "claude-sonnet-5",
+  "prompt_hash": "b2b3b1b99322c2ec",
+  "created_at": "2026-09-19T02:23:25.973Z",
+  "lines": [
+    "This recipe uses flour and sugar in a 3 to 5 ratio, and we're told 12 cups of flour are used. We need to find the sugar.",
+    "So the ratio is 3 parts flour to 5 parts sugar, we have 12 cups of flour, and we want the matching sugar amount.",
+    "Good, so we both have the ratio and the flour amount clear before we go further.",
+    "So how do we actually turn that ratio into a real amount of sugar?",
+    "Think about what one single 'part' of the ratio is worth in cups.",
+    "So the plan is to figure out how many cups one part equals, starting from the flour side.",
+    "Right, and once we know that, we scale it up to however many parts sugar needs.",
+    "So the plan is: find one part from the flour, then multiply that by five for sugar.",
+    "That's a solid plan, let's carry it out step by step.",
+    "So flour is 3 parts of the ratio, and those 3 parts equal 12 cups.",
+    "Right, so each of those 3 equal parts must be worth the same number of cups.",
+    "If 3 parts together make 12 cups, then one part has to be 4 cups.",
+    "Exactly, and since sugar is 5 of those same-sized parts, each is also 4 cups.",
+    "So the sugar amount follows from taking those 5 parts at 4 cups each.",
+    "That gives 20 cups of sugar needed for this batch of the recipe.",
+    "And 12 to 20 reduces right back down to 3 to 5, so it fits the original ratio.",
+    "Let's just pause here for a second before we move on.",
+    "Yeah, hang on, let me make sure that's actually settled in my head.",
+    "No rush, take whatever time you need.",
+    "Okay, I think it's clicked now.",
+    "Good, glad it's sitting right with you.",
+    "Alright, I feel ready for whatever comes next."
+  ]
+}

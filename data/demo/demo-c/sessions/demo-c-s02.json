@@ -1,0 +1,240 @@
+{
+  "session_id": "demo-c-s02",
+  "student_id": "stu-demo-c",
+  "session_index": 2,
+  "session_date": "2026-01-20",
+  "session_topic": "Scaling a ratio",
+  "has_timestamps": true,
+  "transcript_scope": "full",
+  "problems": [
+    {
+      "problem_id": "demo-c-s02-p01",
+      "topic": "Scaling a ratio",
+      "start_turn_id": "demo-c-s02-t001",
+      "end_turn_id": "demo-c-s02-t022"
+    }
+  ],
+  "turns": [
+    {
+      "_id": "0",
+      "session_id": "demo-c-s02",
+      "sequence_id": 1,
+      "role": "TUTOR",
+      "content": "This recipe uses flour and sugar in a 3 to 5 ratio, and we're told 12 cups of flour are used. We need to find the sugar.",
+      "turn_id": "demo-c-s02-t001",
+      "start_time": "2026-01-20T16:00:00.000Z",
+      "end_time": "2026-01-20T16:01:01.000Z"
+    },
+    {
+      "_id": "1",
+      "session_id": "demo-c-s02",
+      "sequence_id": 2,
+      "role": "STUDENT_1",
+      "content": "So the ratio is 3 parts flour to 5 parts sugar, we have 12 cups of flour, and we want the matching sugar amount.",
+      "turn_id": "demo-c-s02-t002",
+      "start_time": "2026-01-20T16:01:02.000Z",
+      "end_time": "2026-01-20T16:01:52.000Z"
+    },
+    {
+      "_id": "2",
+      "session_id": "demo-c-s02",
+      "sequence_id": 3,
+      "role": "TUTOR",
+      "content": "Good, so we both have the ratio and the flour amount clear before we go further.",
+      "turn_id": "demo-c-s02-t003",
+      "start_time": "2026-01-20T16:02:00.000Z",
+      "end_time": "2026-01-20T16:02:58.000Z"
+    },
+    {
+      "_id": "3",
+      "session_id": "demo-c-s02",
+      "sequence_id": 4,
+      "role": "STUDENT_1",
+      "content": "So how do we actually turn that ratio into a real amount of sugar?",
+      "turn_id": "demo-c-s02-t004",
+      "start_time": "2026-01-20T16:02:58.000Z",
+      "end_time": "2026-01-20T16:03:32.000Z"
+    },
+    {
+      "_id": "4",
+      "session_id": "demo-c-s02",
+      "sequence_id": 5,
+      "role": "TUTOR",
+      "content": "Think about what one single 'part' of the ratio is worth in cups.",
+      "turn_id": "demo-c-s02-t005",
+      "start_time": "2026-01-20T16:03:39.000Z",
+      "end_time": "2026-01-20T16:04:30.000Z"
+    },
+    {
+      "_id": "5",
+      "session_id": "demo-c-s02",
+      "sequence_id": 6,
+      "role": "STUDENT_1",
+      "content": "So the plan is to figure out how many cups one part equals, starting from the flour side.",
+      "turn_id": "demo-c-s02-t006",
+      "start_time": "2026-01-20T16:04:34.000Z",
+      "end_time": "2026-01-20T16:05:23.000Z"
+    },
+    {
+      "_id": "6",
+      "session_id": "demo-c-s02",
+      "sequence_id": 7,
+      "role": "TUTOR",
+      "content": "Right, and once we know that, we scale it up to however many parts sugar needs.",
+      "turn_id": "demo-c-s02-t007",
+      "start_time": "2026-01-20T16:05:23.000Z",
+      "end_time": "2026-01-20T16:05:37.000Z"
+    },
+    {
+      "_id": "7",
+      "session_id": "demo-c-s02",
+      "sequence_id": 8,
+      "role": "STUDENT_1",
+      "content": "So the plan is: find one part from the flour, then multiply that by five for sugar.",
+      "turn_id": "demo-c-s02-t008",
+      "start_time": "2026-01-20T16:05:42.000Z",
+      "end_time": "2026-01-20T16:05:58.000Z"
+    },
+    {
+      "_id": "8",
+      "session_id": "demo-c-s02",
+      "sequence_id": 9,
+      "role": "TUTOR",
+      "content": "That's a solid plan, let's carry it out step by step.",
+      "turn_id": "demo-c-s02-t009",
+      "start_time": "2026-01-20T16:06:02.000Z",
+      "end_time": "2026-01-20T16:06:57.000Z"
+    },
+    {
+      "_id": "9",
+      "session_id": "demo-c-s02",
+      "sequence_id": 10,
+      "role": "STUDENT_1",
+      "content": "So flour is 3 parts of the ratio, and those 3 parts equal 12 cups.",
+      "turn_id": "demo-c-s02-t010",
+      "start_time": "2026-01-20T16:07:03.000Z",
+      "end_time": "2026-01-20T16:07:46.000Z"
+    },
+    {
+      "_id": "10",
+      "session_id": "demo-c-s02",
+      "sequence_id": 11,
+      "role": "TUTOR",
+      "content": "Right, so each of those 3 equal parts must be worth the same number of cups.",
+      "turn_id": "demo-c-s02-t011",
+      "start_time": "2026-01-20T16:07:47.000Z",
+      "end_time": "2026-01-20T16:08:16.000Z"
+    },
+    {
+      "_id": "11",
+      "session_id": "demo-c-s02",
+      "sequence_id": 12,
+      "role": "STUDENT_1",
+      "content": "If 3 parts together make 12 cups, then one part has to be 4 cups.",
+      "turn_id": "demo-c-s02-t012",
+      "start_time": "2026-01-20T16:08:21.000Z",
+      "end_time": "2026-01-20T16:08:45.000Z"
+    },
+    {
+      "_id": "12",
+      "session_id": "demo-c-s02",
+      "sequence_id": 13,
+      "role": "TUTOR",
+      "content": "Exactly, and since sugar is 5 of those same-sized parts, each is also 4 cups.",
+      "turn_id": "demo-c-s02-t013",
+      "start_time": "2026-01-20T16:08:49.000Z",
+      "end_time": "2026-01-20T16:09:01.000Z"
+    },
+    {
+      "_id": "13",
+      "session_id": "demo-c-s02",
+      "sequence_id": 14,
+      "role": "STUDENT_1",
+      "content": "So the sugar amount follows from taking those 5 parts at 4 cups each.",
+      "turn_id": "demo-c-s02-t014",
+      "start_time": "2026-01-20T16:09:03.000Z",
+      "end_time": "2026-01-20T16:09:42.000Z"
+    },
+    {
+      "_id": "14",
+      "session_id": "demo-c-s02",
+      "sequence_id": 15,
+      "role": "TUTOR",
+      "content": "That gives 20 cups of sugar needed for this batch of the recipe.",
+      "turn_id": "demo-c-s02-t015",
+      "start_time": "2026-01-20T16:09:42.000Z",
+      "end_time": "2026-01-20T16:09:59.000Z"
+    },
+    {
+      "_id": "15",
+      "session_id": "demo-c-s02",
+      "sequence_id": 16,
+      "role": "STUDENT_1",
+      "content": "And 12 to 20 reduces right back down to 3 to 5, so it fits the original ratio.",
+      "turn_id": "demo-c-s02-t016",
+      "start_time": "2026-01-20T16:10:00.000Z",
+      "end_time": "2026-01-20T16:11:07.000Z"
+    },
+    {
+      "_id": "16",
+      "session_id": "demo-c-s02",
+      "sequence_id": 17,
+      "role": "TUTOR",
+      "content": "Let's just pause here for a second before we move on.",
+      "turn_id": "demo-c-s02-t017",
+      "start_time": "2026-01-20T16:11:13.000Z",
+      "end_time": "2026-01-20T16:11:51.000Z"
+    },
+    {
+      "_id": "17",
+      "session_id": "demo-c-s02",
+      "sequence_id": 18,
+      "role": "STUDENT_1",
+      "content": "Yeah, hang on, let me make sure that's actually settled in my head.",
+      "turn_id": "demo-c-s02-t018",
+      "start_time": "2026-01-20T16:11:56.000Z",
+      "end_time": "2026-01-20T16:12:40.000Z"
+    },
+    {
+      "_id": "18",
+      "session_id": "demo-c-s02",
+      "sequence_id": 19,
+      "role": "TUTOR",
+      "content": "No rush, take whatever time you need.",
+      "turn_id": "demo-c-s02-t019",
+      "start_time": "2026-01-20T16:12:40.000Z",
+      "end_time": "2026-01-20T16:13:33.000Z"
+    },
+    {
+      "_id": "19",
+      "session_id": "demo-c-s02",
+      "sequence_id": 20,
+      "role": "STUDENT_1",
+      "content": "Okay, I think it's clicked now.",
+      "turn_id": "demo-c-s02-t020",
+      "start_time": "2026-01-20T16:13:37.000Z",
+      "end_time": "2026-01-20T16:14:30.000Z"
+    },
+    {
+      "_id": "20",
+      "session_id": "demo-c-s02",
+      "sequence_id": 21,
+      "role": "TUTOR",
+      "content": "Good, glad it's sitting right with you.",
+      "turn_id": "demo-c-s02-t021",
+      "start_time": "2026-01-20T16:14:33.000Z",
+      "end_time": "2026-01-20T16:14:59.000Z"
+    },
+    {
+      "_id": "21",
+      "session_id": "demo-c-s02",
+      "sequence_id": 22,
+      "role": "STUDENT_1",
+      "content": "Alright, I feel ready for whatever comes next.",
+      "turn_id": "demo-c-s02-t022",
+      "start_time": "2026-01-20T16:15:07.000Z",
+      "end_time": "2026-01-20T16:15:28.000Z"
+    }
+  ],
+  "lead_role": "TUTOR"
+}

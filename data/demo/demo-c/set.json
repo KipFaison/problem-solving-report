@@ -1,0 +1,75 @@
+{
+  "set_id": "demo-c",
+  "student_id": "stu-demo-c",
+  "data_provenance": {
+    "status": "synthetic",
+    "ui_label": "Simulated session data, generated for this demo. Not a real tutoring session."
+  },
+  "intended_state": "unmeasured",
+  "$comment_intended_state": "Which state of SPEC-gate0 §5.4 this set exists to render. It is what the set was tuned for, not a result: the state a report shows is computed from the kappa between this set's annotation run and the LLM run, and nothing reads this field to decide it.",
+  "generator": {
+    "seed": 20260104,
+    "lead_role": "TUTOR",
+    "$comment_lead_role": "SPEC-gate0 §5.8: the lead role is supplied with the data and never inferred. src/contract/types.ts Session has no field for it, so it is recorded here.",
+    "noise": null
+  },
+  "dialogue": {
+    "$comment": "[OURS] Where each session's lines came from. model_written: a stored file under src/generator/dialogue/, written by a model from the planted schedule (scripts/write-dialogue.ts); nothing checks that a line fits its planted code (docs/DEVIATIONS.md D-034). pool: the fallback lines in src/generator/dialogue.ts, which can repeat within a session. pool_chosen: the sessions in pool that use pool lines by choice although a stored file exists for them, because pool lines follow the planted plan a simulated annotation run is built from [OURS: owner decision 2026-09-18, SPEC D19].",
+    "model_written": [
+      "demo-c-s01",
+      "demo-c-s02",
+      "demo-c-s03",
+      "demo-c-s04"
+    ],
+    "pool": [],
+    "pool_chosen": []
+  },
+  "sessions": [
+    {
+      "session_id": "demo-c-s01",
+      "session_index": 1,
+      "session_date": "2026-01-13",
+      "turn_count": 54,
+      "has_timestamps": true,
+      "transcript_scope": "full",
+      "file": "sessions/demo-c-s01.json",
+      "plan_file": "plans/demo-c-s01.plan.json",
+      "planted_episode_count": 9
+    },
+    {
+      "session_id": "demo-c-s02",
+      "session_index": 2,
+      "session_date": "2026-01-20",
+      "turn_count": 22,
+      "has_timestamps": true,
+      "transcript_scope": "full",
+      "file": "sessions/demo-c-s02.json",
+      "plan_file": "plans/demo-c-s02.plan.json",
+      "planted_episode_count": 4
+    },
+    {
+      "session_id": "demo-c-s03",
+      "session_index": 3,
+      "session_date": "2026-01-27",
+      "turn_count": 46,
+      "has_timestamps": false,
+      "transcript_scope": "full",
+      "file": "sessions/demo-c-s03.json",
+      "plan_file": "plans/demo-c-s03.plan.json",
+      "planted_episode_count": 10
+    },
+    {
+      "session_id": "demo-c-s04",
+      "session_index": 4,
+      "session_date": "2026-02-03",
+      "turn_count": 58,
+      "has_timestamps": true,
+      "transcript_scope": "full",
+      "file": "sessions/demo-c-s04.json",
+      "plan_file": "plans/demo-c-s04.plan.json",
+      "planted_episode_count": 11
+    }
+  ],
+  "runs": [],
+  "noise_check": null
+}

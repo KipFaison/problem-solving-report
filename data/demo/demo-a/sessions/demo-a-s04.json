@@ -1,0 +1,826 @@
+{
+  "session_id": "demo-a-s04",
+  "student_id": "stu-demo-a",
+  "session_index": 4,
+  "session_date": "2026-02-03",
+  "session_topic": "Solving a linear equation with variables on both sides · Scaling a ratio",
+  "has_timestamps": true,
+  "transcript_scope": "full",
+  "problems": [
+    {
+      "problem_id": "demo-a-s04-p01",
+      "topic": "Solving a linear equation with variables on both sides",
+      "start_turn_id": "demo-a-s04-t001",
+      "end_turn_id": "demo-a-s04-t040"
+    },
+    {
+      "problem_id": "demo-a-s04-p02",
+      "topic": "Scaling a ratio",
+      "start_turn_id": "demo-a-s04-t041",
+      "end_turn_id": "demo-a-s04-t080"
+    }
+  ],
+  "turns": [
+    {
+      "_id": "0",
+      "session_id": "demo-a-s04",
+      "sequence_id": 1,
+      "role": "TUTOR",
+      "content": "Solve 5 times the quantity x minus 3, equals 2x plus 9, for x.",
+      "turn_id": "demo-a-s04-t001",
+      "start_time": "2026-02-03T16:00:00.000Z",
+      "end_time": "2026-02-03T16:01:08.000Z"
+    },
+    {
+      "_id": "1",
+      "session_id": "demo-a-s04",
+      "sequence_id": 2,
+      "role": "STUDENT_1",
+      "content": "So there's an x on both sides, and a bracket to expand first.",
+      "turn_id": "demo-a-s04-t002",
+      "start_time": "2026-02-03T16:01:08.000Z",
+      "end_time": "2026-02-03T16:01:37.000Z"
+    },
+    {
+      "_id": "2",
+      "session_id": "demo-a-s04",
+      "sequence_id": 3,
+      "role": "TUTOR",
+      "content": "We could expand the bracket first, or maybe try dividing through by something — thoughts?",
+      "turn_id": "demo-a-s04-t003",
+      "start_time": "2026-02-03T16:01:40.000Z",
+      "end_time": "2026-02-03T16:01:57.000Z"
+    },
+    {
+      "_id": "3",
+      "session_id": "demo-a-s04",
+      "sequence_id": 4,
+      "role": "STUDENT_1",
+      "content": "Maybe we could guess a value and test it, but expanding seems safer.",
+      "turn_id": "demo-a-s04-t004",
+      "start_time": "2026-02-03T16:02:03.000Z",
+      "end_time": "2026-02-03T16:03:11.000Z"
+    },
+    {
+      "_id": "4",
+      "session_id": "demo-a-s04",
+      "sequence_id": 5,
+      "role": "TUTOR",
+      "content": "Let's go with expanding the bracket then, that looks like the cleanest way in.",
+      "turn_id": "demo-a-s04-t005",
+      "start_time": "2026-02-03T16:03:16.000Z",
+      "end_time": "2026-02-03T16:03:46.000Z"
+    },
+    {
+      "_id": "5",
+      "session_id": "demo-a-s04",
+      "sequence_id": 6,
+      "role": "STUDENT_1",
+      "content": "Okay, let me start working it out.",
+      "turn_id": "demo-a-s04-t006",
+      "start_time": "2026-02-03T16:03:47.000Z",
+      "end_time": "2026-02-03T16:04:05.000Z"
+    },
+    {
+      "_id": "6",
+      "session_id": "demo-a-s04",
+      "sequence_id": 7,
+      "role": "TUTOR",
+      "content": "Go ahead, expand the left side first.",
+      "turn_id": "demo-a-s04-t007",
+      "start_time": "2026-02-03T16:04:11.000Z",
+      "end_time": "2026-02-03T16:05:06.000Z"
+    },
+    {
+      "_id": "7",
+      "session_id": "demo-a-s04",
+      "sequence_id": 8,
+      "role": "STUDENT_1",
+      "content": "5 times x is 5x, and 5 times negative 3 is negative 15, so 5x minus 15 equals 2x plus 9.",
+      "turn_id": "demo-a-s04-t008",
+      "start_time": "2026-02-03T16:05:07.000Z",
+      "end_time": "2026-02-03T16:06:14.000Z"
+    },
+    {
+      "_id": "8",
+      "session_id": "demo-a-s04",
+      "sequence_id": 9,
+      "role": "TUTOR",
+      "content": "Good, now let's move the x terms to one side.",
+      "turn_id": "demo-a-s04-t009",
+      "start_time": "2026-02-03T16:06:18.000Z",
+      "end_time": "2026-02-03T16:07:24.000Z"
+    },
+    {
+      "_id": "9",
+      "session_id": "demo-a-s04",
+      "sequence_id": 10,
+      "role": "STUDENT_1",
+      "content": "Subtract 2x from both sides: 3x minus 15 equals 9.",
+      "turn_id": "demo-a-s04-t010",
+      "start_time": "2026-02-03T16:07:28.000Z",
+      "end_time": "2026-02-03T16:08:15.000Z"
+    },
+    {
+      "_id": "10",
+      "session_id": "demo-a-s04",
+      "sequence_id": 11,
+      "role": "TUTOR",
+      "content": "Now add 15 to both sides.",
+      "turn_id": "demo-a-s04-t011",
+      "start_time": "2026-02-03T16:08:17.000Z",
+      "end_time": "2026-02-03T16:08:43.000Z"
+    },
+    {
+      "_id": "11",
+      "session_id": "demo-a-s04",
+      "sequence_id": 12,
+      "role": "STUDENT_1",
+      "content": "That gives 3x equals 24.",
+      "turn_id": "demo-a-s04-t012",
+      "start_time": "2026-02-03T16:08:43.000Z",
+      "end_time": "2026-02-03T16:09:45.000Z"
+    },
+    {
+      "_id": "12",
+      "session_id": "demo-a-s04",
+      "sequence_id": 13,
+      "role": "TUTOR",
+      "content": "Nice, the equation is fully isolated for x now.",
+      "turn_id": "demo-a-s04-t013",
+      "start_time": "2026-02-03T16:09:53.000Z",
+      "end_time": "2026-02-03T16:10:34.000Z"
+    },
+    {
+      "_id": "13",
+      "session_id": "demo-a-s04",
+      "sequence_id": 14,
+      "role": "STUDENT_1",
+      "content": "Wait, before dividing — why do we move the x terms and not the numbers first?",
+      "turn_id": "demo-a-s04-t014",
+      "start_time": "2026-02-03T16:10:41.000Z",
+      "end_time": "2026-02-03T16:11:35.000Z"
+    },
+    {
+      "_id": "14",
+      "session_id": "demo-a-s04",
+      "sequence_id": 15,
+      "role": "TUTOR",
+      "content": "Good question — we group like terms so one side only has x, keeping the equation balanced.",
+      "turn_id": "demo-a-s04-t015",
+      "start_time": "2026-02-03T16:11:40.000Z",
+      "end_time": "2026-02-03T16:12:04.000Z"
+    },
+    {
+      "_id": "15",
+      "session_id": "demo-a-s04",
+      "sequence_id": 16,
+      "role": "STUDENT_1",
+      "content": "So whatever we do to one side, we do to the other, that's why subtracting 2x kept it equal.",
+      "turn_id": "demo-a-s04-t016",
+      "start_time": "2026-02-03T16:12:07.000Z",
+      "end_time": "2026-02-03T16:12:45.000Z"
+    },
+    {
+      "_id": "16",
+      "session_id": "demo-a-s04",
+      "sequence_id": 17,
+      "role": "TUTOR",
+      "content": "Exactly, and that same idea lets us divide both sides by 3 at the end.",
+      "turn_id": "demo-a-s04-t017",
+      "start_time": "2026-02-03T16:12:49.000Z",
+      "end_time": "2026-02-03T16:13:22.000Z"
+    },
+    {
+      "_id": "17",
+      "session_id": "demo-a-s04",
+      "sequence_id": 18,
+      "role": "STUDENT_1",
+      "content": "So dividing 24 by 3 finishes it because balance was kept the whole way through.",
+      "turn_id": "demo-a-s04-t018",
+      "start_time": "2026-02-03T16:13:29.000Z",
+      "end_time": "2026-02-03T16:14:27.000Z"
+    },
+    {
+      "_id": "18",
+      "session_id": "demo-a-s04",
+      "sequence_id": 19,
+      "role": "TUTOR",
+      "content": "Let's look back at the original equation once more before we wrap up.",
+      "turn_id": "demo-a-s04-t019",
+      "start_time": "2026-02-03T16:14:32.000Z",
+      "end_time": "2026-02-03T16:14:54.000Z"
+    },
+    {
+      "_id": "19",
+      "session_id": "demo-a-s04",
+      "sequence_id": 20,
+      "role": "STUDENT_1",
+      "content": "It says solve 5 times x minus 3 equals 2x plus 9.",
+      "turn_id": "demo-a-s04-t020",
+      "start_time": "2026-02-03T16:14:56.000Z",
+      "end_time": "2026-02-03T16:15:16.000Z"
+    },
+    {
+      "_id": "20",
+      "session_id": "demo-a-s04",
+      "sequence_id": 21,
+      "role": "TUTOR",
+      "content": "Right, that's the equation we've been working with all along.",
+      "turn_id": "demo-a-s04-t021",
+      "start_time": "2026-02-03T16:15:19.000Z",
+      "end_time": "2026-02-03T16:15:31.000Z"
+    },
+    {
+      "_id": "21",
+      "session_id": "demo-a-s04",
+      "sequence_id": 22,
+      "role": "STUDENT_1",
+      "content": "What if we'd moved the 2x over first — would we land somewhere different?",
+      "turn_id": "demo-a-s04-t022",
+      "start_time": "2026-02-03T16:15:35.000Z",
+      "end_time": "2026-02-03T16:16:19.000Z"
+    },
+    {
+      "_id": "22",
+      "session_id": "demo-a-s04",
+      "sequence_id": 23,
+      "role": "TUTOR",
+      "content": "Let's try that — subtract 2x from both sides before expanding fully.",
+      "turn_id": "demo-a-s04-t023",
+      "start_time": "2026-02-03T16:16:25.000Z",
+      "end_time": "2026-02-03T16:16:48.000Z"
+    },
+    {
+      "_id": "23",
+      "session_id": "demo-a-s04",
+      "sequence_id": 24,
+      "role": "STUDENT_1",
+      "content": "Then we'd still get 3x minus 15 equals 9, so maybe the order doesn't matter.",
+      "turn_id": "demo-a-s04-t024",
+      "start_time": "2026-02-03T16:16:50.000Z",
+      "end_time": "2026-02-03T16:17:33.000Z"
+    },
+    {
+      "_id": "24",
+      "session_id": "demo-a-s04",
+      "sequence_id": 25,
+      "role": "TUTOR",
+      "content": "Interesting thought — let's turn that into an actual plan.",
+      "turn_id": "demo-a-s04-t025",
+      "start_time": "2026-02-03T16:17:41.000Z",
+      "end_time": "2026-02-03T16:18:15.000Z"
+    },
+    {
+      "_id": "25",
+      "session_id": "demo-a-s04",
+      "sequence_id": 26,
+      "role": "STUDENT_1",
+      "content": "So the plan is to move the 2x first this time and see if we still get x equals 8.",
+      "turn_id": "demo-a-s04-t026",
+      "start_time": "2026-02-03T16:18:17.000Z",
+      "end_time": "2026-02-03T16:19:27.000Z"
+    },
+    {
+      "_id": "26",
+      "session_id": "demo-a-s04",
+      "sequence_id": 27,
+      "role": "TUTOR",
+      "content": "Sounds good — what's the first move?",
+      "turn_id": "demo-a-s04-t027",
+      "start_time": "2026-02-03T16:19:33.000Z",
+      "end_time": "2026-02-03T16:19:55.000Z"
+    },
+    {
+      "_id": "27",
+      "session_id": "demo-a-s04",
+      "sequence_id": 28,
+      "role": "STUDENT_1",
+      "content": "Subtract 2x from both sides of 5x minus 15 equals 2x plus 9 first.",
+      "turn_id": "demo-a-s04-t028",
+      "start_time": "2026-02-03T16:20:03.000Z",
+      "end_time": "2026-02-03T16:21:11.000Z"
+    },
+    {
+      "_id": "28",
+      "session_id": "demo-a-s04",
+      "sequence_id": 29,
+      "role": "TUTOR",
+      "content": "Then what comes after that?",
+      "turn_id": "demo-a-s04-t029",
+      "start_time": "2026-02-03T16:21:17.000Z",
+      "end_time": "2026-02-03T16:22:14.000Z"
+    },
+    {
+      "_id": "29",
+      "session_id": "demo-a-s04",
+      "sequence_id": 30,
+      "role": "STUDENT_1",
+      "content": "Then add 15 to both sides and divide by 3, same as before.",
+      "turn_id": "demo-a-s04-t030",
+      "start_time": "2026-02-03T16:22:14.000Z",
+      "end_time": "2026-02-03T16:23:04.000Z"
+    },
+    {
+      "_id": "30",
+      "session_id": "demo-a-s04",
+      "sequence_id": 31,
+      "role": "TUTOR",
+      "content": "Go ahead and write both versions side by side on your sheet.",
+      "turn_id": "demo-a-s04-t031",
+      "start_time": "2026-02-03T16:23:11.000Z",
+      "end_time": "2026-02-03T16:23:49.000Z"
+    },
+    {
+      "_id": "31",
+      "session_id": "demo-a-s04",
+      "sequence_id": 32,
+      "role": "STUDENT_1",
+      "content": "Okay, I've got them lined up in two columns.",
+      "turn_id": "demo-a-s04-t032",
+      "start_time": "2026-02-03T16:23:52.000Z",
+      "end_time": "2026-02-03T16:24:55.000Z"
+    },
+    {
+      "_id": "32",
+      "session_id": "demo-a-s04",
+      "sequence_id": 33,
+      "role": "TUTOR",
+      "content": "Can you see them clearly on your screen?",
+      "turn_id": "demo-a-s04-t033",
+      "start_time": "2026-02-03T16:25:03.000Z",
+      "end_time": "2026-02-03T16:25:41.000Z"
+    },
+    {
+      "_id": "33",
+      "session_id": "demo-a-s04",
+      "sequence_id": 34,
+      "role": "STUDENT_1",
+      "content": "Yes, it's all visible now.",
+      "turn_id": "demo-a-s04-t034",
+      "start_time": "2026-02-03T16:25:44.000Z",
+      "end_time": "2026-02-03T16:26:24.000Z"
+    },
+    {
+      "_id": "34",
+      "session_id": "demo-a-s04",
+      "sequence_id": 35,
+      "role": "TUTOR",
+      "content": "Great, let's check the answer holds up.",
+      "turn_id": "demo-a-s04-t035",
+      "start_time": "2026-02-03T16:26:30.000Z",
+      "end_time": "2026-02-03T16:26:45.000Z"
+    },
+    {
+      "_id": "35",
+      "session_id": "demo-a-s04",
+      "sequence_id": 36,
+      "role": "STUDENT_1",
+      "content": "Let me plug x equals 8 back into the original equation to check.",
+      "turn_id": "demo-a-s04-t036",
+      "start_time": "2026-02-03T16:26:52.000Z",
+      "end_time": "2026-02-03T16:27:19.000Z"
+    },
+    {
+      "_id": "36",
+      "session_id": "demo-a-s04",
+      "sequence_id": 37,
+      "role": "TUTOR",
+      "content": "Go for it, work out both sides.",
+      "turn_id": "demo-a-s04-t037",
+      "start_time": "2026-02-03T16:27:23.000Z",
+      "end_time": "2026-02-03T16:27:45.000Z"
+    },
+    {
+      "_id": "37",
+      "session_id": "demo-a-s04",
+      "sequence_id": 38,
+      "role": "STUDENT_1",
+      "content": "5 times 8 minus 3 is 5 times 5, which is 25.",
+      "turn_id": "demo-a-s04-t038",
+      "start_time": "2026-02-03T16:27:52.000Z",
+      "end_time": "2026-02-03T16:28:21.000Z"
+    },
+    {
+      "_id": "38",
+      "session_id": "demo-a-s04",
+      "sequence_id": 39,
+      "role": "TUTOR",
+      "content": "And the right side?",
+      "turn_id": "demo-a-s04-t039",
+      "start_time": "2026-02-03T16:28:22.000Z",
+      "end_time": "2026-02-03T16:28:41.000Z"
+    },
+    {
+      "_id": "39",
+      "session_id": "demo-a-s04",
+      "sequence_id": 40,
+      "role": "STUDENT_1",
+      "content": "2 times 8 plus 9 is 16 plus 9, which is 25 too, so it checks out.",
+      "turn_id": "demo-a-s04-t040",
+      "start_time": "2026-02-03T16:28:49.000Z",
+      "end_time": "2026-02-03T16:29:21.000Z"
+    },
+    {
+      "_id": "40",
+      "session_id": "demo-a-s04",
+      "sequence_id": 41,
+      "role": "TUTOR",
+      "content": "New problem: a recipe uses flour and sugar in a 3 to 5 ratio, and we're using 12 cups of flour.",
+      "turn_id": "demo-a-s04-t041",
+      "start_time": "2026-02-03T16:29:25.000Z",
+      "end_time": "2026-02-03T16:30:23.000Z"
+    },
+    {
+      "_id": "41",
+      "session_id": "demo-a-s04",
+      "sequence_id": 42,
+      "role": "STUDENT_1",
+      "content": "So we need to find how much sugar goes with 12 cups of flour.",
+      "turn_id": "demo-a-s04-t042",
+      "start_time": "2026-02-03T16:30:24.000Z",
+      "end_time": "2026-02-03T16:31:08.000Z"
+    },
+    {
+      "_id": "42",
+      "session_id": "demo-a-s04",
+      "sequence_id": 43,
+      "role": "TUTOR",
+      "content": "Right, that's exactly what we need to find.",
+      "turn_id": "demo-a-s04-t043",
+      "start_time": "2026-02-03T16:31:12.000Z",
+      "end_time": "2026-02-03T16:32:04.000Z"
+    },
+    {
+      "_id": "43",
+      "session_id": "demo-a-s04",
+      "sequence_id": 44,
+      "role": "STUDENT_1",
+      "content": "So the ratio means for every 3 cups of flour there's 5 cups of sugar, right?",
+      "turn_id": "demo-a-s04-t044",
+      "start_time": "2026-02-03T16:32:07.000Z",
+      "end_time": "2026-02-03T16:33:13.000Z"
+    },
+    {
+      "_id": "44",
+      "session_id": "demo-a-s04",
+      "sequence_id": 45,
+      "role": "TUTOR",
+      "content": "Exactly, the two amounts scale together by the same factor.",
+      "turn_id": "demo-a-s04-t045",
+      "start_time": "2026-02-03T16:33:16.000Z",
+      "end_time": "2026-02-03T16:33:48.000Z"
+    },
+    {
+      "_id": "45",
+      "session_id": "demo-a-s04",
+      "sequence_id": 46,
+      "role": "STUDENT_1",
+      "content": "So whatever the flour parts get multiplied by, the sugar parts scale the same way.",
+      "turn_id": "demo-a-s04-t046",
+      "start_time": "2026-02-03T16:33:49.000Z",
+      "end_time": "2026-02-03T16:34:01.000Z"
+    },
+    {
+      "_id": "46",
+      "session_id": "demo-a-s04",
+      "sequence_id": 47,
+      "role": "TUTOR",
+      "content": "That's the key relationship we'll use to solve it.",
+      "turn_id": "demo-a-s04-t047",
+      "start_time": "2026-02-03T16:34:07.000Z",
+      "end_time": "2026-02-03T16:34:50.000Z"
+    },
+    {
+      "_id": "47",
+      "session_id": "demo-a-s04",
+      "sequence_id": 48,
+      "role": "STUDENT_1",
+      "content": "Let me find what one part is worth first.",
+      "turn_id": "demo-a-s04-t048",
+      "start_time": "2026-02-03T16:34:53.000Z",
+      "end_time": "2026-02-03T16:35:06.000Z"
+    },
+    {
+      "_id": "48",
+      "session_id": "demo-a-s04",
+      "sequence_id": 49,
+      "role": "TUTOR",
+      "content": "Go on, use the flour side.",
+      "turn_id": "demo-a-s04-t049",
+      "start_time": "2026-02-03T16:35:11.000Z",
+      "end_time": "2026-02-03T16:35:36.000Z"
+    },
+    {
+      "_id": "49",
+      "session_id": "demo-a-s04",
+      "sequence_id": 50,
+      "role": "STUDENT_1",
+      "content": "3 parts equal 12 cups, so one part is 12 divided by 3, which is 4 cups.",
+      "turn_id": "demo-a-s04-t050",
+      "start_time": "2026-02-03T16:35:42.000Z",
+      "end_time": "2026-02-03T16:35:57.000Z"
+    },
+    {
+      "_id": "50",
+      "session_id": "demo-a-s04",
+      "sequence_id": 51,
+      "role": "TUTOR",
+      "content": "Now use that to find the sugar.",
+      "turn_id": "demo-a-s04-t051",
+      "start_time": "2026-02-03T16:36:01.000Z",
+      "end_time": "2026-02-03T16:37:07.000Z"
+    },
+    {
+      "_id": "51",
+      "session_id": "demo-a-s04",
+      "sequence_id": 52,
+      "role": "STUDENT_1",
+      "content": "Sugar is 5 parts, so 5 times 4 is 20 cups.",
+      "turn_id": "demo-a-s04-t052",
+      "start_time": "2026-02-03T16:37:11.000Z",
+      "end_time": "2026-02-03T16:37:49.000Z"
+    },
+    {
+      "_id": "52",
+      "session_id": "demo-a-s04",
+      "sequence_id": 53,
+      "role": "TUTOR",
+      "content": "So how much sugar is needed in total?",
+      "turn_id": "demo-a-s04-t053",
+      "start_time": "2026-02-03T16:37:54.000Z",
+      "end_time": "2026-02-03T16:38:40.000Z"
+    },
+    {
+      "_id": "53",
+      "session_id": "demo-a-s04",
+      "sequence_id": 54,
+      "role": "STUDENT_1",
+      "content": "20 cups of sugar for 12 cups of flour.",
+      "turn_id": "demo-a-s04-t054",
+      "start_time": "2026-02-03T16:38:40.000Z",
+      "end_time": "2026-02-03T16:39:35.000Z"
+    },
+    {
+      "_id": "54",
+      "session_id": "demo-a-s04",
+      "sequence_id": 55,
+      "role": "TUTOR",
+      "content": "That gives us the amount we needed.",
+      "turn_id": "demo-a-s04-t055",
+      "start_time": "2026-02-03T16:39:40.000Z",
+      "end_time": "2026-02-03T16:40:50.000Z"
+    },
+    {
+      "_id": "55",
+      "session_id": "demo-a-s04",
+      "sequence_id": 56,
+      "role": "STUDENT_1",
+      "content": "Should we check this a different way, like doubling the recipe?",
+      "turn_id": "demo-a-s04-t056",
+      "start_time": "2026-02-03T16:40:53.000Z",
+      "end_time": "2026-02-03T16:41:24.000Z"
+    },
+    {
+      "_id": "56",
+      "session_id": "demo-a-s04",
+      "sequence_id": 57,
+      "role": "TUTOR",
+      "content": "Sure, what would you do first?",
+      "turn_id": "demo-a-s04-t057",
+      "start_time": "2026-02-03T16:41:24.000Z",
+      "end_time": "2026-02-03T16:42:10.000Z"
+    },
+    {
+      "_id": "57",
+      "session_id": "demo-a-s04",
+      "sequence_id": 58,
+      "role": "STUDENT_1",
+      "content": "Double both amounts: 24 cups of flour, and see what sugar that needs.",
+      "turn_id": "demo-a-s04-t058",
+      "start_time": "2026-02-03T16:42:10.000Z",
+      "end_time": "2026-02-03T16:43:09.000Z"
+    },
+    {
+      "_id": "58",
+      "session_id": "demo-a-s04",
+      "sequence_id": 59,
+      "role": "TUTOR",
+      "content": "Good, let's actually try that out.",
+      "turn_id": "demo-a-s04-t059",
+      "start_time": "2026-02-03T16:43:14.000Z",
+      "end_time": "2026-02-03T16:44:02.000Z"
+    },
+    {
+      "_id": "59",
+      "session_id": "demo-a-s04",
+      "sequence_id": 60,
+      "role": "STUDENT_1",
+      "content": "Maybe doubling flour to 24 cups just doubles the sugar too?",
+      "turn_id": "demo-a-s04-t060",
+      "start_time": "2026-02-03T16:44:02.000Z",
+      "end_time": "2026-02-03T16:45:03.000Z"
+    },
+    {
+      "_id": "60",
+      "session_id": "demo-a-s04",
+      "sequence_id": 61,
+      "role": "TUTOR",
+      "content": "Let's see if that holds — what would sugar be then?",
+      "turn_id": "demo-a-s04-t061",
+      "start_time": "2026-02-03T16:45:03.000Z",
+      "end_time": "2026-02-03T16:45:28.000Z"
+    },
+    {
+      "_id": "61",
+      "session_id": "demo-a-s04",
+      "sequence_id": 62,
+      "role": "STUDENT_1",
+      "content": "If one part is still 4 cups, 24 divided by 3 is 8 cups per part now... wait, that doesn't match.",
+      "turn_id": "demo-a-s04-t062",
+      "start_time": "2026-02-03T16:45:30.000Z",
+      "end_time": "2026-02-03T16:46:29.000Z"
+    },
+    {
+      "_id": "62",
+      "session_id": "demo-a-s04",
+      "sequence_id": 63,
+      "role": "TUTOR",
+      "content": "Hmm, remember doubling the recipe scales everything by the same factor, it doesn't change the part size.",
+      "turn_id": "demo-a-s04-t063",
+      "start_time": "2026-02-03T16:46:34.000Z",
+      "end_time": "2026-02-03T16:46:46.000Z"
+    },
+    {
+      "_id": "63",
+      "session_id": "demo-a-s04",
+      "sequence_id": 64,
+      "role": "STUDENT_1",
+      "content": "Right, so if flour doubles to 24, sugar should just double to 40, not recompute the part.",
+      "turn_id": "demo-a-s04-t064",
+      "start_time": "2026-02-03T16:46:54.000Z",
+      "end_time": "2026-02-03T16:47:18.000Z"
+    },
+    {
+      "_id": "64",
+      "session_id": "demo-a-s04",
+      "sequence_id": 65,
+      "role": "TUTOR",
+      "content": "That's the right instinct — let's lay it out as a plan.",
+      "turn_id": "demo-a-s04-t065",
+      "start_time": "2026-02-03T16:47:23.000Z",
+      "end_time": "2026-02-03T16:48:08.000Z"
+    },
+    {
+      "_id": "65",
+      "session_id": "demo-a-s04",
+      "sequence_id": 66,
+      "role": "STUDENT_1",
+      "content": "Okay, the plan is to multiply both original amounts by 2 to check consistency.",
+      "turn_id": "demo-a-s04-t066",
+      "start_time": "2026-02-03T16:48:14.000Z",
+      "end_time": "2026-02-03T16:48:38.000Z"
+    },
+    {
+      "_id": "66",
+      "session_id": "demo-a-s04",
+      "sequence_id": 67,
+      "role": "TUTOR",
+      "content": "Go ahead, what's 12 times 2?",
+      "turn_id": "demo-a-s04-t067",
+      "start_time": "2026-02-03T16:48:44.000Z",
+      "end_time": "2026-02-03T16:49:25.000Z"
+    },
+    {
+      "_id": "67",
+      "session_id": "demo-a-s04",
+      "sequence_id": 68,
+      "role": "STUDENT_1",
+      "content": "12 times 2 is 24 cups of flour, and 20 times 2 is 40 cups of sugar.",
+      "turn_id": "demo-a-s04-t068",
+      "start_time": "2026-02-03T16:49:25.000Z",
+      "end_time": "2026-02-03T16:50:16.000Z"
+    },
+    {
+      "_id": "68",
+      "session_id": "demo-a-s04",
+      "sequence_id": 69,
+      "role": "TUTOR",
+      "content": "Write that comparison down next to your first answer.",
+      "turn_id": "demo-a-s04-t069",
+      "start_time": "2026-02-03T16:50:17.000Z",
+      "end_time": "2026-02-03T16:51:03.000Z"
+    },
+    {
+      "_id": "69",
+      "session_id": "demo-a-s04",
+      "sequence_id": 70,
+      "role": "STUDENT_1",
+      "content": "Done, I've got both sets of numbers next to each other.",
+      "turn_id": "demo-a-s04-t070",
+      "start_time": "2026-02-03T16:51:06.000Z",
+      "end_time": "2026-02-03T16:52:09.000Z"
+    },
+    {
+      "_id": "70",
+      "session_id": "demo-a-s04",
+      "sequence_id": 71,
+      "role": "TUTOR",
+      "content": "Now, does the ratio 24 to 40 still simplify to 3 to 5?",
+      "turn_id": "demo-a-s04-t071",
+      "start_time": "2026-02-03T16:52:11.000Z",
+      "end_time": "2026-02-03T16:52:37.000Z"
+    },
+    {
+      "_id": "71",
+      "session_id": "demo-a-s04",
+      "sequence_id": 72,
+      "role": "STUDENT_1",
+      "content": "Let's see, dividing both by 8 gives 3 and 5, so yes it matches.",
+      "turn_id": "demo-a-s04-t072",
+      "start_time": "2026-02-03T16:52:43.000Z",
+      "end_time": "2026-02-03T16:53:29.000Z"
+    },
+    {
+      "_id": "72",
+      "session_id": "demo-a-s04",
+      "sequence_id": 73,
+      "role": "TUTOR",
+      "content": "What if the ratio had been flour to sugar as 5 to 3 instead — would the answer change?",
+      "turn_id": "demo-a-s04-t073",
+      "start_time": "2026-02-03T16:53:29.000Z",
+      "end_time": "2026-02-03T16:54:20.000Z"
+    },
+    {
+      "_id": "73",
+      "session_id": "demo-a-s04",
+      "sequence_id": 74,
+      "role": "STUDENT_1",
+      "content": "Then 12 cups flour would be 5 parts, so one part would be 12 divided by 5... that's not a whole number.",
+      "turn_id": "demo-a-s04-t074",
+      "start_time": "2026-02-03T16:54:25.000Z",
+      "end_time": "2026-02-03T16:54:48.000Z"
+    },
+    {
+      "_id": "74",
+      "session_id": "demo-a-s04",
+      "sequence_id": 75,
+      "role": "TUTOR",
+      "content": "Right, that's why the given ratio matters — 3 parts fitting evenly into 12 wasn't an accident here.",
+      "turn_id": "demo-a-s04-t075",
+      "start_time": "2026-02-03T16:54:56.000Z",
+      "end_time": "2026-02-03T16:55:56.000Z"
+    },
+    {
+      "_id": "75",
+      "session_id": "demo-a-s04",
+      "sequence_id": 76,
+      "role": "STUDENT_1",
+      "content": "So the numbers were chosen so the flour side divides cleanly by the ratio.",
+      "turn_id": "demo-a-s04-t076",
+      "start_time": "2026-02-03T16:55:58.000Z",
+      "end_time": "2026-02-03T16:57:03.000Z"
+    },
+    {
+      "_id": "76",
+      "session_id": "demo-a-s04",
+      "sequence_id": 77,
+      "role": "TUTOR",
+      "content": "Exactly, and that's worth noticing for future ratio problems.",
+      "turn_id": "demo-a-s04-t077",
+      "start_time": "2026-02-03T16:57:09.000Z",
+      "end_time": "2026-02-03T16:57:22.000Z"
+    },
+    {
+      "_id": "77",
+      "session_id": "demo-a-s04",
+      "sequence_id": 78,
+      "role": "STUDENT_1",
+      "content": "Hmm, wait, let me just make sure I've got the right numbers written down.",
+      "turn_id": "demo-a-s04-t078",
+      "start_time": "2026-02-03T16:57:30.000Z",
+      "end_time": "2026-02-03T16:58:10.000Z"
+    },
+    {
+      "_id": "78",
+      "session_id": "demo-a-s04",
+      "sequence_id": 79,
+      "role": "TUTOR",
+      "content": "Take your time.",
+      "turn_id": "demo-a-s04-t079",
+      "start_time": "2026-02-03T16:58:15.000Z",
+      "end_time": "2026-02-03T16:59:07.000Z"
+    },
+    {
+      "_id": "79",
+      "session_id": "demo-a-s04",
+      "sequence_id": 80,
+      "role": "STUDENT_1",
+      "content": "Okay, yeah, I've got it now.",
+      "turn_id": "demo-a-s04-t080",
+      "start_time": "2026-02-03T16:59:12.000Z",
+      "end_time": "2026-02-03T16:59:48.000Z"
+    }
+  ],
+  "lead_role": "TUTOR"
+}

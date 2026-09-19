@@ -1,0 +1,264 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://reasoning-trajectory.local/schema/transcript.schema.json",
+  "title": "Session transcript",
+  "description": "One session: its identity, its turns, and the episode sets annotated over it. Written from docs/SPEC-gate0.md \u00a75.1, \u00a75.3 and \u00a75.8. Turn-level field names match Sandpiper's (\u00a710 item 3); everything above the turn is ours.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "session_id",
+    "student_id",
+    "session_index",
+    "session_date",
+    "has_timestamps",
+    "transcript_scope",
+    "turns"
+  ],
+  "properties": {
+    "session_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "student_id": {
+      "type": "string",
+      "minLength": 1,
+      "$comment": "[SOURCE: docs/SPEC-gate0.md \u00a75.8 \u2014 from the manifest supplied with the data, never inferred]"
+    },
+    "session_index": {
+      "type": "integer",
+      "minimum": 0,
+      "$comment": "[SOURCE: docs/SPEC-gate0.md \u00a75.8 \u2014 manifest-supplied order, never inferred from dates or file names]"
+    },
+    "session_date": {
+      "type": "string",
+      "minLength": 1,
+      "$comment": "[OURS: no format asserted. \u00a75.8 leaves the manifest's date format open, and asserting date-time here would reject an intake file the spec permits.]"
+    },
+    "session_topic": {
+      "type": "string"
+    },
+    "has_timestamps": {
+      "type": "boolean",
+      "$comment": "[SOURCE: docs/SPEC-gate0.md \u00a75.8 \u2014 true only when every turn has start_time and end_time. The validator checks the claim against the turns; the schema cannot.]"
+    },
+    "transcript_scope": {
+      "enum": [
+        "full",
+        "excerpt"
+      ],
+      "$comment": "Which value is required for reportability is config.session.requiredTranscriptScope, not this schema."
+    },
+    "lead_role": {
+      "type": "string",
+      "$comment": "[SOURCE: docs/SPEC-gate0.md \u00a75.8 \u2014 supplied in the manifest, never inferred. Optional here: a demo set need not carry one.]"
+    },
+    "turns": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/definitions/turn"
+      }
+    },
+    "annotations": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/episode"
+      },
+      "$comment": "[SOURCE: docs/SPEC-gate0.md \u00a75.3 \u2014 episodes are stored in the session-level annotations[] array, one tiling set per run. Absent on a raw intake transcript, which has no runs over it yet.]"
+    },
+    "problems": {
+      "description": "The problems worked on in this session, in turn order. An episode never straddles a boundary. Absent means the session was one problem.",
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "problem_id",
+          "topic",
+          "start_turn_id",
+          "end_turn_id"
+        ],
+        "properties": {
+          "problem_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "topic": {
+            "type": "string",
+            "minLength": 1
+          },
+          "start_turn_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "end_turn_id": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "turn": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "_id",
+        "session_id",
+        "sequence_id",
+        "role",
+        "content",
+        "turn_id"
+      ],
+      "properties": {
+        "_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "session_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sequence_id": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "role": {
+          "type": "string",
+          "minLength": 1
+        },
+        "content": {
+          "type": "string"
+        },
+        "turn_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "start_time": {
+          "type": "string",
+          "minLength": 1,
+          "$comment": "[OURS: no format asserted; \u00a75.8 does not fix one, and Sandpiper's transcripts carry offsets as well as clock times.]"
+        },
+        "end_time": {
+          "type": "string",
+          "minLength": 1
+        },
+        "annotations": {
+          "type": "array",
+          "$comment": "Sandpiper's turn-level field, carried for compatibility at the turn level only (\u00a710 item 3). Nothing in Gate 0 writes it; our episodes live on the session."
+        }
+      }
+    },
+    "episode": {
+      "type": "object",
+      "description": "A contiguous span of turns, spanning both speakers, during which the participants are doing one kind of problem-solving work. docs/SPEC-gate0.md \u00a75.3.",
+      "additionalProperties": false,
+      "required": [
+        "_id",
+        "episode_id",
+        "run_id",
+        "identifiedBy",
+        "layer_id",
+        "codebook_version",
+        "domain",
+        "EPISODE",
+        "start_turn_id",
+        "end_turn_id",
+        "evidence"
+      ],
+      "properties": {
+        "_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "episode_id": {
+          "type": "string",
+          "minLength": 1,
+          "$comment": "[SOURCE: docs/SPEC-gate0.md \u00a75.3 \u2014 composed from the run id, the session and the ordinal within that session, so a later record can keep pointing at one episode.]"
+        },
+        "run_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "identifiedBy": {
+          "enum": [
+            "AI",
+            "HUMAN"
+          ],
+          "$comment": "Follows the run's kind, never set per episode (\u00a75.3). The validator checks it against the run."
+        },
+        "layer_id": {
+          "const": "episodes"
+        },
+        "codebook_version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "domain": {
+          "type": "string",
+          "minLength": 1
+        },
+        "EPISODE": {
+          "type": "string",
+          "minLength": 1,
+          "$comment": "The code. Deliberately not an enum: the code list has exactly one home, codebook.v2.json, and the validator reads it from there for the run's codebook_version."
+        },
+        "start_turn_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "end_turn_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "evidence": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "$comment": "Exactly the turns of the span (\u00a75.3, \u00a79.1). The validator checks that; the schema cannot."
+        },
+        "reviewer_id": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "$comment": "Present and null in Gate 0 (\u00a75.3). Neither presence nor nullness is required here: \u00a79.1 gives each its own rejection, and a schema error would not name the offending episode."
+        },
+        "reviewed_at": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        },
+        "tutor_prompting": {
+          "$comment": "Layer 2 (docs/SPEC-layer2.md). Nested because `codebook_version` above is the episode codebook's and this layer has its own.",
+          "oneOf": [
+            { "type": "null" },
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["preceding_turn_id", "preceding_speaker", "tutor_move", "codebook_version"],
+              "properties": {
+                "preceding_turn_id": { "type": "string", "minLength": 1 },
+                "preceding_speaker": { "type": "string", "minLength": 1 },
+                "tutor_move": {
+                  "oneOf": [
+                    { "type": "null" },
+                    { "enum": ["PROMPTING_SELF_EXPLANATION", "PROMPTING_SELF_CORRECTION", "GIVING_ANSWER", "OTHER_TUTOR_MOVE", "NONE"] }
+                  ]
+                },
+                "codebook_version": { "type": "string", "minLength": 1 }
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

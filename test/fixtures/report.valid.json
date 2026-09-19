@@ -1,0 +1,2623 @@
+{
+  "report_version": "0.2.0",
+  "data_provenance": {
+    "status": "synthetic",
+    "ui_label": "Illustrative fixture data. No real session produced it."
+  },
+  "student_id": "stu-001",
+  "source_run_id": "run-llm-001",
+  "codebook_version": "2.2.0",
+  "domain": "math",
+  "sessions": [
+    {
+      "session_id": "s01",
+      "student_id": "stu-001",
+      "session_index": 1,
+      "session_date": "2026-01-14",
+      "session_topic": "fixture",
+      "has_timestamps": true,
+      "transcript_scope": "full",
+      "turns": [
+        {
+          "_id": "0",
+          "session_id": "s01",
+          "sequence_id": 1,
+          "role": "tutor",
+          "content": "[fixture] session s01, turn 1.",
+          "turn_id": "s01-t001",
+          "start_time": "00:00:00",
+          "end_time": "00:00:45"
+        },
+        {
+          "_id": "1",
+          "session_id": "s01",
+          "sequence_id": 2,
+          "role": "student",
+          "content": "[fixture] session s01, turn 2.",
+          "turn_id": "s01-t002",
+          "start_time": "00:01:00",
+          "end_time": "00:01:45"
+        },
+        {
+          "_id": "2",
+          "session_id": "s01",
+          "sequence_id": 3,
+          "role": "tutor",
+          "content": "[fixture] session s01, turn 3.",
+          "turn_id": "s01-t003",
+          "start_time": "00:02:00",
+          "end_time": "00:02:45"
+        },
+        {
+          "_id": "3",
+          "session_id": "s01",
+          "sequence_id": 4,
+          "role": "student",
+          "content": "[fixture] session s01, turn 4.",
+          "turn_id": "s01-t004",
+          "start_time": "00:03:00",
+          "end_time": "00:03:45"
+        },
+        {
+          "_id": "4",
+          "session_id": "s01",
+          "sequence_id": 5,
+          "role": "tutor",
+          "content": "[fixture] session s01, turn 5.",
+          "turn_id": "s01-t005",
+          "start_time": "00:04:00",
+          "end_time": "00:04:45"
+        },
+        {
+          "_id": "5",
+          "session_id": "s01",
+          "sequence_id": 6,
+          "role": "student",
+          "content": "[fixture] session s01, turn 6.",
+          "turn_id": "s01-t006",
+          "start_time": "00:05:00",
+          "end_time": "00:05:45"
+        },
+        {
+          "_id": "6",
+          "session_id": "s01",
+          "sequence_id": 7,
+          "role": "tutor",
+          "content": "[fixture] session s01, turn 7.",
+          "turn_id": "s01-t007",
+          "start_time": "00:06:00",
+          "end_time": "00:06:45"
+        },
+        {
+          "_id": "7",
+          "session_id": "s01",
+          "sequence_id": 8,
+          "role": "student",
+          "content": "[fixture] session s01, turn 8.",
+          "turn_id": "s01-t008",
+          "start_time": "00:07:00",
+          "end_time": "00:07:45"
+        },
+        {
+          "_id": "8",
+          "session_id": "s01",
+          "sequence_id": 9,
+          "role": "tutor",
+          "content": "[fixture] session s01, turn 9.",
+          "turn_id": "s01-t009",
+          "start_time": "00:08:00",
+          "end_time": "00:08:45"
+        },
+        {
+          "_id": "9",
+          "session_id": "s01",
+          "sequence_id": 10,
+          "role": "student",
+          "content": "[fixture] session s01, turn 10.",
+          "turn_id": "s01-t010",
+          "start_time": "00:09:00",
+          "end_time": "00:09:45"
+        },
+        {
+          "_id": "10",
+          "session_id": "s01",
+          "sequence_id": 11,
+          "role": "tutor",
+          "content": "[fixture] session s01, turn 11.",
+          "turn_id": "s01-t011",
+          "start_time": "00:10:00",
+          "end_time": "00:10:45"
+        },
+        {
+          "_id": "11",
+          "session_id": "s01",
+          "sequence_id": 12,
+          "role": "student",
+          "content": "[fixture] session s01, turn 12.",
+          "turn_id": "s01-t012",
+          "start_time": "00:11:00",
+          "end_time": "00:11:45"
+        },
+        {
+          "_id": "12",
+          "session_id": "s01",
+          "sequence_id": 13,
+          "role": "tutor",
+          "content": "[fixture] session s01, turn 13.",
+          "turn_id": "s01-t013",
+          "start_time": "00:12:00",
+          "end_time": "00:12:45"
+        },
+        {
+          "_id": "13",
+          "session_id": "s01",
+          "sequence_id": 14,
+          "role": "student",
+          "content": "[fixture] session s01, turn 14.",
+          "turn_id": "s01-t014",
+          "start_time": "00:13:00",
+          "end_time": "00:13:45"
+        },
+        {
+          "_id": "14",
+          "session_id": "s01",
+          "sequence_id": 15,
+          "role": "tutor",
+          "content": "[fixture] session s01, turn 15.",
+          "turn_id": "s01-t015",
+          "start_time": "00:14:00",
+          "end_time": "00:14:45"
+        },
+        {
+          "_id": "15",
+          "session_id": "s01",
+          "sequence_id": 16,
+          "role": "student",
+          "content": "[fixture] session s01, turn 16.",
+          "turn_id": "s01-t016",
+          "start_time": "00:15:00",
+          "end_time": "00:15:45"
+        },
+        {
+          "_id": "16",
+          "session_id": "s01",
+          "sequence_id": 17,
+          "role": "tutor",
+          "content": "[fixture] session s01, turn 17.",
+          "turn_id": "s01-t017",
+          "start_time": "00:16:00",
+          "end_time": "00:16:45"
+        },
+        {
+          "_id": "17",
+          "session_id": "s01",
+          "sequence_id": 18,
+          "role": "student",
+          "content": "[fixture] session s01, turn 18.",
+          "turn_id": "s01-t018",
+          "start_time": "00:17:00",
+          "end_time": "00:17:45"
+        },
+        {
+          "_id": "18",
+          "session_id": "s01",
+          "sequence_id": 19,
+          "role": "tutor",
+          "content": "[fixture] session s01, turn 19.",
+          "turn_id": "s01-t019",
+          "start_time": "00:18:00",
+          "end_time": "00:18:45"
+        },
+        {
+          "_id": "19",
+          "session_id": "s01",
+          "sequence_id": 20,
+          "role": "student",
+          "content": "[fixture] session s01, turn 20.",
+          "turn_id": "s01-t020",
+          "start_time": "00:19:00",
+          "end_time": "00:19:45"
+        },
+        {
+          "_id": "20",
+          "session_id": "s01",
+          "sequence_id": 21,
+          "role": "tutor",
+          "content": "[fixture] session s01, turn 21.",
+          "turn_id": "s01-t021",
+          "start_time": "00:20:00",
+          "end_time": "00:20:45"
+        },
+        {
+          "_id": "21",
+          "session_id": "s01",
+          "sequence_id": 22,
+          "role": "student",
+          "content": "[fixture] session s01, turn 22.",
+          "turn_id": "s01-t022",
+          "start_time": "00:21:00",
+          "end_time": "00:21:45"
+        },
+        {
+          "_id": "22",
+          "session_id": "s01",
+          "sequence_id": 23,
+          "role": "tutor",
+          "content": "[fixture] session s01, turn 23.",
+          "turn_id": "s01-t023",
+          "start_time": "00:22:00",
+          "end_time": "00:22:45"
+        },
+        {
+          "_id": "23",
+          "session_id": "s01",
+          "sequence_id": 24,
+          "role": "student",
+          "content": "[fixture] session s01, turn 24.",
+          "turn_id": "s01-t024",
+          "start_time": "00:23:00",
+          "end_time": "00:23:45"
+        },
+        {
+          "_id": "24",
+          "session_id": "s01",
+          "sequence_id": 25,
+          "role": "tutor",
+          "content": "[fixture] session s01, turn 25.",
+          "turn_id": "s01-t025",
+          "start_time": "00:24:00",
+          "end_time": "00:24:45"
+        },
+        {
+          "_id": "25",
+          "session_id": "s01",
+          "sequence_id": 26,
+          "role": "student",
+          "content": "[fixture] session s01, turn 26.",
+          "turn_id": "s01-t026",
+          "start_time": "00:25:00",
+          "end_time": "00:25:45"
+        },
+        {
+          "_id": "26",
+          "session_id": "s01",
+          "sequence_id": 27,
+          "role": "tutor",
+          "content": "[fixture] session s01, turn 27.",
+          "turn_id": "s01-t027",
+          "start_time": "00:26:00",
+          "end_time": "00:26:45"
+        },
+        {
+          "_id": "27",
+          "session_id": "s01",
+          "sequence_id": 28,
+          "role": "student",
+          "content": "[fixture] session s01, turn 28.",
+          "turn_id": "s01-t028",
+          "start_time": "00:27:00",
+          "end_time": "00:27:45"
+        },
+        {
+          "_id": "28",
+          "session_id": "s01",
+          "sequence_id": 29,
+          "role": "tutor",
+          "content": "[fixture] session s01, turn 29.",
+          "turn_id": "s01-t029",
+          "start_time": "00:28:00",
+          "end_time": "00:28:45"
+        },
+        {
+          "_id": "29",
+          "session_id": "s01",
+          "sequence_id": 30,
+          "role": "student",
+          "content": "[fixture] session s01, turn 30.",
+          "turn_id": "s01-t030",
+          "start_time": "00:29:00",
+          "end_time": "00:29:45"
+        },
+        {
+          "_id": "30",
+          "session_id": "s01",
+          "sequence_id": 31,
+          "role": "tutor",
+          "content": "[fixture] session s01, turn 31.",
+          "turn_id": "s01-t031",
+          "start_time": "00:30:00",
+          "end_time": "00:30:45"
+        },
+        {
+          "_id": "31",
+          "session_id": "s01",
+          "sequence_id": 32,
+          "role": "student",
+          "content": "[fixture] session s01, turn 32.",
+          "turn_id": "s01-t032",
+          "start_time": "00:31:00",
+          "end_time": "00:31:45"
+        },
+        {
+          "_id": "32",
+          "session_id": "s01",
+          "sequence_id": 33,
+          "role": "tutor",
+          "content": "[fixture] session s01, turn 33.",
+          "turn_id": "s01-t033",
+          "start_time": "00:32:00",
+          "end_time": "00:32:45"
+        },
+        {
+          "_id": "33",
+          "session_id": "s01",
+          "sequence_id": 34,
+          "role": "student",
+          "content": "[fixture] session s01, turn 34.",
+          "turn_id": "s01-t034",
+          "start_time": "00:33:00",
+          "end_time": "00:33:45"
+        },
+        {
+          "_id": "34",
+          "session_id": "s01",
+          "sequence_id": 35,
+          "role": "tutor",
+          "content": "[fixture] session s01, turn 35.",
+          "turn_id": "s01-t035",
+          "start_time": "00:34:00",
+          "end_time": "00:34:45"
+        },
+        {
+          "_id": "35",
+          "session_id": "s01",
+          "sequence_id": 36,
+          "role": "student",
+          "content": "[fixture] session s01, turn 36.",
+          "turn_id": "s01-t036",
+          "start_time": "00:35:00",
+          "end_time": "00:35:45"
+        },
+        {
+          "_id": "36",
+          "session_id": "s01",
+          "sequence_id": 37,
+          "role": "tutor",
+          "content": "[fixture] session s01, turn 37.",
+          "turn_id": "s01-t037",
+          "start_time": "00:36:00",
+          "end_time": "00:36:45"
+        },
+        {
+          "_id": "37",
+          "session_id": "s01",
+          "sequence_id": 38,
+          "role": "student",
+          "content": "[fixture] session s01, turn 38.",
+          "turn_id": "s01-t038",
+          "start_time": "00:37:00",
+          "end_time": "00:37:45"
+        },
+        {
+          "_id": "38",
+          "session_id": "s01",
+          "sequence_id": 39,
+          "role": "tutor",
+          "content": "[fixture] session s01, turn 39.",
+          "turn_id": "s01-t039",
+          "start_time": "00:38:00",
+          "end_time": "00:38:45"
+        },
+        {
+          "_id": "39",
+          "session_id": "s01",
+          "sequence_id": 40,
+          "role": "student",
+          "content": "[fixture] session s01, turn 40.",
+          "turn_id": "s01-t040",
+          "start_time": "00:39:00",
+          "end_time": "00:39:45"
+        },
+        {
+          "_id": "40",
+          "session_id": "s01",
+          "sequence_id": 41,
+          "role": "tutor",
+          "content": "[fixture] session s01, turn 41.",
+          "turn_id": "s01-t041",
+          "start_time": "00:40:00",
+          "end_time": "00:40:45"
+        },
+        {
+          "_id": "41",
+          "session_id": "s01",
+          "sequence_id": 42,
+          "role": "student",
+          "content": "[fixture] session s01, turn 42.",
+          "turn_id": "s01-t042",
+          "start_time": "00:41:00",
+          "end_time": "00:41:45"
+        },
+        {
+          "_id": "42",
+          "session_id": "s01",
+          "sequence_id": 43,
+          "role": "tutor",
+          "content": "[fixture] session s01, turn 43.",
+          "turn_id": "s01-t043",
+          "start_time": "00:42:00",
+          "end_time": "00:42:45"
+        },
+        {
+          "_id": "43",
+          "session_id": "s01",
+          "sequence_id": 44,
+          "role": "student",
+          "content": "[fixture] session s01, turn 44.",
+          "turn_id": "s01-t044",
+          "start_time": "00:43:00",
+          "end_time": "00:43:45"
+        }
+      ],
+      "annotations": [
+        {
+          "_id": "1",
+          "episode_id": "ep-run-human-001-s01-002",
+          "run_id": "run-human-001",
+          "identifiedBy": "HUMAN",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "analysis",
+          "start_turn_id": "s01-t005",
+          "end_turn_id": "s01-t012",
+          "evidence": [
+            "s01-t005",
+            "s01-t006",
+            "s01-t007",
+            "s01-t008",
+            "s01-t009",
+            "s01-t010",
+            "s01-t011",
+            "s01-t012"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "2",
+          "episode_id": "ep-run-human-001-s01-003",
+          "run_id": "run-human-001",
+          "identifiedBy": "HUMAN",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "exploration",
+          "start_turn_id": "s01-t013",
+          "end_turn_id": "s01-t015",
+          "evidence": [
+            "s01-t013",
+            "s01-t014",
+            "s01-t015"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "3",
+          "episode_id": "ep-run-human-001-s01-004",
+          "run_id": "run-human-001",
+          "identifiedBy": "HUMAN",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "implementation",
+          "start_turn_id": "s01-t016",
+          "end_turn_id": "s01-t022",
+          "evidence": [
+            "s01-t016",
+            "s01-t017",
+            "s01-t018",
+            "s01-t019",
+            "s01-t020",
+            "s01-t021",
+            "s01-t022"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "4",
+          "episode_id": "ep-run-human-001-s01-005",
+          "run_id": "run-human-001",
+          "identifiedBy": "HUMAN",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "exploration",
+          "start_turn_id": "s01-t023",
+          "end_turn_id": "s01-t026",
+          "evidence": [
+            "s01-t023",
+            "s01-t024",
+            "s01-t025",
+            "s01-t026"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "5",
+          "episode_id": "ep-run-human-001-s01-006",
+          "run_id": "run-human-001",
+          "identifiedBy": "HUMAN",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "verification",
+          "start_turn_id": "s01-t027",
+          "end_turn_id": "s01-t029",
+          "evidence": [
+            "s01-t027",
+            "s01-t028",
+            "s01-t029"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "10",
+          "episode_id": "ep-run-human-001-s01-011",
+          "run_id": "run-human-001",
+          "identifiedBy": "HUMAN",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "implementation",
+          "start_turn_id": "s01-t043",
+          "end_turn_id": "s01-t044",
+          "evidence": [
+            "s01-t043",
+            "s01-t044"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "0",
+          "episode_id": "ep-run-llm-001-s01-001",
+          "run_id": "run-llm-001",
+          "identifiedBy": "AI",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "reading",
+          "start_turn_id": "s01-t001",
+          "end_turn_id": "s01-t004",
+          "evidence": [
+            "s01-t001",
+            "s01-t002",
+            "s01-t003",
+            "s01-t004"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "1",
+          "episode_id": "ep-run-llm-001-s01-002",
+          "run_id": "run-llm-001",
+          "identifiedBy": "AI",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "analysis",
+          "start_turn_id": "s01-t005",
+          "end_turn_id": "s01-t010",
+          "evidence": [
+            "s01-t005",
+            "s01-t006",
+            "s01-t007",
+            "s01-t008",
+            "s01-t009",
+            "s01-t010"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "2",
+          "episode_id": "ep-run-llm-001-s01-003",
+          "run_id": "run-llm-001",
+          "identifiedBy": "AI",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "planning",
+          "start_turn_id": "s01-t011",
+          "end_turn_id": "s01-t015",
+          "evidence": [
+            "s01-t011",
+            "s01-t012",
+            "s01-t013",
+            "s01-t014",
+            "s01-t015"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "3",
+          "episode_id": "ep-run-llm-001-s01-004",
+          "run_id": "run-llm-001",
+          "identifiedBy": "AI",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "implementation",
+          "start_turn_id": "s01-t016",
+          "end_turn_id": "s01-t022",
+          "evidence": [
+            "s01-t016",
+            "s01-t017",
+            "s01-t018",
+            "s01-t019",
+            "s01-t020",
+            "s01-t021",
+            "s01-t022"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "4",
+          "episode_id": "ep-run-llm-001-s01-005",
+          "run_id": "run-llm-001",
+          "identifiedBy": "AI",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "exploration",
+          "start_turn_id": "s01-t023",
+          "end_turn_id": "s01-t026",
+          "evidence": [
+            "s01-t023",
+            "s01-t024",
+            "s01-t025",
+            "s01-t026"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "5",
+          "episode_id": "ep-run-llm-001-s01-006",
+          "run_id": "run-llm-001",
+          "identifiedBy": "AI",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "verification",
+          "start_turn_id": "s01-t027",
+          "end_turn_id": "s01-t029",
+          "evidence": [
+            "s01-t027",
+            "s01-t028",
+            "s01-t029"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "6",
+          "episode_id": "ep-run-llm-001-s01-007",
+          "run_id": "run-llm-001",
+          "identifiedBy": "AI",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "monitor",
+          "start_turn_id": "s01-t030",
+          "end_turn_id": "s01-t032",
+          "evidence": [
+            "s01-t030",
+            "s01-t031",
+            "s01-t032"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "7",
+          "episode_id": "ep-run-llm-001-s01-008",
+          "run_id": "run-llm-001",
+          "identifiedBy": "AI",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "organization",
+          "start_turn_id": "s01-t033",
+          "end_turn_id": "s01-t035",
+          "evidence": [
+            "s01-t033",
+            "s01-t034",
+            "s01-t035"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "8",
+          "episode_id": "ep-run-llm-001-s01-009",
+          "run_id": "run-llm-001",
+          "identifiedBy": "AI",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "digression",
+          "start_turn_id": "s01-t036",
+          "end_turn_id": "s01-t040",
+          "evidence": [
+            "s01-t036",
+            "s01-t037",
+            "s01-t038",
+            "s01-t039",
+            "s01-t040"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "9",
+          "episode_id": "ep-run-llm-001-s01-010",
+          "run_id": "run-llm-001",
+          "identifiedBy": "AI",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "reading",
+          "start_turn_id": "s01-t041",
+          "end_turn_id": "s01-t042",
+          "evidence": [
+            "s01-t041",
+            "s01-t042"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "10",
+          "episode_id": "ep-run-llm-001-s01-011",
+          "run_id": "run-llm-001",
+          "identifiedBy": "AI",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "analysis",
+          "start_turn_id": "s01-t043",
+          "end_turn_id": "s01-t044",
+          "evidence": [
+            "s01-t043",
+            "s01-t044"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        }
+      ]
+    },
+    {
+      "session_id": "s02",
+      "student_id": "stu-001",
+      "session_index": 2,
+      "session_date": "2026-02-14",
+      "session_topic": "fixture",
+      "has_timestamps": false,
+      "transcript_scope": "full",
+      "turns": [
+        {
+          "_id": "0",
+          "session_id": "s02",
+          "sequence_id": 1,
+          "role": "tutor",
+          "content": "[fixture] session s02, turn 1.",
+          "turn_id": "s02-t001"
+        },
+        {
+          "_id": "1",
+          "session_id": "s02",
+          "sequence_id": 2,
+          "role": "student",
+          "content": "[fixture] session s02, turn 2.",
+          "turn_id": "s02-t002"
+        },
+        {
+          "_id": "2",
+          "session_id": "s02",
+          "sequence_id": 3,
+          "role": "tutor",
+          "content": "[fixture] session s02, turn 3.",
+          "turn_id": "s02-t003"
+        },
+        {
+          "_id": "3",
+          "session_id": "s02",
+          "sequence_id": 4,
+          "role": "student",
+          "content": "[fixture] session s02, turn 4.",
+          "turn_id": "s02-t004"
+        },
+        {
+          "_id": "4",
+          "session_id": "s02",
+          "sequence_id": 5,
+          "role": "tutor",
+          "content": "[fixture] session s02, turn 5.",
+          "turn_id": "s02-t005"
+        },
+        {
+          "_id": "5",
+          "session_id": "s02",
+          "sequence_id": 6,
+          "role": "student",
+          "content": "[fixture] session s02, turn 6.",
+          "turn_id": "s02-t006"
+        },
+        {
+          "_id": "6",
+          "session_id": "s02",
+          "sequence_id": 7,
+          "role": "tutor",
+          "content": "[fixture] session s02, turn 7.",
+          "turn_id": "s02-t007"
+        },
+        {
+          "_id": "7",
+          "session_id": "s02",
+          "sequence_id": 8,
+          "role": "student",
+          "content": "[fixture] session s02, turn 8.",
+          "turn_id": "s02-t008"
+        },
+        {
+          "_id": "8",
+          "session_id": "s02",
+          "sequence_id": 9,
+          "role": "tutor",
+          "content": "[fixture] session s02, turn 9.",
+          "turn_id": "s02-t009"
+        },
+        {
+          "_id": "9",
+          "session_id": "s02",
+          "sequence_id": 10,
+          "role": "student",
+          "content": "[fixture] session s02, turn 10.",
+          "turn_id": "s02-t010"
+        },
+        {
+          "_id": "10",
+          "session_id": "s02",
+          "sequence_id": 11,
+          "role": "tutor",
+          "content": "[fixture] session s02, turn 11.",
+          "turn_id": "s02-t011"
+        },
+        {
+          "_id": "11",
+          "session_id": "s02",
+          "sequence_id": 12,
+          "role": "student",
+          "content": "[fixture] session s02, turn 12.",
+          "turn_id": "s02-t012"
+        },
+        {
+          "_id": "12",
+          "session_id": "s02",
+          "sequence_id": 13,
+          "role": "tutor",
+          "content": "[fixture] session s02, turn 13.",
+          "turn_id": "s02-t013"
+        },
+        {
+          "_id": "13",
+          "session_id": "s02",
+          "sequence_id": 14,
+          "role": "student",
+          "content": "[fixture] session s02, turn 14.",
+          "turn_id": "s02-t014"
+        },
+        {
+          "_id": "14",
+          "session_id": "s02",
+          "sequence_id": 15,
+          "role": "tutor",
+          "content": "[fixture] session s02, turn 15.",
+          "turn_id": "s02-t015"
+        },
+        {
+          "_id": "15",
+          "session_id": "s02",
+          "sequence_id": 16,
+          "role": "student",
+          "content": "[fixture] session s02, turn 16.",
+          "turn_id": "s02-t016"
+        },
+        {
+          "_id": "16",
+          "session_id": "s02",
+          "sequence_id": 17,
+          "role": "tutor",
+          "content": "[fixture] session s02, turn 17.",
+          "turn_id": "s02-t017"
+        },
+        {
+          "_id": "17",
+          "session_id": "s02",
+          "sequence_id": 18,
+          "role": "student",
+          "content": "[fixture] session s02, turn 18.",
+          "turn_id": "s02-t018"
+        },
+        {
+          "_id": "18",
+          "session_id": "s02",
+          "sequence_id": 19,
+          "role": "tutor",
+          "content": "[fixture] session s02, turn 19.",
+          "turn_id": "s02-t019"
+        },
+        {
+          "_id": "19",
+          "session_id": "s02",
+          "sequence_id": 20,
+          "role": "student",
+          "content": "[fixture] session s02, turn 20.",
+          "turn_id": "s02-t020"
+        },
+        {
+          "_id": "20",
+          "session_id": "s02",
+          "sequence_id": 21,
+          "role": "tutor",
+          "content": "[fixture] session s02, turn 21.",
+          "turn_id": "s02-t021"
+        },
+        {
+          "_id": "21",
+          "session_id": "s02",
+          "sequence_id": 22,
+          "role": "student",
+          "content": "[fixture] session s02, turn 22.",
+          "turn_id": "s02-t022"
+        },
+        {
+          "_id": "22",
+          "session_id": "s02",
+          "sequence_id": 23,
+          "role": "tutor",
+          "content": "[fixture] session s02, turn 23.",
+          "turn_id": "s02-t023"
+        },
+        {
+          "_id": "23",
+          "session_id": "s02",
+          "sequence_id": 24,
+          "role": "student",
+          "content": "[fixture] session s02, turn 24.",
+          "turn_id": "s02-t024"
+        },
+        {
+          "_id": "24",
+          "session_id": "s02",
+          "sequence_id": 25,
+          "role": "tutor",
+          "content": "[fixture] session s02, turn 25.",
+          "turn_id": "s02-t025"
+        },
+        {
+          "_id": "25",
+          "session_id": "s02",
+          "sequence_id": 26,
+          "role": "student",
+          "content": "[fixture] session s02, turn 26.",
+          "turn_id": "s02-t026"
+        },
+        {
+          "_id": "26",
+          "session_id": "s02",
+          "sequence_id": 27,
+          "role": "tutor",
+          "content": "[fixture] session s02, turn 27.",
+          "turn_id": "s02-t027"
+        },
+        {
+          "_id": "27",
+          "session_id": "s02",
+          "sequence_id": 28,
+          "role": "student",
+          "content": "[fixture] session s02, turn 28.",
+          "turn_id": "s02-t028"
+        },
+        {
+          "_id": "28",
+          "session_id": "s02",
+          "sequence_id": 29,
+          "role": "tutor",
+          "content": "[fixture] session s02, turn 29.",
+          "turn_id": "s02-t029"
+        },
+        {
+          "_id": "29",
+          "session_id": "s02",
+          "sequence_id": 30,
+          "role": "student",
+          "content": "[fixture] session s02, turn 30.",
+          "turn_id": "s02-t030"
+        },
+        {
+          "_id": "30",
+          "session_id": "s02",
+          "sequence_id": 31,
+          "role": "tutor",
+          "content": "[fixture] session s02, turn 31.",
+          "turn_id": "s02-t031"
+        },
+        {
+          "_id": "31",
+          "session_id": "s02",
+          "sequence_id": 32,
+          "role": "student",
+          "content": "[fixture] session s02, turn 32.",
+          "turn_id": "s02-t032"
+        },
+        {
+          "_id": "32",
+          "session_id": "s02",
+          "sequence_id": 33,
+          "role": "tutor",
+          "content": "[fixture] session s02, turn 33.",
+          "turn_id": "s02-t033"
+        },
+        {
+          "_id": "33",
+          "session_id": "s02",
+          "sequence_id": 34,
+          "role": "student",
+          "content": "[fixture] session s02, turn 34.",
+          "turn_id": "s02-t034"
+        },
+        {
+          "_id": "34",
+          "session_id": "s02",
+          "sequence_id": 35,
+          "role": "tutor",
+          "content": "[fixture] session s02, turn 35.",
+          "turn_id": "s02-t035"
+        },
+        {
+          "_id": "35",
+          "session_id": "s02",
+          "sequence_id": 36,
+          "role": "student",
+          "content": "[fixture] session s02, turn 36.",
+          "turn_id": "s02-t036"
+        },
+        {
+          "_id": "36",
+          "session_id": "s02",
+          "sequence_id": 37,
+          "role": "tutor",
+          "content": "[fixture] session s02, turn 37.",
+          "turn_id": "s02-t037"
+        },
+        {
+          "_id": "37",
+          "session_id": "s02",
+          "sequence_id": 38,
+          "role": "student",
+          "content": "[fixture] session s02, turn 38.",
+          "turn_id": "s02-t038"
+        },
+        {
+          "_id": "38",
+          "session_id": "s02",
+          "sequence_id": 39,
+          "role": "tutor",
+          "content": "[fixture] session s02, turn 39.",
+          "turn_id": "s02-t039"
+        },
+        {
+          "_id": "39",
+          "session_id": "s02",
+          "sequence_id": 40,
+          "role": "student",
+          "content": "[fixture] session s02, turn 40.",
+          "turn_id": "s02-t040"
+        },
+        {
+          "_id": "40",
+          "session_id": "s02",
+          "sequence_id": 41,
+          "role": "tutor",
+          "content": "[fixture] session s02, turn 41.",
+          "turn_id": "s02-t041"
+        },
+        {
+          "_id": "41",
+          "session_id": "s02",
+          "sequence_id": 42,
+          "role": "student",
+          "content": "[fixture] session s02, turn 42.",
+          "turn_id": "s02-t042"
+        },
+        {
+          "_id": "42",
+          "session_id": "s02",
+          "sequence_id": 43,
+          "role": "tutor",
+          "content": "[fixture] session s02, turn 43.",
+          "turn_id": "s02-t043"
+        },
+        {
+          "_id": "43",
+          "session_id": "s02",
+          "sequence_id": 44,
+          "role": "student",
+          "content": "[fixture] session s02, turn 44.",
+          "turn_id": "s02-t044"
+        }
+      ],
+      "annotations": [
+        {
+          "_id": "1",
+          "episode_id": "ep-run-human-001-s02-002",
+          "run_id": "run-human-001",
+          "identifiedBy": "HUMAN",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "analysis",
+          "start_turn_id": "s02-t005",
+          "end_turn_id": "s02-t012",
+          "evidence": [
+            "s02-t005",
+            "s02-t006",
+            "s02-t007",
+            "s02-t008",
+            "s02-t009",
+            "s02-t010",
+            "s02-t011",
+            "s02-t012"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "2",
+          "episode_id": "ep-run-human-001-s02-003",
+          "run_id": "run-human-001",
+          "identifiedBy": "HUMAN",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "verification",
+          "start_turn_id": "s02-t013",
+          "end_turn_id": "s02-t015",
+          "evidence": [
+            "s02-t013",
+            "s02-t014",
+            "s02-t015"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "3",
+          "episode_id": "ep-run-human-001-s02-004",
+          "run_id": "run-human-001",
+          "identifiedBy": "HUMAN",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "implementation",
+          "start_turn_id": "s02-t016",
+          "end_turn_id": "s02-t022",
+          "evidence": [
+            "s02-t016",
+            "s02-t017",
+            "s02-t018",
+            "s02-t019",
+            "s02-t020",
+            "s02-t021",
+            "s02-t022"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "4",
+          "episode_id": "ep-run-human-001-s02-005",
+          "run_id": "run-human-001",
+          "identifiedBy": "HUMAN",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "exploration",
+          "start_turn_id": "s02-t023",
+          "end_turn_id": "s02-t026",
+          "evidence": [
+            "s02-t023",
+            "s02-t024",
+            "s02-t025",
+            "s02-t026"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "5",
+          "episode_id": "ep-run-human-001-s02-006",
+          "run_id": "run-human-001",
+          "identifiedBy": "HUMAN",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "verification",
+          "start_turn_id": "s02-t027",
+          "end_turn_id": "s02-t029",
+          "evidence": [
+            "s02-t027",
+            "s02-t028",
+            "s02-t029"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "10",
+          "episode_id": "ep-run-human-001-s02-011",
+          "run_id": "run-human-001",
+          "identifiedBy": "HUMAN",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "exploration",
+          "start_turn_id": "s02-t043",
+          "end_turn_id": "s02-t044",
+          "evidence": [
+            "s02-t043",
+            "s02-t044"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "0",
+          "episode_id": "ep-run-llm-001-s02-001",
+          "run_id": "run-llm-001",
+          "identifiedBy": "AI",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "reading",
+          "start_turn_id": "s02-t001",
+          "end_turn_id": "s02-t004",
+          "evidence": [
+            "s02-t001",
+            "s02-t002",
+            "s02-t003",
+            "s02-t004"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "1",
+          "episode_id": "ep-run-llm-001-s02-002",
+          "run_id": "run-llm-001",
+          "identifiedBy": "AI",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "analysis",
+          "start_turn_id": "s02-t005",
+          "end_turn_id": "s02-t010",
+          "evidence": [
+            "s02-t005",
+            "s02-t006",
+            "s02-t007",
+            "s02-t008",
+            "s02-t009",
+            "s02-t010"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "2",
+          "episode_id": "ep-run-llm-001-s02-003",
+          "run_id": "run-llm-001",
+          "identifiedBy": "AI",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "planning",
+          "start_turn_id": "s02-t011",
+          "end_turn_id": "s02-t015",
+          "evidence": [
+            "s02-t011",
+            "s02-t012",
+            "s02-t013",
+            "s02-t014",
+            "s02-t015"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "3",
+          "episode_id": "ep-run-llm-001-s02-004",
+          "run_id": "run-llm-001",
+          "identifiedBy": "AI",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "implementation",
+          "start_turn_id": "s02-t016",
+          "end_turn_id": "s02-t022",
+          "evidence": [
+            "s02-t016",
+            "s02-t017",
+            "s02-t018",
+            "s02-t019",
+            "s02-t020",
+            "s02-t021",
+            "s02-t022"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "4",
+          "episode_id": "ep-run-llm-001-s02-005",
+          "run_id": "run-llm-001",
+          "identifiedBy": "AI",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "exploration",
+          "start_turn_id": "s02-t023",
+          "end_turn_id": "s02-t026",
+          "evidence": [
+            "s02-t023",
+            "s02-t024",
+            "s02-t025",
+            "s02-t026"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "5",
+          "episode_id": "ep-run-llm-001-s02-006",
+          "run_id": "run-llm-001",
+          "identifiedBy": "AI",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "verification",
+          "start_turn_id": "s02-t027",
+          "end_turn_id": "s02-t029",
+          "evidence": [
+            "s02-t027",
+            "s02-t028",
+            "s02-t029"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "6",
+          "episode_id": "ep-run-llm-001-s02-007",
+          "run_id": "run-llm-001",
+          "identifiedBy": "AI",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "monitor",
+          "start_turn_id": "s02-t030",
+          "end_turn_id": "s02-t032",
+          "evidence": [
+            "s02-t030",
+            "s02-t031",
+            "s02-t032"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "7",
+          "episode_id": "ep-run-llm-001-s02-008",
+          "run_id": "run-llm-001",
+          "identifiedBy": "AI",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "organization",
+          "start_turn_id": "s02-t033",
+          "end_turn_id": "s02-t035",
+          "evidence": [
+            "s02-t033",
+            "s02-t034",
+            "s02-t035"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "8",
+          "episode_id": "ep-run-llm-001-s02-009",
+          "run_id": "run-llm-001",
+          "identifiedBy": "AI",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "digression",
+          "start_turn_id": "s02-t036",
+          "end_turn_id": "s02-t040",
+          "evidence": [
+            "s02-t036",
+            "s02-t037",
+            "s02-t038",
+            "s02-t039",
+            "s02-t040"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "9",
+          "episode_id": "ep-run-llm-001-s02-010",
+          "run_id": "run-llm-001",
+          "identifiedBy": "AI",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "reading",
+          "start_turn_id": "s02-t041",
+          "end_turn_id": "s02-t042",
+          "evidence": [
+            "s02-t041",
+            "s02-t042"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "10",
+          "episode_id": "ep-run-llm-001-s02-011",
+          "run_id": "run-llm-001",
+          "identifiedBy": "AI",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "analysis",
+          "start_turn_id": "s02-t043",
+          "end_turn_id": "s02-t044",
+          "evidence": [
+            "s02-t043",
+            "s02-t044"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        }
+      ]
+    },
+    {
+      "session_id": "s03",
+      "student_id": "stu-001",
+      "session_index": 3,
+      "session_date": "2026-03-14",
+      "session_topic": "fixture",
+      "has_timestamps": false,
+      "transcript_scope": "full",
+      "turns": [
+        {
+          "_id": "0",
+          "session_id": "s03",
+          "sequence_id": 1,
+          "role": "tutor",
+          "content": "[fixture] session s03, turn 1.",
+          "turn_id": "s03-t001"
+        },
+        {
+          "_id": "1",
+          "session_id": "s03",
+          "sequence_id": 2,
+          "role": "student",
+          "content": "[fixture] session s03, turn 2.",
+          "turn_id": "s03-t002"
+        },
+        {
+          "_id": "2",
+          "session_id": "s03",
+          "sequence_id": 3,
+          "role": "tutor",
+          "content": "[fixture] session s03, turn 3.",
+          "turn_id": "s03-t003"
+        },
+        {
+          "_id": "3",
+          "session_id": "s03",
+          "sequence_id": 4,
+          "role": "student",
+          "content": "[fixture] session s03, turn 4.",
+          "turn_id": "s03-t004"
+        },
+        {
+          "_id": "4",
+          "session_id": "s03",
+          "sequence_id": 5,
+          "role": "tutor",
+          "content": "[fixture] session s03, turn 5.",
+          "turn_id": "s03-t005"
+        },
+        {
+          "_id": "5",
+          "session_id": "s03",
+          "sequence_id": 6,
+          "role": "student",
+          "content": "[fixture] session s03, turn 6.",
+          "turn_id": "s03-t006"
+        },
+        {
+          "_id": "6",
+          "session_id": "s03",
+          "sequence_id": 7,
+          "role": "tutor",
+          "content": "[fixture] session s03, turn 7.",
+          "turn_id": "s03-t007"
+        },
+        {
+          "_id": "7",
+          "session_id": "s03",
+          "sequence_id": 8,
+          "role": "student",
+          "content": "[fixture] session s03, turn 8.",
+          "turn_id": "s03-t008"
+        },
+        {
+          "_id": "8",
+          "session_id": "s03",
+          "sequence_id": 9,
+          "role": "tutor",
+          "content": "[fixture] session s03, turn 9.",
+          "turn_id": "s03-t009"
+        },
+        {
+          "_id": "9",
+          "session_id": "s03",
+          "sequence_id": 10,
+          "role": "student",
+          "content": "[fixture] session s03, turn 10.",
+          "turn_id": "s03-t010"
+        },
+        {
+          "_id": "10",
+          "session_id": "s03",
+          "sequence_id": 11,
+          "role": "tutor",
+          "content": "[fixture] session s03, turn 11.",
+          "turn_id": "s03-t011"
+        },
+        {
+          "_id": "11",
+          "session_id": "s03",
+          "sequence_id": 12,
+          "role": "student",
+          "content": "[fixture] session s03, turn 12.",
+          "turn_id": "s03-t012"
+        },
+        {
+          "_id": "12",
+          "session_id": "s03",
+          "sequence_id": 13,
+          "role": "tutor",
+          "content": "[fixture] session s03, turn 13.",
+          "turn_id": "s03-t013"
+        },
+        {
+          "_id": "13",
+          "session_id": "s03",
+          "sequence_id": 14,
+          "role": "student",
+          "content": "[fixture] session s03, turn 14.",
+          "turn_id": "s03-t014"
+        },
+        {
+          "_id": "14",
+          "session_id": "s03",
+          "sequence_id": 15,
+          "role": "tutor",
+          "content": "[fixture] session s03, turn 15.",
+          "turn_id": "s03-t015"
+        },
+        {
+          "_id": "15",
+          "session_id": "s03",
+          "sequence_id": 16,
+          "role": "student",
+          "content": "[fixture] session s03, turn 16.",
+          "turn_id": "s03-t016"
+        },
+        {
+          "_id": "16",
+          "session_id": "s03",
+          "sequence_id": 17,
+          "role": "tutor",
+          "content": "[fixture] session s03, turn 17.",
+          "turn_id": "s03-t017"
+        },
+        {
+          "_id": "17",
+          "session_id": "s03",
+          "sequence_id": 18,
+          "role": "student",
+          "content": "[fixture] session s03, turn 18.",
+          "turn_id": "s03-t018"
+        },
+        {
+          "_id": "18",
+          "session_id": "s03",
+          "sequence_id": 19,
+          "role": "tutor",
+          "content": "[fixture] session s03, turn 19.",
+          "turn_id": "s03-t019"
+        },
+        {
+          "_id": "19",
+          "session_id": "s03",
+          "sequence_id": 20,
+          "role": "student",
+          "content": "[fixture] session s03, turn 20.",
+          "turn_id": "s03-t020"
+        },
+        {
+          "_id": "20",
+          "session_id": "s03",
+          "sequence_id": 21,
+          "role": "tutor",
+          "content": "[fixture] session s03, turn 21.",
+          "turn_id": "s03-t021"
+        },
+        {
+          "_id": "21",
+          "session_id": "s03",
+          "sequence_id": 22,
+          "role": "student",
+          "content": "[fixture] session s03, turn 22.",
+          "turn_id": "s03-t022"
+        },
+        {
+          "_id": "22",
+          "session_id": "s03",
+          "sequence_id": 23,
+          "role": "tutor",
+          "content": "[fixture] session s03, turn 23.",
+          "turn_id": "s03-t023"
+        },
+        {
+          "_id": "23",
+          "session_id": "s03",
+          "sequence_id": 24,
+          "role": "student",
+          "content": "[fixture] session s03, turn 24.",
+          "turn_id": "s03-t024"
+        },
+        {
+          "_id": "24",
+          "session_id": "s03",
+          "sequence_id": 25,
+          "role": "tutor",
+          "content": "[fixture] session s03, turn 25.",
+          "turn_id": "s03-t025"
+        },
+        {
+          "_id": "25",
+          "session_id": "s03",
+          "sequence_id": 26,
+          "role": "student",
+          "content": "[fixture] session s03, turn 26.",
+          "turn_id": "s03-t026"
+        },
+        {
+          "_id": "26",
+          "session_id": "s03",
+          "sequence_id": 27,
+          "role": "tutor",
+          "content": "[fixture] session s03, turn 27.",
+          "turn_id": "s03-t027"
+        },
+        {
+          "_id": "27",
+          "session_id": "s03",
+          "sequence_id": 28,
+          "role": "student",
+          "content": "[fixture] session s03, turn 28.",
+          "turn_id": "s03-t028"
+        },
+        {
+          "_id": "28",
+          "session_id": "s03",
+          "sequence_id": 29,
+          "role": "tutor",
+          "content": "[fixture] session s03, turn 29.",
+          "turn_id": "s03-t029"
+        },
+        {
+          "_id": "29",
+          "session_id": "s03",
+          "sequence_id": 30,
+          "role": "student",
+          "content": "[fixture] session s03, turn 30.",
+          "turn_id": "s03-t030"
+        },
+        {
+          "_id": "30",
+          "session_id": "s03",
+          "sequence_id": 31,
+          "role": "tutor",
+          "content": "[fixture] session s03, turn 31.",
+          "turn_id": "s03-t031"
+        },
+        {
+          "_id": "31",
+          "session_id": "s03",
+          "sequence_id": 32,
+          "role": "student",
+          "content": "[fixture] session s03, turn 32.",
+          "turn_id": "s03-t032"
+        },
+        {
+          "_id": "32",
+          "session_id": "s03",
+          "sequence_id": 33,
+          "role": "tutor",
+          "content": "[fixture] session s03, turn 33.",
+          "turn_id": "s03-t033"
+        },
+        {
+          "_id": "33",
+          "session_id": "s03",
+          "sequence_id": 34,
+          "role": "student",
+          "content": "[fixture] session s03, turn 34.",
+          "turn_id": "s03-t034"
+        },
+        {
+          "_id": "34",
+          "session_id": "s03",
+          "sequence_id": 35,
+          "role": "tutor",
+          "content": "[fixture] session s03, turn 35.",
+          "turn_id": "s03-t035"
+        },
+        {
+          "_id": "35",
+          "session_id": "s03",
+          "sequence_id": 36,
+          "role": "student",
+          "content": "[fixture] session s03, turn 36.",
+          "turn_id": "s03-t036"
+        },
+        {
+          "_id": "36",
+          "session_id": "s03",
+          "sequence_id": 37,
+          "role": "tutor",
+          "content": "[fixture] session s03, turn 37.",
+          "turn_id": "s03-t037"
+        },
+        {
+          "_id": "37",
+          "session_id": "s03",
+          "sequence_id": 38,
+          "role": "student",
+          "content": "[fixture] session s03, turn 38.",
+          "turn_id": "s03-t038"
+        },
+        {
+          "_id": "38",
+          "session_id": "s03",
+          "sequence_id": 39,
+          "role": "tutor",
+          "content": "[fixture] session s03, turn 39.",
+          "turn_id": "s03-t039"
+        },
+        {
+          "_id": "39",
+          "session_id": "s03",
+          "sequence_id": 40,
+          "role": "student",
+          "content": "[fixture] session s03, turn 40.",
+          "turn_id": "s03-t040"
+        },
+        {
+          "_id": "40",
+          "session_id": "s03",
+          "sequence_id": 41,
+          "role": "tutor",
+          "content": "[fixture] session s03, turn 41.",
+          "turn_id": "s03-t041"
+        },
+        {
+          "_id": "41",
+          "session_id": "s03",
+          "sequence_id": 42,
+          "role": "student",
+          "content": "[fixture] session s03, turn 42.",
+          "turn_id": "s03-t042"
+        },
+        {
+          "_id": "42",
+          "session_id": "s03",
+          "sequence_id": 43,
+          "role": "tutor",
+          "content": "[fixture] session s03, turn 43.",
+          "turn_id": "s03-t043"
+        },
+        {
+          "_id": "43",
+          "session_id": "s03",
+          "sequence_id": 44,
+          "role": "student",
+          "content": "[fixture] session s03, turn 44.",
+          "turn_id": "s03-t044"
+        }
+      ],
+      "annotations": [
+        {
+          "_id": "1",
+          "episode_id": "ep-run-human-001-s03-002",
+          "run_id": "run-human-001",
+          "identifiedBy": "HUMAN",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "analysis",
+          "start_turn_id": "s03-t005",
+          "end_turn_id": "s03-t012",
+          "evidence": [
+            "s03-t005",
+            "s03-t006",
+            "s03-t007",
+            "s03-t008",
+            "s03-t009",
+            "s03-t010",
+            "s03-t011",
+            "s03-t012"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "3",
+          "episode_id": "ep-run-human-001-s03-004",
+          "run_id": "run-human-001",
+          "identifiedBy": "HUMAN",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "implementation",
+          "start_turn_id": "s03-t016",
+          "end_turn_id": "s03-t022",
+          "evidence": [
+            "s03-t016",
+            "s03-t017",
+            "s03-t018",
+            "s03-t019",
+            "s03-t020",
+            "s03-t021",
+            "s03-t022"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "4",
+          "episode_id": "ep-run-human-001-s03-005",
+          "run_id": "run-human-001",
+          "identifiedBy": "HUMAN",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "exploration",
+          "start_turn_id": "s03-t023",
+          "end_turn_id": "s03-t026",
+          "evidence": [
+            "s03-t023",
+            "s03-t024",
+            "s03-t025",
+            "s03-t026"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "5",
+          "episode_id": "ep-run-human-001-s03-006",
+          "run_id": "run-human-001",
+          "identifiedBy": "HUMAN",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "verification",
+          "start_turn_id": "s03-t027",
+          "end_turn_id": "s03-t029",
+          "evidence": [
+            "s03-t027",
+            "s03-t028",
+            "s03-t029"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "6",
+          "episode_id": "ep-run-human-001-s03-007",
+          "run_id": "run-human-001",
+          "identifiedBy": "HUMAN",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "analysis",
+          "start_turn_id": "s03-t030",
+          "end_turn_id": "s03-t032",
+          "evidence": [
+            "s03-t030",
+            "s03-t031",
+            "s03-t032"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "10",
+          "episode_id": "ep-run-human-001-s03-011",
+          "run_id": "run-human-001",
+          "identifiedBy": "HUMAN",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "verification",
+          "start_turn_id": "s03-t043",
+          "end_turn_id": "s03-t044",
+          "evidence": [
+            "s03-t043",
+            "s03-t044"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "0",
+          "episode_id": "ep-run-llm-001-s03-001",
+          "run_id": "run-llm-001",
+          "identifiedBy": "AI",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "reading",
+          "start_turn_id": "s03-t001",
+          "end_turn_id": "s03-t004",
+          "evidence": [
+            "s03-t001",
+            "s03-t002",
+            "s03-t003",
+            "s03-t004"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "1",
+          "episode_id": "ep-run-llm-001-s03-002",
+          "run_id": "run-llm-001",
+          "identifiedBy": "AI",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "analysis",
+          "start_turn_id": "s03-t005",
+          "end_turn_id": "s03-t010",
+          "evidence": [
+            "s03-t005",
+            "s03-t006",
+            "s03-t007",
+            "s03-t008",
+            "s03-t009",
+            "s03-t010"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "2",
+          "episode_id": "ep-run-llm-001-s03-003",
+          "run_id": "run-llm-001",
+          "identifiedBy": "AI",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "planning",
+          "start_turn_id": "s03-t011",
+          "end_turn_id": "s03-t015",
+          "evidence": [
+            "s03-t011",
+            "s03-t012",
+            "s03-t013",
+            "s03-t014",
+            "s03-t015"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "3",
+          "episode_id": "ep-run-llm-001-s03-004",
+          "run_id": "run-llm-001",
+          "identifiedBy": "AI",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "implementation",
+          "start_turn_id": "s03-t016",
+          "end_turn_id": "s03-t022",
+          "evidence": [
+            "s03-t016",
+            "s03-t017",
+            "s03-t018",
+            "s03-t019",
+            "s03-t020",
+            "s03-t021",
+            "s03-t022"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "4",
+          "episode_id": "ep-run-llm-001-s03-005",
+          "run_id": "run-llm-001",
+          "identifiedBy": "AI",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "exploration",
+          "start_turn_id": "s03-t023",
+          "end_turn_id": "s03-t026",
+          "evidence": [
+            "s03-t023",
+            "s03-t024",
+            "s03-t025",
+            "s03-t026"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "5",
+          "episode_id": "ep-run-llm-001-s03-006",
+          "run_id": "run-llm-001",
+          "identifiedBy": "AI",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "verification",
+          "start_turn_id": "s03-t027",
+          "end_turn_id": "s03-t029",
+          "evidence": [
+            "s03-t027",
+            "s03-t028",
+            "s03-t029"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "6",
+          "episode_id": "ep-run-llm-001-s03-007",
+          "run_id": "run-llm-001",
+          "identifiedBy": "AI",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "monitor",
+          "start_turn_id": "s03-t030",
+          "end_turn_id": "s03-t032",
+          "evidence": [
+            "s03-t030",
+            "s03-t031",
+            "s03-t032"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "7",
+          "episode_id": "ep-run-llm-001-s03-008",
+          "run_id": "run-llm-001",
+          "identifiedBy": "AI",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "organization",
+          "start_turn_id": "s03-t033",
+          "end_turn_id": "s03-t035",
+          "evidence": [
+            "s03-t033",
+            "s03-t034",
+            "s03-t035"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "8",
+          "episode_id": "ep-run-llm-001-s03-009",
+          "run_id": "run-llm-001",
+          "identifiedBy": "AI",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "digression",
+          "start_turn_id": "s03-t036",
+          "end_turn_id": "s03-t040",
+          "evidence": [
+            "s03-t036",
+            "s03-t037",
+            "s03-t038",
+            "s03-t039",
+            "s03-t040"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "9",
+          "episode_id": "ep-run-llm-001-s03-010",
+          "run_id": "run-llm-001",
+          "identifiedBy": "AI",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "reading",
+          "start_turn_id": "s03-t041",
+          "end_turn_id": "s03-t042",
+          "evidence": [
+            "s03-t041",
+            "s03-t042"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "10",
+          "episode_id": "ep-run-llm-001-s03-011",
+          "run_id": "run-llm-001",
+          "identifiedBy": "AI",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "analysis",
+          "start_turn_id": "s03-t043",
+          "end_turn_id": "s03-t044",
+          "evidence": [
+            "s03-t043",
+            "s03-t044"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        }
+      ]
+    },
+    {
+      "session_id": "s04",
+      "student_id": "stu-001",
+      "session_index": 4,
+      "session_date": "2026-04-14",
+      "session_topic": "fixture",
+      "has_timestamps": false,
+      "transcript_scope": "excerpt",
+      "turns": [
+        {
+          "_id": "0",
+          "session_id": "s04",
+          "sequence_id": 1,
+          "role": "tutor",
+          "content": "[fixture] session s04, turn 1.",
+          "turn_id": "s04-t001"
+        },
+        {
+          "_id": "1",
+          "session_id": "s04",
+          "sequence_id": 2,
+          "role": "student",
+          "content": "[fixture] session s04, turn 2.",
+          "turn_id": "s04-t002"
+        },
+        {
+          "_id": "2",
+          "session_id": "s04",
+          "sequence_id": 3,
+          "role": "tutor",
+          "content": "[fixture] session s04, turn 3.",
+          "turn_id": "s04-t003"
+        },
+        {
+          "_id": "3",
+          "session_id": "s04",
+          "sequence_id": 4,
+          "role": "student",
+          "content": "[fixture] session s04, turn 4.",
+          "turn_id": "s04-t004"
+        },
+        {
+          "_id": "4",
+          "session_id": "s04",
+          "sequence_id": 5,
+          "role": "tutor",
+          "content": "[fixture] session s04, turn 5.",
+          "turn_id": "s04-t005"
+        },
+        {
+          "_id": "5",
+          "session_id": "s04",
+          "sequence_id": 6,
+          "role": "student",
+          "content": "[fixture] session s04, turn 6.",
+          "turn_id": "s04-t006"
+        },
+        {
+          "_id": "6",
+          "session_id": "s04",
+          "sequence_id": 7,
+          "role": "tutor",
+          "content": "[fixture] session s04, turn 7.",
+          "turn_id": "s04-t007"
+        },
+        {
+          "_id": "7",
+          "session_id": "s04",
+          "sequence_id": 8,
+          "role": "student",
+          "content": "[fixture] session s04, turn 8.",
+          "turn_id": "s04-t008"
+        },
+        {
+          "_id": "8",
+          "session_id": "s04",
+          "sequence_id": 9,
+          "role": "tutor",
+          "content": "[fixture] session s04, turn 9.",
+          "turn_id": "s04-t009"
+        },
+        {
+          "_id": "9",
+          "session_id": "s04",
+          "sequence_id": 10,
+          "role": "student",
+          "content": "[fixture] session s04, turn 10.",
+          "turn_id": "s04-t010"
+        },
+        {
+          "_id": "10",
+          "session_id": "s04",
+          "sequence_id": 11,
+          "role": "tutor",
+          "content": "[fixture] session s04, turn 11.",
+          "turn_id": "s04-t011"
+        },
+        {
+          "_id": "11",
+          "session_id": "s04",
+          "sequence_id": 12,
+          "role": "student",
+          "content": "[fixture] session s04, turn 12.",
+          "turn_id": "s04-t012"
+        },
+        {
+          "_id": "12",
+          "session_id": "s04",
+          "sequence_id": 13,
+          "role": "tutor",
+          "content": "[fixture] session s04, turn 13.",
+          "turn_id": "s04-t013"
+        },
+        {
+          "_id": "13",
+          "session_id": "s04",
+          "sequence_id": 14,
+          "role": "student",
+          "content": "[fixture] session s04, turn 14.",
+          "turn_id": "s04-t014"
+        },
+        {
+          "_id": "14",
+          "session_id": "s04",
+          "sequence_id": 15,
+          "role": "tutor",
+          "content": "[fixture] session s04, turn 15.",
+          "turn_id": "s04-t015"
+        },
+        {
+          "_id": "15",
+          "session_id": "s04",
+          "sequence_id": 16,
+          "role": "student",
+          "content": "[fixture] session s04, turn 16.",
+          "turn_id": "s04-t016"
+        },
+        {
+          "_id": "16",
+          "session_id": "s04",
+          "sequence_id": 17,
+          "role": "tutor",
+          "content": "[fixture] session s04, turn 17.",
+          "turn_id": "s04-t017"
+        },
+        {
+          "_id": "17",
+          "session_id": "s04",
+          "sequence_id": 18,
+          "role": "student",
+          "content": "[fixture] session s04, turn 18.",
+          "turn_id": "s04-t018"
+        },
+        {
+          "_id": "18",
+          "session_id": "s04",
+          "sequence_id": 19,
+          "role": "tutor",
+          "content": "[fixture] session s04, turn 19.",
+          "turn_id": "s04-t019"
+        },
+        {
+          "_id": "19",
+          "session_id": "s04",
+          "sequence_id": 20,
+          "role": "student",
+          "content": "[fixture] session s04, turn 20.",
+          "turn_id": "s04-t020"
+        }
+      ],
+      "annotations": [
+        {
+          "_id": "1",
+          "episode_id": "ep-run-human-001-s04-002",
+          "run_id": "run-human-001",
+          "identifiedBy": "HUMAN",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "analysis",
+          "start_turn_id": "s04-t005",
+          "end_turn_id": "s04-t012",
+          "evidence": [
+            "s04-t005",
+            "s04-t006",
+            "s04-t007",
+            "s04-t008",
+            "s04-t009",
+            "s04-t010",
+            "s04-t011",
+            "s04-t012"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "3",
+          "episode_id": "ep-run-human-001-s04-004",
+          "run_id": "run-human-001",
+          "identifiedBy": "HUMAN",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "implementation",
+          "start_turn_id": "s04-t016",
+          "end_turn_id": "s04-t020",
+          "evidence": [
+            "s04-t016",
+            "s04-t017",
+            "s04-t018",
+            "s04-t019",
+            "s04-t020"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "0",
+          "episode_id": "ep-run-llm-001-s04-001",
+          "run_id": "run-llm-001",
+          "identifiedBy": "AI",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "reading",
+          "start_turn_id": "s04-t001",
+          "end_turn_id": "s04-t004",
+          "evidence": [
+            "s04-t001",
+            "s04-t002",
+            "s04-t003",
+            "s04-t004"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "1",
+          "episode_id": "ep-run-llm-001-s04-002",
+          "run_id": "run-llm-001",
+          "identifiedBy": "AI",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "analysis",
+          "start_turn_id": "s04-t005",
+          "end_turn_id": "s04-t010",
+          "evidence": [
+            "s04-t005",
+            "s04-t006",
+            "s04-t007",
+            "s04-t008",
+            "s04-t009",
+            "s04-t010"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "2",
+          "episode_id": "ep-run-llm-001-s04-003",
+          "run_id": "run-llm-001",
+          "identifiedBy": "AI",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "planning",
+          "start_turn_id": "s04-t011",
+          "end_turn_id": "s04-t015",
+          "evidence": [
+            "s04-t011",
+            "s04-t012",
+            "s04-t013",
+            "s04-t014",
+            "s04-t015"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "3",
+          "episode_id": "ep-run-llm-001-s04-004",
+          "run_id": "run-llm-001",
+          "identifiedBy": "AI",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "implementation",
+          "start_turn_id": "s04-t016",
+          "end_turn_id": "s04-t020",
+          "evidence": [
+            "s04-t016",
+            "s04-t017",
+            "s04-t018",
+            "s04-t019",
+            "s04-t020"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        }
+      ]
+    }
+  ],
+  "runs": [
+    {
+      "run_id": "run-human-001",
+      "kind": "human",
+      "simulated": true,
+      "model": null,
+      "prompt_hash": null,
+      "annotator_id": "annotator-001",
+      "codebook_version": "2.2.0",
+      "domain": "math",
+      "created_at": "2026-09-17T09:00:00Z"
+    },
+    {
+      "run_id": "run-llm-001",
+      "kind": "llm",
+      "simulated": false,
+      "model": "claude-sonnet-5",
+      "prompt_hash": "sha256:fixture",
+      "annotator_id": null,
+      "codebook_version": "2.2.0",
+      "domain": "math",
+      "created_at": "2026-09-17T10:00:00Z"
+    }
+  ],
+  "agreement": {
+    "threshold": 0.61,
+    "statistic": "Cohen's kappa",
+    "unit": "turn",
+    "compared_runs": [
+      "run-human-001",
+      "run-llm-001"
+    ],
+    "n_turns": 132,
+    "value": 0.762909744050292,
+    "band": "Substantial",
+    "measured": true,
+    "state": "shown",
+    "simulated": true,
+    "refusal": null,
+    "statement": "The episode layer surfaced. An annotation run and an LLM run were compared over the reportable sessions; that comparison is internal and is not shown here."
+  },
+  "session_gate": {
+    "min_turns": 40,
+    "sessions": [
+      {
+        "session_id": "s01",
+        "turn_count": 44,
+        "reportable": true
+      },
+      {
+        "session_id": "s02",
+        "turn_count": 44,
+        "reportable": true
+      },
+      {
+        "session_id": "s03",
+        "turn_count": 44,
+        "reportable": true
+      },
+      {
+        "session_id": "s04",
+        "turn_count": 20,
+        "reportable": false
+      }
+    ]
+  },
+  "claims": [
+    {
+      "claim_id": "claim-001",
+      "text": "In the first session the work returned to planning after a stretch of implementation.",
+      "evidence_episode_ids": [
+        "ep-run-llm-001-s01-003",
+        "ep-run-llm-001-s01-004"
+      ],
+      "provenance": "[DERIVED: run-llm-001 episodes -> the ordering of two adjacent episodes]"
+    },
+    {
+      "claim_id": "claim-002",
+      "text": "Verification appears in the closing turns of each session that is long enough to report on.",
+      "evidence_episode_ids": [
+        "ep-run-llm-001-s01-005"
+      ],
+      "provenance": "[DERIVED: run-llm-001 episodes -> position within the session turn order]"
+    }
+  ],
+  "summary": "Across the three sessions long enough to report on, the work moved between reading, analysis and planning early in each session, and verification episodes sit near the end of all three.",
+  "provenance_card": [
+    "Episode codes: Schoenfeld episodes, with operational definitions from Li et al. (2025) Appendix E, plus organization, writing and digression from Rott et al. (2021). [SOURCE: codebook.v2.json origin fields]",
+    "[EXTRAPOLATION: Li et al. annotated sentences of a reasoning model chain of thought, not two-speaker tutoring turns. See docs/DEVIATIONS.md D-022.]",
+    "Illustrative fixture data. No real session produced it.",
+    "This report was generated from the LLM run run-llm-001.",
+    "The episode layer surfaced: an annotation run and the LLM run were compared, and the comparison cleared the gate this project sets. The comparison is internal and is not shown here.",
+    "No inter-rater reliability has been established for this layer in this project, and Li et al. (2025) report no agreement figure of their own.",
+    "The episode layer does not surface unless agreement between the two runs reaches 0.61.",
+    "These definitions have been used on mathematics only. Nothing here is evidence that they carry to another subject."
+  ]
+}

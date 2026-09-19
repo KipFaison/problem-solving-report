@@ -1,0 +1,532 @@
+{
+  "$comment": "The planted episode plan this session was generated from. It is not a labelling run, nothing is scored against it, and no report reads it (SPEC-gate0 §8). It is here so a reader can see what the transcript was built to contain.",
+  "set_id": "demo-c",
+  "session_id": "demo-c-s04",
+  "seed": 20260104,
+  "turn_count": 58,
+  "episodes": [
+    {
+      "ordinal": 1,
+      "code": "reading",
+      "turns": 4
+    },
+    {
+      "ordinal": 2,
+      "code": "implementation",
+      "turns": 7
+    },
+    {
+      "ordinal": 3,
+      "code": "exploration",
+      "turns": 4
+    },
+    {
+      "ordinal": 4,
+      "code": "planning",
+      "turns": 8
+    },
+    {
+      "ordinal": 5,
+      "code": "implementation",
+      "turns": 4
+    },
+    {
+      "ordinal": 6,
+      "code": "organization",
+      "turns": 2
+    },
+    {
+      "ordinal": 7,
+      "code": "analysis",
+      "turns": 6
+    },
+    {
+      "ordinal": 8,
+      "code": "exploration",
+      "turns": 8
+    },
+    {
+      "ordinal": 9,
+      "code": "analysis",
+      "turns": 4
+    },
+    {
+      "ordinal": 10,
+      "code": "planning",
+      "turns": 8
+    },
+    {
+      "ordinal": 11,
+      "code": "monitor",
+      "turns": 3
+    }
+  ],
+  "$comment_schedule": "[OURS] The same plan turn by turn: speaker, planted code, boundary cue and problem. scripts/write-dialogue.ts writes the session's lines from it, and schedule_hash (sha256 of its canonical JSON) ties the stored lines at src/generator/dialogue/demo-c-s04.json to it.",
+  "schedule_hash": "e5867fc5b9e79fb44b578437600d17169d9b6caef5c5ef096ec541a5a2a4d21d",
+  "schedule": [
+    {
+      "index": 0,
+      "turn_id": "demo-c-s04-t001",
+      "role": "TUTOR",
+      "code": "reading",
+      "cue": null,
+      "problem_topic": "Scaling a ratio"
+    },
+    {
+      "index": 1,
+      "turn_id": "demo-c-s04-t002",
+      "role": "STUDENT_1",
+      "code": "reading",
+      "cue": null,
+      "problem_topic": "Scaling a ratio"
+    },
+    {
+      "index": 2,
+      "turn_id": "demo-c-s04-t003",
+      "role": "TUTOR",
+      "code": "reading",
+      "cue": null,
+      "problem_topic": "Scaling a ratio"
+    },
+    {
+      "index": 3,
+      "turn_id": "demo-c-s04-t004",
+      "role": "STUDENT_1",
+      "code": "reading",
+      "cue": null,
+      "problem_topic": "Scaling a ratio"
+    },
+    {
+      "index": 4,
+      "turn_id": "demo-c-s04-t005",
+      "role": "TUTOR",
+      "code": "implementation",
+      "cue": null,
+      "problem_topic": "Scaling a ratio"
+    },
+    {
+      "index": 5,
+      "turn_id": "demo-c-s04-t006",
+      "role": "STUDENT_1",
+      "code": "implementation",
+      "cue": null,
+      "problem_topic": "Scaling a ratio"
+    },
+    {
+      "index": 6,
+      "turn_id": "demo-c-s04-t007",
+      "role": "TUTOR",
+      "code": "implementation",
+      "cue": null,
+      "problem_topic": "Scaling a ratio"
+    },
+    {
+      "index": 7,
+      "turn_id": "demo-c-s04-t008",
+      "role": "STUDENT_1",
+      "code": "implementation",
+      "cue": null,
+      "problem_topic": "Scaling a ratio"
+    },
+    {
+      "index": 8,
+      "turn_id": "demo-c-s04-t009",
+      "role": "TUTOR",
+      "code": "implementation",
+      "cue": null,
+      "problem_topic": "Scaling a ratio"
+    },
+    {
+      "index": 9,
+      "turn_id": "demo-c-s04-t010",
+      "role": "STUDENT_1",
+      "code": "implementation",
+      "cue": null,
+      "problem_topic": "Scaling a ratio"
+    },
+    {
+      "index": 10,
+      "turn_id": "demo-c-s04-t011",
+      "role": "TUTOR",
+      "code": "implementation",
+      "cue": "handoff",
+      "problem_topic": "Scaling a ratio"
+    },
+    {
+      "index": 11,
+      "turn_id": "demo-c-s04-t012",
+      "role": "STUDENT_1",
+      "code": "exploration",
+      "cue": "opening",
+      "problem_topic": "Scaling a ratio"
+    },
+    {
+      "index": 12,
+      "turn_id": "demo-c-s04-t013",
+      "role": "TUTOR",
+      "code": "exploration",
+      "cue": "follow",
+      "problem_topic": "Scaling a ratio"
+    },
+    {
+      "index": 13,
+      "turn_id": "demo-c-s04-t014",
+      "role": "STUDENT_1",
+      "code": "exploration",
+      "cue": null,
+      "problem_topic": "Scaling a ratio"
+    },
+    {
+      "index": 14,
+      "turn_id": "demo-c-s04-t015",
+      "role": "TUTOR",
+      "code": "exploration",
+      "cue": "handoff",
+      "problem_topic": "Scaling a ratio"
+    },
+    {
+      "index": 15,
+      "turn_id": "demo-c-s04-t016",
+      "role": "STUDENT_1",
+      "code": "planning",
+      "cue": "opening",
+      "problem_topic": "Scaling a ratio"
+    },
+    {
+      "index": 16,
+      "turn_id": "demo-c-s04-t017",
+      "role": "TUTOR",
+      "code": "planning",
+      "cue": "follow",
+      "problem_topic": "Scaling a ratio"
+    },
+    {
+      "index": 17,
+      "turn_id": "demo-c-s04-t018",
+      "role": "STUDENT_1",
+      "code": "planning",
+      "cue": null,
+      "problem_topic": "Scaling a ratio"
+    },
+    {
+      "index": 18,
+      "turn_id": "demo-c-s04-t019",
+      "role": "TUTOR",
+      "code": "planning",
+      "cue": null,
+      "problem_topic": "Scaling a ratio"
+    },
+    {
+      "index": 19,
+      "turn_id": "demo-c-s04-t020",
+      "role": "STUDENT_1",
+      "code": "planning",
+      "cue": null,
+      "problem_topic": "Scaling a ratio"
+    },
+    {
+      "index": 20,
+      "turn_id": "demo-c-s04-t021",
+      "role": "TUTOR",
+      "code": "planning",
+      "cue": null,
+      "problem_topic": "Scaling a ratio"
+    },
+    {
+      "index": 21,
+      "turn_id": "demo-c-s04-t022",
+      "role": "STUDENT_1",
+      "code": "planning",
+      "cue": null,
+      "problem_topic": "Scaling a ratio"
+    },
+    {
+      "index": 22,
+      "turn_id": "demo-c-s04-t023",
+      "role": "TUTOR",
+      "code": "planning",
+      "cue": "handoff",
+      "problem_topic": "Scaling a ratio"
+    },
+    {
+      "index": 23,
+      "turn_id": "demo-c-s04-t024",
+      "role": "STUDENT_1",
+      "code": "implementation",
+      "cue": "opening",
+      "problem_topic": "Scaling a ratio"
+    },
+    {
+      "index": 24,
+      "turn_id": "demo-c-s04-t025",
+      "role": "TUTOR",
+      "code": "implementation",
+      "cue": "follow",
+      "problem_topic": "Scaling a ratio"
+    },
+    {
+      "index": 25,
+      "turn_id": "demo-c-s04-t026",
+      "role": "STUDENT_1",
+      "code": "implementation",
+      "cue": null,
+      "problem_topic": "Scaling a ratio"
+    },
+    {
+      "index": 26,
+      "turn_id": "demo-c-s04-t027",
+      "role": "TUTOR",
+      "code": "implementation",
+      "cue": null,
+      "problem_topic": "Scaling a ratio"
+    },
+    {
+      "index": 27,
+      "turn_id": "demo-c-s04-t028",
+      "role": "STUDENT_1",
+      "code": "organization",
+      "cue": null,
+      "problem_topic": "Scaling a ratio"
+    },
+    {
+      "index": 28,
+      "turn_id": "demo-c-s04-t029",
+      "role": "TUTOR",
+      "code": "organization",
+      "cue": "handoff",
+      "problem_topic": "Scaling a ratio"
+    },
+    {
+      "index": 29,
+      "turn_id": "demo-c-s04-t030",
+      "role": "STUDENT_1",
+      "code": "analysis",
+      "cue": "opening",
+      "problem_topic": "Scaling a ratio"
+    },
+    {
+      "index": 30,
+      "turn_id": "demo-c-s04-t031",
+      "role": "TUTOR",
+      "code": "analysis",
+      "cue": "follow",
+      "problem_topic": "Scaling a ratio"
+    },
+    {
+      "index": 31,
+      "turn_id": "demo-c-s04-t032",
+      "role": "STUDENT_1",
+      "code": "analysis",
+      "cue": null,
+      "problem_topic": "Scaling a ratio"
+    },
+    {
+      "index": 32,
+      "turn_id": "demo-c-s04-t033",
+      "role": "TUTOR",
+      "code": "analysis",
+      "cue": null,
+      "problem_topic": "Scaling a ratio"
+    },
+    {
+      "index": 33,
+      "turn_id": "demo-c-s04-t034",
+      "role": "STUDENT_1",
+      "code": "analysis",
+      "cue": null,
+      "problem_topic": "Scaling a ratio"
+    },
+    {
+      "index": 34,
+      "turn_id": "demo-c-s04-t035",
+      "role": "TUTOR",
+      "code": "analysis",
+      "cue": "handoff",
+      "problem_topic": "Scaling a ratio"
+    },
+    {
+      "index": 35,
+      "turn_id": "demo-c-s04-t036",
+      "role": "STUDENT_1",
+      "code": "exploration",
+      "cue": "opening",
+      "problem_topic": "Scaling a ratio"
+    },
+    {
+      "index": 36,
+      "turn_id": "demo-c-s04-t037",
+      "role": "TUTOR",
+      "code": "exploration",
+      "cue": "follow",
+      "problem_topic": "Scaling a ratio"
+    },
+    {
+      "index": 37,
+      "turn_id": "demo-c-s04-t038",
+      "role": "STUDENT_1",
+      "code": "exploration",
+      "cue": null,
+      "problem_topic": "Scaling a ratio"
+    },
+    {
+      "index": 38,
+      "turn_id": "demo-c-s04-t039",
+      "role": "TUTOR",
+      "code": "exploration",
+      "cue": null,
+      "problem_topic": "Scaling a ratio"
+    },
+    {
+      "index": 39,
+      "turn_id": "demo-c-s04-t040",
+      "role": "STUDENT_1",
+      "code": "exploration",
+      "cue": null,
+      "problem_topic": "Scaling a ratio"
+    },
+    {
+      "index": 40,
+      "turn_id": "demo-c-s04-t041",
+      "role": "TUTOR",
+      "code": "exploration",
+      "cue": null,
+      "problem_topic": "Scaling a ratio"
+    },
+    {
+      "index": 41,
+      "turn_id": "demo-c-s04-t042",
+      "role": "STUDENT_1",
+      "code": "exploration",
+      "cue": null,
+      "problem_topic": "Scaling a ratio"
+    },
+    {
+      "index": 42,
+      "turn_id": "demo-c-s04-t043",
+      "role": "TUTOR",
+      "code": "exploration",
+      "cue": "handoff",
+      "problem_topic": "Scaling a ratio"
+    },
+    {
+      "index": 43,
+      "turn_id": "demo-c-s04-t044",
+      "role": "STUDENT_1",
+      "code": "analysis",
+      "cue": "opening",
+      "problem_topic": "Scaling a ratio"
+    },
+    {
+      "index": 44,
+      "turn_id": "demo-c-s04-t045",
+      "role": "TUTOR",
+      "code": "analysis",
+      "cue": "follow",
+      "problem_topic": "Scaling a ratio"
+    },
+    {
+      "index": 45,
+      "turn_id": "demo-c-s04-t046",
+      "role": "STUDENT_1",
+      "code": "analysis",
+      "cue": null,
+      "problem_topic": "Scaling a ratio"
+    },
+    {
+      "index": 46,
+      "turn_id": "demo-c-s04-t047",
+      "role": "TUTOR",
+      "code": "analysis",
+      "cue": "handoff",
+      "problem_topic": "Scaling a ratio"
+    },
+    {
+      "index": 47,
+      "turn_id": "demo-c-s04-t048",
+      "role": "STUDENT_1",
+      "code": "planning",
+      "cue": "opening",
+      "problem_topic": "Scaling a ratio"
+    },
+    {
+      "index": 48,
+      "turn_id": "demo-c-s04-t049",
+      "role": "TUTOR",
+      "code": "planning",
+      "cue": "follow",
+      "problem_topic": "Scaling a ratio"
+    },
+    {
+      "index": 49,
+      "turn_id": "demo-c-s04-t050",
+      "role": "STUDENT_1",
+      "code": "planning",
+      "cue": null,
+      "problem_topic": "Scaling a ratio"
+    },
+    {
+      "index": 50,
+      "turn_id": "demo-c-s04-t051",
+      "role": "TUTOR",
+      "code": "planning",
+      "cue": null,
+      "problem_topic": "Scaling a ratio"
+    },
+    {
+      "index": 51,
+      "turn_id": "demo-c-s04-t052",
+      "role": "STUDENT_1",
+      "code": "planning",
+      "cue": null,
+      "problem_topic": "Scaling a ratio"
+    },
+    {
+      "index": 52,
+      "turn_id": "demo-c-s04-t053",
+      "role": "TUTOR",
+      "code": "planning",
+      "cue": null,
+      "problem_topic": "Scaling a ratio"
+    },
+    {
+      "index": 53,
+      "turn_id": "demo-c-s04-t054",
+      "role": "STUDENT_1",
+      "code": "planning",
+      "cue": null,
+      "problem_topic": "Scaling a ratio"
+    },
+    {
+      "index": 54,
+      "turn_id": "demo-c-s04-t055",
+      "role": "TUTOR",
+      "code": "planning",
+      "cue": null,
+      "problem_topic": "Scaling a ratio"
+    },
+    {
+      "index": 55,
+      "turn_id": "demo-c-s04-t056",
+      "role": "STUDENT_1",
+      "code": "monitor",
+      "cue": null,
+      "problem_topic": "Scaling a ratio"
+    },
+    {
+      "index": 56,
+      "turn_id": "demo-c-s04-t057",
+      "role": "TUTOR",
+      "code": "monitor",
+      "cue": null,
+      "problem_topic": "Scaling a ratio"
+    },
+    {
+      "index": 57,
+      "turn_id": "demo-c-s04-t058",
+      "role": "STUDENT_1",
+      "code": "monitor",
+      "cue": null,
+      "problem_topic": "Scaling a ratio"
+    }
+  ]
+}

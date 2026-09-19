@@ -1,0 +1,105 @@
+{
+  "$comment": "[OURS: the list is our own. INTENT.md 'Wording rules' and CLAUDE.md rule 8 give the constraint — describe episodes and behaviours, never dispositions, and never compare to other students — and docs/SPEC-gate0.md §9.2 names the three categories this list must cover. The evidence behind the constraint is docs/03-open-learner-models.md, which is cited by CLAUDE.md but is not in the repo. Nothing here is taken from a source paper. Each group carries the one-line reason it exists; someone will argue with an entry one day and should be able to see why it is there.]",
+
+  "$matching": "Word-boundary, case-insensitive, whitespace between words is flexible. A group's `allow` list holds literal contexts where the group's phrases are copy we need; a match inside one of those is not reported. When in doubt the checker fires: a false positive costs one rewrite, a false negative ships a claim about a child.",
+
+  "groups": [
+    {
+      "id": "disposition-nouns",
+      "reason": "A noun phrase naming a kind of student is a claim about the person; what this repo measures is the episode structure of a session (INTENT.md, 'What is measured').",
+      "suggestion": "Make the session or the work the subject: 'in this session the work moved from exploring to planning twice'.",
+      "phrases": [
+        "visual learner", "auditory learner", "kinesthetic learner",
+        "learning style", "learner type", "type of learner", "kind of learner",
+        "kind of thinker", "type of thinker",
+        "slow learner", "fast learner", "quick learner",
+        "struggling student", "strong student", "weak student",
+        "good student", "bad student", "bright student", "advanced student",
+        "average student", "typical student",
+        "gifted", "high achiever", "low achiever", "overachiever", "underachiever",
+        "at-risk", "remedial",
+        "math person", "not a math person", "a natural", "natural talent",
+        "perfectionist", "procrastinator", "hard worker", "self-starter",
+        "independent learner",
+        "the student", "this student", "the learner", "the child", "your child",
+        "the kid", "the tutee"
+      ],
+      "allow": ["opened on the student's turn"],
+      "$note_allow": "Owner decision D-C, 2026-09-18: the Student Report may say 'This stretch of <kind of work> opened on the student's turn.' with the stretch as the subject, and only that construction. Nothing wider is allowed: 'the student's turn' elsewhere still fires. The apostrophe is the straight one; a typographic one does not match and fires.",
+      "$note_the_student":"'the student' fires in internal views too (the annotation interface, the agreement view). Use the role label 'Student' on a turn, or name the session. This list is for our copy; do not point the lint at codebook definitions, which are source text and say 'the student' where the paper did."
+    },
+
+    {
+      "id": "ability-words",
+      "reason": "Ability talk names a trait rather than an episode, and trait feedback is what INTENT.md's wording rules exist to keep out of the report.",
+      "suggestion": "Drop the trait. Say what kind of work happened, when in the session, and for how long.",
+      "phrases": [
+        "smart", "intelligent", "clever", "talented", "brilliant", "genius",
+        "capable", "ability", "abilities", "aptitude", "innate",
+        "natural ability", "potential", "slow", "bright",
+        "good at", "bad at", "poor at", "strong at", "weak at"
+      ]
+    },
+
+    {
+      "id": "comparison",
+      "reason": "No comparison to other students, including an implicit one (INTENT.md 'Wording rules'; docs/SPEC-gate0.md §9.2 names typical, average, on track, ahead, behind).",
+      "suggestion": "Compare the sessions to each other, or give the number: 'episodes ran 6 to 14 turns'.",
+      "phrases": [
+        "typical", "typically", "average", "on average", "above average", "below average",
+        "on track", "off track", "ahead", "behind", "falling behind", "catching up",
+        "compared to", "compared with", "other students", "most students", "other kids",
+        "peers", "classmates", "grade level", "above grade", "below grade",
+        "percentile", "rank", "ranked", "ranking",
+        "normal", "normally", "the norm",
+        "expected for", "for their age", "for their grade", "where they should be",
+        "standard for"
+      ],
+      "allow": ["turns behind", "the turns behind", "evidence behind", "work behind"],
+      "$note_allow": "CLAUDE.md rule 7 requires an evidence link to the turns behind every claim, so 'the turns behind this claim' is copy the product needs."
+    },
+
+    {
+      "id": "learning-gain",
+      "reason": "Whether the student improved is on INTENT.md's not-measured list; the report claims process visibility, not learning gains.",
+      "suggestion": "Say what changed in the shape of the sessions: 'verification appears in four of the last five sessions'.",
+      "phrases": [
+        "improve", "improved", "improving", "improvement", "improvements",
+        "progress", "progressed", "progressing",
+        "master", "mastered", "mastery",
+        "understand", "understands", "understood", "understanding",
+        "know", "knows", "knew", "knowledge",
+        "grasp", "grasped", "learned", "learnt",
+        "learning gains", "gains", "growth", "grew",
+        "got better", "better at", "worse at",
+        "declined", "regressed", "retained", "internalized",
+        "now able to", "no longer struggles"
+      ],
+      "$note_progress": "'progress' is word-boundary matched, so 'the progression of episodes' does not fire. 'progression' is deliberately absent."
+    },
+
+    {
+      "id": "deficit-and-judgement",
+      "reason": "INTENT.md: nothing framed as a deficit without something actionable attached, and no verdict on the work; a verdict on the session reads as a verdict on the child sitting next to the parent.",
+      "suggestion": "Describe the episode and link its turns. If there is nothing actionable to attach, leave it out.",
+      "phrases": [
+        "struggle", "struggled", "struggles", "struggling",
+        "difficulty", "trouble with", "failed", "failure",
+        "strength", "strengths", "weakness", "weaknesses",
+        "lacks", "lacking", "deficit", "gap in",
+        "needs work", "needs to", "should have", "did poorly", "poor",
+        "lazy", "gave up"
+      ]
+    },
+
+    {
+      "id": "asserted-initiative",
+      "reason": "These assert an absence no transcript shows and credit the student with it. Layer 2 observes one tutor turn before a boundary; a tutor who prompted earlier, paused or waited still shaped what followed (INTENT.md 'Layer 2'; CLAUDE.md rules 8 and 13).",
+      "suggestion": "Keep the stretch of work as the subject and say only what one turn shows: 'this stretch of planning opened on a Student turn'. Add ', with no prompt in the turn before it' only where Layer 2 codes that turn NONE and the layer surfaces.",
+      "phrases": [
+        "unprompted", "took initiative", "initiative", "spontaneously",
+        "without being asked", "on their own"
+      ]
+    }
+  ]
+}

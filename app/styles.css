@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+/* Warm and legible in two minutes, read by a student and a parent together
+   (INTENT.md). Resist the dashboard. */
+:root {
+  --paper: #fdfcfa;
+  --ink: #1f1d1a;
+  --muted: #6b6560;
+  --rule: #e6e1da;
+  --accent: #7c5cff;
+}
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: ui-serif, Georgia, "Times New Roman", serif;
+}

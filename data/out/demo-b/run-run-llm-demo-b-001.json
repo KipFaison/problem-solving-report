@@ -1,0 +1,1301 @@
+{
+  "run_id": "run-llm-demo-b-001",
+  "kind": "llm",
+  "simulated": true,
+  "model": "claude-sonnet-5",
+  "prompt_hash": "21da27aab383016d",
+  "annotator_id": null,
+  "codebook_version": "2.2.0",
+  "domain": "math",
+  "created_at": "2026-09-19T02:28:45.591Z",
+  "usage": {
+    "calls": 5,
+    "totals": {
+      "input_tokens": 1685,
+      "output_tokens": 10658,
+      "cache_creation_input_tokens": 17206,
+      "cache_read_input_tokens": 15204
+    },
+    "per_call": [
+      {
+        "input_tokens": 324,
+        "output_tokens": 1561,
+        "cache_creation_input_tokens": 2494,
+        "cache_read_input_tokens": 3801,
+        "purpose": "segment",
+        "session_id": "demo-b-s01"
+      },
+      {
+        "input_tokens": 324,
+        "output_tokens": 2499,
+        "cache_creation_input_tokens": 1951,
+        "cache_read_input_tokens": 3801,
+        "purpose": "segment",
+        "session_id": "demo-b-s02"
+      },
+      {
+        "input_tokens": 324,
+        "output_tokens": 1596,
+        "cache_creation_input_tokens": 2355,
+        "cache_read_input_tokens": 3801,
+        "purpose": "segment",
+        "session_id": "demo-b-s03"
+      },
+      {
+        "input_tokens": 324,
+        "output_tokens": 1771,
+        "cache_creation_input_tokens": 2049,
+        "cache_read_input_tokens": 3801,
+        "purpose": "segment",
+        "session_id": "demo-b-s04"
+      },
+      {
+        "input_tokens": 389,
+        "output_tokens": 3231,
+        "cache_creation_input_tokens": 8357,
+        "cache_read_input_tokens": 0,
+        "purpose": "summarise"
+      }
+    ]
+  },
+  "episodes": [
+    {
+      "_id": "0",
+      "episode_id": "ep-run-llm-demo-b-001-demo-b-s01-001",
+      "run_id": "run-llm-demo-b-001",
+      "identifiedBy": "AI",
+      "layer_id": "episodes",
+      "codebook_version": "2.2.0",
+      "domain": "math",
+      "EPISODE": "reading",
+      "start_turn_id": "demo-b-s01-t001",
+      "end_turn_id": "demo-b-s01-t004",
+      "evidence": [
+        "demo-b-s01-t001",
+        "demo-b-s01-t002",
+        "demo-b-s01-t003",
+        "demo-b-s01-t004"
+      ],
+      "reviewer_id": null,
+      "reviewed_at": null
+    },
+    {
+      "_id": "1",
+      "episode_id": "ep-run-llm-demo-b-001-demo-b-s01-002",
+      "run_id": "run-llm-demo-b-001",
+      "identifiedBy": "AI",
+      "layer_id": "episodes",
+      "codebook_version": "2.2.0",
+      "domain": "math",
+      "EPISODE": "digression",
+      "start_turn_id": "demo-b-s01-t005",
+      "end_turn_id": "demo-b-s01-t005",
+      "evidence": [
+        "demo-b-s01-t005"
+      ],
+      "reviewer_id": null,
+      "reviewed_at": null
+    },
+    {
+      "_id": "2",
+      "episode_id": "ep-run-llm-demo-b-001-demo-b-s01-003",
+      "run_id": "run-llm-demo-b-001",
+      "identifiedBy": "AI",
+      "layer_id": "episodes",
+      "codebook_version": "2.2.0",
+      "domain": "math",
+      "EPISODE": "analysis",
+      "start_turn_id": "demo-b-s01-t006",
+      "end_turn_id": "demo-b-s01-t013",
+      "evidence": [
+        "demo-b-s01-t006",
+        "demo-b-s01-t007",
+        "demo-b-s01-t008",
+        "demo-b-s01-t009",
+        "demo-b-s01-t010",
+        "demo-b-s01-t011",
+        "demo-b-s01-t012",
+        "demo-b-s01-t013"
+      ],
+      "reviewer_id": null,
+      "reviewed_at": null
+    },
+    {
+      "_id": "3",
+      "episode_id": "ep-run-llm-demo-b-001-demo-b-s01-004",
+      "run_id": "run-llm-demo-b-001",
+      "identifiedBy": "AI",
+      "layer_id": "episodes",
+      "codebook_version": "2.2.0",
+      "domain": "math",
+      "EPISODE": "planning",
+      "start_turn_id": "demo-b-s01-t014",
+      "end_turn_id": "demo-b-s01-t015",
+      "evidence": [
+        "demo-b-s01-t014",
+        "demo-b-s01-t015"
+      ],
+      "reviewer_id": null,
+      "reviewed_at": null
+    },
+    {
+      "_id": "4",
+      "episode_id": "ep-run-llm-demo-b-001-demo-b-s01-005",
+      "run_id": "run-llm-demo-b-001",
+      "identifiedBy": "AI",
+      "layer_id": "episodes",
+      "codebook_version": "2.2.0",
+      "domain": "math",
+      "EPISODE": "implementation",
+      "start_turn_id": "demo-b-s01-t016",
+      "end_turn_id": "demo-b-s01-t018",
+      "evidence": [
+        "demo-b-s01-t016",
+        "demo-b-s01-t017",
+        "demo-b-s01-t018"
+      ],
+      "reviewer_id": null,
+      "reviewed_at": null
+    },
+    {
+      "_id": "5",
+      "episode_id": "ep-run-llm-demo-b-001-demo-b-s01-006",
+      "run_id": "run-llm-demo-b-001",
+      "identifiedBy": "AI",
+      "layer_id": "episodes",
+      "codebook_version": "2.2.0",
+      "domain": "math",
+      "EPISODE": "verification",
+      "start_turn_id": "demo-b-s01-t019",
+      "end_turn_id": "demo-b-s01-t022",
+      "evidence": [
+        "demo-b-s01-t019",
+        "demo-b-s01-t020",
+        "demo-b-s01-t021",
+        "demo-b-s01-t022"
+      ],
+      "reviewer_id": null,
+      "reviewed_at": null
+    },
+    {
+      "_id": "6",
+      "episode_id": "ep-run-llm-demo-b-001-demo-b-s01-007",
+      "run_id": "run-llm-demo-b-001",
+      "identifiedBy": "AI",
+      "layer_id": "episodes",
+      "codebook_version": "2.2.0",
+      "domain": "math",
+      "EPISODE": "monitor",
+      "start_turn_id": "demo-b-s01-t023",
+      "end_turn_id": "demo-b-s01-t024",
+      "evidence": [
+        "demo-b-s01-t023",
+        "demo-b-s01-t024"
+      ],
+      "reviewer_id": null,
+      "reviewed_at": null
+    },
+    {
+      "_id": "7",
+      "episode_id": "ep-run-llm-demo-b-001-demo-b-s01-008",
+      "run_id": "run-llm-demo-b-001",
+      "identifiedBy": "AI",
+      "layer_id": "episodes",
+      "codebook_version": "2.2.0",
+      "domain": "math",
+      "EPISODE": "planning",
+      "start_turn_id": "demo-b-s01-t025",
+      "end_turn_id": "demo-b-s01-t026",
+      "evidence": [
+        "demo-b-s01-t025",
+        "demo-b-s01-t026"
+      ],
+      "reviewer_id": null,
+      "reviewed_at": null
+    },
+    {
+      "_id": "8",
+      "episode_id": "ep-run-llm-demo-b-001-demo-b-s01-009",
+      "run_id": "run-llm-demo-b-001",
+      "identifiedBy": "AI",
+      "layer_id": "episodes",
+      "codebook_version": "2.2.0",
+      "domain": "math",
+      "EPISODE": "implementation",
+      "start_turn_id": "demo-b-s01-t027",
+      "end_turn_id": "demo-b-s01-t031",
+      "evidence": [
+        "demo-b-s01-t027",
+        "demo-b-s01-t028",
+        "demo-b-s01-t029",
+        "demo-b-s01-t030",
+        "demo-b-s01-t031"
+      ],
+      "reviewer_id": null,
+      "reviewed_at": null
+    },
+    {
+      "_id": "9",
+      "episode_id": "ep-run-llm-demo-b-001-demo-b-s01-010",
+      "run_id": "run-llm-demo-b-001",
+      "identifiedBy": "AI",
+      "layer_id": "episodes",
+      "codebook_version": "2.2.0",
+      "domain": "math",
+      "EPISODE": "exploration",
+      "start_turn_id": "demo-b-s01-t032",
+      "end_turn_id": "demo-b-s01-t034",
+      "evidence": [
+        "demo-b-s01-t032",
+        "demo-b-s01-t033",
+        "demo-b-s01-t034"
+      ],
+      "reviewer_id": null,
+      "reviewed_at": null
+    },
+    {
+      "_id": "10",
+      "episode_id": "ep-run-llm-demo-b-001-demo-b-s01-011",
+      "run_id": "run-llm-demo-b-001",
+      "identifiedBy": "AI",
+      "layer_id": "episodes",
+      "codebook_version": "2.2.0",
+      "domain": "math",
+      "EPISODE": "verification",
+      "start_turn_id": "demo-b-s01-t035",
+      "end_turn_id": "demo-b-s01-t039",
+      "evidence": [
+        "demo-b-s01-t035",
+        "demo-b-s01-t036",
+        "demo-b-s01-t037",
+        "demo-b-s01-t038",
+        "demo-b-s01-t039"
+      ],
+      "reviewer_id": null,
+      "reviewed_at": null
+    },
+    {
+      "_id": "11",
+      "episode_id": "ep-run-llm-demo-b-001-demo-b-s01-012",
+      "run_id": "run-llm-demo-b-001",
+      "identifiedBy": "AI",
+      "layer_id": "episodes",
+      "codebook_version": "2.2.0",
+      "domain": "math",
+      "EPISODE": "planning",
+      "start_turn_id": "demo-b-s01-t040",
+      "end_turn_id": "demo-b-s01-t040",
+      "evidence": [
+        "demo-b-s01-t040"
+      ],
+      "reviewer_id": null,
+      "reviewed_at": null
+    },
+    {
+      "_id": "12",
+      "episode_id": "ep-run-llm-demo-b-001-demo-b-s01-013",
+      "run_id": "run-llm-demo-b-001",
+      "identifiedBy": "AI",
+      "layer_id": "episodes",
+      "codebook_version": "2.2.0",
+      "domain": "math",
+      "EPISODE": "implementation",
+      "start_turn_id": "demo-b-s01-t041",
+      "end_turn_id": "demo-b-s01-t042",
+      "evidence": [
+        "demo-b-s01-t041",
+        "demo-b-s01-t042"
+      ],
+      "reviewer_id": null,
+      "reviewed_at": null
+    },
+    {
+      "_id": "13",
+      "episode_id": "ep-run-llm-demo-b-001-demo-b-s01-014",
+      "run_id": "run-llm-demo-b-001",
+      "identifiedBy": "AI",
+      "layer_id": "episodes",
+      "codebook_version": "2.2.0",
+      "domain": "math",
+      "EPISODE": "verification",
+      "start_turn_id": "demo-b-s01-t043",
+      "end_turn_id": "demo-b-s01-t051",
+      "evidence": [
+        "demo-b-s01-t043",
+        "demo-b-s01-t044",
+        "demo-b-s01-t045",
+        "demo-b-s01-t046",
+        "demo-b-s01-t047",
+        "demo-b-s01-t048",
+        "demo-b-s01-t049",
+        "demo-b-s01-t050",
+        "demo-b-s01-t051"
+      ],
+      "reviewer_id": null,
+      "reviewed_at": null
+    },
+    {
+      "_id": "14",
+      "episode_id": "ep-run-llm-demo-b-001-demo-b-s01-015",
+      "run_id": "run-llm-demo-b-001",
+      "identifiedBy": "AI",
+      "layer_id": "episodes",
+      "codebook_version": "2.2.0",
+      "domain": "math",
+      "EPISODE": "planning",
+      "start_turn_id": "demo-b-s01-t052",
+      "end_turn_id": "demo-b-s01-t053",
+      "evidence": [
+        "demo-b-s01-t052",
+        "demo-b-s01-t053"
+      ],
+      "reviewer_id": null,
+      "reviewed_at": null
+    },
+    {
+      "_id": "15",
+      "episode_id": "ep-run-llm-demo-b-001-demo-b-s01-016",
+      "run_id": "run-llm-demo-b-001",
+      "identifiedBy": "AI",
+      "layer_id": "episodes",
+      "codebook_version": "2.2.0",
+      "domain": "math",
+      "EPISODE": "monitor",
+      "start_turn_id": "demo-b-s01-t054",
+      "end_turn_id": "demo-b-s01-t055",
+      "evidence": [
+        "demo-b-s01-t054",
+        "demo-b-s01-t055"
+      ],
+      "reviewer_id": null,
+      "reviewed_at": null
+    },
+    {
+      "_id": "16",
+      "episode_id": "ep-run-llm-demo-b-001-demo-b-s01-017",
+      "run_id": "run-llm-demo-b-001",
+      "identifiedBy": "AI",
+      "layer_id": "episodes",
+      "codebook_version": "2.2.0",
+      "domain": "math",
+      "EPISODE": "analysis",
+      "start_turn_id": "demo-b-s01-t056",
+      "end_turn_id": "demo-b-s01-t056",
+      "evidence": [
+        "demo-b-s01-t056"
+      ],
+      "reviewer_id": null,
+      "reviewed_at": null
+    },
+    {
+      "_id": "0",
+      "episode_id": "ep-run-llm-demo-b-001-demo-b-s02-001",
+      "run_id": "run-llm-demo-b-001",
+      "identifiedBy": "AI",
+      "layer_id": "episodes",
+      "codebook_version": "2.2.0",
+      "domain": "math",
+      "EPISODE": "reading",
+      "start_turn_id": "demo-b-s02-t001",
+      "end_turn_id": "demo-b-s02-t001",
+      "evidence": [
+        "demo-b-s02-t001"
+      ],
+      "reviewer_id": null,
+      "reviewed_at": null
+    },
+    {
+      "_id": "1",
+      "episode_id": "ep-run-llm-demo-b-001-demo-b-s02-002",
+      "run_id": "run-llm-demo-b-001",
+      "identifiedBy": "AI",
+      "layer_id": "episodes",
+      "codebook_version": "2.2.0",
+      "domain": "math",
+      "EPISODE": "analysis",
+      "start_turn_id": "demo-b-s02-t002",
+      "end_turn_id": "demo-b-s02-t005",
+      "evidence": [
+        "demo-b-s02-t002",
+        "demo-b-s02-t003",
+        "demo-b-s02-t004",
+        "demo-b-s02-t005"
+      ],
+      "reviewer_id": null,
+      "reviewed_at": null
+    },
+    {
+      "_id": "2",
+      "episode_id": "ep-run-llm-demo-b-001-demo-b-s02-003",
+      "run_id": "run-llm-demo-b-001",
+      "identifiedBy": "AI",
+      "layer_id": "episodes",
+      "codebook_version": "2.2.0",
+      "domain": "math",
+      "EPISODE": "implementation",
+      "start_turn_id": "demo-b-s02-t006",
+      "end_turn_id": "demo-b-s02-t009",
+      "evidence": [
+        "demo-b-s02-t006",
+        "demo-b-s02-t007",
+        "demo-b-s02-t008",
+        "demo-b-s02-t009"
+      ],
+      "reviewer_id": null,
+      "reviewed_at": null
+    },
+    {
+      "_id": "3",
+      "episode_id": "ep-run-llm-demo-b-001-demo-b-s02-004",
+      "run_id": "run-llm-demo-b-001",
+      "identifiedBy": "AI",
+      "layer_id": "episodes",
+      "codebook_version": "2.2.0",
+      "domain": "math",
+      "EPISODE": "planning",
+      "start_turn_id": "demo-b-s02-t010",
+      "end_turn_id": "demo-b-s02-t010",
+      "evidence": [
+        "demo-b-s02-t010"
+      ],
+      "reviewer_id": null,
+      "reviewed_at": null
+    },
+    {
+      "_id": "4",
+      "episode_id": "ep-run-llm-demo-b-001-demo-b-s02-005",
+      "run_id": "run-llm-demo-b-001",
+      "identifiedBy": "AI",
+      "layer_id": "episodes",
+      "codebook_version": "2.2.0",
+      "domain": "math",
+      "EPISODE": "implementation",
+      "start_turn_id": "demo-b-s02-t011",
+      "end_turn_id": "demo-b-s02-t012",
+      "evidence": [
+        "demo-b-s02-t011",
+        "demo-b-s02-t012"
+      ],
+      "reviewer_id": null,
+      "reviewed_at": null
+    },
+    {
+      "_id": "5",
+      "episode_id": "ep-run-llm-demo-b-001-demo-b-s02-006",
+      "run_id": "run-llm-demo-b-001",
+      "identifiedBy": "AI",
+      "layer_id": "episodes",
+      "codebook_version": "2.2.0",
+      "domain": "math",
+      "EPISODE": "planning",
+      "start_turn_id": "demo-b-s02-t013",
+      "end_turn_id": "demo-b-s02-t013",
+      "evidence": [
+        "demo-b-s02-t013"
+      ],
+      "reviewer_id": null,
+      "reviewed_at": null
+    },
+    {
+      "_id": "6",
+      "episode_id": "ep-run-llm-demo-b-001-demo-b-s02-007",
+      "run_id": "run-llm-demo-b-001",
+      "identifiedBy": "AI",
+      "layer_id": "episodes",
+      "codebook_version": "2.2.0",
+      "domain": "math",
+      "EPISODE": "implementation",
+      "start_turn_id": "demo-b-s02-t014",
+      "end_turn_id": "demo-b-s02-t014",
+      "evidence": [
+        "demo-b-s02-t014"
+      ],
+      "reviewer_id": null,
+      "reviewed_at": null
+    },
+    {
+      "_id": "7",
+      "episode_id": "ep-run-llm-demo-b-001-demo-b-s02-008",
+      "run_id": "run-llm-demo-b-001",
+      "identifiedBy": "AI",
+      "layer_id": "episodes",
+      "codebook_version": "2.2.0",
+      "domain": "math",
+      "EPISODE": "planning",
+      "start_turn_id": "demo-b-s02-t015",
+      "end_turn_id": "demo-b-s02-t015",
+      "evidence": [
+        "demo-b-s02-t015"
+      ],
+      "reviewer_id": null,
+      "reviewed_at": null
+    },
+    {
+      "_id": "8",
+      "episode_id": "ep-run-llm-demo-b-001-demo-b-s02-009",
+      "run_id": "run-llm-demo-b-001",
+      "identifiedBy": "AI",
+      "layer_id": "episodes",
+      "codebook_version": "2.2.0",
+      "domain": "math",
+      "EPISODE": "implementation",
+      "start_turn_id": "demo-b-s02-t016",
+      "end_turn_id": "demo-b-s02-t016",
+      "evidence": [
+        "demo-b-s02-t016"
+      ],
+      "reviewer_id": null,
+      "reviewed_at": null
+    },
+    {
+      "_id": "9",
+      "episode_id": "ep-run-llm-demo-b-001-demo-b-s02-010",
+      "run_id": "run-llm-demo-b-001",
+      "identifiedBy": "AI",
+      "layer_id": "episodes",
+      "codebook_version": "2.2.0",
+      "domain": "math",
+      "EPISODE": "exploration",
+      "start_turn_id": "demo-b-s02-t017",
+      "end_turn_id": "demo-b-s02-t019",
+      "evidence": [
+        "demo-b-s02-t017",
+        "demo-b-s02-t018",
+        "demo-b-s02-t019"
+      ],
+      "reviewer_id": null,
+      "reviewed_at": null
+    },
+    {
+      "_id": "10",
+      "episode_id": "ep-run-llm-demo-b-001-demo-b-s02-011",
+      "run_id": "run-llm-demo-b-001",
+      "identifiedBy": "AI",
+      "layer_id": "episodes",
+      "codebook_version": "2.2.0",
+      "domain": "math",
+      "EPISODE": "implementation",
+      "start_turn_id": "demo-b-s02-t020",
+      "end_turn_id": "demo-b-s02-t022",
+      "evidence": [
+        "demo-b-s02-t020",
+        "demo-b-s02-t021",
+        "demo-b-s02-t022"
+      ],
+      "reviewer_id": null,
+      "reviewed_at": null
+    },
+    {
+      "_id": "11",
+      "episode_id": "ep-run-llm-demo-b-001-demo-b-s02-012",
+      "run_id": "run-llm-demo-b-001",
+      "identifiedBy": "AI",
+      "layer_id": "episodes",
+      "codebook_version": "2.2.0",
+      "domain": "math",
+      "EPISODE": "planning",
+      "start_turn_id": "demo-b-s02-t023",
+      "end_turn_id": "demo-b-s02-t023",
+      "evidence": [
+        "demo-b-s02-t023"
+      ],
+      "reviewer_id": null,
+      "reviewed_at": null
+    },
+    {
+      "_id": "12",
+      "episode_id": "ep-run-llm-demo-b-001-demo-b-s02-013",
+      "run_id": "run-llm-demo-b-001",
+      "identifiedBy": "AI",
+      "layer_id": "episodes",
+      "codebook_version": "2.2.0",
+      "domain": "math",
+      "EPISODE": "organization",
+      "start_turn_id": "demo-b-s02-t024",
+      "end_turn_id": "demo-b-s02-t025",
+      "evidence": [
+        "demo-b-s02-t024",
+        "demo-b-s02-t025"
+      ],
+      "reviewer_id": null,
+      "reviewed_at": null
+    },
+    {
+      "_id": "13",
+      "episode_id": "ep-run-llm-demo-b-001-demo-b-s02-014",
+      "run_id": "run-llm-demo-b-001",
+      "identifiedBy": "AI",
+      "layer_id": "episodes",
+      "codebook_version": "2.2.0",
+      "domain": "math",
+      "EPISODE": "implementation",
+      "start_turn_id": "demo-b-s02-t026",
+      "end_turn_id": "demo-b-s02-t028",
+      "evidence": [
+        "demo-b-s02-t026",
+        "demo-b-s02-t027",
+        "demo-b-s02-t028"
+      ],
+      "reviewer_id": null,
+      "reviewed_at": null
+    },
+    {
+      "_id": "14",
+      "episode_id": "ep-run-llm-demo-b-001-demo-b-s02-015",
+      "run_id": "run-llm-demo-b-001",
+      "identifiedBy": "AI",
+      "layer_id": "episodes",
+      "codebook_version": "2.2.0",
+      "domain": "math",
+      "EPISODE": "verification",
+      "start_turn_id": "demo-b-s02-t029",
+      "end_turn_id": "demo-b-s02-t033",
+      "evidence": [
+        "demo-b-s02-t029",
+        "demo-b-s02-t030",
+        "demo-b-s02-t031",
+        "demo-b-s02-t032",
+        "demo-b-s02-t033"
+      ],
+      "reviewer_id": null,
+      "reviewed_at": null
+    },
+    {
+      "_id": "15",
+      "episode_id": "ep-run-llm-demo-b-001-demo-b-s02-016",
+      "run_id": "run-llm-demo-b-001",
+      "identifiedBy": "AI",
+      "layer_id": "episodes",
+      "codebook_version": "2.2.0",
+      "domain": "math",
+      "EPISODE": "analysis",
+      "start_turn_id": "demo-b-s02-t034",
+      "end_turn_id": "demo-b-s02-t041",
+      "evidence": [
+        "demo-b-s02-t034",
+        "demo-b-s02-t035",
+        "demo-b-s02-t036",
+        "demo-b-s02-t037",
+        "demo-b-s02-t038",
+        "demo-b-s02-t039",
+        "demo-b-s02-t040",
+        "demo-b-s02-t041"
+      ],
+      "reviewer_id": null,
+      "reviewed_at": null
+    },
+    {
+      "_id": "16",
+      "episode_id": "ep-run-llm-demo-b-001-demo-b-s02-017",
+      "run_id": "run-llm-demo-b-001",
+      "identifiedBy": "AI",
+      "layer_id": "episodes",
+      "codebook_version": "2.2.0",
+      "domain": "math",
+      "EPISODE": "verification",
+      "start_turn_id": "demo-b-s02-t042",
+      "end_turn_id": "demo-b-s02-t043",
+      "evidence": [
+        "demo-b-s02-t042",
+        "demo-b-s02-t043"
+      ],
+      "reviewer_id": null,
+      "reviewed_at": null
+    },
+    {
+      "_id": "17",
+      "episode_id": "ep-run-llm-demo-b-001-demo-b-s02-018",
+      "run_id": "run-llm-demo-b-001",
+      "identifiedBy": "AI",
+      "layer_id": "episodes",
+      "codebook_version": "2.2.0",
+      "domain": "math",
+      "EPISODE": "monitor",
+      "start_turn_id": "demo-b-s02-t044",
+      "end_turn_id": "demo-b-s02-t045",
+      "evidence": [
+        "demo-b-s02-t044",
+        "demo-b-s02-t045"
+      ],
+      "reviewer_id": null,
+      "reviewed_at": null
+    },
+    {
+      "_id": "18",
+      "episode_id": "ep-run-llm-demo-b-001-demo-b-s02-019",
+      "run_id": "run-llm-demo-b-001",
+      "identifiedBy": "AI",
+      "layer_id": "episodes",
+      "codebook_version": "2.2.0",
+      "domain": "math",
+      "EPISODE": "verification",
+      "start_turn_id": "demo-b-s02-t046",
+      "end_turn_id": "demo-b-s02-t048",
+      "evidence": [
+        "demo-b-s02-t046",
+        "demo-b-s02-t047",
+        "demo-b-s02-t048"
+      ],
+      "reviewer_id": null,
+      "reviewed_at": null
+    },
+    {
+      "_id": "0",
+      "episode_id": "ep-run-llm-demo-b-001-demo-b-s03-001",
+      "run_id": "run-llm-demo-b-001",
+      "identifiedBy": "AI",
+      "layer_id": "episodes",
+      "codebook_version": "2.2.0",
+      "domain": "math",
+      "EPISODE": "reading",
+      "start_turn_id": "demo-b-s03-t001",
+      "end_turn_id": "demo-b-s03-t002",
+      "evidence": [
+        "demo-b-s03-t001",
+        "demo-b-s03-t002"
+      ],
+      "reviewer_id": null,
+      "reviewed_at": null
+    },
+    {
+      "_id": "1",
+      "episode_id": "ep-run-llm-demo-b-001-demo-b-s03-002",
+      "run_id": "run-llm-demo-b-001",
+      "identifiedBy": "AI",
+      "layer_id": "episodes",
+      "codebook_version": "2.2.0",
+      "domain": "math",
+      "EPISODE": "planning",
+      "start_turn_id": "demo-b-s03-t003",
+      "end_turn_id": "demo-b-s03-t003",
+      "evidence": [
+        "demo-b-s03-t003"
+      ],
+      "reviewer_id": null,
+      "reviewed_at": null
+    },
+    {
+      "_id": "2",
+      "episode_id": "ep-run-llm-demo-b-001-demo-b-s03-003",
+      "run_id": "run-llm-demo-b-001",
+      "identifiedBy": "AI",
+      "layer_id": "episodes",
+      "codebook_version": "2.2.0",
+      "domain": "math",
+      "EPISODE": "analysis",
+      "start_turn_id": "demo-b-s03-t004",
+      "end_turn_id": "demo-b-s03-t010",
+      "evidence": [
+        "demo-b-s03-t004",
+        "demo-b-s03-t005",
+        "demo-b-s03-t006",
+        "demo-b-s03-t007",
+        "demo-b-s03-t008",
+        "demo-b-s03-t009",
+        "demo-b-s03-t010"
+      ],
+      "reviewer_id": null,
+      "reviewed_at": null
+    },
+    {
+      "_id": "3",
+      "episode_id": "ep-run-llm-demo-b-001-demo-b-s03-004",
+      "run_id": "run-llm-demo-b-001",
+      "identifiedBy": "AI",
+      "layer_id": "episodes",
+      "codebook_version": "2.2.0",
+      "domain": "math",
+      "EPISODE": "reading",
+      "start_turn_id": "demo-b-s03-t011",
+      "end_turn_id": "demo-b-s03-t012",
+      "evidence": [
+        "demo-b-s03-t011",
+        "demo-b-s03-t012"
+      ],
+      "reviewer_id": null,
+      "reviewed_at": null
+    },
+    {
+      "_id": "4",
+      "episode_id": "ep-run-llm-demo-b-001-demo-b-s03-005",
+      "run_id": "run-llm-demo-b-001",
+      "identifiedBy": "AI",
+      "layer_id": "episodes",
+      "codebook_version": "2.2.0",
+      "domain": "math",
+      "EPISODE": "planning",
+      "start_turn_id": "demo-b-s03-t013",
+      "end_turn_id": "demo-b-s03-t013",
+      "evidence": [
+        "demo-b-s03-t013"
+      ],
+      "reviewer_id": null,
+      "reviewed_at": null
+    },
+    {
+      "_id": "5",
+      "episode_id": "ep-run-llm-demo-b-001-demo-b-s03-006",
+      "run_id": "run-llm-demo-b-001",
+      "identifiedBy": "AI",
+      "layer_id": "episodes",
+      "codebook_version": "2.2.0",
+      "domain": "math",
+      "EPISODE": "exploration",
+      "start_turn_id": "demo-b-s03-t014",
+      "end_turn_id": "demo-b-s03-t016",
+      "evidence": [
+        "demo-b-s03-t014",
+        "demo-b-s03-t015",
+        "demo-b-s03-t016"
+      ],
+      "reviewer_id": null,
+      "reviewed_at": null
+    },
+    {
+      "_id": "6",
+      "episode_id": "ep-run-llm-demo-b-001-demo-b-s03-007",
+      "run_id": "run-llm-demo-b-001",
+      "identifiedBy": "AI",
+      "layer_id": "episodes",
+      "codebook_version": "2.2.0",
+      "domain": "math",
+      "EPISODE": "monitor",
+      "start_turn_id": "demo-b-s03-t017",
+      "end_turn_id": "demo-b-s03-t022",
+      "evidence": [
+        "demo-b-s03-t017",
+        "demo-b-s03-t018",
+        "demo-b-s03-t019",
+        "demo-b-s03-t020",
+        "demo-b-s03-t021",
+        "demo-b-s03-t022"
+      ],
+      "reviewer_id": null,
+      "reviewed_at": null
+    },
+    {
+      "_id": "7",
+      "episode_id": "ep-run-llm-demo-b-001-demo-b-s03-008",
+      "run_id": "run-llm-demo-b-001",
+      "identifiedBy": "AI",
+      "layer_id": "episodes",
+      "codebook_version": "2.2.0",
+      "domain": "math",
+      "EPISODE": "planning",
+      "start_turn_id": "demo-b-s03-t023",
+      "end_turn_id": "demo-b-s03-t024",
+      "evidence": [
+        "demo-b-s03-t023",
+        "demo-b-s03-t024"
+      ],
+      "reviewer_id": null,
+      "reviewed_at": null
+    },
+    {
+      "_id": "8",
+      "episode_id": "ep-run-llm-demo-b-001-demo-b-s03-009",
+      "run_id": "run-llm-demo-b-001",
+      "identifiedBy": "AI",
+      "layer_id": "episodes",
+      "codebook_version": "2.2.0",
+      "domain": "math",
+      "EPISODE": "implementation",
+      "start_turn_id": "demo-b-s03-t025",
+      "end_turn_id": "demo-b-s03-t030",
+      "evidence": [
+        "demo-b-s03-t025",
+        "demo-b-s03-t026",
+        "demo-b-s03-t027",
+        "demo-b-s03-t028",
+        "demo-b-s03-t029",
+        "demo-b-s03-t030"
+      ],
+      "reviewer_id": null,
+      "reviewed_at": null
+    },
+    {
+      "_id": "9",
+      "episode_id": "ep-run-llm-demo-b-001-demo-b-s03-010",
+      "run_id": "run-llm-demo-b-001",
+      "identifiedBy": "AI",
+      "layer_id": "episodes",
+      "codebook_version": "2.2.0",
+      "domain": "math",
+      "EPISODE": "monitor",
+      "start_turn_id": "demo-b-s03-t031",
+      "end_turn_id": "demo-b-s03-t034",
+      "evidence": [
+        "demo-b-s03-t031",
+        "demo-b-s03-t032",
+        "demo-b-s03-t033",
+        "demo-b-s03-t034"
+      ],
+      "reviewer_id": null,
+      "reviewed_at": null
+    },
+    {
+      "_id": "10",
+      "episode_id": "ep-run-llm-demo-b-001-demo-b-s03-011",
+      "run_id": "run-llm-demo-b-001",
+      "identifiedBy": "AI",
+      "layer_id": "episodes",
+      "codebook_version": "2.2.0",
+      "domain": "math",
+      "EPISODE": "organization",
+      "start_turn_id": "demo-b-s03-t035",
+      "end_turn_id": "demo-b-s03-t039",
+      "evidence": [
+        "demo-b-s03-t035",
+        "demo-b-s03-t036",
+        "demo-b-s03-t037",
+        "demo-b-s03-t038",
+        "demo-b-s03-t039"
+      ],
+      "reviewer_id": null,
+      "reviewed_at": null
+    },
+    {
+      "_id": "11",
+      "episode_id": "ep-run-llm-demo-b-001-demo-b-s03-012",
+      "run_id": "run-llm-demo-b-001",
+      "identifiedBy": "AI",
+      "layer_id": "episodes",
+      "codebook_version": "2.2.0",
+      "domain": "math",
+      "EPISODE": "implementation",
+      "start_turn_id": "demo-b-s03-t040",
+      "end_turn_id": "demo-b-s03-t045",
+      "evidence": [
+        "demo-b-s03-t040",
+        "demo-b-s03-t041",
+        "demo-b-s03-t042",
+        "demo-b-s03-t043",
+        "demo-b-s03-t044",
+        "demo-b-s03-t045"
+      ],
+      "reviewer_id": null,
+      "reviewed_at": null
+    },
+    {
+      "_id": "12",
+      "episode_id": "ep-run-llm-demo-b-001-demo-b-s03-013",
+      "run_id": "run-llm-demo-b-001",
+      "identifiedBy": "AI",
+      "layer_id": "episodes",
+      "codebook_version": "2.2.0",
+      "domain": "math",
+      "EPISODE": "analysis",
+      "start_turn_id": "demo-b-s03-t046",
+      "end_turn_id": "demo-b-s03-t049",
+      "evidence": [
+        "demo-b-s03-t046",
+        "demo-b-s03-t047",
+        "demo-b-s03-t048",
+        "demo-b-s03-t049"
+      ],
+      "reviewer_id": null,
+      "reviewed_at": null
+    },
+    {
+      "_id": "13",
+      "episode_id": "ep-run-llm-demo-b-001-demo-b-s03-014",
+      "run_id": "run-llm-demo-b-001",
+      "identifiedBy": "AI",
+      "layer_id": "episodes",
+      "codebook_version": "2.2.0",
+      "domain": "math",
+      "EPISODE": "exploration",
+      "start_turn_id": "demo-b-s03-t050",
+      "end_turn_id": "demo-b-s03-t056",
+      "evidence": [
+        "demo-b-s03-t050",
+        "demo-b-s03-t051",
+        "demo-b-s03-t052",
+        "demo-b-s03-t053",
+        "demo-b-s03-t054",
+        "demo-b-s03-t055",
+        "demo-b-s03-t056"
+      ],
+      "reviewer_id": null,
+      "reviewed_at": null
+    },
+    {
+      "_id": "14",
+      "episode_id": "ep-run-llm-demo-b-001-demo-b-s03-015",
+      "run_id": "run-llm-demo-b-001",
+      "identifiedBy": "AI",
+      "layer_id": "episodes",
+      "codebook_version": "2.2.0",
+      "domain": "math",
+      "EPISODE": "verification",
+      "start_turn_id": "demo-b-s03-t057",
+      "end_turn_id": "demo-b-s03-t058",
+      "evidence": [
+        "demo-b-s03-t057",
+        "demo-b-s03-t058"
+      ],
+      "reviewer_id": null,
+      "reviewed_at": null
+    },
+    {
+      "_id": "15",
+      "episode_id": "ep-run-llm-demo-b-001-demo-b-s03-016",
+      "run_id": "run-llm-demo-b-001",
+      "identifiedBy": "AI",
+      "layer_id": "episodes",
+      "codebook_version": "2.2.0",
+      "domain": "math",
+      "EPISODE": "monitor",
+      "start_turn_id": "demo-b-s03-t059",
+      "end_turn_id": "demo-b-s03-t060",
+      "evidence": [
+        "demo-b-s03-t059",
+        "demo-b-s03-t060"
+      ],
+      "reviewer_id": null,
+      "reviewed_at": null
+    },
+    {
+      "_id": "0",
+      "episode_id": "ep-run-llm-demo-b-001-demo-b-s04-001",
+      "run_id": "run-llm-demo-b-001",
+      "identifiedBy": "AI",
+      "layer_id": "episodes",
+      "codebook_version": "2.2.0",
+      "domain": "math",
+      "EPISODE": "reading",
+      "start_turn_id": "demo-b-s04-t001",
+      "end_turn_id": "demo-b-s04-t002",
+      "evidence": [
+        "demo-b-s04-t001",
+        "demo-b-s04-t002"
+      ],
+      "reviewer_id": null,
+      "reviewed_at": null
+    },
+    {
+      "_id": "1",
+      "episode_id": "ep-run-llm-demo-b-001-demo-b-s04-002",
+      "run_id": "run-llm-demo-b-001",
+      "identifiedBy": "AI",
+      "layer_id": "episodes",
+      "codebook_version": "2.2.0",
+      "domain": "math",
+      "EPISODE": "monitor",
+      "start_turn_id": "demo-b-s04-t003",
+      "end_turn_id": "demo-b-s04-t003",
+      "evidence": [
+        "demo-b-s04-t003"
+      ],
+      "reviewer_id": null,
+      "reviewed_at": null
+    },
+    {
+      "_id": "2",
+      "episode_id": "ep-run-llm-demo-b-001-demo-b-s04-003",
+      "run_id": "run-llm-demo-b-001",
+      "identifiedBy": "AI",
+      "layer_id": "episodes",
+      "codebook_version": "2.2.0",
+      "domain": "math",
+      "EPISODE": "planning",
+      "start_turn_id": "demo-b-s04-t004",
+      "end_turn_id": "demo-b-s04-t011",
+      "evidence": [
+        "demo-b-s04-t004",
+        "demo-b-s04-t005",
+        "demo-b-s04-t006",
+        "demo-b-s04-t007",
+        "demo-b-s04-t008",
+        "demo-b-s04-t009",
+        "demo-b-s04-t010",
+        "demo-b-s04-t011"
+      ],
+      "reviewer_id": null,
+      "reviewed_at": null
+    },
+    {
+      "_id": "3",
+      "episode_id": "ep-run-llm-demo-b-001-demo-b-s04-004",
+      "run_id": "run-llm-demo-b-001",
+      "identifiedBy": "AI",
+      "layer_id": "episodes",
+      "codebook_version": "2.2.0",
+      "domain": "math",
+      "EPISODE": "implementation",
+      "start_turn_id": "demo-b-s04-t012",
+      "end_turn_id": "demo-b-s04-t017",
+      "evidence": [
+        "demo-b-s04-t012",
+        "demo-b-s04-t013",
+        "demo-b-s04-t014",
+        "demo-b-s04-t015",
+        "demo-b-s04-t016",
+        "demo-b-s04-t017"
+      ],
+      "reviewer_id": null,
+      "reviewed_at": null
+    },
+    {
+      "_id": "4",
+      "episode_id": "ep-run-llm-demo-b-001-demo-b-s04-005",
+      "run_id": "run-llm-demo-b-001",
+      "identifiedBy": "AI",
+      "layer_id": "episodes",
+      "codebook_version": "2.2.0",
+      "domain": "math",
+      "EPISODE": "exploration",
+      "start_turn_id": "demo-b-s04-t018",
+      "end_turn_id": "demo-b-s04-t019",
+      "evidence": [
+        "demo-b-s04-t018",
+        "demo-b-s04-t019"
+      ],
+      "reviewer_id": null,
+      "reviewed_at": null
+    },
+    {
+      "_id": "5",
+      "episode_id": "ep-run-llm-demo-b-001-demo-b-s04-006",
+      "run_id": "run-llm-demo-b-001",
+      "identifiedBy": "AI",
+      "layer_id": "episodes",
+      "codebook_version": "2.2.0",
+      "domain": "math",
+      "EPISODE": "implementation",
+      "start_turn_id": "demo-b-s04-t020",
+      "end_turn_id": "demo-b-s04-t022",
+      "evidence": [
+        "demo-b-s04-t020",
+        "demo-b-s04-t021",
+        "demo-b-s04-t022"
+      ],
+      "reviewer_id": null,
+      "reviewed_at": null
+    },
+    {
+      "_id": "6",
+      "episode_id": "ep-run-llm-demo-b-001-demo-b-s04-007",
+      "run_id": "run-llm-demo-b-001",
+      "identifiedBy": "AI",
+      "layer_id": "episodes",
+      "codebook_version": "2.2.0",
+      "domain": "math",
+      "EPISODE": "organization",
+      "start_turn_id": "demo-b-s04-t023",
+      "end_turn_id": "demo-b-s04-t024",
+      "evidence": [
+        "demo-b-s04-t023",
+        "demo-b-s04-t024"
+      ],
+      "reviewer_id": null,
+      "reviewed_at": null
+    },
+    {
+      "_id": "7",
+      "episode_id": "ep-run-llm-demo-b-001-demo-b-s04-008",
+      "run_id": "run-llm-demo-b-001",
+      "identifiedBy": "AI",
+      "layer_id": "episodes",
+      "codebook_version": "2.2.0",
+      "domain": "math",
+      "EPISODE": "verification",
+      "start_turn_id": "demo-b-s04-t025",
+      "end_turn_id": "demo-b-s04-t028",
+      "evidence": [
+        "demo-b-s04-t025",
+        "demo-b-s04-t026",
+        "demo-b-s04-t027",
+        "demo-b-s04-t028"
+      ],
+      "reviewer_id": null,
+      "reviewed_at": null
+    },
+    {
+      "_id": "8",
+      "episode_id": "ep-run-llm-demo-b-001-demo-b-s04-009",
+      "run_id": "run-llm-demo-b-001",
+      "identifiedBy": "AI",
+      "layer_id": "episodes",
+      "codebook_version": "2.2.0",
+      "domain": "math",
+      "EPISODE": "monitor",
+      "start_turn_id": "demo-b-s04-t029",
+      "end_turn_id": "demo-b-s04-t032",
+      "evidence": [
+        "demo-b-s04-t029",
+        "demo-b-s04-t030",
+        "demo-b-s04-t031",
+        "demo-b-s04-t032"
+      ],
+      "reviewer_id": null,
+      "reviewed_at": null
+    },
+    {
+      "_id": "9",
+      "episode_id": "ep-run-llm-demo-b-001-demo-b-s04-010",
+      "run_id": "run-llm-demo-b-001",
+      "identifiedBy": "AI",
+      "layer_id": "episodes",
+      "codebook_version": "2.2.0",
+      "domain": "math",
+      "EPISODE": "verification",
+      "start_turn_id": "demo-b-s04-t033",
+      "end_turn_id": "demo-b-s04-t039",
+      "evidence": [
+        "demo-b-s04-t033",
+        "demo-b-s04-t034",
+        "demo-b-s04-t035",
+        "demo-b-s04-t036",
+        "demo-b-s04-t037",
+        "demo-b-s04-t038",
+        "demo-b-s04-t039"
+      ],
+      "reviewer_id": null,
+      "reviewed_at": null
+    },
+    {
+      "_id": "10",
+      "episode_id": "ep-run-llm-demo-b-001-demo-b-s04-011",
+      "run_id": "run-llm-demo-b-001",
+      "identifiedBy": "AI",
+      "layer_id": "episodes",
+      "codebook_version": "2.2.0",
+      "domain": "math",
+      "EPISODE": "organization",
+      "start_turn_id": "demo-b-s04-t040",
+      "end_turn_id": "demo-b-s04-t045",
+      "evidence": [
+        "demo-b-s04-t040",
+        "demo-b-s04-t041",
+        "demo-b-s04-t042",
+        "demo-b-s04-t043",
+        "demo-b-s04-t044",
+        "demo-b-s04-t045"
+      ],
+      "reviewer_id": null,
+      "reviewed_at": null
+    },
+    {
+      "_id": "11",
+      "episode_id": "ep-run-llm-demo-b-001-demo-b-s04-012",
+      "run_id": "run-llm-demo-b-001",
+      "identifiedBy": "AI",
+      "layer_id": "episodes",
+      "codebook_version": "2.2.0",
+      "domain": "math",
+      "EPISODE": "monitor",
+      "start_turn_id": "demo-b-s04-t046",
+      "end_turn_id": "demo-b-s04-t050",
+      "evidence": [
+        "demo-b-s04-t046",
+        "demo-b-s04-t047",
+        "demo-b-s04-t048",
+        "demo-b-s04-t049",
+        "demo-b-s04-t050"
+      ],
+      "reviewer_id": null,
+      "reviewed_at": null
+    }
+  ]
+}

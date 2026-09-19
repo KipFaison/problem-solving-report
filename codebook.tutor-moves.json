@@ -1,0 +1,63 @@
+{
+  "codebook_version": "1.0.0",
+  "layer_id": "tutor_moves",
+  "source": "Zhou, Z., Vanacore, K., Thompson, T., St John, J., & Kizilcec, R. (2026). NTO Tutor Move Taxonomy. arXiv:2603.05778v1. Three codes are taken verbatim from Table 1, out of the taxonomy's twenty-eight. OTHER_TUTOR_MOVE and NONE are this project's. Each code's meaning is stated here in this project's own words; the authors' wording is in their Table 1.",
+  "unit_of_analysis": "One tutor turn: the turn immediately before a problem-solving episode that a student's turn opens. Only that one turn is examined.",
+
+  "note_on_independence": "A separate layer with its own version, its own provenance card and its own agreement figure. It does not merge with, redefine, or get crosswalked against the episode codes, and no index is computed across the two layers. It classifies a tutor turn; it never labels an episode.",
+
+  "note_on_none": "NONE means the tutor's turn contains no move that invites, directs or supplies the next piece of work. It does NOT mean 'none of the three named codes': every other such move is OTHER_TUTOR_MOVE. Only NONE licenses the report sentence 'with no prompt in the turn before it'. [OURS: with three codes and NONE alone, NONE would absorb next-step prompts, hints and probing, and the report sentence would be false exactly where it is most often said.]",
+
+  "provenance": {
+    "citation": "Zhou, Vanacore, Thompson, St John & Kizilcec (2026). NTO Tutor Move Taxonomy. arXiv:2603.05778v1.",
+    "licence": "CC BY 4.0",
+    "corpus": "Authentic one-to-one tutoring transcripts from multiple providers. The authors do not report corpus counts.",
+    "agreement_as_reported": "Two veteran teachers coded with the full scheme. Cohen's kappa was .65 in the first round and .78 in the second round, after clarifications and minor alterations to the scheme.",
+    "status": "An arXiv preprint. The authors describe the taxonomy as a living framework that will evolve as more data is ingested.",
+    "not_validated_on": "The use of a three-code subset, with two codes of this project's added, rather than the full twenty-eight. The authors' agreement is for the full scheme; a subset's reliability is not established by it.",
+    "in_this_project": "No agreement has been established for this layer in this project. It reaches a family's report only when its own agreement reaches 0.61."
+  },
+
+  "codes": [
+    {
+      "code": "PROMPTING_SELF_EXPLANATION",
+      "name": "Asks for an explanation",
+      "origin": "Zhou et al. (2026), Table 1",
+      "definition": "The tutor asks the student to explain their own reasoning, an action they took, or something they know.",
+      "include": ["asking why a step works", "asking the student to say how they got a result", "asking the student to put what they know into words"],
+      "exclude": ["asking for the next step without asking for an explanation (OTHER_TUTOR_MOVE)", "asking the student to fix an error (PROMPTING_SELF_CORRECTION)"]
+    },
+    {
+      "code": "PROMPTING_SELF_CORRECTION",
+      "name": "Asks for a correction",
+      "origin": "Zhou et al. (2026), Table 1",
+      "definition": "The tutor asks the student to find and fix a mistake of their own, without giving the correct version.",
+      "include": ["pointing out that something is off and asking the student to check it", "asking the student to look again at a step that went wrong"],
+      "exclude": ["stating the correct answer (GIVING_ANSWER)", "saying only that a response is wrong, with no request (NONE)"]
+    },
+    {
+      "code": "GIVING_ANSWER",
+      "name": "Gives the answer",
+      "origin": "Zhou et al. (2026), Table 1",
+      "definition": "The tutor supplies the solution or result outright, without the steps that lead to it.",
+      "include": ["stating the final value", "stating the result of a step the student was working on"],
+      "exclude": ["explaining how to do a step (OTHER_TUTOR_MOVE)", "confirming a result the student already gave (NONE)"]
+    },
+    {
+      "code": "OTHER_TUTOR_MOVE",
+      "name": "Another prompt or direction",
+      "origin": "[OURS] Covers every other move in the Zhou et al. (2026) taxonomy that invites, directs or supplies the next piece of work.",
+      "definition": "Any other tutor move that invites, directs or supplies content for what comes next.",
+      "include": ["asking for the next step", "giving a hint", "probing understanding or prior knowledge", "asking for a different representation", "pointing to a related idea", "explaining a concept or a procedure", "giving a worked example", "asking the student to clarify"],
+      "exclude": ["the three named codes above", "a turn that makes no such move (NONE)"]
+    },
+    {
+      "code": "NONE",
+      "name": "No prompt",
+      "origin": "[OURS]",
+      "definition": "The tutor's turn contains no move that invites, directs or supplies the next piece of work.",
+      "include": ["an acknowledgement or filler ('okay', 'mm-hm')", "confirming or rejecting a response with no request attached", "praise", "repeating or rephrasing what the student said, with no question", "social talk or session logistics"],
+      "exclude": ["any question or instruction about the work, however light (OTHER_TUTOR_MOVE or a named code)"]
+    }
+  ]
+}

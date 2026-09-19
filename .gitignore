@@ -1,0 +1,35 @@
+# Node
+node_modules/
+dist/
+
+# Upstream repos cloned for reading, at the repo root only. docs/reference/
+# is tracked.
+/reference/
+
+# dotenv environment variables files. .env.example is tracked.
+.env
+.env.*
+!.env.example
+
+# Claude Code per-machine settings
+.claude/settings.local.json
+
+### OSX ###
+.DS_Store
+
+# Rott et al. (2021) Fig. 5 is CC BY 4.0 and IS tracked, at
+# docs/reference/rott-2021-fig5.png. This is the loose copy it came from.
+image-*.png
+
+# Li et al. (2025), arXiv:2509.14662. Read locally; not redistributable:
+# arXiv perpetual non-exclusive licence 1.0, authors retain copyright.
+# Cited in docs/CITATIONS.md and docs/SOURCES.md. See SPEC-gate0 O-28.
+docs/reference/2509.14662v1.pdf
+
+# Paper PDFs are cited, not redistributed (NOTICE §3, docs/CITATIONS.md).
+docs/**/*.pdf
+
+# The live workspace the dev server reads and writes, seeded by `yarn seed:live`
+# from data/demo and data/out. Those two are tracked, so the demo seeds
+# without an API key.
+data/live/

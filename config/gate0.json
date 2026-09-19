@@ -1,0 +1,47 @@
+{
+  "$comment": "Gate 0 configuration. Every threshold in this project lives here and nowhere else. Tags follow CLAUDE.md.",
+  "agreement": {
+    "threshold": 0.61,
+    "$comment_threshold": "[SOURCE: Landis & Koch (1977), Biometrics 33(1):159-174 \u2014 floor of the 'substantial' band, as implemented in vendor/sandpiper/getKappaInterpretation.ts]",
+    "minTurnsForAgreement": 100,
+    "$comment_minTurns": "The floor for the POOLED figure, which is the one the gate acts on: below this the gate refuses rather than reporting a kappa over too few turns. [OURS: placeholder, no source. docs/SPEC-gate0.md O-7]",
+    "minTurnsForSessionAgreement": 30,
+    "$comment_minTurnsSession": "The floor for a single session's figure, which is shown internally as a working aid and gates nothing. A session runs 40-80 turns, so the pooled floor would refuse every one of them. Lower, and deliberately so: it buys a usable per-session reading at the cost of a thinner one, and nothing surfaces on its say-so. [OURS: placeholder, no source. docs/SPEC-gate0.md O-7]"
+  },
+  "session": {
+    "minTurnsReportable": 40,
+    "$comment_minTurns": "[OURS: placeholder, no source. docs/SPEC-gate0.md O-7]",
+    "requiredTranscriptScope": "full"
+  },
+  "sampling": {
+    "$comment": "What a tutor is shown of a session that marks two or more problems: whole problems, drawn at random with a seed, and a toggle on the Tutor Annotation screen for the whole session. A session with no problems, or one, is shown whole and never sampled. Sampling decides what a tutor reads, not what the report covers. INTENT.md, \"What a tutor is shown\"; docs/SPEC-gate0.md D18.",
+    "enabled": true,
+    "problemsPerSession": 1,
+    "$comment_problemsPerSession": "[OURS: placeholder; no source. One whole problem is the owner's unit (D18): short enough that a tutor reads all of it, whole so that no episode is cut at the edge of what was shown. Nothing measured says one is enough; finer units are a README next step.]",
+    "seed": 20260918,
+    "$comment_seed": "[OURS: placeholder; no source. Any fixed number makes the draw repeatable, which is all it is for; this one is the date of D18. Hashed with each session_id (src/sampling/draw.ts), so sessions do not all draw the same position. Changing it changes which problem a tutor is shown, not any saved annotation, which records its own turns.]"
+  },
+  "moves": {
+    "codebookPath": "codebook.tutor-moves.json",
+    "minItemsForAgreement": 15,
+    "minItemsForSessionAgreement": 4,
+    "$comment": "Layer 2 counts items (tutor turns before student-opened episodes), not turns, so the episode floors do not transfer. A session yields a handful of items. Both floors are placeholders with no source. [OURS: docs/SPEC-layer2.md]"
+  },
+  "codebook": {
+    "path": "codebook.v2.json",
+    "domainsDir": "domains",
+    "domain": "math"
+  },
+  "paths": {
+    "demoDir": "data/demo",
+    "intakeDir": "data/intake",
+    "outputDir": "data/out"
+  },
+  "model": {
+    "id": "claude-sonnet-5",
+    "$comment": "Set in the build plan (docs/PLAN-gate0.md). The key is read from ANTHROPIC_API_KEY in .env and never written to a file.",
+    "thinking": "adaptive",
+    "effort": "medium",
+    "$comment_thinking": "This model thinks adaptively and rejects a token budget. Left unset, a call can spend its whole output allowance thinking and return no text, which is how the first run failed. Segmentation is boundary placement, which INTENT.md calls the hard problem, so the effort is not turned down to low. [OURS: 'medium' is a guess, not a finding.]"
+  }
+}

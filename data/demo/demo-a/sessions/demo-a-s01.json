@@ -1,0 +1,540 @@
+{
+  "session_id": "demo-a-s01",
+  "student_id": "stu-demo-a",
+  "session_index": 1,
+  "session_date": "2026-01-13",
+  "session_topic": "Scaling a ratio",
+  "has_timestamps": true,
+  "transcript_scope": "full",
+  "problems": [
+    {
+      "problem_id": "demo-a-s01-p01",
+      "topic": "Scaling a ratio",
+      "start_turn_id": "demo-a-s01-t001",
+      "end_turn_id": "demo-a-s01-t052"
+    }
+  ],
+  "turns": [
+    {
+      "_id": "0",
+      "session_id": "demo-a-s01",
+      "sequence_id": 1,
+      "role": "TUTOR",
+      "content": "Start by reading it out loud, and stop where it stops making sense.",
+      "turn_id": "demo-a-s01-t001",
+      "start_time": "2026-01-13T16:00:00.000Z",
+      "end_time": "2026-01-13T16:00:12.000Z"
+    },
+    {
+      "_id": "1",
+      "session_id": "demo-a-s01",
+      "sequence_id": 2,
+      "role": "STUDENT_1",
+      "content": "Okay, it gives the whole setup and then asks for one number.",
+      "turn_id": "demo-a-s01-t002",
+      "start_time": "2026-01-13T16:00:13.000Z",
+      "end_time": "2026-01-13T16:01:00.000Z"
+    },
+    {
+      "_id": "2",
+      "session_id": "demo-a-s01",
+      "sequence_id": 3,
+      "role": "TUTOR",
+      "content": "Read the last sentence again — what is it asking for?",
+      "turn_id": "demo-a-s01-t003",
+      "start_time": "2026-01-13T16:01:06.000Z",
+      "end_time": "2026-01-13T16:02:04.000Z"
+    },
+    {
+      "_id": "3",
+      "session_id": "demo-a-s01",
+      "sequence_id": 4,
+      "role": "STUDENT_1",
+      "content": "So everything we need is in those two sentences.",
+      "turn_id": "demo-a-s01-t004",
+      "start_time": "2026-01-13T16:02:05.000Z",
+      "end_time": "2026-01-13T16:02:57.000Z"
+    },
+    {
+      "_id": "4",
+      "session_id": "demo-a-s01",
+      "sequence_id": 5,
+      "role": "TUTOR",
+      "content": "What do the two pieces tell us together?",
+      "turn_id": "demo-a-s01-t005",
+      "start_time": "2026-01-13T16:03:02.000Z",
+      "end_time": "2026-01-13T16:04:06.000Z"
+    },
+    {
+      "_id": "5",
+      "session_id": "demo-a-s01",
+      "sequence_id": 6,
+      "role": "STUDENT_1",
+      "content": "The unknown shows up in both places, not just one.",
+      "turn_id": "demo-a-s01-t006",
+      "start_time": "2026-01-13T16:04:07.000Z",
+      "end_time": "2026-01-13T16:05:14.000Z"
+    },
+    {
+      "_id": "6",
+      "session_id": "demo-a-s01",
+      "sequence_id": 7,
+      "role": "TUTOR",
+      "content": "What changes once we give the unknown a name?",
+      "turn_id": "demo-a-s01-t007",
+      "start_time": "2026-01-13T16:05:22.000Z",
+      "end_time": "2026-01-13T16:06:09.000Z"
+    },
+    {
+      "_id": "7",
+      "session_id": "demo-a-s01",
+      "sequence_id": 8,
+      "role": "STUDENT_1",
+      "content": "So the two amounts move together: each part of flour comes with a fixed part of sugar.",
+      "turn_id": "demo-a-s01-t008",
+      "start_time": "2026-01-13T16:06:16.000Z",
+      "end_time": "2026-01-13T16:06:34.000Z"
+    },
+    {
+      "_id": "8",
+      "session_id": "demo-a-s01",
+      "sequence_id": 9,
+      "role": "TUTOR",
+      "content": "Right. Both conditions are doing work there.",
+      "turn_id": "demo-a-s01-t009",
+      "start_time": "2026-01-13T16:06:40.000Z",
+      "end_time": "2026-01-13T16:06:55.000Z"
+    },
+    {
+      "_id": "9",
+      "session_id": "demo-a-s01",
+      "sequence_id": 10,
+      "role": "STUDENT_1",
+      "content": "I will do the arithmetic now.",
+      "turn_id": "demo-a-s01-t010",
+      "start_time": "2026-01-13T16:06:57.000Z",
+      "end_time": "2026-01-13T16:08:06.000Z"
+    },
+    {
+      "_id": "10",
+      "session_id": "demo-a-s01",
+      "sequence_id": 11,
+      "role": "TUTOR",
+      "content": "Okay, show me.",
+      "turn_id": "demo-a-s01-t011",
+      "start_time": "2026-01-13T16:08:06.000Z",
+      "end_time": "2026-01-13T16:09:15.000Z"
+    },
+    {
+      "_id": "11",
+      "session_id": "demo-a-s01",
+      "sequence_id": 12,
+      "role": "STUDENT_1",
+      "content": "3 parts is 12 cups, so one part is 4 cups.",
+      "turn_id": "demo-a-s01-t012",
+      "start_time": "2026-01-13T16:09:18.000Z",
+      "end_time": "2026-01-13T16:10:23.000Z"
+    },
+    {
+      "_id": "12",
+      "session_id": "demo-a-s01",
+      "sequence_id": 13,
+      "role": "TUTOR",
+      "content": "Read it through once before either of us says anything.",
+      "turn_id": "demo-a-s01-t013",
+      "start_time": "2026-01-13T16:10:28.000Z",
+      "end_time": "2026-01-13T16:10:45.000Z"
+    },
+    {
+      "_id": "13",
+      "session_id": "demo-a-s01",
+      "sequence_id": 14,
+      "role": "STUDENT_1",
+      "content": "Two sentences of setup, and then the question at the end.",
+      "turn_id": "demo-a-s01-t014",
+      "start_time": "2026-01-13T16:10:47.000Z",
+      "end_time": "2026-01-13T16:11:14.000Z"
+    },
+    {
+      "_id": "14",
+      "session_id": "demo-a-s01",
+      "sequence_id": 15,
+      "role": "TUTOR",
+      "content": "Here is the one for today. A recipe uses flour and sugar in a 3 to 5 ratio. If 12 cups of flour are used, how much sugar is needed?",
+      "turn_id": "demo-a-s01-t015",
+      "start_time": "2026-01-13T16:11:17.000Z",
+      "end_time": "2026-01-13T16:11:57.000Z"
+    },
+    {
+      "_id": "15",
+      "session_id": "demo-a-s01",
+      "sequence_id": 16,
+      "role": "STUDENT_1",
+      "content": "Okay, it gives the whole setup and then asks for one number.",
+      "turn_id": "demo-a-s01-t016",
+      "start_time": "2026-01-13T16:11:58.000Z",
+      "end_time": "2026-01-13T16:12:33.000Z"
+    },
+    {
+      "_id": "16",
+      "session_id": "demo-a-s01",
+      "sequence_id": 17,
+      "role": "TUTOR",
+      "content": "Where are we right now?",
+      "turn_id": "demo-a-s01-t017",
+      "start_time": "2026-01-13T16:12:39.000Z",
+      "end_time": "2026-01-13T16:12:54.000Z"
+    },
+    {
+      "_id": "17",
+      "session_id": "demo-a-s01",
+      "sequence_id": 18,
+      "role": "STUDENT_1",
+      "content": "I think I am going in circles here.",
+      "turn_id": "demo-a-s01-t018",
+      "start_time": "2026-01-13T16:12:54.000Z",
+      "end_time": "2026-01-13T16:13:31.000Z"
+    },
+    {
+      "_id": "18",
+      "session_id": "demo-a-s01",
+      "sequence_id": 19,
+      "role": "TUTOR",
+      "content": "Worth stopping here for a second?",
+      "turn_id": "demo-a-s01-t019",
+      "start_time": "2026-01-13T16:13:31.000Z",
+      "end_time": "2026-01-13T16:13:57.000Z"
+    },
+    {
+      "_id": "19",
+      "session_id": "demo-a-s01",
+      "sequence_id": 20,
+      "role": "STUDENT_1",
+      "content": "Wait — I think I have drifted from what I said I would do.",
+      "turn_id": "demo-a-s01-t020",
+      "start_time": "2026-01-13T16:14:05.000Z",
+      "end_time": "2026-01-13T16:14:24.000Z"
+    },
+    {
+      "_id": "20",
+      "session_id": "demo-a-s01",
+      "sequence_id": 21,
+      "role": "TUTOR",
+      "content": "Are we still going somewhere with this?",
+      "turn_id": "demo-a-s01-t021",
+      "start_time": "2026-01-13T16:14:24.000Z",
+      "end_time": "2026-01-13T16:15:02.000Z"
+    },
+    {
+      "_id": "21",
+      "session_id": "demo-a-s01",
+      "sequence_id": 22,
+      "role": "STUDENT_1",
+      "content": "Hold on, let me look at where I am.",
+      "turn_id": "demo-a-s01-t022",
+      "start_time": "2026-01-13T16:15:07.000Z",
+      "end_time": "2026-01-13T16:16:11.000Z"
+    },
+    {
+      "_id": "22",
+      "session_id": "demo-a-s01",
+      "sequence_id": 23,
+      "role": "TUTOR",
+      "content": "Take your time.",
+      "turn_id": "demo-a-s01-t023",
+      "start_time": "2026-01-13T16:16:12.000Z",
+      "end_time": "2026-01-13T16:16:48.000Z"
+    },
+    {
+      "_id": "23",
+      "session_id": "demo-a-s01",
+      "sequence_id": 24,
+      "role": "STUDENT_1",
+      "content": "I think I need a route first. Which step comes first?",
+      "turn_id": "demo-a-s01-t024",
+      "start_time": "2026-01-13T16:16:56.000Z",
+      "end_time": "2026-01-13T16:17:38.000Z"
+    },
+    {
+      "_id": "24",
+      "session_id": "demo-a-s01",
+      "sequence_id": 25,
+      "role": "TUTOR",
+      "content": "Okay, say the route.",
+      "turn_id": "demo-a-s01-t025",
+      "start_time": "2026-01-13T16:17:46.000Z",
+      "end_time": "2026-01-13T16:18:56.000Z"
+    },
+    {
+      "_id": "25",
+      "session_id": "demo-a-s01",
+      "sequence_id": 26,
+      "role": "STUDENT_1",
+      "content": "First the unknown, then the quantity the question actually asks for.",
+      "turn_id": "demo-a-s01-t026",
+      "start_time": "2026-01-13T16:19:00.000Z",
+      "end_time": "2026-01-13T16:19:53.000Z"
+    },
+    {
+      "_id": "26",
+      "session_id": "demo-a-s01",
+      "sequence_id": 27,
+      "role": "TUTOR",
+      "content": "What would you do first, and what would it give you?",
+      "turn_id": "demo-a-s01-t027",
+      "start_time": "2026-01-13T16:19:56.000Z",
+      "end_time": "2026-01-13T16:21:05.000Z"
+    },
+    {
+      "_id": "27",
+      "session_id": "demo-a-s01",
+      "sequence_id": 28,
+      "role": "STUDENT_1",
+      "content": "Set it up first, then do the arithmetic once at the end.",
+      "turn_id": "demo-a-s01-t028",
+      "start_time": "2026-01-13T16:21:06.000Z",
+      "end_time": "2026-01-13T16:21:28.000Z"
+    },
+    {
+      "_id": "28",
+      "session_id": "demo-a-s01",
+      "sequence_id": 29,
+      "role": "TUTOR",
+      "content": "There are two routes here. Which one, and why that one?",
+      "turn_id": "demo-a-s01-t029",
+      "start_time": "2026-01-13T16:21:36.000Z",
+      "end_time": "2026-01-13T16:22:16.000Z"
+    },
+    {
+      "_id": "29",
+      "session_id": "demo-a-s01",
+      "sequence_id": 30,
+      "role": "STUDENT_1",
+      "content": "First the unknown, then the quantity the question actually asks for.",
+      "turn_id": "demo-a-s01-t030",
+      "start_time": "2026-01-13T16:22:21.000Z",
+      "end_time": "2026-01-13T16:23:06.000Z"
+    },
+    {
+      "_id": "30",
+      "session_id": "demo-a-s01",
+      "sequence_id": 31,
+      "role": "TUTOR",
+      "content": "What would you do first, and what would it give you?",
+      "turn_id": "demo-a-s01-t031",
+      "start_time": "2026-01-13T16:23:10.000Z",
+      "end_time": "2026-01-13T16:23:35.000Z"
+    },
+    {
+      "_id": "31",
+      "session_id": "demo-a-s01",
+      "sequence_id": 32,
+      "role": "STUDENT_1",
+      "content": "I would find what one part is worth from the flour side, then multiply by five.",
+      "turn_id": "demo-a-s01-t032",
+      "start_time": "2026-01-13T16:23:36.000Z",
+      "end_time": "2026-01-13T16:23:53.000Z"
+    },
+    {
+      "_id": "32",
+      "session_id": "demo-a-s01",
+      "sequence_id": 33,
+      "role": "TUTOR",
+      "content": "Keep going — what does that come out to?",
+      "turn_id": "demo-a-s01-t033",
+      "start_time": "2026-01-13T16:23:53.000Z",
+      "end_time": "2026-01-13T16:24:53.000Z"
+    },
+    {
+      "_id": "33",
+      "session_id": "demo-a-s01",
+      "sequence_id": 34,
+      "role": "STUDENT_1",
+      "content": "Next line: I combine the two terms and then divide.",
+      "turn_id": "demo-a-s01-t034",
+      "start_time": "2026-01-13T16:24:53.000Z",
+      "end_time": "2026-01-13T16:25:12.000Z"
+    },
+    {
+      "_id": "34",
+      "session_id": "demo-a-s01",
+      "sequence_id": 35,
+      "role": "TUTOR",
+      "content": "Write the next line.",
+      "turn_id": "demo-a-s01-t035",
+      "start_time": "2026-01-13T16:25:15.000Z",
+      "end_time": "2026-01-13T16:26:02.000Z"
+    },
+    {
+      "_id": "35",
+      "session_id": "demo-a-s01",
+      "sequence_id": 36,
+      "role": "STUDENT_1",
+      "content": "3 parts is 12 cups, so one part is 4 cups.",
+      "turn_id": "demo-a-s01-t036",
+      "start_time": "2026-01-13T16:26:07.000Z",
+      "end_time": "2026-01-13T16:27:02.000Z"
+    },
+    {
+      "_id": "36",
+      "session_id": "demo-a-s01",
+      "sequence_id": 37,
+      "role": "TUTOR",
+      "content": "Scroll down to problem four in the packet.",
+      "turn_id": "demo-a-s01-t037",
+      "start_time": "2026-01-13T16:27:02.000Z",
+      "end_time": "2026-01-13T16:27:38.000Z"
+    },
+    {
+      "_id": "37",
+      "session_id": "demo-a-s01",
+      "sequence_id": 38,
+      "role": "STUDENT_1",
+      "content": "Okay, I am going to write it out now.",
+      "turn_id": "demo-a-s01-t038",
+      "start_time": "2026-01-13T16:27:43.000Z",
+      "end_time": "2026-01-13T16:28:30.000Z"
+    },
+    {
+      "_id": "38",
+      "session_id": "demo-a-s01",
+      "sequence_id": 39,
+      "role": "TUTOR",
+      "content": "Go ahead.",
+      "turn_id": "demo-a-s01-t039",
+      "start_time": "2026-01-13T16:28:34.000Z",
+      "end_time": "2026-01-13T16:29:32.000Z"
+    },
+    {
+      "_id": "39",
+      "session_id": "demo-a-s01",
+      "sequence_id": 40,
+      "role": "STUDENT_1",
+      "content": "Dividing both sides leaves the value on its own.",
+      "turn_id": "demo-a-s01-t040",
+      "start_time": "2026-01-13T16:29:35.000Z",
+      "end_time": "2026-01-13T16:30:01.000Z"
+    },
+    {
+      "_id": "40",
+      "session_id": "demo-a-s01",
+      "sequence_id": 41,
+      "role": "TUTOR",
+      "content": "Go ahead and run it.",
+      "turn_id": "demo-a-s01-t041",
+      "start_time": "2026-01-13T16:30:09.000Z",
+      "end_time": "2026-01-13T16:31:10.000Z"
+    },
+    {
+      "_id": "41",
+      "session_id": "demo-a-s01",
+      "sequence_id": 42,
+      "role": "STUDENT_1",
+      "content": "Next line: I combine the two terms and then divide.",
+      "turn_id": "demo-a-s01-t042",
+      "start_time": "2026-01-13T16:31:16.000Z",
+      "end_time": "2026-01-13T16:31:44.000Z"
+    },
+    {
+      "_id": "42",
+      "session_id": "demo-a-s01",
+      "sequence_id": 43,
+      "role": "TUTOR",
+      "content": "Yes — and from there, 5 parts of sugar is 20 cups.",
+      "turn_id": "demo-a-s01-t043",
+      "start_time": "2026-01-13T16:31:51.000Z",
+      "end_time": "2026-01-13T16:32:48.000Z"
+    },
+    {
+      "_id": "43",
+      "session_id": "demo-a-s01",
+      "sequence_id": 44,
+      "role": "STUDENT_1",
+      "content": "Hold on — I want to look at what the two pieces say together.",
+      "turn_id": "demo-a-s01-t044",
+      "start_time": "2026-01-13T16:32:50.000Z",
+      "end_time": "2026-01-13T16:33:38.000Z"
+    },
+    {
+      "_id": "44",
+      "session_id": "demo-a-s01",
+      "sequence_id": 45,
+      "role": "TUTOR",
+      "content": "Okay, say more.",
+      "turn_id": "demo-a-s01-t045",
+      "start_time": "2026-01-13T16:33:46.000Z",
+      "end_time": "2026-01-13T16:34:20.000Z"
+    },
+    {
+      "_id": "45",
+      "session_id": "demo-a-s01",
+      "sequence_id": 46,
+      "role": "STUDENT_1",
+      "content": "That means only one value can work.",
+      "turn_id": "demo-a-s01-t046",
+      "start_time": "2026-01-13T16:34:24.000Z",
+      "end_time": "2026-01-13T16:35:29.000Z"
+    },
+    {
+      "_id": "46",
+      "session_id": "demo-a-s01",
+      "sequence_id": 47,
+      "role": "TUTOR",
+      "content": "Say what depends on what here.",
+      "turn_id": "demo-a-s01-t047",
+      "start_time": "2026-01-13T16:35:36.000Z",
+      "end_time": "2026-01-13T16:36:23.000Z"
+    },
+    {
+      "_id": "47",
+      "session_id": "demo-a-s01",
+      "sequence_id": 48,
+      "role": "STUDENT_1",
+      "content": "The unknown shows up in both places, not just one.",
+      "turn_id": "demo-a-s01-t048",
+      "start_time": "2026-01-13T16:36:29.000Z",
+      "end_time": "2026-01-13T16:37:23.000Z"
+    },
+    {
+      "_id": "48",
+      "session_id": "demo-a-s01",
+      "sequence_id": 49,
+      "role": "TUTOR",
+      "content": "What do the two pieces tell us together?",
+      "turn_id": "demo-a-s01-t049",
+      "start_time": "2026-01-13T16:37:26.000Z",
+      "end_time": "2026-01-13T16:37:55.000Z"
+    },
+    {
+      "_id": "49",
+      "session_id": "demo-a-s01",
+      "sequence_id": 50,
+      "role": "STUDENT_1",
+      "content": "Wait — I think I have drifted from what I said I would do.",
+      "turn_id": "demo-a-s01-t050",
+      "start_time": "2026-01-13T16:38:00.000Z",
+      "end_time": "2026-01-13T16:39:04.000Z"
+    },
+    {
+      "_id": "50",
+      "session_id": "demo-a-s01",
+      "sequence_id": 51,
+      "role": "TUTOR",
+      "content": "Where are we right now?",
+      "turn_id": "demo-a-s01-t051",
+      "start_time": "2026-01-13T16:39:11.000Z",
+      "end_time": "2026-01-13T16:40:19.000Z"
+    },
+    {
+      "_id": "51",
+      "session_id": "demo-a-s01",
+      "sequence_id": 52,
+      "role": "STUDENT_1",
+      "content": "Hold on, let me look at where I am.",
+      "turn_id": "demo-a-s01-t052",
+      "start_time": "2026-01-13T16:40:26.000Z",
+      "end_time": "2026-01-13T16:41:08.000Z"
+    }
+  ],
+  "lead_role": "TUTOR"
+}

@@ -1,0 +1,198 @@
+{
+  "codebook_version": "2.2.0",
+  "source": "Schoenfeld, A. H. (1985). Mathematical Problem Solving. Academic Press. — the episode categories. Operational definitions adapted from Li, M., Zhang, N., Fan, C., Jiao, H., Fu, Y., Peters, S., Xu, Q., Lissitz, R., & Zhou, T. (2025). Understanding the Thinking Process of Reasoning Models: A Perspective from Schoenfeld's Episode Theory. arXiv:2509.14662, Appendix E (Sentence-level Annotation Guidebook). The two codes marked origin 'Rott et al.' come from Rott, B., Specht, B., & Knipping, C. (2021). A descriptive phase model of problem-solving processes. ZDM Mathematics Education, 53(4), 737-752. Rott et al. make three inductive additions; this codebook uses two of them. Their third, an episode of writing up a settled result, was dropped in 2.1.0: it is defined there by a 30-second duration threshold read off video, and it is not visible in a transcript of talk. Recording a settled result is covered by organization.",
+  "unit_of_analysis": "episode — a contiguous span of TURNS during which the participants are doing one kind of problem-solving work. Episodes span both speakers: the process being coded is the collaborative one, and speaker role does not bound an episode.",
+  "note_on_provenance": "v1.0.0 of this file was written from the paper's description rather than from a published coding manual, and was never verifiable. v2.0.0 replaces those definitions with ones adapted from a published, citable operational guidebook (Li et al. 2025, Appendix E). Nothing here is a reconstruction of Rott et al.'s unpublished manual.",
+  "note_on_adaptation": "Appendix E annotates SENTENCES in one reasoning model's chain-of-thought; this repo annotates TURNS in a dialogue between a tutor and one or more students. Two adaptations were therefore required throughout and are not optional: the unit is a turn rather than a sentence, and the actor is the participants jointly rather than a single solver. Each code records what changed in `adaptation`. Keywords written in a lone solver's voice ('Let me check') read in dialogue as either speaker's, including a tutor prompting a student.",
+  "note_on_content_related": "`content_related` is false for the two codes that are not problem-solving work at all — platform and logistics talk, which covers recording an already-settled result, and off-topic talk. It exists so an analysis can exclude them, since their base rates are driven by recording conditions rather than by mathematics. It is NOT a quality judgement and does not mean the code is optional: an annotator must still apply it where it fits, or the surrounding episode absorbs talk that is not part of it. `monitor` is content_related=true because Appendix E treats it as one of the seven problem-solving categories, even though its own definition notes such turns carry little substantive content.",
+  "note_on_in_problem_process": "`in_problem_process` is ours, not the papers'. It marks the codes that describe the problem-solving process itself. The rest — reading, monitor, organization, digression — are labelled so that the model has somewhere to put the turns that are not problem solving, which is what keeps them out of the episodes that are. They are never surfaced in the report or the schematic. Note that this departs from the sources: Li et al. treat reading and monitor as two of their seven problem-solving categories, and this project still records that in each code's `origin`. What changes is only what a reader is shown. [OURS: docs/DEVIATIONS.md]",
+  "note_on_editing": "This file generates the annotator dropdown, the annotator guide AND the LLM prompt, so there is exactly one definition of each code in the repo. Changing a definition is a config edit plus a re-run and a version bump — never a code change. Every annotation record stores the version it was produced under, and a sheet generated under a different version will not import.",
+  "codes": [
+    {
+      "code": "reading",
+      "name": "Read",
+      "origin": "Schoenfeld; operational definition from Li et al. (2025) App. E §1",
+      "content_related": true,
+      "definition": "Extracting or restating the problem as given: its information, conditions, and goal. Understanding the question, with no inference of strategy or reasoning yet.",
+      "include": [
+        "reading the problem statement aloud, or quoting from it directly",
+        "recalling or repeating an element of the question",
+        "checking mid-session that the question was understood correctly",
+        "phrasings like \"the question asks\", \"we are given\", \"the goal is to\""
+      ],
+      "exclude": [
+        "any analysis or evaluation of the problem — Read is about the input, not about processing it",
+        "restating the problem in own words as a step toward understanding it — that is analysis"
+      ],
+      "example": "\"The question asks us to find the value of x in the equation 2x + 5 = 10.\"",
+      "adaptation": "Appendix E notes Read is usually the model's initial processing. In tutoring the tutor commonly reads the problem to the group, and a student may re-read it later; both are Read.",
+      "in_problem_process": false
+    },
+    {
+      "code": "analysis",
+      "name": "Analyze",
+      "origin": "Schoenfeld; operational definition from Li et al. (2025) App. E §2",
+      "content_related": true,
+      "definition": "Constructing or recalling relevant mathematics, introducing symbols, and deducing relationships from the problem and existing knowledge. Explanation or logical inference that sets up a solution but performs no concrete calculation yet.",
+      "include": [
+        "explaining an underlying concept, principle or theorem relevant to the problem",
+        "introducing a variable, formula or notation",
+        "logical deductions and inferences stated with certainty",
+        "phrasings like \"according to\", \"this implies that\", \"let's denote\", \"we can infer\""
+      ],
+      "exclude": [
+        "substituting values or performing a calculation — that is implementation",
+        "suggesting a possibility with uncertainty — that is exploration",
+        "announcing what will be done next — that is planning"
+      ],
+      "example": "\"In a right-angled triangle, the square of the hypotenuse equals the sum of the squares of the other two sides.\"",
+      "adaptation": "None beyond unit and actor. A tutor explaining a theorem to the group and a student deducing one aloud are both Analyze.",
+      "in_problem_process": true
+    },
+    {
+      "code": "planning",
+      "name": "Plan",
+      "origin": "Schoenfeld; operational definition from Li et al. (2025) App. E §3",
+      "content_related": true,
+      "definition": "Announcing the next step or outlining the solution strategy — a commitment to a course of action before it is carried out.",
+      "include": [
+        "stating the intended next step or the overall plan",
+        "an explicit declaration of intent, often imperative or first person",
+        "phrasings like \"next we will\", \"the plan is to\", \"we should first\", \"then calculate\""
+      ],
+      "exclude": [
+        "carrying the decision out — that is implementation",
+        "explaining a concept rather than committing to an action — that is analysis",
+        "suggesting an option tentatively — that is exploration",
+        "a vague \"let's think about it\" with no mathematical next step — that is monitor",
+        "\"let's verify\" or \"let's double-check\" — that is verification"
+      ],
+      "example": "\"Next, we will differentiate both sides of the equation with respect to x.\"",
+      "adaptation": "In dialogue a plan is frequently proposed by the tutor as a question (\"so what should we do first?\") and completed by a student. The exchange is one Plan episode, not two.",
+      "in_problem_process": true
+    },
+    {
+      "code": "implementation",
+      "name": "Implement",
+      "origin": "Schoenfeld; operational definition from Li et al. (2025) App. E §4",
+      "content_related": true,
+      "definition": "The operational phase where the strategy is executed: performing calculations, constructing diagrams, enumerating possibilities, or working through the mathematics with concrete values, symbols or objects.",
+      "include": [
+        "the actual steps taken to solve the problem",
+        "mathematical operations, substitutions, and intermediate results",
+        "a conclusion that follows directly from the mathematics just done",
+        "phrasings like \"substituting x = 2 we get\", \"expanding the expression\""
+      ],
+      "exclude": [
+        "explaining the theory behind the step — that is analysis",
+        "outlining the step before doing it — that is planning",
+        "checking the result afterwards — that is verification"
+      ],
+      "example": "\"Substituting x = 3 into the equation, we get 2(3) + 5 = 6 + 5 = 11.\"",
+      "adaptation": "None beyond unit and actor. Work carried out by a student at the tutor's direction is Implement for both.",
+      "in_problem_process": true
+    },
+    {
+      "code": "exploration",
+      "name": "Explore",
+      "origin": "Schoenfeld; operational definition from Li et al. (2025) App. E §5",
+      "content_related": true,
+      "definition": "Generating potential ideas, guessing, drawing analogies, or attempting trial calculations that may be abandoned. Different avenues are considered without commitment to a solution path; the defining feature is uncertainty.",
+      "include": [
+        "suggesting an alternative approach or possibility",
+        "tentative language and expressions of uncertainty",
+        "brainstorming or initial investigation with no settled method",
+        "phrasings like \"maybe we can try\", \"what if we\", \"could this be related to\", \"alternatively\""
+      ],
+      "exclude": [
+        "announcing a definite course of action — that is planning",
+        "asserting a concluded inference — that is analysis",
+        "the calculation or check that follows a tentative suggestion — code those as what they are"
+      ],
+      "example": "\"Maybe we can try substituting different values for x to see if we can find a pattern.\"",
+      "adaptation": "Appendix E resolves Explore against a paragraph level this repo does not have. Here Explore is applied at the turn level only, so a tentative suggestion followed by a calculation is two episodes, not one Explore containing both.",
+      "in_problem_process": true
+    },
+    {
+      "code": "verification",
+      "name": "Verify",
+      "origin": "Schoenfeld; operational definition from Li et al. (2025) App. E §6",
+      "content_related": true,
+      "definition": "Judging the correctness, effectiveness or simplicity of a result or the method used. May include checking the answer, redoing it by another method, or estimating bounds. Retrospective: it looks back at a result and asks whether it is right.",
+      "include": [
+        "evaluating or confirming the solution or the process",
+        "checking, confirming, validating; comparing against the problem's conditions",
+        "phrasings like \"let me double-check\", \"plugging it back in\", \"is that right\", \"does that make sense\"",
+        "once a checking routine has begun, the steps within it are part of it"
+      ],
+      "exclude": [
+        "stating a final answer without checking it — that is implementation",
+        "generating the result rather than evaluating it — that is implementation",
+        "noticing an error and starting fresh — the new work is exploration or planning"
+      ],
+      "example": "\"Let me double-check my calculations: 2 x 3 + 5 = 11, which matches the previous result.\"",
+      "adaptation": "A tutor asking \"does that seem reasonable to you?\" invites verification and begins the episode; the student's checking continues it.",
+      "in_problem_process": true
+    },
+    {
+      "code": "monitor",
+      "name": "Monitor",
+      "origin": "Li et al. (2025) App. E §7 — addition to Schoenfeld's categories",
+      "content_related": true,
+      "definition": "Short interjections or expressions of self-monitoring, hesitation or reflection at the juncture between episodes. Usually carries little substantive problem-solving content and marks a pause or a shift in thought.",
+      "include": [
+        "a short phrase marking a shift in thought or a brief pause",
+        "expressions of uncertainty, reflection or transition",
+        "meta-comments that fit none of the other problem-solving codes",
+        "phrasings like \"hmm\", \"wait\", \"hold on\", \"let me think\", \"let's see\""
+      ],
+      "exclude": [
+        "anything carrying substantive mathematical content — code that content instead",
+        "talk about the tool or platform — that is organization",
+        "off-topic talk — that is digression",
+        "\"let me parse that information first\" reads as monitor rather than planning: it is checking understanding, not committing to a step"
+      ],
+      "example": "\"Wait.\"",
+      "adaptation": "Appendix E defines this for one solver's internal processing. In dialogue it also covers a participant audibly pausing or hedging mid-exchange. It does NOT cover a tutor's classroom management, which is organization.",
+      "in_problem_process": false
+    },
+    {
+      "code": "organization",
+      "name": "Organization",
+      "origin": "Rott et al. (2021) — inductive addition",
+      "content_related": false,
+      "definition": "Talk about the tool, platform or session logistics rather than about the mathematics, including recording a result that is already settled: screen sharing, audio, cameras, where to write, who speaks next, writing up an answer that has already been agreed.",
+      "include": [
+        "\"can you see my screen\", \"you're muted\", \"keep your cameras on\"",
+        "connection or audio trouble",
+        "arranging who answers next, or how to submit work",
+        "writing up or copying out a result that is already agreed, with no new ideas generated",
+        "being directed to write down a settled result"
+      ],
+      "exclude": [
+        "talk about mathematical notation or representation — that is analysis",
+        "a brief hesitation with no logistical content — that is monitor",
+        "writing that develops an idea — that is implementation or exploration"
+      ],
+      "deviation_from_paper": "In Rott et al. this code covers talk about dynamic geometry software. Here it covers platform, tool and session-logistics talk generally. Measured floor of 1,187 rows in the LessonLink corpus (\"please unmute yourself\", \"keep your cameras on\"), which is conducted online, so the base rate depends on recording conditions rather than on mathematics — which is why content_related is false. Since 2.1.0 this code also covers what Rott et al. code separately as writing. Their definition rests on a 30-second duration threshold taken from video, which a transcript of talk cannot carry, so the distinction was not recoverable here [OURS: docs/DEVIATIONS.md].",
+      "in_problem_process": false
+    },
+    {
+      "code": "digression",
+      "name": "Digression",
+      "origin": "Rott et al. (2021) — inductive addition",
+      "content_related": false,
+      "definition": "Off-topic talk, unrelated to the problem or to the platform.",
+      "include": [
+        "social conversation",
+        "talk about unrelated schoolwork or scheduling"
+      ],
+      "exclude": [
+        "tool or platform talk — that is organization",
+        "a brief on-task hesitation — that is monitor"
+      ],
+      "deviation_from_paper": "Not a marginal code in these corpora: LessonLink's own gold annotation marks 977 of its 3,576 segments (40,152 rows, 27% of the corpus) as discussing no problem at all. content_related is false because that rate reflects how a session was run, not the mathematics in it.",
+      "in_problem_process": false
+    }
+  ]
+}

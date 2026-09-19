@@ -1,0 +1,4143 @@
+{
+  "report_version": "0.2.0",
+  "data_provenance": {
+    "status": "synthetic",
+    "ui_label": "Simulated session data, generated for this demo. Not a real tutoring session."
+  },
+  "student_id": "stu-demo-b",
+  "source_run_id": "run-llm-demo-b-001",
+  "codebook_version": "2.2.0",
+  "domain": "math",
+  "sessions": [
+    {
+      "session_id": "demo-b-s01",
+      "student_id": "stu-demo-b",
+      "session_index": 1,
+      "session_date": "2026-01-13",
+      "session_topic": "Scaling a ratio",
+      "has_timestamps": true,
+      "transcript_scope": "full",
+      "problems": [
+        {
+          "problem_id": "demo-b-s01-p01",
+          "topic": "Scaling a ratio",
+          "start_turn_id": "demo-b-s01-t001",
+          "end_turn_id": "demo-b-s01-t056"
+        }
+      ],
+      "turns": [
+        {
+          "_id": "0",
+          "session_id": "demo-b-s01",
+          "sequence_id": 1,
+          "role": "TUTOR",
+          "content": "Let's look at this one: a recipe uses flour and sugar in a 3 to 5 ratio, and we're told 12 cups of flour are used.",
+          "turn_id": "demo-b-s01-t001",
+          "start_time": "2026-01-13T16:00:00.000Z",
+          "end_time": "2026-01-13T16:00:22.000Z"
+        },
+        {
+          "_id": "1",
+          "session_id": "demo-b-s01",
+          "sequence_id": 2,
+          "role": "STUDENT_1",
+          "content": "So we know the ratio is 3 to 5, and the flour amount is 12 cups.",
+          "turn_id": "demo-b-s01-t002",
+          "start_time": "2026-01-13T16:00:25.000Z",
+          "end_time": "2026-01-13T16:00:54.000Z"
+        },
+        {
+          "_id": "2",
+          "session_id": "demo-b-s01",
+          "sequence_id": 3,
+          "role": "TUTOR",
+          "content": "Right, and the question wants us to find how much sugar goes with that 12 cups of flour.",
+          "turn_id": "demo-b-s01-t003",
+          "start_time": "2026-01-13T16:00:54.000Z",
+          "end_time": "2026-01-13T16:01:28.000Z"
+        },
+        {
+          "_id": "3",
+          "session_id": "demo-b-s01",
+          "sequence_id": 4,
+          "role": "STUDENT_1",
+          "content": "Got it — find the sugar amount that matches 12 cups of flour.",
+          "turn_id": "demo-b-s01-t004",
+          "start_time": "2026-01-13T16:01:34.000Z",
+          "end_time": "2026-01-13T16:02:34.000Z"
+        },
+        {
+          "_id": "4",
+          "session_id": "demo-b-s01",
+          "sequence_id": 5,
+          "role": "TUTOR",
+          "content": "Before we dive in, did you end up making anything with your family this weekend?",
+          "turn_id": "demo-b-s01-t005",
+          "start_time": "2026-01-13T16:02:34.000Z",
+          "end_time": "2026-01-13T16:03:16.000Z"
+        },
+        {
+          "_id": "5",
+          "session_id": "demo-b-s01",
+          "sequence_id": 6,
+          "role": "STUDENT_1",
+          "content": "Actually let's get into it — the ratio means for every 3 cups of flour there are 5 cups of sugar.",
+          "turn_id": "demo-b-s01-t006",
+          "start_time": "2026-01-13T16:03:21.000Z",
+          "end_time": "2026-01-13T16:04:17.000Z"
+        },
+        {
+          "_id": "6",
+          "session_id": "demo-b-s01",
+          "sequence_id": 7,
+          "role": "TUTOR",
+          "content": "Exactly, the two amounts scale together, so 12 cups of flour is just a multiple of that 3.",
+          "turn_id": "demo-b-s01-t007",
+          "start_time": "2026-01-13T16:04:21.000Z",
+          "end_time": "2026-01-13T16:05:22.000Z"
+        },
+        {
+          "_id": "7",
+          "session_id": "demo-b-s01",
+          "sequence_id": 8,
+          "role": "STUDENT_1",
+          "content": "So whatever flour we use, it has to stay in that same 3 to 5 proportion with the sugar.",
+          "turn_id": "demo-b-s01-t008",
+          "start_time": "2026-01-13T16:05:28.000Z",
+          "end_time": "2026-01-13T16:05:58.000Z"
+        },
+        {
+          "_id": "8",
+          "session_id": "demo-b-s01",
+          "sequence_id": 9,
+          "role": "TUTOR",
+          "content": "That means we can think of the recipe in equal 'parts' — 3 parts flour and 5 parts sugar.",
+          "turn_id": "demo-b-s01-t009",
+          "start_time": "2026-01-13T16:05:58.000Z",
+          "end_time": "2026-01-13T16:07:00.000Z"
+        },
+        {
+          "_id": "9",
+          "session_id": "demo-b-s01",
+          "sequence_id": 10,
+          "role": "STUDENT_1",
+          "content": "So one part of flour and one part of sugar are always the same size unit.",
+          "turn_id": "demo-b-s01-t010",
+          "start_time": "2026-01-13T16:07:04.000Z",
+          "end_time": "2026-01-13T16:07:46.000Z"
+        },
+        {
+          "_id": "10",
+          "session_id": "demo-b-s01",
+          "sequence_id": 11,
+          "role": "TUTOR",
+          "content": "Right, and since 12 cups equals those 3 parts of flour, we can figure out what a single part weighs.",
+          "turn_id": "demo-b-s01-t011",
+          "start_time": "2026-01-13T16:07:50.000Z",
+          "end_time": "2026-01-13T16:09:00.000Z"
+        },
+        {
+          "_id": "11",
+          "session_id": "demo-b-s01",
+          "sequence_id": 12,
+          "role": "STUDENT_1",
+          "content": "Once we know one part in cups, we can just use that to get the sugar side too.",
+          "turn_id": "demo-b-s01-t012",
+          "start_time": "2026-01-13T16:09:07.000Z",
+          "end_time": "2026-01-13T16:09:41.000Z"
+        },
+        {
+          "_id": "12",
+          "session_id": "demo-b-s01",
+          "sequence_id": 13,
+          "role": "TUTOR",
+          "content": "That's the key relationship — parts stay proportional however much you scale the recipe.",
+          "turn_id": "demo-b-s01-t013",
+          "start_time": "2026-01-13T16:09:49.000Z",
+          "end_time": "2026-01-13T16:10:07.000Z"
+        },
+        {
+          "_id": "13",
+          "session_id": "demo-b-s01",
+          "sequence_id": 14,
+          "role": "STUDENT_1",
+          "content": "So I think our first move should be figuring out how many cups one part is worth.",
+          "turn_id": "demo-b-s01-t014",
+          "start_time": "2026-01-13T16:10:15.000Z",
+          "end_time": "2026-01-13T16:11:13.000Z"
+        },
+        {
+          "_id": "14",
+          "session_id": "demo-b-s01",
+          "sequence_id": 15,
+          "role": "TUTOR",
+          "content": "Good instinct — go ahead and find that value from the flour side first.",
+          "turn_id": "demo-b-s01-t015",
+          "start_time": "2026-01-13T16:11:15.000Z",
+          "end_time": "2026-01-13T16:11:58.000Z"
+        },
+        {
+          "_id": "15",
+          "session_id": "demo-b-s01",
+          "sequence_id": 16,
+          "role": "STUDENT_1",
+          "content": "Okay, so maybe I divide the 12 cups by 3 to get one part... does that work?",
+          "turn_id": "demo-b-s01-t016",
+          "start_time": "2026-01-13T16:12:06.000Z",
+          "end_time": "2026-01-13T16:12:56.000Z"
+        },
+        {
+          "_id": "16",
+          "session_id": "demo-b-s01",
+          "sequence_id": 17,
+          "role": "TUTOR",
+          "content": "That's worth trying — what would that division actually give us?",
+          "turn_id": "demo-b-s01-t017",
+          "start_time": "2026-01-13T16:12:56.000Z",
+          "end_time": "2026-01-13T16:14:00.000Z"
+        },
+        {
+          "_id": "17",
+          "session_id": "demo-b-s01",
+          "sequence_id": 18,
+          "role": "STUDENT_1",
+          "content": "12 divided by 3 is 4, so maybe each part is 4 cups?",
+          "turn_id": "demo-b-s01-t018",
+          "start_time": "2026-01-13T16:14:07.000Z",
+          "end_time": "2026-01-13T16:14:55.000Z"
+        },
+        {
+          "_id": "18",
+          "session_id": "demo-b-s01",
+          "sequence_id": 19,
+          "role": "TUTOR",
+          "content": "That seems reasonable — how could we double check that a part really is 4 cups?",
+          "turn_id": "demo-b-s01-t019",
+          "start_time": "2026-01-13T16:15:02.000Z",
+          "end_time": "2026-01-13T16:15:25.000Z"
+        },
+        {
+          "_id": "19",
+          "session_id": "demo-b-s01",
+          "sequence_id": 20,
+          "role": "STUDENT_1",
+          "content": "Maybe we could check by multiplying 4 by 3 and seeing if we get back to 12.",
+          "turn_id": "demo-b-s01-t020",
+          "start_time": "2026-01-13T16:15:27.000Z",
+          "end_time": "2026-01-13T16:16:08.000Z"
+        },
+        {
+          "_id": "20",
+          "session_id": "demo-b-s01",
+          "sequence_id": 21,
+          "role": "TUTOR",
+          "content": "That sounds like a solid way to test it — want to try it?",
+          "turn_id": "demo-b-s01-t021",
+          "start_time": "2026-01-13T16:16:11.000Z",
+          "end_time": "2026-01-13T16:16:45.000Z"
+        },
+        {
+          "_id": "21",
+          "session_id": "demo-b-s01",
+          "sequence_id": 22,
+          "role": "STUDENT_1",
+          "content": "4 times 3 is 12, so that matches the flour amount we were given.",
+          "turn_id": "demo-b-s01-t022",
+          "start_time": "2026-01-13T16:16:47.000Z",
+          "end_time": "2026-01-13T16:17:26.000Z"
+        },
+        {
+          "_id": "22",
+          "session_id": "demo-b-s01",
+          "sequence_id": 23,
+          "role": "TUTOR",
+          "content": "Okay, so we've got a part locked in — let's just sit with that for a second.",
+          "turn_id": "demo-b-s01-t023",
+          "start_time": "2026-01-13T16:17:32.000Z",
+          "end_time": "2026-01-13T16:18:17.000Z"
+        },
+        {
+          "_id": "23",
+          "session_id": "demo-b-s01",
+          "sequence_id": 24,
+          "role": "STUDENT_1",
+          "content": "Yeah... let me make sure I'm thinking about this the right way before moving on.",
+          "turn_id": "demo-b-s01-t024",
+          "start_time": "2026-01-13T16:18:21.000Z",
+          "end_time": "2026-01-13T16:18:48.000Z"
+        },
+        {
+          "_id": "24",
+          "session_id": "demo-b-s01",
+          "sequence_id": 25,
+          "role": "TUTOR",
+          "content": "Take your time — once you're ready, we can use that part size for the sugar.",
+          "turn_id": "demo-b-s01-t025",
+          "start_time": "2026-01-13T16:18:56.000Z",
+          "end_time": "2026-01-13T16:19:33.000Z"
+        },
+        {
+          "_id": "25",
+          "session_id": "demo-b-s01",
+          "sequence_id": 26,
+          "role": "STUDENT_1",
+          "content": "Alright, so now I need to multiply the part size by 5 to get the sugar amount.",
+          "turn_id": "demo-b-s01-t026",
+          "start_time": "2026-01-13T16:19:35.000Z",
+          "end_time": "2026-01-13T16:19:54.000Z"
+        },
+        {
+          "_id": "26",
+          "session_id": "demo-b-s01",
+          "sequence_id": 27,
+          "role": "TUTOR",
+          "content": "Go ahead and do that multiplication.",
+          "turn_id": "demo-b-s01-t027",
+          "start_time": "2026-01-13T16:20:00.000Z",
+          "end_time": "2026-01-13T16:20:17.000Z"
+        },
+        {
+          "_id": "27",
+          "session_id": "demo-b-s01",
+          "sequence_id": 28,
+          "role": "STUDENT_1",
+          "content": "4 times 5 is 20.",
+          "turn_id": "demo-b-s01-t028",
+          "start_time": "2026-01-13T16:20:24.000Z",
+          "end_time": "2026-01-13T16:21:34.000Z"
+        },
+        {
+          "_id": "28",
+          "session_id": "demo-b-s01",
+          "sequence_id": 29,
+          "role": "TUTOR",
+          "content": "So that gives us the amount of sugar in cups.",
+          "turn_id": "demo-b-s01-t029",
+          "start_time": "2026-01-13T16:21:42.000Z",
+          "end_time": "2026-01-13T16:22:31.000Z"
+        },
+        {
+          "_id": "29",
+          "session_id": "demo-b-s01",
+          "sequence_id": 30,
+          "role": "STUDENT_1",
+          "content": "20 cups of sugar is needed for 12 cups of flour.",
+          "turn_id": "demo-b-s01-t030",
+          "start_time": "2026-01-13T16:22:31.000Z",
+          "end_time": "2026-01-13T16:23:36.000Z"
+        },
+        {
+          "_id": "30",
+          "session_id": "demo-b-s01",
+          "sequence_id": 31,
+          "role": "TUTOR",
+          "content": "Nice, we've got a candidate answer of 20 cups of sugar.",
+          "turn_id": "demo-b-s01-t031",
+          "start_time": "2026-01-13T16:23:44.000Z",
+          "end_time": "2026-01-13T16:24:01.000Z"
+        },
+        {
+          "_id": "31",
+          "session_id": "demo-b-s01",
+          "sequence_id": 32,
+          "role": "STUDENT_1",
+          "content": "I wonder if this would also work if we doubled the whole recipe instead.",
+          "turn_id": "demo-b-s01-t032",
+          "start_time": "2026-01-13T16:24:02.000Z",
+          "end_time": "2026-01-13T16:25:05.000Z"
+        },
+        {
+          "_id": "32",
+          "session_id": "demo-b-s01",
+          "sequence_id": 33,
+          "role": "TUTOR",
+          "content": "Interesting idea — what would doubling do to the flour and sugar amounts?",
+          "turn_id": "demo-b-s01-t033",
+          "start_time": "2026-01-13T16:25:08.000Z",
+          "end_time": "2026-01-13T16:25:27.000Z"
+        },
+        {
+          "_id": "33",
+          "session_id": "demo-b-s01",
+          "sequence_id": 34,
+          "role": "STUDENT_1",
+          "content": "Doubling flour would give 24 cups, and sugar would maybe become 40 cups?",
+          "turn_id": "demo-b-s01-t034",
+          "start_time": "2026-01-13T16:25:31.000Z",
+          "end_time": "2026-01-13T16:26:37.000Z"
+        },
+        {
+          "_id": "34",
+          "session_id": "demo-b-s01",
+          "sequence_id": 35,
+          "role": "TUTOR",
+          "content": "Let's see if that stays true to the original ratio — how would we check that?",
+          "turn_id": "demo-b-s01-t035",
+          "start_time": "2026-01-13T16:26:40.000Z",
+          "end_time": "2026-01-13T16:27:08.000Z"
+        },
+        {
+          "_id": "35",
+          "session_id": "demo-b-s01",
+          "sequence_id": 36,
+          "role": "STUDENT_1",
+          "content": "Maybe I could divide 24 by 40 and see if it simplifies to 3 to 5.",
+          "turn_id": "demo-b-s01-t036",
+          "start_time": "2026-01-13T16:27:11.000Z",
+          "end_time": "2026-01-13T16:27:59.000Z"
+        },
+        {
+          "_id": "36",
+          "session_id": "demo-b-s01",
+          "sequence_id": 37,
+          "role": "TUTOR",
+          "content": "That's a good test — go ahead and try simplifying that.",
+          "turn_id": "demo-b-s01-t037",
+          "start_time": "2026-01-13T16:28:04.000Z",
+          "end_time": "2026-01-13T16:28:34.000Z"
+        },
+        {
+          "_id": "37",
+          "session_id": "demo-b-s01",
+          "sequence_id": 38,
+          "role": "STUDENT_1",
+          "content": "24 to 40 both divide by 8, giving 3 to 5, so it still matches.",
+          "turn_id": "demo-b-s01-t038",
+          "start_time": "2026-01-13T16:28:42.000Z",
+          "end_time": "2026-01-13T16:29:22.000Z"
+        },
+        {
+          "_id": "38",
+          "session_id": "demo-b-s01",
+          "sequence_id": 39,
+          "role": "TUTOR",
+          "content": "Nice, that confirms the ratio holds even when we scale the whole recipe up.",
+          "turn_id": "demo-b-s01-t039",
+          "start_time": "2026-01-13T16:29:26.000Z",
+          "end_time": "2026-01-13T16:30:36.000Z"
+        },
+        {
+          "_id": "39",
+          "session_id": "demo-b-s01",
+          "sequence_id": 40,
+          "role": "STUDENT_1",
+          "content": "So now let's go back and write down the actual numbers for our original problem clearly.",
+          "turn_id": "demo-b-s01-t040",
+          "start_time": "2026-01-13T16:30:42.000Z",
+          "end_time": "2026-01-13T16:31:44.000Z"
+        },
+        {
+          "_id": "40",
+          "session_id": "demo-b-s01",
+          "sequence_id": 41,
+          "role": "TUTOR",
+          "content": "Sure, go ahead and lay it out.",
+          "turn_id": "demo-b-s01-t041",
+          "start_time": "2026-01-13T16:31:46.000Z",
+          "end_time": "2026-01-13T16:32:44.000Z"
+        },
+        {
+          "_id": "41",
+          "session_id": "demo-b-s01",
+          "sequence_id": 42,
+          "role": "STUDENT_1",
+          "content": "12 cups of flour pairs with 20 cups of sugar, based on the 3 to 5 ratio.",
+          "turn_id": "demo-b-s01-t042",
+          "start_time": "2026-01-13T16:32:49.000Z",
+          "end_time": "2026-01-13T16:33:30.000Z"
+        },
+        {
+          "_id": "42",
+          "session_id": "demo-b-s01",
+          "sequence_id": 43,
+          "role": "TUTOR",
+          "content": "That's the answer laid out clearly — now let's make sure it holds up.",
+          "turn_id": "demo-b-s01-t043",
+          "start_time": "2026-01-13T16:33:31.000Z",
+          "end_time": "2026-01-13T16:34:28.000Z"
+        },
+        {
+          "_id": "43",
+          "session_id": "demo-b-s01",
+          "sequence_id": 44,
+          "role": "STUDENT_1",
+          "content": "Let me check it by simplifying 12 to 20 and seeing if it reduces properly.",
+          "turn_id": "demo-b-s01-t044",
+          "start_time": "2026-01-13T16:34:33.000Z",
+          "end_time": "2026-01-13T16:35:40.000Z"
+        },
+        {
+          "_id": "44",
+          "session_id": "demo-b-s01",
+          "sequence_id": 45,
+          "role": "TUTOR",
+          "content": "Go for it, walk me through the simplification.",
+          "turn_id": "demo-b-s01-t045",
+          "start_time": "2026-01-13T16:35:47.000Z",
+          "end_time": "2026-01-13T16:36:06.000Z"
+        },
+        {
+          "_id": "45",
+          "session_id": "demo-b-s01",
+          "sequence_id": 46,
+          "role": "STUDENT_1",
+          "content": "Both 12 and 20 divide by 4, giving 3 to 5.",
+          "turn_id": "demo-b-s01-t046",
+          "start_time": "2026-01-13T16:36:11.000Z",
+          "end_time": "2026-01-13T16:36:23.000Z"
+        },
+        {
+          "_id": "46",
+          "session_id": "demo-b-s01",
+          "sequence_id": 47,
+          "role": "TUTOR",
+          "content": "That matches the ratio in the problem exactly, which is a great sign.",
+          "turn_id": "demo-b-s01-t047",
+          "start_time": "2026-01-13T16:36:25.000Z",
+          "end_time": "2026-01-13T16:37:12.000Z"
+        },
+        {
+          "_id": "47",
+          "session_id": "demo-b-s01",
+          "sequence_id": 48,
+          "role": "STUDENT_1",
+          "content": "Is there another way we could double check it, just to be extra sure?",
+          "turn_id": "demo-b-s01-t048",
+          "start_time": "2026-01-13T16:37:20.000Z",
+          "end_time": "2026-01-13T16:38:22.000Z"
+        },
+        {
+          "_id": "48",
+          "session_id": "demo-b-s01",
+          "sequence_id": 49,
+          "role": "TUTOR",
+          "content": "I could also check that 4 parts flour times 3 gives 12, and 4 times 5 gives 20.",
+          "turn_id": "demo-b-s01-t049",
+          "start_time": "2026-01-13T16:38:28.000Z",
+          "end_time": "2026-01-13T16:39:22.000Z"
+        },
+        {
+          "_id": "49",
+          "session_id": "demo-b-s01",
+          "sequence_id": 50,
+          "role": "STUDENT_1",
+          "content": "4 times 3 is 12 and 4 times 5 is 20, so both sides check out.",
+          "turn_id": "demo-b-s01-t050",
+          "start_time": "2026-01-13T16:39:27.000Z",
+          "end_time": "2026-01-13T16:40:27.000Z"
+        },
+        {
+          "_id": "50",
+          "session_id": "demo-b-s01",
+          "sequence_id": 51,
+          "role": "TUTOR",
+          "content": "Everything lines up, so we can be confident in that answer now.",
+          "turn_id": "demo-b-s01-t051",
+          "start_time": "2026-01-13T16:40:33.000Z",
+          "end_time": "2026-01-13T16:41:37.000Z"
+        },
+        {
+          "_id": "51",
+          "session_id": "demo-b-s01",
+          "sequence_id": 52,
+          "role": "STUDENT_1",
+          "content": "Should we also try this method on a different ratio problem to practice more?",
+          "turn_id": "demo-b-s01-t052",
+          "start_time": "2026-01-13T16:41:42.000Z",
+          "end_time": "2026-01-13T16:42:22.000Z"
+        },
+        {
+          "_id": "52",
+          "session_id": "demo-b-s01",
+          "sequence_id": 53,
+          "role": "TUTOR",
+          "content": "That's a good next step — let's find another ratio problem to work through.",
+          "turn_id": "demo-b-s01-t053",
+          "start_time": "2026-01-13T16:42:29.000Z",
+          "end_time": "2026-01-13T16:43:19.000Z"
+        },
+        {
+          "_id": "53",
+          "session_id": "demo-b-s01",
+          "sequence_id": 54,
+          "role": "STUDENT_1",
+          "content": "Actually, hold on, let me just make sure I really understood why we multiplied by 5 there.",
+          "turn_id": "demo-b-s01-t054",
+          "start_time": "2026-01-13T16:43:20.000Z",
+          "end_time": "2026-01-13T16:43:47.000Z"
+        },
+        {
+          "_id": "54",
+          "session_id": "demo-b-s01",
+          "sequence_id": 55,
+          "role": "TUTOR",
+          "content": "Sure, take a moment to think it through before we move on.",
+          "turn_id": "demo-b-s01-t055",
+          "start_time": "2026-01-13T16:43:51.000Z",
+          "end_time": "2026-01-13T16:44:18.000Z"
+        },
+        {
+          "_id": "55",
+          "session_id": "demo-b-s01",
+          "sequence_id": 56,
+          "role": "STUDENT_1",
+          "content": "Okay, I think it's because 5 is the sugar's part count — that makes sense now.",
+          "turn_id": "demo-b-s01-t056",
+          "start_time": "2026-01-13T16:44:18.000Z",
+          "end_time": "2026-01-13T16:45:28.000Z"
+        }
+      ],
+      "lead_role": "TUTOR",
+      "annotations": [
+        {
+          "_id": "0",
+          "episode_id": "ep-run-human-demo-b-001-s01-001",
+          "run_id": "run-human-demo-b-001",
+          "identifiedBy": "HUMAN",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "implementation",
+          "start_turn_id": "demo-b-s01-t001",
+          "end_turn_id": "demo-b-s01-t004",
+          "evidence": [
+            "demo-b-s01-t001",
+            "demo-b-s01-t002",
+            "demo-b-s01-t003",
+            "demo-b-s01-t004"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "2",
+          "episode_id": "ep-run-human-demo-b-001-s01-003",
+          "run_id": "run-human-demo-b-001",
+          "identifiedBy": "HUMAN",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "analysis",
+          "start_turn_id": "demo-b-s01-t006",
+          "end_turn_id": "demo-b-s01-t013",
+          "evidence": [
+            "demo-b-s01-t006",
+            "demo-b-s01-t007",
+            "demo-b-s01-t008",
+            "demo-b-s01-t009",
+            "demo-b-s01-t010",
+            "demo-b-s01-t011",
+            "demo-b-s01-t012",
+            "demo-b-s01-t013"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "3",
+          "episode_id": "ep-run-human-demo-b-001-s01-004",
+          "run_id": "run-human-demo-b-001",
+          "identifiedBy": "HUMAN",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "planning",
+          "start_turn_id": "demo-b-s01-t014",
+          "end_turn_id": "demo-b-s01-t016",
+          "evidence": [
+            "demo-b-s01-t014",
+            "demo-b-s01-t015",
+            "demo-b-s01-t016"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "4",
+          "episode_id": "ep-run-human-demo-b-001-s01-005",
+          "run_id": "run-human-demo-b-001",
+          "identifiedBy": "HUMAN",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "exploration",
+          "start_turn_id": "demo-b-s01-t017",
+          "end_turn_id": "demo-b-s01-t022",
+          "evidence": [
+            "demo-b-s01-t017",
+            "demo-b-s01-t018",
+            "demo-b-s01-t019",
+            "demo-b-s01-t020",
+            "demo-b-s01-t021",
+            "demo-b-s01-t022"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "6",
+          "episode_id": "ep-run-human-demo-b-001-s01-007",
+          "run_id": "run-human-demo-b-001",
+          "identifiedBy": "HUMAN",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "verification",
+          "start_turn_id": "demo-b-s01-t025",
+          "end_turn_id": "demo-b-s01-t029",
+          "evidence": [
+            "demo-b-s01-t025",
+            "demo-b-s01-t026",
+            "demo-b-s01-t027",
+            "demo-b-s01-t028",
+            "demo-b-s01-t029"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "8",
+          "episode_id": "ep-run-human-demo-b-001-s01-009",
+          "run_id": "run-human-demo-b-001",
+          "identifiedBy": "HUMAN",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "implementation",
+          "start_turn_id": "demo-b-s01-t040",
+          "end_turn_id": "demo-b-s01-t043",
+          "evidence": [
+            "demo-b-s01-t040",
+            "demo-b-s01-t041",
+            "demo-b-s01-t042",
+            "demo-b-s01-t043"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "9",
+          "episode_id": "ep-run-human-demo-b-001-s01-010",
+          "run_id": "run-human-demo-b-001",
+          "identifiedBy": "HUMAN",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "verification",
+          "start_turn_id": "demo-b-s01-t044",
+          "end_turn_id": "demo-b-s01-t052",
+          "evidence": [
+            "demo-b-s01-t044",
+            "demo-b-s01-t045",
+            "demo-b-s01-t046",
+            "demo-b-s01-t047",
+            "demo-b-s01-t048",
+            "demo-b-s01-t049",
+            "demo-b-s01-t050",
+            "demo-b-s01-t051",
+            "demo-b-s01-t052"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "10",
+          "episode_id": "ep-run-human-demo-b-001-s01-011",
+          "run_id": "run-human-demo-b-001",
+          "identifiedBy": "HUMAN",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "planning",
+          "start_turn_id": "demo-b-s01-t053",
+          "end_turn_id": "demo-b-s01-t053",
+          "evidence": [
+            "demo-b-s01-t053"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "11",
+          "episode_id": "ep-run-human-demo-b-001-s01-012",
+          "run_id": "run-human-demo-b-001",
+          "identifiedBy": "HUMAN",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "exploration",
+          "start_turn_id": "demo-b-s01-t054",
+          "end_turn_id": "demo-b-s01-t056",
+          "evidence": [
+            "demo-b-s01-t054",
+            "demo-b-s01-t055",
+            "demo-b-s01-t056"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "0",
+          "episode_id": "ep-run-llm-demo-b-001-demo-b-s01-001",
+          "run_id": "run-llm-demo-b-001",
+          "identifiedBy": "AI",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "reading",
+          "start_turn_id": "demo-b-s01-t001",
+          "end_turn_id": "demo-b-s01-t004",
+          "evidence": [
+            "demo-b-s01-t001",
+            "demo-b-s01-t002",
+            "demo-b-s01-t003",
+            "demo-b-s01-t004"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "1",
+          "episode_id": "ep-run-llm-demo-b-001-demo-b-s01-002",
+          "run_id": "run-llm-demo-b-001",
+          "identifiedBy": "AI",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "digression",
+          "start_turn_id": "demo-b-s01-t005",
+          "end_turn_id": "demo-b-s01-t005",
+          "evidence": [
+            "demo-b-s01-t005"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "2",
+          "episode_id": "ep-run-llm-demo-b-001-demo-b-s01-003",
+          "run_id": "run-llm-demo-b-001",
+          "identifiedBy": "AI",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "analysis",
+          "start_turn_id": "demo-b-s01-t006",
+          "end_turn_id": "demo-b-s01-t013",
+          "evidence": [
+            "demo-b-s01-t006",
+            "demo-b-s01-t007",
+            "demo-b-s01-t008",
+            "demo-b-s01-t009",
+            "demo-b-s01-t010",
+            "demo-b-s01-t011",
+            "demo-b-s01-t012",
+            "demo-b-s01-t013"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "3",
+          "episode_id": "ep-run-llm-demo-b-001-demo-b-s01-004",
+          "run_id": "run-llm-demo-b-001",
+          "identifiedBy": "AI",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "planning",
+          "start_turn_id": "demo-b-s01-t014",
+          "end_turn_id": "demo-b-s01-t015",
+          "evidence": [
+            "demo-b-s01-t014",
+            "demo-b-s01-t015"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "4",
+          "episode_id": "ep-run-llm-demo-b-001-demo-b-s01-005",
+          "run_id": "run-llm-demo-b-001",
+          "identifiedBy": "AI",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "implementation",
+          "start_turn_id": "demo-b-s01-t016",
+          "end_turn_id": "demo-b-s01-t018",
+          "evidence": [
+            "demo-b-s01-t016",
+            "demo-b-s01-t017",
+            "demo-b-s01-t018"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "5",
+          "episode_id": "ep-run-llm-demo-b-001-demo-b-s01-006",
+          "run_id": "run-llm-demo-b-001",
+          "identifiedBy": "AI",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "verification",
+          "start_turn_id": "demo-b-s01-t019",
+          "end_turn_id": "demo-b-s01-t022",
+          "evidence": [
+            "demo-b-s01-t019",
+            "demo-b-s01-t020",
+            "demo-b-s01-t021",
+            "demo-b-s01-t022"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "6",
+          "episode_id": "ep-run-llm-demo-b-001-demo-b-s01-007",
+          "run_id": "run-llm-demo-b-001",
+          "identifiedBy": "AI",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "monitor",
+          "start_turn_id": "demo-b-s01-t023",
+          "end_turn_id": "demo-b-s01-t024",
+          "evidence": [
+            "demo-b-s01-t023",
+            "demo-b-s01-t024"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "7",
+          "episode_id": "ep-run-llm-demo-b-001-demo-b-s01-008",
+          "run_id": "run-llm-demo-b-001",
+          "identifiedBy": "AI",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "planning",
+          "start_turn_id": "demo-b-s01-t025",
+          "end_turn_id": "demo-b-s01-t026",
+          "evidence": [
+            "demo-b-s01-t025",
+            "demo-b-s01-t026"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "8",
+          "episode_id": "ep-run-llm-demo-b-001-demo-b-s01-009",
+          "run_id": "run-llm-demo-b-001",
+          "identifiedBy": "AI",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "implementation",
+          "start_turn_id": "demo-b-s01-t027",
+          "end_turn_id": "demo-b-s01-t031",
+          "evidence": [
+            "demo-b-s01-t027",
+            "demo-b-s01-t028",
+            "demo-b-s01-t029",
+            "demo-b-s01-t030",
+            "demo-b-s01-t031"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "9",
+          "episode_id": "ep-run-llm-demo-b-001-demo-b-s01-010",
+          "run_id": "run-llm-demo-b-001",
+          "identifiedBy": "AI",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "exploration",
+          "start_turn_id": "demo-b-s01-t032",
+          "end_turn_id": "demo-b-s01-t034",
+          "evidence": [
+            "demo-b-s01-t032",
+            "demo-b-s01-t033",
+            "demo-b-s01-t034"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "10",
+          "episode_id": "ep-run-llm-demo-b-001-demo-b-s01-011",
+          "run_id": "run-llm-demo-b-001",
+          "identifiedBy": "AI",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "verification",
+          "start_turn_id": "demo-b-s01-t035",
+          "end_turn_id": "demo-b-s01-t039",
+          "evidence": [
+            "demo-b-s01-t035",
+            "demo-b-s01-t036",
+            "demo-b-s01-t037",
+            "demo-b-s01-t038",
+            "demo-b-s01-t039"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "11",
+          "episode_id": "ep-run-llm-demo-b-001-demo-b-s01-012",
+          "run_id": "run-llm-demo-b-001",
+          "identifiedBy": "AI",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "planning",
+          "start_turn_id": "demo-b-s01-t040",
+          "end_turn_id": "demo-b-s01-t040",
+          "evidence": [
+            "demo-b-s01-t040"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "12",
+          "episode_id": "ep-run-llm-demo-b-001-demo-b-s01-013",
+          "run_id": "run-llm-demo-b-001",
+          "identifiedBy": "AI",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "implementation",
+          "start_turn_id": "demo-b-s01-t041",
+          "end_turn_id": "demo-b-s01-t042",
+          "evidence": [
+            "demo-b-s01-t041",
+            "demo-b-s01-t042"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "13",
+          "episode_id": "ep-run-llm-demo-b-001-demo-b-s01-014",
+          "run_id": "run-llm-demo-b-001",
+          "identifiedBy": "AI",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "verification",
+          "start_turn_id": "demo-b-s01-t043",
+          "end_turn_id": "demo-b-s01-t051",
+          "evidence": [
+            "demo-b-s01-t043",
+            "demo-b-s01-t044",
+            "demo-b-s01-t045",
+            "demo-b-s01-t046",
+            "demo-b-s01-t047",
+            "demo-b-s01-t048",
+            "demo-b-s01-t049",
+            "demo-b-s01-t050",
+            "demo-b-s01-t051"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "14",
+          "episode_id": "ep-run-llm-demo-b-001-demo-b-s01-015",
+          "run_id": "run-llm-demo-b-001",
+          "identifiedBy": "AI",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "planning",
+          "start_turn_id": "demo-b-s01-t052",
+          "end_turn_id": "demo-b-s01-t053",
+          "evidence": [
+            "demo-b-s01-t052",
+            "demo-b-s01-t053"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "15",
+          "episode_id": "ep-run-llm-demo-b-001-demo-b-s01-016",
+          "run_id": "run-llm-demo-b-001",
+          "identifiedBy": "AI",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "monitor",
+          "start_turn_id": "demo-b-s01-t054",
+          "end_turn_id": "demo-b-s01-t055",
+          "evidence": [
+            "demo-b-s01-t054",
+            "demo-b-s01-t055"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "16",
+          "episode_id": "ep-run-llm-demo-b-001-demo-b-s01-017",
+          "run_id": "run-llm-demo-b-001",
+          "identifiedBy": "AI",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "analysis",
+          "start_turn_id": "demo-b-s01-t056",
+          "end_turn_id": "demo-b-s01-t056",
+          "evidence": [
+            "demo-b-s01-t056"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        }
+      ]
+    },
+    {
+      "session_id": "demo-b-s02",
+      "student_id": "stu-demo-b",
+      "session_index": 2,
+      "session_date": "2026-01-20",
+      "session_topic": "Solving a linear equation with variables on both sides",
+      "has_timestamps": true,
+      "transcript_scope": "full",
+      "problems": [
+        {
+          "problem_id": "demo-b-s02-p01",
+          "topic": "Solving a linear equation with variables on both sides",
+          "start_turn_id": "demo-b-s02-t001",
+          "end_turn_id": "demo-b-s02-t048"
+        }
+      ],
+      "turns": [
+        {
+          "_id": "0",
+          "session_id": "demo-b-s02",
+          "sequence_id": 1,
+          "role": "TUTOR",
+          "content": "Let's look at this one: solve 5 times the quantity x minus 3 equals 2x plus 9.",
+          "turn_id": "demo-b-s02-t001",
+          "start_time": "2026-01-20T16:00:00.000Z",
+          "end_time": "2026-01-20T16:00:16.000Z"
+        },
+        {
+          "_id": "1",
+          "session_id": "demo-b-s02",
+          "sequence_id": 2,
+          "role": "STUDENT_1",
+          "content": "So we've got parentheses on one side and x's on both sides, got it.",
+          "turn_id": "demo-b-s02-t002",
+          "start_time": "2026-01-20T16:00:20.000Z",
+          "end_time": "2026-01-20T16:00:36.000Z"
+        },
+        {
+          "_id": "2",
+          "session_id": "demo-b-s02",
+          "sequence_id": 3,
+          "role": "TUTOR",
+          "content": "Right, that's the whole problem — nothing else attached to it.",
+          "turn_id": "demo-b-s02-t003",
+          "start_time": "2026-01-20T16:00:38.000Z",
+          "end_time": "2026-01-20T16:01:38.000Z"
+        },
+        {
+          "_id": "3",
+          "session_id": "demo-b-s02",
+          "sequence_id": 4,
+          "role": "STUDENT_1",
+          "content": "So the bracket means we have to multiply the 5 through before anything else, right?",
+          "turn_id": "demo-b-s02-t004",
+          "start_time": "2026-01-20T16:01:46.000Z",
+          "end_time": "2026-01-20T16:02:51.000Z"
+        },
+        {
+          "_id": "4",
+          "session_id": "demo-b-s02",
+          "sequence_id": 5,
+          "role": "TUTOR",
+          "content": "Exactly, that 5 has to hit both terms inside the parentheses.",
+          "turn_id": "demo-b-s02-t005",
+          "start_time": "2026-01-20T16:02:54.000Z",
+          "end_time": "2026-01-20T16:03:56.000Z"
+        },
+        {
+          "_id": "5",
+          "session_id": "demo-b-s02",
+          "sequence_id": 6,
+          "role": "STUDENT_1",
+          "content": "So 5 times x is 5x, and 5 times negative 3 is negative 15.",
+          "turn_id": "demo-b-s02-t006",
+          "start_time": "2026-01-20T16:03:59.000Z",
+          "end_time": "2026-01-20T16:04:29.000Z"
+        },
+        {
+          "_id": "6",
+          "session_id": "demo-b-s02",
+          "sequence_id": 7,
+          "role": "TUTOR",
+          "content": "Right, so the left side becomes 5x minus 15.",
+          "turn_id": "demo-b-s02-t007",
+          "start_time": "2026-01-20T16:04:30.000Z",
+          "end_time": "2026-01-20T16:05:21.000Z"
+        },
+        {
+          "_id": "7",
+          "session_id": "demo-b-s02",
+          "sequence_id": 8,
+          "role": "STUDENT_1",
+          "content": "And the right side just stays as 2x plus 9, since there's no bracket there.",
+          "turn_id": "demo-b-s02-t008",
+          "start_time": "2026-01-20T16:05:29.000Z",
+          "end_time": "2026-01-20T16:06:18.000Z"
+        },
+        {
+          "_id": "8",
+          "session_id": "demo-b-s02",
+          "sequence_id": 9,
+          "role": "TUTOR",
+          "content": "So now we've got 5x minus 15 equals 2x plus 9 — a clean equation to work with.",
+          "turn_id": "demo-b-s02-t009",
+          "start_time": "2026-01-20T16:06:25.000Z",
+          "end_time": "2026-01-20T16:07:18.000Z"
+        },
+        {
+          "_id": "9",
+          "session_id": "demo-b-s02",
+          "sequence_id": 10,
+          "role": "STUDENT_1",
+          "content": "Okay, so I'll subtract 2x from both sides now.",
+          "turn_id": "demo-b-s02-t010",
+          "start_time": "2026-01-20T16:07:23.000Z",
+          "end_time": "2026-01-20T16:08:05.000Z"
+        },
+        {
+          "_id": "10",
+          "session_id": "demo-b-s02",
+          "sequence_id": 11,
+          "role": "TUTOR",
+          "content": "Go ahead, write out what that leaves you with.",
+          "turn_id": "demo-b-s02-t011",
+          "start_time": "2026-01-20T16:08:11.000Z",
+          "end_time": "2026-01-20T16:08:41.000Z"
+        },
+        {
+          "_id": "11",
+          "session_id": "demo-b-s02",
+          "sequence_id": 12,
+          "role": "STUDENT_1",
+          "content": "5x minus 2x is 3x, so it's 3x minus 15 equals 9.",
+          "turn_id": "demo-b-s02-t012",
+          "start_time": "2026-01-20T16:08:48.000Z",
+          "end_time": "2026-01-20T16:09:11.000Z"
+        },
+        {
+          "_id": "12",
+          "session_id": "demo-b-s02",
+          "sequence_id": 13,
+          "role": "TUTOR",
+          "content": "Good, now what do we do with that minus 15?",
+          "turn_id": "demo-b-s02-t013",
+          "start_time": "2026-01-20T16:09:11.000Z",
+          "end_time": "2026-01-20T16:09:23.000Z"
+        },
+        {
+          "_id": "13",
+          "session_id": "demo-b-s02",
+          "sequence_id": 14,
+          "role": "STUDENT_1",
+          "content": "Add 15 to both sides — that gives 3x equals 24.",
+          "turn_id": "demo-b-s02-t014",
+          "start_time": "2026-01-20T16:09:30.000Z",
+          "end_time": "2026-01-20T16:09:58.000Z"
+        },
+        {
+          "_id": "14",
+          "session_id": "demo-b-s02",
+          "sequence_id": 15,
+          "role": "TUTOR",
+          "content": "Nice, and now the last step to isolate x?",
+          "turn_id": "demo-b-s02-t015",
+          "start_time": "2026-01-20T16:10:05.000Z",
+          "end_time": "2026-01-20T16:10:25.000Z"
+        },
+        {
+          "_id": "15",
+          "session_id": "demo-b-s02",
+          "sequence_id": 16,
+          "role": "STUDENT_1",
+          "content": "Divide both sides by 3, so x equals 8.",
+          "turn_id": "demo-b-s02-t016",
+          "start_time": "2026-01-20T16:10:27.000Z",
+          "end_time": "2026-01-20T16:10:47.000Z"
+        },
+        {
+          "_id": "16",
+          "session_id": "demo-b-s02",
+          "sequence_id": 17,
+          "role": "TUTOR",
+          "content": "That's the value — let's think about whether there's another way to reach it.",
+          "turn_id": "demo-b-s02-t017",
+          "start_time": "2026-01-20T16:10:52.000Z",
+          "end_time": "2026-01-20T16:11:33.000Z"
+        },
+        {
+          "_id": "17",
+          "session_id": "demo-b-s02",
+          "sequence_id": 18,
+          "role": "STUDENT_1",
+          "content": "I guess instead of moving the 2x, we could've moved it the other way first?",
+          "turn_id": "demo-b-s02-t018",
+          "start_time": "2026-01-20T16:11:37.000Z",
+          "end_time": "2026-01-20T16:11:57.000Z"
+        },
+        {
+          "_id": "18",
+          "session_id": "demo-b-s02",
+          "sequence_id": 19,
+          "role": "TUTOR",
+          "content": "Sure, walk me through what that would look like.",
+          "turn_id": "demo-b-s02-t019",
+          "start_time": "2026-01-20T16:12:05.000Z",
+          "end_time": "2026-01-20T16:12:37.000Z"
+        },
+        {
+          "_id": "19",
+          "session_id": "demo-b-s02",
+          "sequence_id": 20,
+          "role": "STUDENT_1",
+          "content": "We'd subtract 5x from both sides instead, so the x terms end up on the right.",
+          "turn_id": "demo-b-s02-t020",
+          "start_time": "2026-01-20T16:12:42.000Z",
+          "end_time": "2026-01-20T16:13:40.000Z"
+        },
+        {
+          "_id": "20",
+          "session_id": "demo-b-s02",
+          "sequence_id": 21,
+          "role": "TUTOR",
+          "content": "And what would that leave us with on each side?",
+          "turn_id": "demo-b-s02-t021",
+          "start_time": "2026-01-20T16:13:47.000Z",
+          "end_time": "2026-01-20T16:14:22.000Z"
+        },
+        {
+          "_id": "21",
+          "session_id": "demo-b-s02",
+          "sequence_id": 22,
+          "role": "STUDENT_1",
+          "content": "Negative 15 equals negative 3x plus 9, I think.",
+          "turn_id": "demo-b-s02-t022",
+          "start_time": "2026-01-20T16:14:23.000Z",
+          "end_time": "2026-01-20T16:14:42.000Z"
+        },
+        {
+          "_id": "22",
+          "session_id": "demo-b-s02",
+          "sequence_id": 23,
+          "role": "TUTOR",
+          "content": "Sounds right so far — what's the next move in that version?",
+          "turn_id": "demo-b-s02-t023",
+          "start_time": "2026-01-20T16:14:49.000Z",
+          "end_time": "2026-01-20T16:15:53.000Z"
+        },
+        {
+          "_id": "23",
+          "session_id": "demo-b-s02",
+          "sequence_id": 24,
+          "role": "STUDENT_1",
+          "content": "Let me just jot that equation down on my scratch pad before I lose it.",
+          "turn_id": "demo-b-s02-t024",
+          "start_time": "2026-01-20T16:15:58.000Z",
+          "end_time": "2026-01-20T16:16:14.000Z"
+        },
+        {
+          "_id": "24",
+          "session_id": "demo-b-s02",
+          "sequence_id": 25,
+          "role": "TUTOR",
+          "content": "Sure, take a second to get it written down.",
+          "turn_id": "demo-b-s02-t025",
+          "start_time": "2026-01-20T16:16:20.000Z",
+          "end_time": "2026-01-20T16:17:13.000Z"
+        },
+        {
+          "_id": "25",
+          "session_id": "demo-b-s02",
+          "sequence_id": 26,
+          "role": "STUDENT_1",
+          "content": "Okay, so from there I'd subtract 9 from both sides.",
+          "turn_id": "demo-b-s02-t026",
+          "start_time": "2026-01-20T16:17:18.000Z",
+          "end_time": "2026-01-20T16:18:20.000Z"
+        },
+        {
+          "_id": "26",
+          "session_id": "demo-b-s02",
+          "sequence_id": 27,
+          "role": "TUTOR",
+          "content": "Go on, what does that give you?",
+          "turn_id": "demo-b-s02-t027",
+          "start_time": "2026-01-20T16:18:20.000Z",
+          "end_time": "2026-01-20T16:19:08.000Z"
+        },
+        {
+          "_id": "27",
+          "session_id": "demo-b-s02",
+          "sequence_id": 28,
+          "role": "STUDENT_1",
+          "content": "Negative 24 equals negative 3x, then divide by negative 3.",
+          "turn_id": "demo-b-s02-t028",
+          "start_time": "2026-01-20T16:19:14.000Z",
+          "end_time": "2026-01-20T16:20:12.000Z"
+        },
+        {
+          "_id": "28",
+          "session_id": "demo-b-s02",
+          "sequence_id": 29,
+          "role": "TUTOR",
+          "content": "And that division should land you right back at the same answer as before.",
+          "turn_id": "demo-b-s02-t029",
+          "start_time": "2026-01-20T16:20:12.000Z",
+          "end_time": "2026-01-20T16:21:07.000Z"
+        },
+        {
+          "_id": "29",
+          "session_id": "demo-b-s02",
+          "sequence_id": 30,
+          "role": "STUDENT_1",
+          "content": "Wait, could dividing negative numbers like that flip the sign somewhere and mess it up?",
+          "turn_id": "demo-b-s02-t030",
+          "start_time": "2026-01-20T16:21:08.000Z",
+          "end_time": "2026-01-20T16:21:43.000Z"
+        },
+        {
+          "_id": "30",
+          "session_id": "demo-b-s02",
+          "sequence_id": 31,
+          "role": "TUTOR",
+          "content": "Good instinct to check — try the division and see what actually happens to the sign.",
+          "turn_id": "demo-b-s02-t031",
+          "start_time": "2026-01-20T16:21:44.000Z",
+          "end_time": "2026-01-20T16:22:34.000Z"
+        },
+        {
+          "_id": "31",
+          "session_id": "demo-b-s02",
+          "sequence_id": 32,
+          "role": "STUDENT_1",
+          "content": "Negative 24 over negative 3 is positive 8, so the negatives cancel out fine.",
+          "turn_id": "demo-b-s02-t032",
+          "start_time": "2026-01-20T16:22:34.000Z",
+          "end_time": "2026-01-20T16:23:07.000Z"
+        },
+        {
+          "_id": "32",
+          "session_id": "demo-b-s02",
+          "sequence_id": 33,
+          "role": "TUTOR",
+          "content": "Exactly, both routes land on the same value, just from opposite directions.",
+          "turn_id": "demo-b-s02-t033",
+          "start_time": "2026-01-20T16:23:14.000Z",
+          "end_time": "2026-01-20T16:24:23.000Z"
+        },
+        {
+          "_id": "33",
+          "session_id": "demo-b-s02",
+          "sequence_id": 34,
+          "role": "STUDENT_1",
+          "content": "So it doesn't matter which side we clear the x terms from first?",
+          "turn_id": "demo-b-s02-t034",
+          "start_time": "2026-01-20T16:24:23.000Z",
+          "end_time": "2026-01-20T16:24:54.000Z"
+        },
+        {
+          "_id": "34",
+          "session_id": "demo-b-s02",
+          "sequence_id": 35,
+          "role": "TUTOR",
+          "content": "Right, as long as you do the same operation to both sides, the path can vary.",
+          "turn_id": "demo-b-s02-t035",
+          "start_time": "2026-01-20T16:24:57.000Z",
+          "end_time": "2026-01-20T16:25:38.000Z"
+        },
+        {
+          "_id": "35",
+          "session_id": "demo-b-s02",
+          "sequence_id": 36,
+          "role": "STUDENT_1",
+          "content": "That makes sense because we're just keeping the equation balanced either way.",
+          "turn_id": "demo-b-s02-t036",
+          "start_time": "2026-01-20T16:25:40.000Z",
+          "end_time": "2026-01-20T16:26:05.000Z"
+        },
+        {
+          "_id": "36",
+          "session_id": "demo-b-s02",
+          "sequence_id": 37,
+          "role": "TUTOR",
+          "content": "Exactly — balance is the whole principle behind every move we made.",
+          "turn_id": "demo-b-s02-t037",
+          "start_time": "2026-01-20T16:26:09.000Z",
+          "end_time": "2026-01-20T16:26:41.000Z"
+        },
+        {
+          "_id": "37",
+          "session_id": "demo-b-s02",
+          "sequence_id": 38,
+          "role": "STUDENT_1",
+          "content": "So the bracket expansion was really just applying distribution before anything else.",
+          "turn_id": "demo-b-s02-t038",
+          "start_time": "2026-01-20T16:26:46.000Z",
+          "end_time": "2026-01-20T16:27:14.000Z"
+        },
+        {
+          "_id": "38",
+          "session_id": "demo-b-s02",
+          "sequence_id": 39,
+          "role": "TUTOR",
+          "content": "Right, and collecting the x terms is just combining like terms across the equals sign.",
+          "turn_id": "demo-b-s02-t039",
+          "start_time": "2026-01-20T16:27:21.000Z",
+          "end_time": "2026-01-20T16:27:44.000Z"
+        },
+        {
+          "_id": "39",
+          "session_id": "demo-b-s02",
+          "sequence_id": 40,
+          "role": "STUDENT_1",
+          "content": "So all of this really only used two ideas: distributing and combining like terms.",
+          "turn_id": "demo-b-s02-t040",
+          "start_time": "2026-01-20T16:27:52.000Z",
+          "end_time": "2026-01-20T16:28:31.000Z"
+        },
+        {
+          "_id": "40",
+          "session_id": "demo-b-s02",
+          "sequence_id": 41,
+          "role": "TUTOR",
+          "content": "That's the whole toolkit for this kind of equation, really.",
+          "turn_id": "demo-b-s02-t041",
+          "start_time": "2026-01-20T16:28:35.000Z",
+          "end_time": "2026-01-20T16:28:55.000Z"
+        },
+        {
+          "_id": "41",
+          "session_id": "demo-b-s02",
+          "sequence_id": 42,
+          "role": "STUDENT_1",
+          "content": "Let me plug x equals 8 back into the original to make sure it holds.",
+          "turn_id": "demo-b-s02-t042",
+          "start_time": "2026-01-20T16:28:56.000Z",
+          "end_time": "2026-01-20T16:29:55.000Z"
+        },
+        {
+          "_id": "42",
+          "session_id": "demo-b-s02",
+          "sequence_id": 43,
+          "role": "TUTOR",
+          "content": "Go ahead, work out both sides with that value.",
+          "turn_id": "demo-b-s02-t043",
+          "start_time": "2026-01-20T16:29:59.000Z",
+          "end_time": "2026-01-20T16:30:43.000Z"
+        },
+        {
+          "_id": "43",
+          "session_id": "demo-b-s02",
+          "sequence_id": 44,
+          "role": "STUDENT_1",
+          "content": "Hmm, let me get the arithmetic straight in my head first.",
+          "turn_id": "demo-b-s02-t044",
+          "start_time": "2026-01-20T16:30:47.000Z",
+          "end_time": "2026-01-20T16:31:44.000Z"
+        },
+        {
+          "_id": "44",
+          "session_id": "demo-b-s02",
+          "sequence_id": 45,
+          "role": "TUTOR",
+          "content": "Take your time with it.",
+          "turn_id": "demo-b-s02-t045",
+          "start_time": "2026-01-20T16:31:44.000Z",
+          "end_time": "2026-01-20T16:32:51.000Z"
+        },
+        {
+          "_id": "45",
+          "session_id": "demo-b-s02",
+          "sequence_id": 46,
+          "role": "STUDENT_1",
+          "content": "5 times 8 minus 3 is 5 times 5, which is 25.",
+          "turn_id": "demo-b-s02-t046",
+          "start_time": "2026-01-20T16:32:54.000Z",
+          "end_time": "2026-01-20T16:34:00.000Z"
+        },
+        {
+          "_id": "46",
+          "session_id": "demo-b-s02",
+          "sequence_id": 47,
+          "role": "TUTOR",
+          "content": "And the other side?",
+          "turn_id": "demo-b-s02-t047",
+          "start_time": "2026-01-20T16:34:00.000Z",
+          "end_time": "2026-01-20T16:35:02.000Z"
+        },
+        {
+          "_id": "47",
+          "session_id": "demo-b-s02",
+          "sequence_id": 48,
+          "role": "STUDENT_1",
+          "content": "2 times 8 plus 9 is 16 plus 9, which is also 25 — it checks out.",
+          "turn_id": "demo-b-s02-t048",
+          "start_time": "2026-01-20T16:35:09.000Z",
+          "end_time": "2026-01-20T16:35:32.000Z"
+        }
+      ],
+      "lead_role": "TUTOR",
+      "annotations": [
+        {
+          "_id": "1",
+          "episode_id": "ep-run-human-demo-b-001-s02-002",
+          "run_id": "run-human-demo-b-001",
+          "identifiedBy": "HUMAN",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "analysis",
+          "start_turn_id": "demo-b-s02-t005",
+          "end_turn_id": "demo-b-s02-t011",
+          "evidence": [
+            "demo-b-s02-t005",
+            "demo-b-s02-t006",
+            "demo-b-s02-t007",
+            "demo-b-s02-t008",
+            "demo-b-s02-t009",
+            "demo-b-s02-t010",
+            "demo-b-s02-t011"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "2",
+          "episode_id": "ep-run-human-demo-b-001-s02-003",
+          "run_id": "run-human-demo-b-001",
+          "identifiedBy": "HUMAN",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "implementation",
+          "start_turn_id": "demo-b-s02-t012",
+          "end_turn_id": "demo-b-s02-t025",
+          "evidence": [
+            "demo-b-s02-t012",
+            "demo-b-s02-t013",
+            "demo-b-s02-t014",
+            "demo-b-s02-t015",
+            "demo-b-s02-t016",
+            "demo-b-s02-t017",
+            "demo-b-s02-t018",
+            "demo-b-s02-t019",
+            "demo-b-s02-t020",
+            "demo-b-s02-t021",
+            "demo-b-s02-t022",
+            "demo-b-s02-t023",
+            "demo-b-s02-t024",
+            "demo-b-s02-t025"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "5",
+          "episode_id": "ep-run-human-demo-b-001-s02-006",
+          "run_id": "run-human-demo-b-001",
+          "identifiedBy": "HUMAN",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "exploration",
+          "start_turn_id": "demo-b-s02-t028",
+          "end_turn_id": "demo-b-s02-t032",
+          "evidence": [
+            "demo-b-s02-t028",
+            "demo-b-s02-t029",
+            "demo-b-s02-t030",
+            "demo-b-s02-t031",
+            "demo-b-s02-t032"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "6",
+          "episode_id": "ep-run-human-demo-b-001-s02-007",
+          "run_id": "run-human-demo-b-001",
+          "identifiedBy": "HUMAN",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "analysis",
+          "start_turn_id": "demo-b-s02-t033",
+          "end_turn_id": "demo-b-s02-t042",
+          "evidence": [
+            "demo-b-s02-t033",
+            "demo-b-s02-t034",
+            "demo-b-s02-t035",
+            "demo-b-s02-t036",
+            "demo-b-s02-t037",
+            "demo-b-s02-t038",
+            "demo-b-s02-t039",
+            "demo-b-s02-t040",
+            "demo-b-s02-t041",
+            "demo-b-s02-t042"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "0",
+          "episode_id": "ep-run-llm-demo-b-001-demo-b-s02-001",
+          "run_id": "run-llm-demo-b-001",
+          "identifiedBy": "AI",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "reading",
+          "start_turn_id": "demo-b-s02-t001",
+          "end_turn_id": "demo-b-s02-t001",
+          "evidence": [
+            "demo-b-s02-t001"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "1",
+          "episode_id": "ep-run-llm-demo-b-001-demo-b-s02-002",
+          "run_id": "run-llm-demo-b-001",
+          "identifiedBy": "AI",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "analysis",
+          "start_turn_id": "demo-b-s02-t002",
+          "end_turn_id": "demo-b-s02-t005",
+          "evidence": [
+            "demo-b-s02-t002",
+            "demo-b-s02-t003",
+            "demo-b-s02-t004",
+            "demo-b-s02-t005"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "2",
+          "episode_id": "ep-run-llm-demo-b-001-demo-b-s02-003",
+          "run_id": "run-llm-demo-b-001",
+          "identifiedBy": "AI",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "implementation",
+          "start_turn_id": "demo-b-s02-t006",
+          "end_turn_id": "demo-b-s02-t009",
+          "evidence": [
+            "demo-b-s02-t006",
+            "demo-b-s02-t007",
+            "demo-b-s02-t008",
+            "demo-b-s02-t009"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "3",
+          "episode_id": "ep-run-llm-demo-b-001-demo-b-s02-004",
+          "run_id": "run-llm-demo-b-001",
+          "identifiedBy": "AI",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "planning",
+          "start_turn_id": "demo-b-s02-t010",
+          "end_turn_id": "demo-b-s02-t010",
+          "evidence": [
+            "demo-b-s02-t010"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "4",
+          "episode_id": "ep-run-llm-demo-b-001-demo-b-s02-005",
+          "run_id": "run-llm-demo-b-001",
+          "identifiedBy": "AI",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "implementation",
+          "start_turn_id": "demo-b-s02-t011",
+          "end_turn_id": "demo-b-s02-t012",
+          "evidence": [
+            "demo-b-s02-t011",
+            "demo-b-s02-t012"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "5",
+          "episode_id": "ep-run-llm-demo-b-001-demo-b-s02-006",
+          "run_id": "run-llm-demo-b-001",
+          "identifiedBy": "AI",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "planning",
+          "start_turn_id": "demo-b-s02-t013",
+          "end_turn_id": "demo-b-s02-t013",
+          "evidence": [
+            "demo-b-s02-t013"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "6",
+          "episode_id": "ep-run-llm-demo-b-001-demo-b-s02-007",
+          "run_id": "run-llm-demo-b-001",
+          "identifiedBy": "AI",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "implementation",
+          "start_turn_id": "demo-b-s02-t014",
+          "end_turn_id": "demo-b-s02-t014",
+          "evidence": [
+            "demo-b-s02-t014"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "7",
+          "episode_id": "ep-run-llm-demo-b-001-demo-b-s02-008",
+          "run_id": "run-llm-demo-b-001",
+          "identifiedBy": "AI",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "planning",
+          "start_turn_id": "demo-b-s02-t015",
+          "end_turn_id": "demo-b-s02-t015",
+          "evidence": [
+            "demo-b-s02-t015"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "8",
+          "episode_id": "ep-run-llm-demo-b-001-demo-b-s02-009",
+          "run_id": "run-llm-demo-b-001",
+          "identifiedBy": "AI",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "implementation",
+          "start_turn_id": "demo-b-s02-t016",
+          "end_turn_id": "demo-b-s02-t016",
+          "evidence": [
+            "demo-b-s02-t016"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "9",
+          "episode_id": "ep-run-llm-demo-b-001-demo-b-s02-010",
+          "run_id": "run-llm-demo-b-001",
+          "identifiedBy": "AI",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "exploration",
+          "start_turn_id": "demo-b-s02-t017",
+          "end_turn_id": "demo-b-s02-t019",
+          "evidence": [
+            "demo-b-s02-t017",
+            "demo-b-s02-t018",
+            "demo-b-s02-t019"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "10",
+          "episode_id": "ep-run-llm-demo-b-001-demo-b-s02-011",
+          "run_id": "run-llm-demo-b-001",
+          "identifiedBy": "AI",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "implementation",
+          "start_turn_id": "demo-b-s02-t020",
+          "end_turn_id": "demo-b-s02-t022",
+          "evidence": [
+            "demo-b-s02-t020",
+            "demo-b-s02-t021",
+            "demo-b-s02-t022"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "11",
+          "episode_id": "ep-run-llm-demo-b-001-demo-b-s02-012",
+          "run_id": "run-llm-demo-b-001",
+          "identifiedBy": "AI",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "planning",
+          "start_turn_id": "demo-b-s02-t023",
+          "end_turn_id": "demo-b-s02-t023",
+          "evidence": [
+            "demo-b-s02-t023"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "12",
+          "episode_id": "ep-run-llm-demo-b-001-demo-b-s02-013",
+          "run_id": "run-llm-demo-b-001",
+          "identifiedBy": "AI",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "organization",
+          "start_turn_id": "demo-b-s02-t024",
+          "end_turn_id": "demo-b-s02-t025",
+          "evidence": [
+            "demo-b-s02-t024",
+            "demo-b-s02-t025"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "13",
+          "episode_id": "ep-run-llm-demo-b-001-demo-b-s02-014",
+          "run_id": "run-llm-demo-b-001",
+          "identifiedBy": "AI",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "implementation",
+          "start_turn_id": "demo-b-s02-t026",
+          "end_turn_id": "demo-b-s02-t028",
+          "evidence": [
+            "demo-b-s02-t026",
+            "demo-b-s02-t027",
+            "demo-b-s02-t028"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "14",
+          "episode_id": "ep-run-llm-demo-b-001-demo-b-s02-015",
+          "run_id": "run-llm-demo-b-001",
+          "identifiedBy": "AI",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "verification",
+          "start_turn_id": "demo-b-s02-t029",
+          "end_turn_id": "demo-b-s02-t033",
+          "evidence": [
+            "demo-b-s02-t029",
+            "demo-b-s02-t030",
+            "demo-b-s02-t031",
+            "demo-b-s02-t032",
+            "demo-b-s02-t033"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "15",
+          "episode_id": "ep-run-llm-demo-b-001-demo-b-s02-016",
+          "run_id": "run-llm-demo-b-001",
+          "identifiedBy": "AI",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "analysis",
+          "start_turn_id": "demo-b-s02-t034",
+          "end_turn_id": "demo-b-s02-t041",
+          "evidence": [
+            "demo-b-s02-t034",
+            "demo-b-s02-t035",
+            "demo-b-s02-t036",
+            "demo-b-s02-t037",
+            "demo-b-s02-t038",
+            "demo-b-s02-t039",
+            "demo-b-s02-t040",
+            "demo-b-s02-t041"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "16",
+          "episode_id": "ep-run-llm-demo-b-001-demo-b-s02-017",
+          "run_id": "run-llm-demo-b-001",
+          "identifiedBy": "AI",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "verification",
+          "start_turn_id": "demo-b-s02-t042",
+          "end_turn_id": "demo-b-s02-t043",
+          "evidence": [
+            "demo-b-s02-t042",
+            "demo-b-s02-t043"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "17",
+          "episode_id": "ep-run-llm-demo-b-001-demo-b-s02-018",
+          "run_id": "run-llm-demo-b-001",
+          "identifiedBy": "AI",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "monitor",
+          "start_turn_id": "demo-b-s02-t044",
+          "end_turn_id": "demo-b-s02-t045",
+          "evidence": [
+            "demo-b-s02-t044",
+            "demo-b-s02-t045"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "18",
+          "episode_id": "ep-run-llm-demo-b-001-demo-b-s02-019",
+          "run_id": "run-llm-demo-b-001",
+          "identifiedBy": "AI",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "verification",
+          "start_turn_id": "demo-b-s02-t046",
+          "end_turn_id": "demo-b-s02-t048",
+          "evidence": [
+            "demo-b-s02-t046",
+            "demo-b-s02-t047",
+            "demo-b-s02-t048"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        }
+      ]
+    },
+    {
+      "session_id": "demo-b-s03",
+      "student_id": "stu-demo-b",
+      "session_index": 3,
+      "session_date": "2026-01-27",
+      "session_topic": "Solving a linear equation with variables on both sides",
+      "has_timestamps": false,
+      "transcript_scope": "full",
+      "problems": [
+        {
+          "problem_id": "demo-b-s03-p01",
+          "topic": "Solving a linear equation with variables on both sides",
+          "start_turn_id": "demo-b-s03-t001",
+          "end_turn_id": "demo-b-s03-t060"
+        }
+      ],
+      "turns": [
+        {
+          "_id": "0",
+          "session_id": "demo-b-s03",
+          "sequence_id": 1,
+          "role": "TUTOR",
+          "content": "Let's read the problem: solve 5 times the quantity x minus 3, equal to 2x plus 9, for x.",
+          "turn_id": "demo-b-s03-t001"
+        },
+        {
+          "_id": "1",
+          "session_id": "demo-b-s03",
+          "sequence_id": 2,
+          "role": "STUDENT_1",
+          "content": "So we have 5(x - 3) = 2x + 9, and we need to find x.",
+          "turn_id": "demo-b-s03-t002"
+        },
+        {
+          "_id": "2",
+          "session_id": "demo-b-s03",
+          "sequence_id": 3,
+          "role": "TUTOR",
+          "content": "Good, that's exactly what's given — now let's see how to work with it.",
+          "turn_id": "demo-b-s03-t003"
+        },
+        {
+          "_id": "3",
+          "session_id": "demo-b-s03",
+          "sequence_id": 4,
+          "role": "STUDENT_1",
+          "content": "So x shows up on both sides, that's going to take some untangling.",
+          "turn_id": "demo-b-s03-t004"
+        },
+        {
+          "_id": "4",
+          "session_id": "demo-b-s03",
+          "sequence_id": 5,
+          "role": "TUTOR",
+          "content": "Right, the first thing to deal with is that bracket on the left — remember the distributive property?",
+          "turn_id": "demo-b-s03-t005"
+        },
+        {
+          "_id": "5",
+          "session_id": "demo-b-s03",
+          "sequence_id": 6,
+          "role": "STUDENT_1",
+          "content": "Yeah, multiplying 5 by both x and negative 3 inside the parentheses.",
+          "turn_id": "demo-b-s03-t006"
+        },
+        {
+          "_id": "6",
+          "session_id": "demo-b-s03",
+          "sequence_id": 7,
+          "role": "TUTOR",
+          "content": "Exactly, that turns the left side into a simple expression with one x term.",
+          "turn_id": "demo-b-s03-t007"
+        },
+        {
+          "_id": "7",
+          "session_id": "demo-b-s03",
+          "sequence_id": 8,
+          "role": "STUDENT_1",
+          "content": "And the right side already has its own x term, 2x.",
+          "turn_id": "demo-b-s03-t008"
+        },
+        {
+          "_id": "8",
+          "session_id": "demo-b-s03",
+          "sequence_id": 9,
+          "role": "TUTOR",
+          "content": "So once we expand, we'll have x terms on both sides that need combining.",
+          "turn_id": "demo-b-s03-t009"
+        },
+        {
+          "_id": "9",
+          "session_id": "demo-b-s03",
+          "sequence_id": 10,
+          "role": "STUDENT_1",
+          "content": "Makes sense — the goal is to get all the x's on one side and the numbers on the other.",
+          "turn_id": "demo-b-s03-t010"
+        },
+        {
+          "_id": "10",
+          "session_id": "demo-b-s03",
+          "sequence_id": 11,
+          "role": "TUTOR",
+          "content": "Before we go further, let's make sure we've got the original equation exactly right.",
+          "turn_id": "demo-b-s03-t011"
+        },
+        {
+          "_id": "11",
+          "session_id": "demo-b-s03",
+          "sequence_id": 12,
+          "role": "STUDENT_1",
+          "content": "It's 5 times the quantity x minus 3, equal to 2x plus 9.",
+          "turn_id": "demo-b-s03-t012"
+        },
+        {
+          "_id": "12",
+          "session_id": "demo-b-s03",
+          "sequence_id": 13,
+          "role": "TUTOR",
+          "content": "Perfect, that's the equation we're working with — let's think about our approach.",
+          "turn_id": "demo-b-s03-t013"
+        },
+        {
+          "_id": "13",
+          "session_id": "demo-b-s03",
+          "sequence_id": 14,
+          "role": "STUDENT_1",
+          "content": "Maybe it doesn't matter whether we expand first or move terms first?",
+          "turn_id": "demo-b-s03-t014"
+        },
+        {
+          "_id": "14",
+          "session_id": "demo-b-s03",
+          "sequence_id": 15,
+          "role": "TUTOR",
+          "content": "That's a good question to test out — let's see if both orders end up the same.",
+          "turn_id": "demo-b-s03-t015"
+        },
+        {
+          "_id": "15",
+          "session_id": "demo-b-s03",
+          "sequence_id": 16,
+          "role": "STUDENT_1",
+          "content": "I guess expanding feels more natural to start with, but I'm not totally sure.",
+          "turn_id": "demo-b-s03-t016"
+        },
+        {
+          "_id": "16",
+          "session_id": "demo-b-s03",
+          "sequence_id": 17,
+          "role": "TUTOR",
+          "content": "Hmm, let's pause here for a second.",
+          "turn_id": "demo-b-s03-t017"
+        },
+        {
+          "_id": "17",
+          "session_id": "demo-b-s03",
+          "sequence_id": 18,
+          "role": "STUDENT_1",
+          "content": "Yeah, give me a moment to think.",
+          "turn_id": "demo-b-s03-t018"
+        },
+        {
+          "_id": "18",
+          "session_id": "demo-b-s03",
+          "sequence_id": 19,
+          "role": "TUTOR",
+          "content": "Take your time.",
+          "turn_id": "demo-b-s03-t019"
+        },
+        {
+          "_id": "19",
+          "session_id": "demo-b-s03",
+          "sequence_id": 20,
+          "role": "STUDENT_1",
+          "content": "Okay, I think I've got it sorted in my head.",
+          "turn_id": "demo-b-s03-t020"
+        },
+        {
+          "_id": "20",
+          "session_id": "demo-b-s03",
+          "sequence_id": 21,
+          "role": "TUTOR",
+          "content": "Alright, let's pick back up.",
+          "turn_id": "demo-b-s03-t021"
+        },
+        {
+          "_id": "21",
+          "session_id": "demo-b-s03",
+          "sequence_id": 22,
+          "role": "STUDENT_1",
+          "content": "Ready when you are.",
+          "turn_id": "demo-b-s03-t022"
+        },
+        {
+          "_id": "22",
+          "session_id": "demo-b-s03",
+          "sequence_id": 23,
+          "role": "TUTOR",
+          "content": "Good — let's dig into the equation itself now.",
+          "turn_id": "demo-b-s03-t023"
+        },
+        {
+          "_id": "23",
+          "session_id": "demo-b-s03",
+          "sequence_id": 24,
+          "role": "STUDENT_1",
+          "content": "Let's think through the actual equation now, not just the idea.",
+          "turn_id": "demo-b-s03-t024"
+        },
+        {
+          "_id": "24",
+          "session_id": "demo-b-s03",
+          "sequence_id": 25,
+          "role": "TUTOR",
+          "content": "Right, so what does the left side become once we expand it?",
+          "turn_id": "demo-b-s03-t025"
+        },
+        {
+          "_id": "25",
+          "session_id": "demo-b-s03",
+          "sequence_id": 26,
+          "role": "STUDENT_1",
+          "content": "5 times x is 5x, and 5 times 3 is 15, so it's 5x minus 15.",
+          "turn_id": "demo-b-s03-t026"
+        },
+        {
+          "_id": "26",
+          "session_id": "demo-b-s03",
+          "sequence_id": 27,
+          "role": "TUTOR",
+          "content": "Good, so now the equation reads 5x - 15 = 2x + 9.",
+          "turn_id": "demo-b-s03-t027"
+        },
+        {
+          "_id": "27",
+          "session_id": "demo-b-s03",
+          "sequence_id": 28,
+          "role": "STUDENT_1",
+          "content": "Both sides have x, so we need to get them together somehow.",
+          "turn_id": "demo-b-s03-t028"
+        },
+        {
+          "_id": "28",
+          "session_id": "demo-b-s03",
+          "sequence_id": 29,
+          "role": "TUTOR",
+          "content": "Since 2x is the smaller x term, subtracting it from both sides keeps things positive.",
+          "turn_id": "demo-b-s03-t029"
+        },
+        {
+          "_id": "29",
+          "session_id": "demo-b-s03",
+          "sequence_id": 30,
+          "role": "STUDENT_1",
+          "content": "So we'd end up with just 3x on the left after that subtraction.",
+          "turn_id": "demo-b-s03-t030"
+        },
+        {
+          "_id": "30",
+          "session_id": "demo-b-s03",
+          "sequence_id": 31,
+          "role": "TUTOR",
+          "content": "Let's just pause a second before writing anything down.",
+          "turn_id": "demo-b-s03-t031"
+        },
+        {
+          "_id": "31",
+          "session_id": "demo-b-s03",
+          "sequence_id": 32,
+          "role": "STUDENT_1",
+          "content": "Sure, one sec.",
+          "turn_id": "demo-b-s03-t032"
+        },
+        {
+          "_id": "32",
+          "session_id": "demo-b-s03",
+          "sequence_id": 33,
+          "role": "TUTOR",
+          "content": "No rush.",
+          "turn_id": "demo-b-s03-t033"
+        },
+        {
+          "_id": "33",
+          "session_id": "demo-b-s03",
+          "sequence_id": 34,
+          "role": "STUDENT_1",
+          "content": "Okay, I think I've got the steps clear now.",
+          "turn_id": "demo-b-s03-t034"
+        },
+        {
+          "_id": "34",
+          "session_id": "demo-b-s03",
+          "sequence_id": 35,
+          "role": "TUTOR",
+          "content": "Good, let's get it onto paper then.",
+          "turn_id": "demo-b-s03-t035"
+        },
+        {
+          "_id": "35",
+          "session_id": "demo-b-s03",
+          "sequence_id": 36,
+          "role": "STUDENT_1",
+          "content": "Yeah, let's do that.",
+          "turn_id": "demo-b-s03-t036"
+        },
+        {
+          "_id": "36",
+          "session_id": "demo-b-s03",
+          "sequence_id": 37,
+          "role": "TUTOR",
+          "content": "Alright.",
+          "turn_id": "demo-b-s03-t037"
+        },
+        {
+          "_id": "37",
+          "session_id": "demo-b-s03",
+          "sequence_id": 38,
+          "role": "STUDENT_1",
+          "content": "Should I write this out on the shared doc, or just tell you the steps?",
+          "turn_id": "demo-b-s03-t038"
+        },
+        {
+          "_id": "38",
+          "session_id": "demo-b-s03",
+          "sequence_id": 39,
+          "role": "TUTOR",
+          "content": "Sounds good — the shared doc works fine for this.",
+          "turn_id": "demo-b-s03-t039"
+        },
+        {
+          "_id": "39",
+          "session_id": "demo-b-s03",
+          "sequence_id": 40,
+          "role": "STUDENT_1",
+          "content": "Okay, let me actually write this out step by step now.",
+          "turn_id": "demo-b-s03-t040"
+        },
+        {
+          "_id": "40",
+          "session_id": "demo-b-s03",
+          "sequence_id": 41,
+          "role": "TUTOR",
+          "content": "Go ahead, start by subtracting 2x from both sides of 5x - 15 = 2x + 9.",
+          "turn_id": "demo-b-s03-t041"
+        },
+        {
+          "_id": "41",
+          "session_id": "demo-b-s03",
+          "sequence_id": 42,
+          "role": "STUDENT_1",
+          "content": "That gives 3x - 15 = 9.",
+          "turn_id": "demo-b-s03-t042"
+        },
+        {
+          "_id": "42",
+          "session_id": "demo-b-s03",
+          "sequence_id": 43,
+          "role": "TUTOR",
+          "content": "Now add 15 to both sides.",
+          "turn_id": "demo-b-s03-t043"
+        },
+        {
+          "_id": "43",
+          "session_id": "demo-b-s03",
+          "sequence_id": 44,
+          "role": "STUDENT_1",
+          "content": "3x = 24, so dividing by 3 gives x = 8.",
+          "turn_id": "demo-b-s03-t044"
+        },
+        {
+          "_id": "44",
+          "session_id": "demo-b-s03",
+          "sequence_id": 45,
+          "role": "TUTOR",
+          "content": "Great, that's the value of x locked in.",
+          "turn_id": "demo-b-s03-t045"
+        },
+        {
+          "_id": "45",
+          "session_id": "demo-b-s03",
+          "sequence_id": 46,
+          "role": "STUDENT_1",
+          "content": "So now that we have x = 8, I want to understand why this method always works.",
+          "turn_id": "demo-b-s03-t046"
+        },
+        {
+          "_id": "46",
+          "session_id": "demo-b-s03",
+          "sequence_id": 47,
+          "role": "TUTOR",
+          "content": "It works because both sides represent the same balance — whatever we do to one, we do to the other.",
+          "turn_id": "demo-b-s03-t047"
+        },
+        {
+          "_id": "47",
+          "session_id": "demo-b-s03",
+          "sequence_id": 48,
+          "role": "STUDENT_1",
+          "content": "So subtracting 2x didn't change the equality, it just simplified which terms we're comparing.",
+          "turn_id": "demo-b-s03-t048"
+        },
+        {
+          "_id": "48",
+          "session_id": "demo-b-s03",
+          "sequence_id": 49,
+          "role": "TUTOR",
+          "content": "Exactly — that's the core idea behind isolating a variable on either side.",
+          "turn_id": "demo-b-s03-t049"
+        },
+        {
+          "_id": "49",
+          "session_id": "demo-b-s03",
+          "sequence_id": 50,
+          "role": "STUDENT_1",
+          "content": "What if we'd moved the 2x over before expanding, would that still work?",
+          "turn_id": "demo-b-s03-t050"
+        },
+        {
+          "_id": "50",
+          "session_id": "demo-b-s03",
+          "sequence_id": 51,
+          "role": "TUTOR",
+          "content": "That's worth trying — let's see what happens if we do it that way.",
+          "turn_id": "demo-b-s03-t051"
+        },
+        {
+          "_id": "51",
+          "session_id": "demo-b-s03",
+          "sequence_id": 52,
+          "role": "STUDENT_1",
+          "content": "So we'd have 5(x - 3) - 2x = 9, though it feels messier before expanding.",
+          "turn_id": "demo-b-s03-t052"
+        },
+        {
+          "_id": "52",
+          "session_id": "demo-b-s03",
+          "sequence_id": 53,
+          "role": "TUTOR",
+          "content": "Maybe, but let's expand anyway and see where it leads.",
+          "turn_id": "demo-b-s03-t053"
+        },
+        {
+          "_id": "53",
+          "session_id": "demo-b-s03",
+          "sequence_id": 54,
+          "role": "STUDENT_1",
+          "content": "5x - 15 - 2x = 9, which simplifies to 3x - 15 = 9.",
+          "turn_id": "demo-b-s03-t054"
+        },
+        {
+          "_id": "54",
+          "session_id": "demo-b-s03",
+          "sequence_id": 55,
+          "role": "TUTOR",
+          "content": "That's the same equation as before, just reached differently.",
+          "turn_id": "demo-b-s03-t055"
+        },
+        {
+          "_id": "55",
+          "session_id": "demo-b-s03",
+          "sequence_id": 56,
+          "role": "STUDENT_1",
+          "content": "So the order doesn't matter, we land on 3x - 15 = 9 either way.",
+          "turn_id": "demo-b-s03-t056"
+        },
+        {
+          "_id": "56",
+          "session_id": "demo-b-s03",
+          "sequence_id": 57,
+          "role": "TUTOR",
+          "content": "Good work today, that's a solid way to close this one.",
+          "turn_id": "demo-b-s03-t057"
+        },
+        {
+          "_id": "57",
+          "session_id": "demo-b-s03",
+          "sequence_id": 58,
+          "role": "STUDENT_1",
+          "content": "Yeah, this made a lot more sense once we saw both paths line up.",
+          "turn_id": "demo-b-s03-t058"
+        },
+        {
+          "_id": "58",
+          "session_id": "demo-b-s03",
+          "sequence_id": 59,
+          "role": "TUTOR",
+          "content": "Take a moment before we move on.",
+          "turn_id": "demo-b-s03-t059"
+        },
+        {
+          "_id": "59",
+          "session_id": "demo-b-s03",
+          "sequence_id": 60,
+          "role": "STUDENT_1",
+          "content": "Okay, I'm ready.",
+          "turn_id": "demo-b-s03-t060"
+        }
+      ],
+      "lead_role": "TUTOR",
+      "annotations": [
+        {
+          "_id": "0",
+          "episode_id": "ep-run-human-demo-b-001-s03-001",
+          "run_id": "run-human-demo-b-001",
+          "identifiedBy": "HUMAN",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "analysis",
+          "start_turn_id": "demo-b-s03-t001",
+          "end_turn_id": "demo-b-s03-t012",
+          "evidence": [
+            "demo-b-s03-t001",
+            "demo-b-s03-t002",
+            "demo-b-s03-t003",
+            "demo-b-s03-t004",
+            "demo-b-s03-t005",
+            "demo-b-s03-t006",
+            "demo-b-s03-t007",
+            "demo-b-s03-t008",
+            "demo-b-s03-t009",
+            "demo-b-s03-t010",
+            "demo-b-s03-t011",
+            "demo-b-s03-t012"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "2",
+          "episode_id": "ep-run-human-demo-b-001-s03-003",
+          "run_id": "run-human-demo-b-001",
+          "identifiedBy": "HUMAN",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "exploration",
+          "start_turn_id": "demo-b-s03-t015",
+          "end_turn_id": "demo-b-s03-t016",
+          "evidence": [
+            "demo-b-s03-t015",
+            "demo-b-s03-t016"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "4",
+          "episode_id": "ep-run-human-demo-b-001-s03-005",
+          "run_id": "run-human-demo-b-001",
+          "identifiedBy": "HUMAN",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "analysis",
+          "start_turn_id": "demo-b-s03-t025",
+          "end_turn_id": "demo-b-s03-t032",
+          "evidence": [
+            "demo-b-s03-t025",
+            "demo-b-s03-t026",
+            "demo-b-s03-t027",
+            "demo-b-s03-t028",
+            "demo-b-s03-t029",
+            "demo-b-s03-t030",
+            "demo-b-s03-t031",
+            "demo-b-s03-t032"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "5",
+          "episode_id": "ep-run-human-demo-b-001-s03-006",
+          "run_id": "run-human-demo-b-001",
+          "identifiedBy": "HUMAN",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "planning",
+          "start_turn_id": "demo-b-s03-t033",
+          "end_turn_id": "demo-b-s03-t038",
+          "evidence": [
+            "demo-b-s03-t033",
+            "demo-b-s03-t034",
+            "demo-b-s03-t035",
+            "demo-b-s03-t036",
+            "demo-b-s03-t037",
+            "demo-b-s03-t038"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "7",
+          "episode_id": "ep-run-human-demo-b-001-s03-008",
+          "run_id": "run-human-demo-b-001",
+          "identifiedBy": "HUMAN",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "implementation",
+          "start_turn_id": "demo-b-s03-t041",
+          "end_turn_id": "demo-b-s03-t047",
+          "evidence": [
+            "demo-b-s03-t041",
+            "demo-b-s03-t042",
+            "demo-b-s03-t043",
+            "demo-b-s03-t044",
+            "demo-b-s03-t045",
+            "demo-b-s03-t046",
+            "demo-b-s03-t047"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "8",
+          "episode_id": "ep-run-human-demo-b-001-s03-009",
+          "run_id": "run-human-demo-b-001",
+          "identifiedBy": "HUMAN",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "analysis",
+          "start_turn_id": "demo-b-s03-t048",
+          "end_turn_id": "demo-b-s03-t049",
+          "evidence": [
+            "demo-b-s03-t048",
+            "demo-b-s03-t049"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "9",
+          "episode_id": "ep-run-human-demo-b-001-s03-010",
+          "run_id": "run-human-demo-b-001",
+          "identifiedBy": "HUMAN",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "exploration",
+          "start_turn_id": "demo-b-s03-t050",
+          "end_turn_id": "demo-b-s03-t057",
+          "evidence": [
+            "demo-b-s03-t050",
+            "demo-b-s03-t051",
+            "demo-b-s03-t052",
+            "demo-b-s03-t053",
+            "demo-b-s03-t054",
+            "demo-b-s03-t055",
+            "demo-b-s03-t056",
+            "demo-b-s03-t057"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "0",
+          "episode_id": "ep-run-llm-demo-b-001-demo-b-s03-001",
+          "run_id": "run-llm-demo-b-001",
+          "identifiedBy": "AI",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "reading",
+          "start_turn_id": "demo-b-s03-t001",
+          "end_turn_id": "demo-b-s03-t002",
+          "evidence": [
+            "demo-b-s03-t001",
+            "demo-b-s03-t002"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "1",
+          "episode_id": "ep-run-llm-demo-b-001-demo-b-s03-002",
+          "run_id": "run-llm-demo-b-001",
+          "identifiedBy": "AI",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "planning",
+          "start_turn_id": "demo-b-s03-t003",
+          "end_turn_id": "demo-b-s03-t003",
+          "evidence": [
+            "demo-b-s03-t003"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "2",
+          "episode_id": "ep-run-llm-demo-b-001-demo-b-s03-003",
+          "run_id": "run-llm-demo-b-001",
+          "identifiedBy": "AI",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "analysis",
+          "start_turn_id": "demo-b-s03-t004",
+          "end_turn_id": "demo-b-s03-t010",
+          "evidence": [
+            "demo-b-s03-t004",
+            "demo-b-s03-t005",
+            "demo-b-s03-t006",
+            "demo-b-s03-t007",
+            "demo-b-s03-t008",
+            "demo-b-s03-t009",
+            "demo-b-s03-t010"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "3",
+          "episode_id": "ep-run-llm-demo-b-001-demo-b-s03-004",
+          "run_id": "run-llm-demo-b-001",
+          "identifiedBy": "AI",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "reading",
+          "start_turn_id": "demo-b-s03-t011",
+          "end_turn_id": "demo-b-s03-t012",
+          "evidence": [
+            "demo-b-s03-t011",
+            "demo-b-s03-t012"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "4",
+          "episode_id": "ep-run-llm-demo-b-001-demo-b-s03-005",
+          "run_id": "run-llm-demo-b-001",
+          "identifiedBy": "AI",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "planning",
+          "start_turn_id": "demo-b-s03-t013",
+          "end_turn_id": "demo-b-s03-t013",
+          "evidence": [
+            "demo-b-s03-t013"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "5",
+          "episode_id": "ep-run-llm-demo-b-001-demo-b-s03-006",
+          "run_id": "run-llm-demo-b-001",
+          "identifiedBy": "AI",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "exploration",
+          "start_turn_id": "demo-b-s03-t014",
+          "end_turn_id": "demo-b-s03-t016",
+          "evidence": [
+            "demo-b-s03-t014",
+            "demo-b-s03-t015",
+            "demo-b-s03-t016"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "6",
+          "episode_id": "ep-run-llm-demo-b-001-demo-b-s03-007",
+          "run_id": "run-llm-demo-b-001",
+          "identifiedBy": "AI",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "monitor",
+          "start_turn_id": "demo-b-s03-t017",
+          "end_turn_id": "demo-b-s03-t022",
+          "evidence": [
+            "demo-b-s03-t017",
+            "demo-b-s03-t018",
+            "demo-b-s03-t019",
+            "demo-b-s03-t020",
+            "demo-b-s03-t021",
+            "demo-b-s03-t022"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "7",
+          "episode_id": "ep-run-llm-demo-b-001-demo-b-s03-008",
+          "run_id": "run-llm-demo-b-001",
+          "identifiedBy": "AI",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "planning",
+          "start_turn_id": "demo-b-s03-t023",
+          "end_turn_id": "demo-b-s03-t024",
+          "evidence": [
+            "demo-b-s03-t023",
+            "demo-b-s03-t024"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "8",
+          "episode_id": "ep-run-llm-demo-b-001-demo-b-s03-009",
+          "run_id": "run-llm-demo-b-001",
+          "identifiedBy": "AI",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "implementation",
+          "start_turn_id": "demo-b-s03-t025",
+          "end_turn_id": "demo-b-s03-t030",
+          "evidence": [
+            "demo-b-s03-t025",
+            "demo-b-s03-t026",
+            "demo-b-s03-t027",
+            "demo-b-s03-t028",
+            "demo-b-s03-t029",
+            "demo-b-s03-t030"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "9",
+          "episode_id": "ep-run-llm-demo-b-001-demo-b-s03-010",
+          "run_id": "run-llm-demo-b-001",
+          "identifiedBy": "AI",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "monitor",
+          "start_turn_id": "demo-b-s03-t031",
+          "end_turn_id": "demo-b-s03-t034",
+          "evidence": [
+            "demo-b-s03-t031",
+            "demo-b-s03-t032",
+            "demo-b-s03-t033",
+            "demo-b-s03-t034"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "10",
+          "episode_id": "ep-run-llm-demo-b-001-demo-b-s03-011",
+          "run_id": "run-llm-demo-b-001",
+          "identifiedBy": "AI",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "organization",
+          "start_turn_id": "demo-b-s03-t035",
+          "end_turn_id": "demo-b-s03-t039",
+          "evidence": [
+            "demo-b-s03-t035",
+            "demo-b-s03-t036",
+            "demo-b-s03-t037",
+            "demo-b-s03-t038",
+            "demo-b-s03-t039"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "11",
+          "episode_id": "ep-run-llm-demo-b-001-demo-b-s03-012",
+          "run_id": "run-llm-demo-b-001",
+          "identifiedBy": "AI",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "implementation",
+          "start_turn_id": "demo-b-s03-t040",
+          "end_turn_id": "demo-b-s03-t045",
+          "evidence": [
+            "demo-b-s03-t040",
+            "demo-b-s03-t041",
+            "demo-b-s03-t042",
+            "demo-b-s03-t043",
+            "demo-b-s03-t044",
+            "demo-b-s03-t045"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "12",
+          "episode_id": "ep-run-llm-demo-b-001-demo-b-s03-013",
+          "run_id": "run-llm-demo-b-001",
+          "identifiedBy": "AI",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "analysis",
+          "start_turn_id": "demo-b-s03-t046",
+          "end_turn_id": "demo-b-s03-t049",
+          "evidence": [
+            "demo-b-s03-t046",
+            "demo-b-s03-t047",
+            "demo-b-s03-t048",
+            "demo-b-s03-t049"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "13",
+          "episode_id": "ep-run-llm-demo-b-001-demo-b-s03-014",
+          "run_id": "run-llm-demo-b-001",
+          "identifiedBy": "AI",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "exploration",
+          "start_turn_id": "demo-b-s03-t050",
+          "end_turn_id": "demo-b-s03-t056",
+          "evidence": [
+            "demo-b-s03-t050",
+            "demo-b-s03-t051",
+            "demo-b-s03-t052",
+            "demo-b-s03-t053",
+            "demo-b-s03-t054",
+            "demo-b-s03-t055",
+            "demo-b-s03-t056"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "14",
+          "episode_id": "ep-run-llm-demo-b-001-demo-b-s03-015",
+          "run_id": "run-llm-demo-b-001",
+          "identifiedBy": "AI",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "verification",
+          "start_turn_id": "demo-b-s03-t057",
+          "end_turn_id": "demo-b-s03-t058",
+          "evidence": [
+            "demo-b-s03-t057",
+            "demo-b-s03-t058"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "15",
+          "episode_id": "ep-run-llm-demo-b-001-demo-b-s03-016",
+          "run_id": "run-llm-demo-b-001",
+          "identifiedBy": "AI",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "monitor",
+          "start_turn_id": "demo-b-s03-t059",
+          "end_turn_id": "demo-b-s03-t060",
+          "evidence": [
+            "demo-b-s03-t059",
+            "demo-b-s03-t060"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        }
+      ]
+    },
+    {
+      "session_id": "demo-b-s04",
+      "student_id": "stu-demo-b",
+      "session_index": 4,
+      "session_date": "2026-02-03",
+      "session_topic": "Solving a linear equation with variables on both sides",
+      "has_timestamps": true,
+      "transcript_scope": "full",
+      "problems": [
+        {
+          "problem_id": "demo-b-s04-p01",
+          "topic": "Solving a linear equation with variables on both sides",
+          "start_turn_id": "demo-b-s04-t001",
+          "end_turn_id": "demo-b-s04-t050"
+        }
+      ],
+      "turns": [
+        {
+          "_id": "0",
+          "session_id": "demo-b-s04",
+          "sequence_id": 1,
+          "role": "TUTOR",
+          "content": "Let's look at this equation: 5 times the quantity x minus 3, equals 2x plus 9. We need to find x.",
+          "turn_id": "demo-b-s04-t001",
+          "start_time": "2026-02-03T16:00:00.000Z",
+          "end_time": "2026-02-03T16:00:50.000Z"
+        },
+        {
+          "_id": "1",
+          "session_id": "demo-b-s04",
+          "sequence_id": 2,
+          "role": "STUDENT_1",
+          "content": "So we have 5(x - 3) = 2x + 9, and we're solving for x.",
+          "turn_id": "demo-b-s04-t002",
+          "start_time": "2026-02-03T16:00:52.000Z",
+          "end_time": "2026-02-03T16:01:20.000Z"
+        },
+        {
+          "_id": "2",
+          "session_id": "demo-b-s04",
+          "sequence_id": 3,
+          "role": "TUTOR",
+          "content": "Right, that's the equation we're working with — got it clearly in mind now.",
+          "turn_id": "demo-b-s04-t003",
+          "start_time": "2026-02-03T16:01:27.000Z",
+          "end_time": "2026-02-03T16:01:53.000Z"
+        },
+        {
+          "_id": "3",
+          "session_id": "demo-b-s04",
+          "sequence_id": 4,
+          "role": "STUDENT_1",
+          "content": "Okay, so... what should we do first with that parenthesis?",
+          "turn_id": "demo-b-s04-t004",
+          "start_time": "2026-02-03T16:02:00.000Z",
+          "end_time": "2026-02-03T16:02:21.000Z"
+        },
+        {
+          "_id": "4",
+          "session_id": "demo-b-s04",
+          "sequence_id": 5,
+          "role": "TUTOR",
+          "content": "Good question — think about what we need to do before we can combine like terms.",
+          "turn_id": "demo-b-s04-t005",
+          "start_time": "2026-02-03T16:02:22.000Z",
+          "end_time": "2026-02-03T16:02:37.000Z"
+        },
+        {
+          "_id": "5",
+          "session_id": "demo-b-s04",
+          "sequence_id": 6,
+          "role": "STUDENT_1",
+          "content": "We probably need to distribute the 5 into the parentheses first.",
+          "turn_id": "demo-b-s04-t006",
+          "start_time": "2026-02-03T16:02:37.000Z",
+          "end_time": "2026-02-03T16:02:58.000Z"
+        },
+        {
+          "_id": "6",
+          "session_id": "demo-b-s04",
+          "sequence_id": 7,
+          "role": "TUTOR",
+          "content": "Right. And after that, what's our goal with the x terms?",
+          "turn_id": "demo-b-s04-t007",
+          "start_time": "2026-02-03T16:03:04.000Z",
+          "end_time": "2026-02-03T16:04:14.000Z"
+        },
+        {
+          "_id": "7",
+          "session_id": "demo-b-s04",
+          "sequence_id": 8,
+          "role": "STUDENT_1",
+          "content": "We want to get all the x's on one side, so I'd move the 2x over.",
+          "turn_id": "demo-b-s04-t008",
+          "start_time": "2026-02-03T16:04:16.000Z",
+          "end_time": "2026-02-03T16:05:24.000Z"
+        },
+        {
+          "_id": "8",
+          "session_id": "demo-b-s04",
+          "sequence_id": 9,
+          "role": "TUTOR",
+          "content": "Exactly — then once the x terms are together, what's left to do?",
+          "turn_id": "demo-b-s04-t009",
+          "start_time": "2026-02-03T16:05:27.000Z",
+          "end_time": "2026-02-03T16:05:41.000Z"
+        },
+        {
+          "_id": "9",
+          "session_id": "demo-b-s04",
+          "sequence_id": 10,
+          "role": "STUDENT_1",
+          "content": "Then we just divide to get x by itself.",
+          "turn_id": "demo-b-s04-t010",
+          "start_time": "2026-02-03T16:05:42.000Z",
+          "end_time": "2026-02-03T16:06:13.000Z"
+        },
+        {
+          "_id": "10",
+          "session_id": "demo-b-s04",
+          "sequence_id": 11,
+          "role": "TUTOR",
+          "content": "That's the plan: expand, collect the x terms, then isolate x. Let's put it into action.",
+          "turn_id": "demo-b-s04-t011",
+          "start_time": "2026-02-03T16:06:21.000Z",
+          "end_time": "2026-02-03T16:06:36.000Z"
+        },
+        {
+          "_id": "11",
+          "session_id": "demo-b-s04",
+          "sequence_id": 12,
+          "role": "STUDENT_1",
+          "content": "Alright, let me expand the left side: 5 times x is 5x, and 5 times -3 is -15.",
+          "turn_id": "demo-b-s04-t012",
+          "start_time": "2026-02-03T16:06:40.000Z",
+          "end_time": "2026-02-03T16:07:08.000Z"
+        },
+        {
+          "_id": "12",
+          "session_id": "demo-b-s04",
+          "sequence_id": 13,
+          "role": "TUTOR",
+          "content": "Good — so now the equation reads 5x - 15 = 2x + 9.",
+          "turn_id": "demo-b-s04-t013",
+          "start_time": "2026-02-03T16:07:14.000Z",
+          "end_time": "2026-02-03T16:07:33.000Z"
+        },
+        {
+          "_id": "13",
+          "session_id": "demo-b-s04",
+          "sequence_id": 14,
+          "role": "STUDENT_1",
+          "content": "Now I'll subtract 2x from both sides: 5x minus 2x is 3x, so 3x - 15 = 9.",
+          "turn_id": "demo-b-s04-t014",
+          "start_time": "2026-02-03T16:07:41.000Z",
+          "end_time": "2026-02-03T16:08:46.000Z"
+        },
+        {
+          "_id": "14",
+          "session_id": "demo-b-s04",
+          "sequence_id": 15,
+          "role": "TUTOR",
+          "content": "Nice. Now add 15 to both sides to get the x term alone.",
+          "turn_id": "demo-b-s04-t015",
+          "start_time": "2026-02-03T16:08:48.000Z",
+          "end_time": "2026-02-03T16:09:52.000Z"
+        },
+        {
+          "_id": "15",
+          "session_id": "demo-b-s04",
+          "sequence_id": 16,
+          "role": "STUDENT_1",
+          "content": "That gives 3x = 24.",
+          "turn_id": "demo-b-s04-t016",
+          "start_time": "2026-02-03T16:09:57.000Z",
+          "end_time": "2026-02-03T16:10:55.000Z"
+        },
+        {
+          "_id": "16",
+          "session_id": "demo-b-s04",
+          "sequence_id": 17,
+          "role": "TUTOR",
+          "content": "And now it's just one more move to finish — divide both sides by 3.",
+          "turn_id": "demo-b-s04-t017",
+          "start_time": "2026-02-03T16:10:55.000Z",
+          "end_time": "2026-02-03T16:11:33.000Z"
+        },
+        {
+          "_id": "17",
+          "session_id": "demo-b-s04",
+          "sequence_id": 18,
+          "role": "STUDENT_1",
+          "content": "Wait, would it work if I moved the 2x first instead of subtracting it at that stage?",
+          "turn_id": "demo-b-s04-t018",
+          "start_time": "2026-02-03T16:11:40.000Z",
+          "end_time": "2026-02-03T16:12:16.000Z"
+        },
+        {
+          "_id": "18",
+          "session_id": "demo-b-s04",
+          "sequence_id": 19,
+          "role": "TUTOR",
+          "content": "Sure, try it that way and see where it leads.",
+          "turn_id": "demo-b-s04-t019",
+          "start_time": "2026-02-03T16:12:22.000Z",
+          "end_time": "2026-02-03T16:13:26.000Z"
+        },
+        {
+          "_id": "19",
+          "session_id": "demo-b-s04",
+          "sequence_id": 20,
+          "role": "STUDENT_1",
+          "content": "So starting from 5x - 15 = 2x + 9, I'd subtract 5x from both sides instead: -15 = -3x + 9.",
+          "turn_id": "demo-b-s04-t020",
+          "start_time": "2026-02-03T16:13:26.000Z",
+          "end_time": "2026-02-03T16:14:14.000Z"
+        },
+        {
+          "_id": "20",
+          "session_id": "demo-b-s04",
+          "sequence_id": 21,
+          "role": "TUTOR",
+          "content": "Okay, keep going and see if you land on the same value for x.",
+          "turn_id": "demo-b-s04-t021",
+          "start_time": "2026-02-03T16:14:19.000Z",
+          "end_time": "2026-02-03T16:14:52.000Z"
+        },
+        {
+          "_id": "21",
+          "session_id": "demo-b-s04",
+          "sequence_id": 22,
+          "role": "STUDENT_1",
+          "content": "Subtracting 9 gives -24 = -3x, and dividing by -3 gives x = 8 — same answer either way.",
+          "turn_id": "demo-b-s04-t022",
+          "start_time": "2026-02-03T16:14:54.000Z",
+          "end_time": "2026-02-03T16:15:50.000Z"
+        },
+        {
+          "_id": "22",
+          "session_id": "demo-b-s04",
+          "sequence_id": 23,
+          "role": "TUTOR",
+          "content": "Good work — can you write that final line down clearly so we have it on record?",
+          "turn_id": "demo-b-s04-t023",
+          "start_time": "2026-02-03T16:15:58.000Z",
+          "end_time": "2026-02-03T16:16:13.000Z"
+        },
+        {
+          "_id": "23",
+          "session_id": "demo-b-s04",
+          "sequence_id": 24,
+          "role": "STUDENT_1",
+          "content": "Sure, I'll jot down x = 8 as the solution.",
+          "turn_id": "demo-b-s04-t024",
+          "start_time": "2026-02-03T16:16:17.000Z",
+          "end_time": "2026-02-03T16:16:46.000Z"
+        },
+        {
+          "_id": "24",
+          "session_id": "demo-b-s04",
+          "sequence_id": 25,
+          "role": "TUTOR",
+          "content": "Let's just go back and reread the original problem to make sure we've matched it.",
+          "turn_id": "demo-b-s04-t025",
+          "start_time": "2026-02-03T16:16:48.000Z",
+          "end_time": "2026-02-03T16:17:42.000Z"
+        },
+        {
+          "_id": "25",
+          "session_id": "demo-b-s04",
+          "sequence_id": 26,
+          "role": "STUDENT_1",
+          "content": "It says solve 5(x - 3) = 2x + 9 for x.",
+          "turn_id": "demo-b-s04-t026",
+          "start_time": "2026-02-03T16:17:46.000Z",
+          "end_time": "2026-02-03T16:18:22.000Z"
+        },
+        {
+          "_id": "26",
+          "session_id": "demo-b-s04",
+          "sequence_id": 27,
+          "role": "TUTOR",
+          "content": "Right, and we're checking that our value of x actually satisfies that equation.",
+          "turn_id": "demo-b-s04-t027",
+          "start_time": "2026-02-03T16:18:25.000Z",
+          "end_time": "2026-02-03T16:19:32.000Z"
+        },
+        {
+          "_id": "27",
+          "session_id": "demo-b-s04",
+          "sequence_id": 28,
+          "role": "STUDENT_1",
+          "content": "So we want to plug x = 8 back into both sides and see if they match.",
+          "turn_id": "demo-b-s04-t028",
+          "start_time": "2026-02-03T16:19:33.000Z",
+          "end_time": "2026-02-03T16:19:58.000Z"
+        },
+        {
+          "_id": "28",
+          "session_id": "demo-b-s04",
+          "sequence_id": 29,
+          "role": "TUTOR",
+          "content": "Hmm, let's think for a second before we substitute.",
+          "turn_id": "demo-b-s04-t029",
+          "start_time": "2026-02-03T16:20:06.000Z",
+          "end_time": "2026-02-03T16:21:00.000Z"
+        },
+        {
+          "_id": "29",
+          "session_id": "demo-b-s04",
+          "sequence_id": 30,
+          "role": "STUDENT_1",
+          "content": "Yeah, hold on, let me get the numbers straight in my head.",
+          "turn_id": "demo-b-s04-t030",
+          "start_time": "2026-02-03T16:21:00.000Z",
+          "end_time": "2026-02-03T16:21:51.000Z"
+        },
+        {
+          "_id": "30",
+          "session_id": "demo-b-s04",
+          "sequence_id": 31,
+          "role": "TUTOR",
+          "content": "Take your time.",
+          "turn_id": "demo-b-s04-t031",
+          "start_time": "2026-02-03T16:21:59.000Z",
+          "end_time": "2026-02-03T16:22:56.000Z"
+        },
+        {
+          "_id": "31",
+          "session_id": "demo-b-s04",
+          "sequence_id": 32,
+          "role": "STUDENT_1",
+          "content": "Okay, I think I'm ready to plug it in now.",
+          "turn_id": "demo-b-s04-t032",
+          "start_time": "2026-02-03T16:23:03.000Z",
+          "end_time": "2026-02-03T16:23:48.000Z"
+        },
+        {
+          "_id": "32",
+          "session_id": "demo-b-s04",
+          "sequence_id": 33,
+          "role": "TUTOR",
+          "content": "Great, go ahead and write out the check step by step.",
+          "turn_id": "demo-b-s04-t033",
+          "start_time": "2026-02-03T16:23:48.000Z",
+          "end_time": "2026-02-03T16:24:52.000Z"
+        },
+        {
+          "_id": "33",
+          "session_id": "demo-b-s04",
+          "sequence_id": 34,
+          "role": "STUDENT_1",
+          "content": "So 5 times (8 - 3) is 5 times 5, which is 25.",
+          "turn_id": "demo-b-s04-t034",
+          "start_time": "2026-02-03T16:24:55.000Z",
+          "end_time": "2026-02-03T16:25:12.000Z"
+        },
+        {
+          "_id": "34",
+          "session_id": "demo-b-s04",
+          "sequence_id": 35,
+          "role": "TUTOR",
+          "content": "Good, now do the same for the right side.",
+          "turn_id": "demo-b-s04-t035",
+          "start_time": "2026-02-03T16:25:13.000Z",
+          "end_time": "2026-02-03T16:26:20.000Z"
+        },
+        {
+          "_id": "35",
+          "session_id": "demo-b-s04",
+          "sequence_id": 36,
+          "role": "STUDENT_1",
+          "content": "2 times 8 is 16, plus 9 is 25.",
+          "turn_id": "demo-b-s04-t036",
+          "start_time": "2026-02-03T16:26:27.000Z",
+          "end_time": "2026-02-03T16:26:56.000Z"
+        },
+        {
+          "_id": "36",
+          "session_id": "demo-b-s04",
+          "sequence_id": 37,
+          "role": "TUTOR",
+          "content": "So both sides equal 25 — the two sides match exactly.",
+          "turn_id": "demo-b-s04-t037",
+          "start_time": "2026-02-03T16:26:57.000Z",
+          "end_time": "2026-02-03T16:27:51.000Z"
+        },
+        {
+          "_id": "37",
+          "session_id": "demo-b-s04",
+          "sequence_id": 38,
+          "role": "STUDENT_1",
+          "content": "That confirms x = 8 is correct for this equation.",
+          "turn_id": "demo-b-s04-t038",
+          "start_time": "2026-02-03T16:27:58.000Z",
+          "end_time": "2026-02-03T16:28:55.000Z"
+        },
+        {
+          "_id": "38",
+          "session_id": "demo-b-s04",
+          "sequence_id": 39,
+          "role": "TUTOR",
+          "content": "So the final answer is x = 8, and we've checked it against both sides.",
+          "turn_id": "demo-b-s04-t039",
+          "start_time": "2026-02-03T16:29:01.000Z",
+          "end_time": "2026-02-03T16:30:00.000Z"
+        },
+        {
+          "_id": "39",
+          "session_id": "demo-b-s04",
+          "sequence_id": 40,
+          "role": "STUDENT_1",
+          "content": "Should I write that as the final answer now?",
+          "turn_id": "demo-b-s04-t040",
+          "start_time": "2026-02-03T16:30:04.000Z",
+          "end_time": "2026-02-03T16:30:57.000Z"
+        },
+        {
+          "_id": "40",
+          "session_id": "demo-b-s04",
+          "sequence_id": 41,
+          "role": "TUTOR",
+          "content": "Yes, go ahead and record x = 8 as your solution.",
+          "turn_id": "demo-b-s04-t041",
+          "start_time": "2026-02-03T16:30:57.000Z",
+          "end_time": "2026-02-03T16:31:46.000Z"
+        },
+        {
+          "_id": "41",
+          "session_id": "demo-b-s04",
+          "sequence_id": 42,
+          "role": "STUDENT_1",
+          "content": "Okay, writing it down: x = 8.",
+          "turn_id": "demo-b-s04-t042",
+          "start_time": "2026-02-03T16:31:53.000Z",
+          "end_time": "2026-02-03T16:32:10.000Z"
+        },
+        {
+          "_id": "42",
+          "session_id": "demo-b-s04",
+          "sequence_id": 43,
+          "role": "TUTOR",
+          "content": "Perfect, that's saved. Anything else you want on the page before we move on?",
+          "turn_id": "demo-b-s04-t043",
+          "start_time": "2026-02-03T16:32:16.000Z",
+          "end_time": "2026-02-03T16:32:57.000Z"
+        },
+        {
+          "_id": "43",
+          "session_id": "demo-b-s04",
+          "sequence_id": 44,
+          "role": "STUDENT_1",
+          "content": "No, I think that's all we need for this one.",
+          "turn_id": "demo-b-s04-t044",
+          "start_time": "2026-02-03T16:33:02.000Z",
+          "end_time": "2026-02-03T16:33:35.000Z"
+        },
+        {
+          "_id": "44",
+          "session_id": "demo-b-s04",
+          "sequence_id": 45,
+          "role": "TUTOR",
+          "content": "Alright, that's noted then.",
+          "turn_id": "demo-b-s04-t045",
+          "start_time": "2026-02-03T16:33:37.000Z",
+          "end_time": "2026-02-03T16:34:19.000Z"
+        },
+        {
+          "_id": "45",
+          "session_id": "demo-b-s04",
+          "sequence_id": 46,
+          "role": "STUDENT_1",
+          "content": "Wait, actually that felt pretty smooth once we got moving.",
+          "turn_id": "demo-b-s04-t046",
+          "start_time": "2026-02-03T16:34:27.000Z",
+          "end_time": "2026-02-03T16:35:08.000Z"
+        },
+        {
+          "_id": "46",
+          "session_id": "demo-b-s04",
+          "sequence_id": 47,
+          "role": "TUTOR",
+          "content": "Yeah, it did — nice steady pace through that one.",
+          "turn_id": "demo-b-s04-t047",
+          "start_time": "2026-02-03T16:35:09.000Z",
+          "end_time": "2026-02-03T16:35:34.000Z"
+        },
+        {
+          "_id": "47",
+          "session_id": "demo-b-s04",
+          "sequence_id": 48,
+          "role": "STUDENT_1",
+          "content": "Hmm, I was worried about the negative signs at first.",
+          "turn_id": "demo-b-s04-t048",
+          "start_time": "2026-02-03T16:35:41.000Z",
+          "end_time": "2026-02-03T16:36:50.000Z"
+        },
+        {
+          "_id": "48",
+          "session_id": "demo-b-s04",
+          "sequence_id": 49,
+          "role": "TUTOR",
+          "content": "That's a common spot to trip up, but you handled it fine here.",
+          "turn_id": "demo-b-s04-t049",
+          "start_time": "2026-02-03T16:36:58.000Z",
+          "end_time": "2026-02-03T16:37:30.000Z"
+        },
+        {
+          "_id": "49",
+          "session_id": "demo-b-s04",
+          "sequence_id": 50,
+          "role": "STUDENT_1",
+          "content": "Okay, good, feeling solid about it now.",
+          "turn_id": "demo-b-s04-t050",
+          "start_time": "2026-02-03T16:37:36.000Z",
+          "end_time": "2026-02-03T16:38:10.000Z"
+        }
+      ],
+      "lead_role": "TUTOR",
+      "annotations": [
+        {
+          "_id": "1",
+          "episode_id": "ep-run-human-demo-b-001-s04-002",
+          "run_id": "run-human-demo-b-001",
+          "identifiedBy": "HUMAN",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "planning",
+          "start_turn_id": "demo-b-s04-t004",
+          "end_turn_id": "demo-b-s04-t011",
+          "evidence": [
+            "demo-b-s04-t004",
+            "demo-b-s04-t005",
+            "demo-b-s04-t006",
+            "demo-b-s04-t007",
+            "demo-b-s04-t008",
+            "demo-b-s04-t009",
+            "demo-b-s04-t010",
+            "demo-b-s04-t011"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "3",
+          "episode_id": "ep-run-human-demo-b-001-s04-004",
+          "run_id": "run-human-demo-b-001",
+          "identifiedBy": "HUMAN",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "exploration",
+          "start_turn_id": "demo-b-s04-t017",
+          "end_turn_id": "demo-b-s04-t021",
+          "evidence": [
+            "demo-b-s04-t017",
+            "demo-b-s04-t018",
+            "demo-b-s04-t019",
+            "demo-b-s04-t020",
+            "demo-b-s04-t021"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "7",
+          "episode_id": "ep-run-human-demo-b-001-s04-008",
+          "run_id": "run-human-demo-b-001",
+          "identifiedBy": "HUMAN",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "implementation",
+          "start_turn_id": "demo-b-s04-t035",
+          "end_turn_id": "demo-b-s04-t043",
+          "evidence": [
+            "demo-b-s04-t035",
+            "demo-b-s04-t036",
+            "demo-b-s04-t037",
+            "demo-b-s04-t038",
+            "demo-b-s04-t039",
+            "demo-b-s04-t040",
+            "demo-b-s04-t041",
+            "demo-b-s04-t042",
+            "demo-b-s04-t043"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "0",
+          "episode_id": "ep-run-llm-demo-b-001-demo-b-s04-001",
+          "run_id": "run-llm-demo-b-001",
+          "identifiedBy": "AI",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "reading",
+          "start_turn_id": "demo-b-s04-t001",
+          "end_turn_id": "demo-b-s04-t002",
+          "evidence": [
+            "demo-b-s04-t001",
+            "demo-b-s04-t002"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "1",
+          "episode_id": "ep-run-llm-demo-b-001-demo-b-s04-002",
+          "run_id": "run-llm-demo-b-001",
+          "identifiedBy": "AI",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "monitor",
+          "start_turn_id": "demo-b-s04-t003",
+          "end_turn_id": "demo-b-s04-t003",
+          "evidence": [
+            "demo-b-s04-t003"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "2",
+          "episode_id": "ep-run-llm-demo-b-001-demo-b-s04-003",
+          "run_id": "run-llm-demo-b-001",
+          "identifiedBy": "AI",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "planning",
+          "start_turn_id": "demo-b-s04-t004",
+          "end_turn_id": "demo-b-s04-t011",
+          "evidence": [
+            "demo-b-s04-t004",
+            "demo-b-s04-t005",
+            "demo-b-s04-t006",
+            "demo-b-s04-t007",
+            "demo-b-s04-t008",
+            "demo-b-s04-t009",
+            "demo-b-s04-t010",
+            "demo-b-s04-t011"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "3",
+          "episode_id": "ep-run-llm-demo-b-001-demo-b-s04-004",
+          "run_id": "run-llm-demo-b-001",
+          "identifiedBy": "AI",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "implementation",
+          "start_turn_id": "demo-b-s04-t012",
+          "end_turn_id": "demo-b-s04-t017",
+          "evidence": [
+            "demo-b-s04-t012",
+            "demo-b-s04-t013",
+            "demo-b-s04-t014",
+            "demo-b-s04-t015",
+            "demo-b-s04-t016",
+            "demo-b-s04-t017"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "4",
+          "episode_id": "ep-run-llm-demo-b-001-demo-b-s04-005",
+          "run_id": "run-llm-demo-b-001",
+          "identifiedBy": "AI",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "exploration",
+          "start_turn_id": "demo-b-s04-t018",
+          "end_turn_id": "demo-b-s04-t019",
+          "evidence": [
+            "demo-b-s04-t018",
+            "demo-b-s04-t019"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "5",
+          "episode_id": "ep-run-llm-demo-b-001-demo-b-s04-006",
+          "run_id": "run-llm-demo-b-001",
+          "identifiedBy": "AI",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "implementation",
+          "start_turn_id": "demo-b-s04-t020",
+          "end_turn_id": "demo-b-s04-t022",
+          "evidence": [
+            "demo-b-s04-t020",
+            "demo-b-s04-t021",
+            "demo-b-s04-t022"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "6",
+          "episode_id": "ep-run-llm-demo-b-001-demo-b-s04-007",
+          "run_id": "run-llm-demo-b-001",
+          "identifiedBy": "AI",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "organization",
+          "start_turn_id": "demo-b-s04-t023",
+          "end_turn_id": "demo-b-s04-t024",
+          "evidence": [
+            "demo-b-s04-t023",
+            "demo-b-s04-t024"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "7",
+          "episode_id": "ep-run-llm-demo-b-001-demo-b-s04-008",
+          "run_id": "run-llm-demo-b-001",
+          "identifiedBy": "AI",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "verification",
+          "start_turn_id": "demo-b-s04-t025",
+          "end_turn_id": "demo-b-s04-t028",
+          "evidence": [
+            "demo-b-s04-t025",
+            "demo-b-s04-t026",
+            "demo-b-s04-t027",
+            "demo-b-s04-t028"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "8",
+          "episode_id": "ep-run-llm-demo-b-001-demo-b-s04-009",
+          "run_id": "run-llm-demo-b-001",
+          "identifiedBy": "AI",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "monitor",
+          "start_turn_id": "demo-b-s04-t029",
+          "end_turn_id": "demo-b-s04-t032",
+          "evidence": [
+            "demo-b-s04-t029",
+            "demo-b-s04-t030",
+            "demo-b-s04-t031",
+            "demo-b-s04-t032"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "9",
+          "episode_id": "ep-run-llm-demo-b-001-demo-b-s04-010",
+          "run_id": "run-llm-demo-b-001",
+          "identifiedBy": "AI",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "verification",
+          "start_turn_id": "demo-b-s04-t033",
+          "end_turn_id": "demo-b-s04-t039",
+          "evidence": [
+            "demo-b-s04-t033",
+            "demo-b-s04-t034",
+            "demo-b-s04-t035",
+            "demo-b-s04-t036",
+            "demo-b-s04-t037",
+            "demo-b-s04-t038",
+            "demo-b-s04-t039"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "10",
+          "episode_id": "ep-run-llm-demo-b-001-demo-b-s04-011",
+          "run_id": "run-llm-demo-b-001",
+          "identifiedBy": "AI",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "organization",
+          "start_turn_id": "demo-b-s04-t040",
+          "end_turn_id": "demo-b-s04-t045",
+          "evidence": [
+            "demo-b-s04-t040",
+            "demo-b-s04-t041",
+            "demo-b-s04-t042",
+            "demo-b-s04-t043",
+            "demo-b-s04-t044",
+            "demo-b-s04-t045"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        },
+        {
+          "_id": "11",
+          "episode_id": "ep-run-llm-demo-b-001-demo-b-s04-012",
+          "run_id": "run-llm-demo-b-001",
+          "identifiedBy": "AI",
+          "layer_id": "episodes",
+          "codebook_version": "2.2.0",
+          "domain": "math",
+          "EPISODE": "monitor",
+          "start_turn_id": "demo-b-s04-t046",
+          "end_turn_id": "demo-b-s04-t050",
+          "evidence": [
+            "demo-b-s04-t046",
+            "demo-b-s04-t047",
+            "demo-b-s04-t048",
+            "demo-b-s04-t049",
+            "demo-b-s04-t050"
+          ],
+          "reviewer_id": null,
+          "reviewed_at": null
+        }
+      ]
+    }
+  ],
+  "runs": [
+    {
+      "run_id": "run-human-demo-b-001",
+      "kind": "human",
+      "simulated": true,
+      "model": null,
+      "prompt_hash": null,
+      "annotator_id": "sim-annotator-01",
+      "codebook_version": "2.2.0",
+      "domain": "math",
+      "created_at": "2026-02-03T18:00:00.000Z"
+    },
+    {
+      "run_id": "run-llm-demo-b-001",
+      "kind": "llm",
+      "simulated": true,
+      "model": "claude-sonnet-5",
+      "prompt_hash": "21da27aab383016d",
+      "annotator_id": null,
+      "codebook_version": "2.2.0",
+      "domain": "math",
+      "created_at": "2026-09-19T02:28:45.591Z",
+      "usage": {
+        "calls": 5,
+        "totals": {
+          "input_tokens": 1685,
+          "output_tokens": 10658,
+          "cache_creation_input_tokens": 17206,
+          "cache_read_input_tokens": 15204
+        },
+        "per_call": [
+          {
+            "input_tokens": 324,
+            "output_tokens": 1561,
+            "cache_creation_input_tokens": 2494,
+            "cache_read_input_tokens": 3801,
+            "purpose": "segment",
+            "session_id": "demo-b-s01"
+          },
+          {
+            "input_tokens": 324,
+            "output_tokens": 2499,
+            "cache_creation_input_tokens": 1951,
+            "cache_read_input_tokens": 3801,
+            "purpose": "segment",
+            "session_id": "demo-b-s02"
+          },
+          {
+            "input_tokens": 324,
+            "output_tokens": 1596,
+            "cache_creation_input_tokens": 2355,
+            "cache_read_input_tokens": 3801,
+            "purpose": "segment",
+            "session_id": "demo-b-s03"
+          },
+          {
+            "input_tokens": 324,
+            "output_tokens": 1771,
+            "cache_creation_input_tokens": 2049,
+            "cache_read_input_tokens": 3801,
+            "purpose": "segment",
+            "session_id": "demo-b-s04"
+          },
+          {
+            "input_tokens": 389,
+            "output_tokens": 3231,
+            "cache_creation_input_tokens": 8357,
+            "cache_read_input_tokens": 0,
+            "purpose": "summarise"
+          }
+        ]
+      }
+    }
+  ],
+  "agreement": {
+    "threshold": 0.61,
+    "statistic": "Cohen's kappa",
+    "unit": "turn",
+    "statement": "",
+    "compared_runs": [
+      "run-human-demo-b-001",
+      "run-llm-demo-b-001"
+    ],
+    "n_turns": 214,
+    "value": 0.34651237544198005,
+    "band": "Fair",
+    "measured": true,
+    "state": "suppressed",
+    "simulated": true,
+    "refusal": null,
+    "per_code": {
+      "implementation": {
+        "n_turns": 70,
+        "agreed": 13
+      },
+      "not_problem_solving": {
+        "n_turns": 92,
+        "agreed": 31
+      },
+      "analysis": {
+        "n_turns": 53,
+        "agreed": 26
+      },
+      "planning": {
+        "n_turns": 30,
+        "agreed": 11
+      },
+      "exploration": {
+        "n_turns": 36,
+        "agreed": 11
+      },
+      "verification": {
+        "n_turns": 47,
+        "agreed": 8
+      }
+    }
+  },
+  "session_gate": {
+    "min_turns": 40,
+    "sessions": [
+      {
+        "session_id": "demo-b-s01",
+        "turn_count": 56,
+        "reportable": true
+      },
+      {
+        "session_id": "demo-b-s02",
+        "turn_count": 48,
+        "reportable": true
+      },
+      {
+        "session_id": "demo-b-s03",
+        "turn_count": 60,
+        "reportable": true
+      },
+      {
+        "session_id": "demo-b-s04",
+        "turn_count": 50,
+        "reportable": true
+      }
+    ]
+  },
+  "claims": [
+    {
+      "claim_id": "claim-001",
+      "text": "The first session's work spanned thirteen episodes across fifty-six turns.",
+      "evidence_episode_ids": [
+        "ep-run-llm-demo-b-001-demo-b-s01-003",
+        "ep-run-llm-demo-b-001-demo-b-s01-004",
+        "ep-run-llm-demo-b-001-demo-b-s01-005",
+        "ep-run-llm-demo-b-001-demo-b-s01-006",
+        "ep-run-llm-demo-b-001-demo-b-s01-008",
+        "ep-run-llm-demo-b-001-demo-b-s01-009",
+        "ep-run-llm-demo-b-001-demo-b-s01-010",
+        "ep-run-llm-demo-b-001-demo-b-s01-011",
+        "ep-run-llm-demo-b-001-demo-b-s01-012",
+        "ep-run-llm-demo-b-001-demo-b-s01-013",
+        "ep-run-llm-demo-b-001-demo-b-s01-014",
+        "ep-run-llm-demo-b-001-demo-b-s01-015",
+        "ep-run-llm-demo-b-001-demo-b-s01-017"
+      ],
+      "provenance": "DERIVED: episodes of the source run, counted in code; phrasing by a separate model call (D10)"
+    },
+    {
+      "claim_id": "claim-002",
+      "text": "In the first session, verification took up three episodes and eighteen turns, the heaviest turn count of any code in that session.",
+      "evidence_episode_ids": [
+        "ep-run-llm-demo-b-001-demo-b-s01-006",
+        "ep-run-llm-demo-b-001-demo-b-s01-011",
+        "ep-run-llm-demo-b-001-demo-b-s01-014"
+      ],
+      "provenance": "DERIVED: episodes of the source run, counted in code; phrasing by a separate model call (D10)"
+    },
+    {
+      "claim_id": "claim-003",
+      "text": "The second session's work spanned sixteen episodes across forty-eight turns.",
+      "evidence_episode_ids": [
+        "ep-run-llm-demo-b-001-demo-b-s02-002",
+        "ep-run-llm-demo-b-001-demo-b-s02-003",
+        "ep-run-llm-demo-b-001-demo-b-s02-004",
+        "ep-run-llm-demo-b-001-demo-b-s02-005",
+        "ep-run-llm-demo-b-001-demo-b-s02-006",
+        "ep-run-llm-demo-b-001-demo-b-s02-007",
+        "ep-run-llm-demo-b-001-demo-b-s02-008",
+        "ep-run-llm-demo-b-001-demo-b-s02-009",
+        "ep-run-llm-demo-b-001-demo-b-s02-010",
+        "ep-run-llm-demo-b-001-demo-b-s02-011",
+        "ep-run-llm-demo-b-001-demo-b-s02-012",
+        "ep-run-llm-demo-b-001-demo-b-s02-014",
+        "ep-run-llm-demo-b-001-demo-b-s02-015",
+        "ep-run-llm-demo-b-001-demo-b-s02-016",
+        "ep-run-llm-demo-b-001-demo-b-s02-017",
+        "ep-run-llm-demo-b-001-demo-b-s02-019"
+      ],
+      "provenance": "DERIVED: episodes of the source run, counted in code; phrasing by a separate model call (D10)"
+    },
+    {
+      "claim_id": "claim-004",
+      "text": "In the second session, implementation took up six episodes and fourteen turns, becoming the most frequent code in that session.",
+      "evidence_episode_ids": [
+        "ep-run-llm-demo-b-001-demo-b-s02-003",
+        "ep-run-llm-demo-b-001-demo-b-s02-005",
+        "ep-run-llm-demo-b-001-demo-b-s02-007",
+        "ep-run-llm-demo-b-001-demo-b-s02-009",
+        "ep-run-llm-demo-b-001-demo-b-s02-011",
+        "ep-run-llm-demo-b-001-demo-b-s02-014"
+      ],
+      "provenance": "DERIVED: episodes of the source run, counted in code; phrasing by a separate model call (D10)"
+    },
+    {
+      "claim_id": "claim-005",
+      "text": "The third session's work spanned ten episodes across sixty turns.",
+      "evidence_episode_ids": [
+        "ep-run-llm-demo-b-001-demo-b-s03-002",
+        "ep-run-llm-demo-b-001-demo-b-s03-003",
+        "ep-run-llm-demo-b-001-demo-b-s03-005",
+        "ep-run-llm-demo-b-001-demo-b-s03-006",
+        "ep-run-llm-demo-b-001-demo-b-s03-008",
+        "ep-run-llm-demo-b-001-demo-b-s03-009",
+        "ep-run-llm-demo-b-001-demo-b-s03-012",
+        "ep-run-llm-demo-b-001-demo-b-s03-013",
+        "ep-run-llm-demo-b-001-demo-b-s03-014",
+        "ep-run-llm-demo-b-001-demo-b-s03-015"
+      ],
+      "provenance": "DERIVED: episodes of the source run, counted in code; phrasing by a separate model call (D10)"
+    },
+    {
+      "claim_id": "claim-006",
+      "text": "In the third session, exploration took up two episodes and ten turns.",
+      "evidence_episode_ids": [
+        "ep-run-llm-demo-b-001-demo-b-s03-006",
+        "ep-run-llm-demo-b-001-demo-b-s03-014"
+      ],
+      "provenance": "DERIVED: episodes of the source run, counted in code; phrasing by a separate model call (D10)"
+    },
+    {
+      "claim_id": "claim-007",
+      "text": "The fourth session's work spanned six episodes across fifty turns.",
+      "evidence_episode_ids": [
+        "ep-run-llm-demo-b-001-demo-b-s04-003",
+        "ep-run-llm-demo-b-001-demo-b-s04-004",
+        "ep-run-llm-demo-b-001-demo-b-s04-005",
+        "ep-run-llm-demo-b-001-demo-b-s04-006",
+        "ep-run-llm-demo-b-001-demo-b-s04-008",
+        "ep-run-llm-demo-b-001-demo-b-s04-010"
+      ],
+      "provenance": "DERIVED: episodes of the source run, counted in code; phrasing by a separate model call (D10)"
+    },
+    {
+      "claim_id": "claim-008",
+      "text": "In the fourth session, verification took up two episodes and eleven turns and planning took up one episode and eight turns.",
+      "evidence_episode_ids": [
+        "ep-run-llm-demo-b-001-demo-b-s04-008",
+        "ep-run-llm-demo-b-001-demo-b-s04-010",
+        "ep-run-llm-demo-b-001-demo-b-s04-003"
+      ],
+      "provenance": "DERIVED: episodes of the source run, counted in code; phrasing by a separate model call (D10)"
+    }
+  ],
+  "summary": "Across four sessions, the work moved through a changing number of episodes and turns. The first session spanned thirteen episodes across fifty-six turns, with verification taking up three episodes and eighteen turns, the heaviest turn count of any code in that session. The second session spanned sixteen episodes across forty-eight turns, with implementation taking up six episodes and fourteen turns, becoming the most frequent code in that session. The third session spanned ten episodes across sixty turns, with exploration taking up two episodes and ten turns. The fourth session spanned six episodes across fifty turns, with verification taking up two episodes and eleven turns and planning taking up one episode and eight turns, showing a narrower spread of episodes than earlier sessions while turn counts stayed close to fifty.",
+  "provenance_card": [
+    "The kinds of work shown come from Schoenfeld’s categories of mathematical problem solving, as set out by Li et al. (2025).",
+    "Those definitions were written for other settings: a reasoning model’s written solutions, and video of university students solving geometry problems. Using them on tutoring turns goes beyond the settings where those definitions were tested.",
+    "The episodes in this report were proposed by a language model.",
+    "Simulated session data, generated for this demo. Not a real tutoring session.",
+    "These sessions were marked by the model and, separately, by an annotator generated for this demo. The two diverged too much for this view to be shown, so the episode detail is held back.",
+    "Nobody has established how reliably these labels can be applied. This report describes what happened in the sessions and claims nothing beyond that.",
+    "The episode detail is shown only when the model’s marking and a second, separate marking of the same sessions agree at 0.61 or above on Cohen’s kappa, a measure of how closely two markings agree beyond chance.",
+    "The definitions were developed on mathematics and are used here on mathematics only."
+  ]
+}

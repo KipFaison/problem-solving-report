@@ -1,0 +1,436 @@
+{
+  "$comment": "The planted episode plan this session was generated from. It is not a labelling run, nothing is scored against it, and no report reads it (SPEC-gate0 §8). It is here so a reader can see what the transcript was built to contain.",
+  "set_id": "demo-a",
+  "session_id": "demo-a-s03",
+  "seed": 20260102,
+  "turn_count": 46,
+  "episodes": [
+    {
+      "ordinal": 1,
+      "code": "reading",
+      "turns": 3
+    },
+    {
+      "ordinal": 2,
+      "code": "implementation",
+      "turns": 6
+    },
+    {
+      "ordinal": 3,
+      "code": "planning",
+      "turns": 2
+    },
+    {
+      "ordinal": 4,
+      "code": "analysis",
+      "turns": 8
+    },
+    {
+      "ordinal": 5,
+      "code": "implementation",
+      "turns": 7
+    },
+    {
+      "ordinal": 6,
+      "code": "organization",
+      "turns": 2
+    },
+    {
+      "ordinal": 7,
+      "code": "verification",
+      "turns": 3
+    },
+    {
+      "ordinal": 8,
+      "code": "monitor",
+      "turns": 2
+    },
+    {
+      "ordinal": 9,
+      "code": "implementation",
+      "turns": 8
+    },
+    {
+      "ordinal": 10,
+      "code": "planning",
+      "turns": 2
+    },
+    {
+      "ordinal": 11,
+      "code": "monitor",
+      "turns": 3
+    }
+  ],
+  "$comment_schedule": "[OURS] The same plan turn by turn: speaker, planted code, boundary cue and problem. scripts/write-dialogue.ts writes the session's lines from it, and schedule_hash (sha256 of its canonical JSON) ties the stored lines at src/generator/dialogue/demo-a-s03.json to it.",
+  "schedule_hash": "e31bc02730bcef0e832e6336fb40e5341ef3cb4b59d2fd8ba5aae3103e2f57f1",
+  "schedule": [
+    {
+      "index": 0,
+      "turn_id": "demo-a-s03-t001",
+      "role": "TUTOR",
+      "code": "reading",
+      "cue": null,
+      "problem_topic": "Perimeter and area of a rectangle"
+    },
+    {
+      "index": 1,
+      "turn_id": "demo-a-s03-t002",
+      "role": "STUDENT_1",
+      "code": "reading",
+      "cue": null,
+      "problem_topic": "Perimeter and area of a rectangle"
+    },
+    {
+      "index": 2,
+      "turn_id": "demo-a-s03-t003",
+      "role": "TUTOR",
+      "code": "reading",
+      "cue": "handoff",
+      "problem_topic": "Perimeter and area of a rectangle"
+    },
+    {
+      "index": 3,
+      "turn_id": "demo-a-s03-t004",
+      "role": "STUDENT_1",
+      "code": "implementation",
+      "cue": "opening",
+      "problem_topic": "Perimeter and area of a rectangle"
+    },
+    {
+      "index": 4,
+      "turn_id": "demo-a-s03-t005",
+      "role": "TUTOR",
+      "code": "implementation",
+      "cue": "follow",
+      "problem_topic": "Perimeter and area of a rectangle"
+    },
+    {
+      "index": 5,
+      "turn_id": "demo-a-s03-t006",
+      "role": "STUDENT_1",
+      "code": "implementation",
+      "cue": null,
+      "problem_topic": "Perimeter and area of a rectangle"
+    },
+    {
+      "index": 6,
+      "turn_id": "demo-a-s03-t007",
+      "role": "TUTOR",
+      "code": "implementation",
+      "cue": null,
+      "problem_topic": "Perimeter and area of a rectangle"
+    },
+    {
+      "index": 7,
+      "turn_id": "demo-a-s03-t008",
+      "role": "STUDENT_1",
+      "code": "implementation",
+      "cue": null,
+      "problem_topic": "Perimeter and area of a rectangle"
+    },
+    {
+      "index": 8,
+      "turn_id": "demo-a-s03-t009",
+      "role": "TUTOR",
+      "code": "implementation",
+      "cue": "handoff",
+      "problem_topic": "Perimeter and area of a rectangle"
+    },
+    {
+      "index": 9,
+      "turn_id": "demo-a-s03-t010",
+      "role": "STUDENT_1",
+      "code": "planning",
+      "cue": null,
+      "problem_topic": "Perimeter and area of a rectangle"
+    },
+    {
+      "index": 10,
+      "turn_id": "demo-a-s03-t011",
+      "role": "TUTOR",
+      "code": "planning",
+      "cue": "handoff",
+      "problem_topic": "Perimeter and area of a rectangle"
+    },
+    {
+      "index": 11,
+      "turn_id": "demo-a-s03-t012",
+      "role": "STUDENT_1",
+      "code": "analysis",
+      "cue": "opening",
+      "problem_topic": "Perimeter and area of a rectangle"
+    },
+    {
+      "index": 12,
+      "turn_id": "demo-a-s03-t013",
+      "role": "TUTOR",
+      "code": "analysis",
+      "cue": "follow",
+      "problem_topic": "Perimeter and area of a rectangle"
+    },
+    {
+      "index": 13,
+      "turn_id": "demo-a-s03-t014",
+      "role": "STUDENT_1",
+      "code": "analysis",
+      "cue": null,
+      "problem_topic": "Perimeter and area of a rectangle"
+    },
+    {
+      "index": 14,
+      "turn_id": "demo-a-s03-t015",
+      "role": "TUTOR",
+      "code": "analysis",
+      "cue": null,
+      "problem_topic": "Perimeter and area of a rectangle"
+    },
+    {
+      "index": 15,
+      "turn_id": "demo-a-s03-t016",
+      "role": "STUDENT_1",
+      "code": "analysis",
+      "cue": null,
+      "problem_topic": "Perimeter and area of a rectangle"
+    },
+    {
+      "index": 16,
+      "turn_id": "demo-a-s03-t017",
+      "role": "TUTOR",
+      "code": "analysis",
+      "cue": null,
+      "problem_topic": "Perimeter and area of a rectangle"
+    },
+    {
+      "index": 17,
+      "turn_id": "demo-a-s03-t018",
+      "role": "STUDENT_1",
+      "code": "analysis",
+      "cue": null,
+      "problem_topic": "Perimeter and area of a rectangle"
+    },
+    {
+      "index": 18,
+      "turn_id": "demo-a-s03-t019",
+      "role": "TUTOR",
+      "code": "analysis",
+      "cue": "handoff",
+      "problem_topic": "Perimeter and area of a rectangle"
+    },
+    {
+      "index": 19,
+      "turn_id": "demo-a-s03-t020",
+      "role": "STUDENT_1",
+      "code": "implementation",
+      "cue": "opening",
+      "problem_topic": "Perimeter and area of a rectangle"
+    },
+    {
+      "index": 20,
+      "turn_id": "demo-a-s03-t021",
+      "role": "TUTOR",
+      "code": "implementation",
+      "cue": "follow",
+      "problem_topic": "Perimeter and area of a rectangle"
+    },
+    {
+      "index": 21,
+      "turn_id": "demo-a-s03-t022",
+      "role": "STUDENT_1",
+      "code": "implementation",
+      "cue": null,
+      "problem_topic": "Perimeter and area of a rectangle"
+    },
+    {
+      "index": 22,
+      "turn_id": "demo-a-s03-t023",
+      "role": "TUTOR",
+      "code": "implementation",
+      "cue": null,
+      "problem_topic": "Perimeter and area of a rectangle"
+    },
+    {
+      "index": 23,
+      "turn_id": "demo-a-s03-t024",
+      "role": "STUDENT_1",
+      "code": "implementation",
+      "cue": null,
+      "problem_topic": "Perimeter and area of a rectangle"
+    },
+    {
+      "index": 24,
+      "turn_id": "demo-a-s03-t025",
+      "role": "TUTOR",
+      "code": "implementation",
+      "cue": null,
+      "problem_topic": "Perimeter and area of a rectangle"
+    },
+    {
+      "index": 25,
+      "turn_id": "demo-a-s03-t026",
+      "role": "STUDENT_1",
+      "code": "implementation",
+      "cue": null,
+      "problem_topic": "Perimeter and area of a rectangle"
+    },
+    {
+      "index": 26,
+      "turn_id": "demo-a-s03-t027",
+      "role": "TUTOR",
+      "code": "organization",
+      "cue": null,
+      "problem_topic": "Perimeter and area of a rectangle"
+    },
+    {
+      "index": 27,
+      "turn_id": "demo-a-s03-t028",
+      "role": "STUDENT_1",
+      "code": "organization",
+      "cue": null,
+      "problem_topic": "Perimeter and area of a rectangle"
+    },
+    {
+      "index": 28,
+      "turn_id": "demo-a-s03-t029",
+      "role": "TUTOR",
+      "code": "verification",
+      "cue": null,
+      "problem_topic": "Perimeter and area of a rectangle"
+    },
+    {
+      "index": 29,
+      "turn_id": "demo-a-s03-t030",
+      "role": "STUDENT_1",
+      "code": "verification",
+      "cue": null,
+      "problem_topic": "Perimeter and area of a rectangle"
+    },
+    {
+      "index": 30,
+      "turn_id": "demo-a-s03-t031",
+      "role": "TUTOR",
+      "code": "verification",
+      "cue": null,
+      "problem_topic": "Perimeter and area of a rectangle"
+    },
+    {
+      "index": 31,
+      "turn_id": "demo-a-s03-t032",
+      "role": "STUDENT_1",
+      "code": "monitor",
+      "cue": null,
+      "problem_topic": "Perimeter and area of a rectangle"
+    },
+    {
+      "index": 32,
+      "turn_id": "demo-a-s03-t033",
+      "role": "TUTOR",
+      "code": "monitor",
+      "cue": "handoff",
+      "problem_topic": "Perimeter and area of a rectangle"
+    },
+    {
+      "index": 33,
+      "turn_id": "demo-a-s03-t034",
+      "role": "STUDENT_1",
+      "code": "implementation",
+      "cue": "opening",
+      "problem_topic": "Perimeter and area of a rectangle"
+    },
+    {
+      "index": 34,
+      "turn_id": "demo-a-s03-t035",
+      "role": "TUTOR",
+      "code": "implementation",
+      "cue": "follow",
+      "problem_topic": "Perimeter and area of a rectangle"
+    },
+    {
+      "index": 35,
+      "turn_id": "demo-a-s03-t036",
+      "role": "STUDENT_1",
+      "code": "implementation",
+      "cue": null,
+      "problem_topic": "Perimeter and area of a rectangle"
+    },
+    {
+      "index": 36,
+      "turn_id": "demo-a-s03-t037",
+      "role": "TUTOR",
+      "code": "implementation",
+      "cue": null,
+      "problem_topic": "Perimeter and area of a rectangle"
+    },
+    {
+      "index": 37,
+      "turn_id": "demo-a-s03-t038",
+      "role": "STUDENT_1",
+      "code": "implementation",
+      "cue": null,
+      "problem_topic": "Perimeter and area of a rectangle"
+    },
+    {
+      "index": 38,
+      "turn_id": "demo-a-s03-t039",
+      "role": "TUTOR",
+      "code": "implementation",
+      "cue": null,
+      "problem_topic": "Perimeter and area of a rectangle"
+    },
+    {
+      "index": 39,
+      "turn_id": "demo-a-s03-t040",
+      "role": "STUDENT_1",
+      "code": "implementation",
+      "cue": null,
+      "problem_topic": "Perimeter and area of a rectangle"
+    },
+    {
+      "index": 40,
+      "turn_id": "demo-a-s03-t041",
+      "role": "TUTOR",
+      "code": "implementation",
+      "cue": "handoff",
+      "problem_topic": "Perimeter and area of a rectangle"
+    },
+    {
+      "index": 41,
+      "turn_id": "demo-a-s03-t042",
+      "role": "STUDENT_1",
+      "code": "planning",
+      "cue": null,
+      "problem_topic": "Perimeter and area of a rectangle"
+    },
+    {
+      "index": 42,
+      "turn_id": "demo-a-s03-t043",
+      "role": "TUTOR",
+      "code": "planning",
+      "cue": null,
+      "problem_topic": "Perimeter and area of a rectangle"
+    },
+    {
+      "index": 43,
+      "turn_id": "demo-a-s03-t044",
+      "role": "STUDENT_1",
+      "code": "monitor",
+      "cue": null,
+      "problem_topic": "Perimeter and area of a rectangle"
+    },
+    {
+      "index": 44,
+      "turn_id": "demo-a-s03-t045",
+      "role": "TUTOR",
+      "code": "monitor",
+      "cue": null,
+      "problem_topic": "Perimeter and area of a rectangle"
+    },
+    {
+      "index": 45,
+      "turn_id": "demo-a-s03-t046",
+      "role": "STUDENT_1",
+      "code": "monitor",
+      "cue": null,
+      "problem_topic": "Perimeter and area of a rectangle"
+    }
+  ]
+}

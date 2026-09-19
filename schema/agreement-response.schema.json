@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://reasoning-trajectory.local/schema/agreement-response.schema.json",
+  "title": "Student agreement response",
+  "description": "One student's response to one claim in a report. Records are appended, never edited; the latest responded_at for a claim is the current view. Nothing consumes these in Gate 0.",
+  "$comment": "[OURS: deliberately unlike Sandpiper's markedAs/votingReason fields, which have no id, no timestamp, and are addressed by array position. This record has its own id and timestamp and addresses a claim by its stable claim_id. Reviewer identity and agreement measurement belong to Gate 3. See docs/DEVIATIONS.md D-013.]",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "response_id",
+    "report_schema_version",
+    "student_id",
+    "layer_id",
+    "claim_id",
+    "response",
+    "responded_at",
+    "responder"
+  ],
+  "properties": {
+    "response_id": { "type": "string", "format": "uuid" },
+    "report_schema_version": { "type": "string", "minLength": 1 },
+    "student_id": { "type": "string", "minLength": 1 },
+    "layer_id": { "type": "string", "minLength": 1 },
+    "claim_id": { "type": "string", "minLength": 1 },
+    "response": { "type": "string", "enum": ["agree", "not_sure", "disagree"] },
+    "comment": { "type": "string", "maxLength": 500 },
+    "responded_at": { "type": "string", "format": "date-time" },
+    "responder": {
+      "type": "string",
+      "const": "student",
+      "$comment": "[OURS: the brief asks for the student's view. Accepting a parent's response would be a separate decision.]"
+    }
+  }
+}

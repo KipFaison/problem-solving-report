@@ -1,0 +1,388 @@
+{
+  "session_id": "demo-c-s03",
+  "student_id": "stu-demo-c",
+  "session_index": 3,
+  "session_date": "2026-01-27",
+  "session_topic": "Perimeter and area of a rectangle",
+  "has_timestamps": false,
+  "transcript_scope": "full",
+  "problems": [
+    {
+      "problem_id": "demo-c-s03-p01",
+      "topic": "Perimeter and area of a rectangle",
+      "start_turn_id": "demo-c-s03-t001",
+      "end_turn_id": "demo-c-s03-t046"
+    }
+  ],
+  "turns": [
+    {
+      "_id": "0",
+      "session_id": "demo-c-s03",
+      "sequence_id": 1,
+      "role": "TUTOR",
+      "content": "A rectangle has a perimeter of 36 centimetres, and its length is twice its width. We need to find its area.",
+      "turn_id": "demo-c-s03-t001"
+    },
+    {
+      "_id": "1",
+      "session_id": "demo-c-s03",
+      "sequence_id": 2,
+      "role": "STUDENT_1",
+      "content": "So we're given the perimeter and how the length relates to the width, and the goal is the area.",
+      "turn_id": "demo-c-s03-t002"
+    },
+    {
+      "_id": "2",
+      "session_id": "demo-c-s03",
+      "sequence_id": 3,
+      "role": "TUTOR",
+      "content": "Good, that's exactly what's given and exactly what we need to find.",
+      "turn_id": "demo-c-s03-t003"
+    },
+    {
+      "_id": "3",
+      "session_id": "demo-c-s03",
+      "sequence_id": 4,
+      "role": "STUDENT_1",
+      "content": "Okay, so how should we turn this into something we can solve?",
+      "turn_id": "demo-c-s03-t004"
+    },
+    {
+      "_id": "4",
+      "session_id": "demo-c-s03",
+      "sequence_id": 5,
+      "role": "TUTOR",
+      "content": "Right, let's call the width w — what would the length be in terms of w?",
+      "turn_id": "demo-c-s03-t005"
+    },
+    {
+      "_id": "5",
+      "session_id": "demo-c-s03",
+      "sequence_id": 6,
+      "role": "STUDENT_1",
+      "content": "The length would be 2w, so I can plug both into the perimeter formula.",
+      "turn_id": "demo-c-s03-t006"
+    },
+    {
+      "_id": "6",
+      "session_id": "demo-c-s03",
+      "sequence_id": 7,
+      "role": "TUTOR",
+      "content": "Quick thing — did you get your permission slip turned in for the trip yet?",
+      "turn_id": "demo-c-s03-t007"
+    },
+    {
+      "_id": "7",
+      "session_id": "demo-c-s03",
+      "sequence_id": 8,
+      "role": "STUDENT_1",
+      "content": "Not yet, I'll do it later — so the perimeter is 2(w + 2w), which comes out to 6w.",
+      "turn_id": "demo-c-s03-t008"
+    },
+    {
+      "_id": "8",
+      "session_id": "demo-c-s03",
+      "sequence_id": 9,
+      "role": "TUTOR",
+      "content": "Nice, so set that equal to 36 and solve for w.",
+      "turn_id": "demo-c-s03-t009"
+    },
+    {
+      "_id": "9",
+      "session_id": "demo-c-s03",
+      "sequence_id": 10,
+      "role": "STUDENT_1",
+      "content": "6w = 36, so w = 6.",
+      "turn_id": "demo-c-s03-t010"
+    },
+    {
+      "_id": "10",
+      "session_id": "demo-c-s03",
+      "sequence_id": 11,
+      "role": "TUTOR",
+      "content": "Good — now what's the length?",
+      "turn_id": "demo-c-s03-t011"
+    },
+    {
+      "_id": "11",
+      "session_id": "demo-c-s03",
+      "sequence_id": 12,
+      "role": "STUDENT_1",
+      "content": "The length is 2 times 6, so 12.",
+      "turn_id": "demo-c-s03-t012"
+    },
+    {
+      "_id": "12",
+      "session_id": "demo-c-s03",
+      "sequence_id": 13,
+      "role": "TUTOR",
+      "content": "Now use those two numbers to get the area.",
+      "turn_id": "demo-c-s03-t013"
+    },
+    {
+      "_id": "13",
+      "session_id": "demo-c-s03",
+      "sequence_id": 14,
+      "role": "STUDENT_1",
+      "content": "Area is 12 times 6, which is 72 square centimetres.",
+      "turn_id": "demo-c-s03-t014"
+    },
+    {
+      "_id": "14",
+      "session_id": "demo-c-s03",
+      "sequence_id": 15,
+      "role": "TUTOR",
+      "content": "Go ahead and write that down as your answer: 72 square centimetres.",
+      "turn_id": "demo-c-s03-t015"
+    },
+    {
+      "_id": "15",
+      "session_id": "demo-c-s03",
+      "sequence_id": 16,
+      "role": "STUDENT_1",
+      "content": "Let me check that against the perimeter to be sure it actually works.",
+      "turn_id": "demo-c-s03-t016"
+    },
+    {
+      "_id": "16",
+      "session_id": "demo-c-s03",
+      "sequence_id": 17,
+      "role": "TUTOR",
+      "content": "Good idea, go ahead and add up all four sides.",
+      "turn_id": "demo-c-s03-t017"
+    },
+    {
+      "_id": "17",
+      "session_id": "demo-c-s03",
+      "sequence_id": 18,
+      "role": "STUDENT_1",
+      "content": "6 + 12 + 6 + 12 comes to 36, so that matches.",
+      "turn_id": "demo-c-s03-t018"
+    },
+    {
+      "_id": "18",
+      "session_id": "demo-c-s03",
+      "sequence_id": 19,
+      "role": "TUTOR",
+      "content": "And does the length still come out to twice the width?",
+      "turn_id": "demo-c-s03-t019"
+    },
+    {
+      "_id": "19",
+      "session_id": "demo-c-s03",
+      "sequence_id": 20,
+      "role": "STUDENT_1",
+      "content": "Yes, 12 is twice 6, so both conditions check out.",
+      "turn_id": "demo-c-s03-t020"
+    },
+    {
+      "_id": "20",
+      "session_id": "demo-c-s03",
+      "sequence_id": 21,
+      "role": "TUTOR",
+      "content": "Great, the answer holds up on both counts then.",
+      "turn_id": "demo-c-s03-t021"
+    },
+    {
+      "_id": "21",
+      "session_id": "demo-c-s03",
+      "sequence_id": 22,
+      "role": "STUDENT_1",
+      "content": "Can we look at why the width had to land on exactly 6?",
+      "turn_id": "demo-c-s03-t022"
+    },
+    {
+      "_id": "22",
+      "session_id": "demo-c-s03",
+      "sequence_id": 23,
+      "role": "TUTOR",
+      "content": "Sure — the perimeter formula for this shape always reduces to 6w, since it's twice three widths.",
+      "turn_id": "demo-c-s03-t023"
+    },
+    {
+      "_id": "23",
+      "session_id": "demo-c-s03",
+      "sequence_id": 24,
+      "role": "STUDENT_1",
+      "content": "So the width is always the perimeter divided by 6 for this setup.",
+      "turn_id": "demo-c-s03-t024"
+    },
+    {
+      "_id": "24",
+      "session_id": "demo-c-s03",
+      "sequence_id": 25,
+      "role": "TUTOR",
+      "content": "Exactly — any perimeter value plugs straight into 6w = P to give the width.",
+      "turn_id": "demo-c-s03-t025"
+    },
+    {
+      "_id": "25",
+      "session_id": "demo-c-s03",
+      "sequence_id": 26,
+      "role": "STUDENT_1",
+      "content": "That means if the perimeter changed, the area wouldn't scale the same way.",
+      "turn_id": "demo-c-s03-t026"
+    },
+    {
+      "_id": "26",
+      "session_id": "demo-c-s03",
+      "sequence_id": 27,
+      "role": "TUTOR",
+      "content": "Right, area depends on w squared times two, so it grows faster than the perimeter does.",
+      "turn_id": "demo-c-s03-t027"
+    },
+    {
+      "_id": "27",
+      "session_id": "demo-c-s03",
+      "sequence_id": 28,
+      "role": "STUDENT_1",
+      "content": "So doubling the perimeter would more than double the area.",
+      "turn_id": "demo-c-s03-t028"
+    },
+    {
+      "_id": "28",
+      "session_id": "demo-c-s03",
+      "sequence_id": 29,
+      "role": "TUTOR",
+      "content": "That's a good way to see how the pieces connect — let's test a number to see it happen.",
+      "turn_id": "demo-c-s03-t029"
+    },
+    {
+      "_id": "29",
+      "session_id": "demo-c-s03",
+      "sequence_id": 30,
+      "role": "STUDENT_1",
+      "content": "Let's try a width of 5 and see what perimeter that would give.",
+      "turn_id": "demo-c-s03-t030"
+    },
+    {
+      "_id": "30",
+      "session_id": "demo-c-s03",
+      "sequence_id": 31,
+      "role": "TUTOR",
+      "content": "Go ahead, work it through.",
+      "turn_id": "demo-c-s03-t031"
+    },
+    {
+      "_id": "31",
+      "session_id": "demo-c-s03",
+      "sequence_id": 32,
+      "role": "STUDENT_1",
+      "content": "Length would be 10, so perimeter is 2 times 15, which is 30.",
+      "turn_id": "demo-c-s03-t032"
+    },
+    {
+      "_id": "32",
+      "session_id": "demo-c-s03",
+      "sequence_id": 33,
+      "role": "TUTOR",
+      "content": "So how far off is that from the 36 we actually need?",
+      "turn_id": "demo-c-s03-t033"
+    },
+    {
+      "_id": "33",
+      "session_id": "demo-c-s03",
+      "sequence_id": 34,
+      "role": "STUDENT_1",
+      "content": "It's 6 short, so a width of 5 is too small for this rectangle.",
+      "turn_id": "demo-c-s03-t034"
+    },
+    {
+      "_id": "34",
+      "session_id": "demo-c-s03",
+      "sequence_id": 35,
+      "role": "TUTOR",
+      "content": "That confirms 5 doesn't fit — good check on the relationship.",
+      "turn_id": "demo-c-s03-t035"
+    },
+    {
+      "_id": "35",
+      "session_id": "demo-c-s03",
+      "sequence_id": 36,
+      "role": "STUDENT_1",
+      "content": "So what should we do to figure out exactly how far off a guess is?",
+      "turn_id": "demo-c-s03-t036"
+    },
+    {
+      "_id": "36",
+      "session_id": "demo-c-s03",
+      "sequence_id": 37,
+      "role": "TUTOR",
+      "content": "We could compare the guessed perimeter to 36 and find the gap in terms of w.",
+      "turn_id": "demo-c-s03-t037"
+    },
+    {
+      "_id": "37",
+      "session_id": "demo-c-s03",
+      "sequence_id": 38,
+      "role": "STUDENT_1",
+      "content": "So I'd take that gap, 6, and divide it by 6 to see how much to adjust w.",
+      "turn_id": "demo-c-s03-t038"
+    },
+    {
+      "_id": "38",
+      "session_id": "demo-c-s03",
+      "sequence_id": 39,
+      "role": "TUTOR",
+      "content": "Exactly — then add that adjustment onto the guessed width.",
+      "turn_id": "demo-c-s03-t039"
+    },
+    {
+      "_id": "39",
+      "session_id": "demo-c-s03",
+      "sequence_id": 40,
+      "role": "STUDENT_1",
+      "content": "That would bring 5 up to 6, matching what we found earlier.",
+      "turn_id": "demo-c-s03-t040"
+    },
+    {
+      "_id": "40",
+      "session_id": "demo-c-s03",
+      "sequence_id": 41,
+      "role": "TUTOR",
+      "content": "That's a solid general method — let's confirm it lines up with our earlier work.",
+      "turn_id": "demo-c-s03-t041"
+    },
+    {
+      "_id": "41",
+      "session_id": "demo-c-s03",
+      "sequence_id": 42,
+      "role": "STUDENT_1",
+      "content": "So adding 1 to the guess of 5 does give the correct width of 6.",
+      "turn_id": "demo-c-s03-t042"
+    },
+    {
+      "_id": "42",
+      "session_id": "demo-c-s03",
+      "sequence_id": 43,
+      "role": "TUTOR",
+      "content": "Right, so plug that back into the length and area formulas.",
+      "turn_id": "demo-c-s03-t043"
+    },
+    {
+      "_id": "43",
+      "session_id": "demo-c-s03",
+      "sequence_id": 44,
+      "role": "STUDENT_1",
+      "content": "Length comes out to 12, area comes out to 72, same as before.",
+      "turn_id": "demo-c-s03-t044"
+    },
+    {
+      "_id": "44",
+      "session_id": "demo-c-s03",
+      "sequence_id": 45,
+      "role": "TUTOR",
+      "content": "So the adjustment method agrees with our original solution.",
+      "turn_id": "demo-c-s03-t045"
+    },
+    {
+      "_id": "45",
+      "session_id": "demo-c-s03",
+      "sequence_id": 46,
+      "role": "STUDENT_1",
+      "content": "Yes, everything checks out consistently across both approaches.",
+      "turn_id": "demo-c-s03-t046"
+    }
+  ],
+  "lead_role": "TUTOR"
+}

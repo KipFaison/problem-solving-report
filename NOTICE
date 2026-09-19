@@ -1,0 +1,140 @@
+reasoning-trajectory — third-party notices
+
+1. NTO Sandpiper
+   https://github.com/National-Tutoring-Observatory/sandpiper
+   Commit b437988 (2026-09-08)
+
+   Two files are copied into this repository:
+   vendor/sandpiper/getKappaInterpretation.ts
+     <- app/modules/evaluations/helpers/getKappaInterpretation.ts
+        Copied unchanged, below a six-line origin header. Zero imports. It
+        implements the Landis & Koch bands and is the source of this project's
+        AGREEMENT_THRESHOLD = 0.61. See docs/DEVIATIONS.md D-010.
+   vendor/sandpiper/calculateCohensKappa.ts
+     <- app/modules/evaluations/helpers/calculateCohensKappa.ts
+        Copied unchanged, below a six-line origin header. Zero imports. It
+        computes Cohen's kappa between two equal-length, positionally aligned
+        label sequences; this project calls it on one annotation run and one
+        LLM run, at the turn level. Its two upstream edge cases are left as
+        found: it returns 1 when expected agreement is 1, so two runs that
+        annotate nothing score a perfect 1, and it returns 0 on a length
+        mismatch rather than raising. Refusing those two inputs is the job of
+        a thin wrapper [OURS: an edited vendored file is no longer
+        attributable, so the refusals live outside the copy]. See
+        docs/DEVIATIONS.md.
+
+   Nothing else is copied. An earlier draft forked Sandpiper's
+   app/lib/schemas/json/transcript.schema.json; that fork was abandoned on
+   2026-09-17 and the transcript shape is this project's own. Two things are
+   taken as design rather than as code, and neither carries copied text: the
+   codebook structure, and the turn-level transcript field names. See
+   docs/SPEC-gate0.md §10.
+
+   Sandpiper license:
+
+MIT License
+
+Copyright (c) 2025 National Tutoring Observatory
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+2. Codebook sources
+   The episode codes and their operational definitions are cited in
+   codebook.v2.json, in its `source` field and in each code's `origin`:
+   Schoenfeld (1985) for the categories; Li et al. (2025, EMNLP 2025,
+   doi:10.18653/v1/2025.emnlp-main.922, Appendix E; CC BY 4.0, ©2025
+   Association for Computational Linguistics; see §4) for the operational
+   definitions; Rott, Specht & Knipping (2021, ZDM 53(4):737-752) for two
+   inductive additions. The definitions of the seven codes whose origin is
+   Li et al. are adapted from its Appendix E, with what was adapted recorded
+   per code; organization and digression are adapted from Rott et al. The example
+   sentences in codebook.v2.json are quoted, wholly or partly, from that
+   appendix. codebook.v2.json itself still cites the arXiv preprint,
+   arXiv:2509.14662.
+
+   Zhou, Vanacore, Thompson, St John, Kizilcec. Tutor Move Taxonomy.
+   arXiv:2603.05778, 2026. doi:10.48550/arXiv.2603.05778. CC BY 4.0
+   (https://creativecommons.org/licenses/by/4.0/). Used by Layer 2, an
+   independent layer cited in codebook.tutor-moves.json, in its `source`
+   field and in each code's `origin`. Three code names are taken verbatim
+   from its Table 1: PROMPTING_SELF_EXPLANATION, PROMPTING_SELF_CORRECTION
+   and GIVING_ANSWER. No definition text is reproduced; each code is stated
+   in this project's own words. Cohen's kappa as the authors report it, for
+   the full scheme: .65 in the first round and .78 in the second round,
+   after clarifications and minor alterations.
+
+3. Third-party material redistributed in this repository
+
+   Besides the two Sandpiper files in §1, one file is redistributed, under
+   Creative Commons Attribution 4.0 International
+   (https://creativecommons.org/licenses/by/4.0/), unmodified, with
+   attribution:
+
+   docs/reference/rott-2021-fig5.png
+     Figure 5, "Descriptive model of problem-solving processes" (p. 746), from
+     Rott, B., Specht, B., & Knipping, C. (2021). A descriptive phase model of
+     problem-solving processes. ZDM - Mathematics Education, 53(4), 737-752.
+     © The Author(s) 2021. https://doi.org/10.1007/s11858-021-01244-3. The
+     CC BY statement is printed on p. 752. If the report's visual schematic
+     adapts it rather than reproducing it, CC BY requires that the adaptation
+     be indicated; see docs/reference/rott-2021-fig5.md.
+
+   The papers themselves are cited, not redistributed. Local PDF copies may
+   sit in docs/ and docs/reference/ for reading; they are not shipped. Each of
+   the following is CC BY 4.0:
+
+   docs/2603.05778v1.pdf
+     Zhou, Vanacore, Thompson, St John, Kizilcec. Tutor Move Taxonomy: A
+     Theory-Aligned Framework for Analyzing Instructional Moves in Tutoring.
+     arXiv:2603.05778 v1, 2026.
+
+   docs/reference/s11858-021-01244-3 (2).pdf
+     Rott, Specht & Knipping (2021), above. © The Author(s) 2021.
+     https://doi.org/10.1007/s11858-021-01244-3. The CC BY statement is
+     printed on p. 752.
+
+   docs/reference/2603.08406v2.pdf
+     Hedley et al. (2026). Sandpiper: Orchestrated AI-Annotation for
+     Educational Discourse at Scale. arXiv:2603.08406 v2. The CC BY statement
+     is in the file's embedded metadata, not printed on any page.
+
+4. Read locally, not redistributed
+
+   Li, Zhang, Fan, Jiao, Fu, Peters, Xu, Lissitz, Zhou (2025). Understanding
+   the Thinking Process of Reasoning Models: A Perspective from Schoenfeld's
+   Episode Theory. In Proceedings of the 2025 Conference on Empirical Methods
+   in Natural Language Processing, pp. 18267-18288. Association for
+   Computational Linguistics. doi:10.18653/v1/2025.emnlp-main.922.
+   https://aclanthology.org/2025.emnlp-main.922/
+   ©2025 Association for Computational Linguistics. Licensed under Creative
+   Commons Attribution 4.0 International
+   (https://creativecommons.org/licenses/by/4.0/).
+
+   This paper is the source of the operational definitions adapted in
+   codebook.v2.json, from its Appendix E, the Sentence-level Annotation
+   Guidebook (pp. 18284-18288), with what was adapted recorded per code. The
+   example sentences in codebook.v2.json are quoted, wholly or partly, from
+   that appendix.
+
+   codebook.v2.json cites the earlier preprint, arXiv:2509.14662 v1, which
+   carries only the arXiv perpetual non-exclusive licence to distribute,
+   version 1.0, asserted in the PDF's embedded metadata; the authors retain
+   copyright of that version. A local copy of the preprint may sit in
+   docs/reference/ for reading and is gitignored. It is cited, not shipped:
+   https://arxiv.org/abs/2509.14662

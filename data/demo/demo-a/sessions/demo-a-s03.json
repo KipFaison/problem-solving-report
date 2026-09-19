@@ -1,0 +1,388 @@
+{
+  "session_id": "demo-a-s03",
+  "student_id": "stu-demo-a",
+  "session_index": 3,
+  "session_date": "2026-01-27",
+  "session_topic": "Perimeter and area of a rectangle",
+  "has_timestamps": false,
+  "transcript_scope": "full",
+  "problems": [
+    {
+      "problem_id": "demo-a-s03-p01",
+      "topic": "Perimeter and area of a rectangle",
+      "start_turn_id": "demo-a-s03-t001",
+      "end_turn_id": "demo-a-s03-t046"
+    }
+  ],
+  "turns": [
+    {
+      "_id": "0",
+      "session_id": "demo-a-s03",
+      "sequence_id": 1,
+      "role": "TUTOR",
+      "content": "Read the last sentence again — what is it asking for?",
+      "turn_id": "demo-a-s03-t001"
+    },
+    {
+      "_id": "1",
+      "session_id": "demo-a-s03",
+      "sequence_id": 2,
+      "role": "STUDENT_1",
+      "content": "Let me read that part again.",
+      "turn_id": "demo-a-s03-t002"
+    },
+    {
+      "_id": "2",
+      "session_id": "demo-a-s03",
+      "sequence_id": 3,
+      "role": "TUTOR",
+      "content": "Right — that is the whole question.",
+      "turn_id": "demo-a-s03-t003"
+    },
+    {
+      "_id": "3",
+      "session_id": "demo-a-s03",
+      "sequence_id": 4,
+      "role": "STUDENT_1",
+      "content": "I will do the arithmetic now.",
+      "turn_id": "demo-a-s03-t004"
+    },
+    {
+      "_id": "4",
+      "session_id": "demo-a-s03",
+      "sequence_id": 5,
+      "role": "TUTOR",
+      "content": "Okay, show me.",
+      "turn_id": "demo-a-s03-t005"
+    },
+    {
+      "_id": "5",
+      "session_id": "demo-a-s03",
+      "sequence_id": 6,
+      "role": "STUDENT_1",
+      "content": "Dividing both sides leaves the value on its own.",
+      "turn_id": "demo-a-s03-t006"
+    },
+    {
+      "_id": "6",
+      "session_id": "demo-a-s03",
+      "sequence_id": 7,
+      "role": "TUTOR",
+      "content": "Show me that step written out.",
+      "turn_id": "demo-a-s03-t007"
+    },
+    {
+      "_id": "7",
+      "session_id": "demo-a-s03",
+      "sequence_id": 8,
+      "role": "STUDENT_1",
+      "content": "Next line: I combine the two terms and then divide.",
+      "turn_id": "demo-a-s03-t008"
+    },
+    {
+      "_id": "8",
+      "session_id": "demo-a-s03",
+      "sequence_id": 9,
+      "role": "TUTOR",
+      "content": "Look at that last line again.",
+      "turn_id": "demo-a-s03-t009"
+    },
+    {
+      "_id": "9",
+      "session_id": "demo-a-s03",
+      "sequence_id": 10,
+      "role": "STUDENT_1",
+      "content": "Set it up first, then do the arithmetic once at the end.",
+      "turn_id": "demo-a-s03-t010"
+    },
+    {
+      "_id": "10",
+      "session_id": "demo-a-s03",
+      "sequence_id": 11,
+      "role": "TUTOR",
+      "content": "Okay, that is a route.",
+      "turn_id": "demo-a-s03-t011"
+    },
+    {
+      "_id": "11",
+      "session_id": "demo-a-s03",
+      "sequence_id": 12,
+      "role": "STUDENT_1",
+      "content": "Okay, but what changes if I give the unknown a name?",
+      "turn_id": "demo-a-s03-t012"
+    },
+    {
+      "_id": "12",
+      "session_id": "demo-a-s03",
+      "sequence_id": 13,
+      "role": "TUTOR",
+      "content": "Go on — what do you see?",
+      "turn_id": "demo-a-s03-t013"
+    },
+    {
+      "_id": "13",
+      "session_id": "demo-a-s03",
+      "sequence_id": 14,
+      "role": "STUDENT_1",
+      "content": "That means only one value can work.",
+      "turn_id": "demo-a-s03-t014"
+    },
+    {
+      "_id": "14",
+      "session_id": "demo-a-s03",
+      "sequence_id": 15,
+      "role": "TUTOR",
+      "content": "What is fixed here, and what is still free to move?",
+      "turn_id": "demo-a-s03-t015"
+    },
+    {
+      "_id": "15",
+      "session_id": "demo-a-s03",
+      "sequence_id": 16,
+      "role": "STUDENT_1",
+      "content": "The two conditions are not separate — one of them fixes the other.",
+      "turn_id": "demo-a-s03-t016"
+    },
+    {
+      "_id": "16",
+      "session_id": "demo-a-s03",
+      "sequence_id": 17,
+      "role": "TUTOR",
+      "content": "Say what depends on what here.",
+      "turn_id": "demo-a-s03-t017"
+    },
+    {
+      "_id": "17",
+      "session_id": "demo-a-s03",
+      "sequence_id": 18,
+      "role": "STUDENT_1",
+      "content": "That means only one value can work.",
+      "turn_id": "demo-a-s03-t018"
+    },
+    {
+      "_id": "18",
+      "session_id": "demo-a-s03",
+      "sequence_id": 19,
+      "role": "TUTOR",
+      "content": "Okay. And from there?",
+      "turn_id": "demo-a-s03-t019"
+    },
+    {
+      "_id": "19",
+      "session_id": "demo-a-s03",
+      "sequence_id": 20,
+      "role": "STUDENT_1",
+      "content": "Let me just run it.",
+      "turn_id": "demo-a-s03-t020"
+    },
+    {
+      "_id": "20",
+      "session_id": "demo-a-s03",
+      "sequence_id": 21,
+      "role": "TUTOR",
+      "content": "Go ahead.",
+      "turn_id": "demo-a-s03-t021"
+    },
+    {
+      "_id": "21",
+      "session_id": "demo-a-s03",
+      "sequence_id": 22,
+      "role": "STUDENT_1",
+      "content": "Dividing both sides leaves the value on its own.",
+      "turn_id": "demo-a-s03-t022"
+    },
+    {
+      "_id": "22",
+      "session_id": "demo-a-s03",
+      "sequence_id": 23,
+      "role": "TUTOR",
+      "content": "Go ahead and run it.",
+      "turn_id": "demo-a-s03-t023"
+    },
+    {
+      "_id": "23",
+      "session_id": "demo-a-s03",
+      "sequence_id": 24,
+      "role": "STUDENT_1",
+      "content": "6w = 36, so w = 6.",
+      "turn_id": "demo-a-s03-t024"
+    },
+    {
+      "_id": "24",
+      "session_id": "demo-a-s03",
+      "sequence_id": 25,
+      "role": "TUTOR",
+      "content": "Keep going — what does that come out to?",
+      "turn_id": "demo-a-s03-t025"
+    },
+    {
+      "_id": "25",
+      "session_id": "demo-a-s03",
+      "sequence_id": 26,
+      "role": "STUDENT_1",
+      "content": "Dividing both sides leaves the value on its own.",
+      "turn_id": "demo-a-s03-t026"
+    },
+    {
+      "_id": "26",
+      "session_id": "demo-a-s03",
+      "sequence_id": 27,
+      "role": "TUTOR",
+      "content": "Copy that line into your notes before we move on.",
+      "turn_id": "demo-a-s03-t027"
+    },
+    {
+      "_id": "27",
+      "session_id": "demo-a-s03",
+      "sequence_id": 28,
+      "role": "STUDENT_1",
+      "content": "Yes, I can see it now.",
+      "turn_id": "demo-a-s03-t028"
+    },
+    {
+      "_id": "28",
+      "session_id": "demo-a-s03",
+      "sequence_id": 29,
+      "role": "TUTOR",
+      "content": "Substitute back and see whether both statements hold.",
+      "turn_id": "demo-a-s03-t029"
+    },
+    {
+      "_id": "29",
+      "session_id": "demo-a-s03",
+      "sequence_id": 30,
+      "role": "STUDENT_1",
+      "content": "Both conditions come out right.",
+      "turn_id": "demo-a-s03-t030"
+    },
+    {
+      "_id": "30",
+      "session_id": "demo-a-s03",
+      "sequence_id": 31,
+      "role": "TUTOR",
+      "content": "Does that answer the question that was asked?",
+      "turn_id": "demo-a-s03-t031"
+    },
+    {
+      "_id": "31",
+      "session_id": "demo-a-s03",
+      "sequence_id": 32,
+      "role": "STUDENT_1",
+      "content": "This is taking longer than I expected; let me back up.",
+      "turn_id": "demo-a-s03-t032"
+    },
+    {
+      "_id": "32",
+      "session_id": "demo-a-s03",
+      "sequence_id": 33,
+      "role": "TUTOR",
+      "content": "Fair enough.",
+      "turn_id": "demo-a-s03-t033"
+    },
+    {
+      "_id": "33",
+      "session_id": "demo-a-s03",
+      "sequence_id": 34,
+      "role": "STUDENT_1",
+      "content": "Okay, I am going to write it out now.",
+      "turn_id": "demo-a-s03-t034"
+    },
+    {
+      "_id": "34",
+      "session_id": "demo-a-s03",
+      "sequence_id": 35,
+      "role": "TUTOR",
+      "content": "Okay, show me.",
+      "turn_id": "demo-a-s03-t035"
+    },
+    {
+      "_id": "35",
+      "session_id": "demo-a-s03",
+      "sequence_id": 36,
+      "role": "STUDENT_1",
+      "content": "So the length is 12 and the width is 6, so the area is 72 square centimetres.",
+      "turn_id": "demo-a-s03-t036"
+    },
+    {
+      "_id": "36",
+      "session_id": "demo-a-s03",
+      "sequence_id": 37,
+      "role": "TUTOR",
+      "content": "Go ahead and run it.",
+      "turn_id": "demo-a-s03-t037"
+    },
+    {
+      "_id": "37",
+      "session_id": "demo-a-s03",
+      "sequence_id": 38,
+      "role": "STUDENT_1",
+      "content": "6w = 36, so w = 6.",
+      "turn_id": "demo-a-s03-t038"
+    },
+    {
+      "_id": "38",
+      "session_id": "demo-a-s03",
+      "sequence_id": 39,
+      "role": "TUTOR",
+      "content": "Keep going — what does that come out to?",
+      "turn_id": "demo-a-s03-t039"
+    },
+    {
+      "_id": "39",
+      "session_id": "demo-a-s03",
+      "sequence_id": 40,
+      "role": "STUDENT_1",
+      "content": "Dividing both sides leaves the value on its own.",
+      "turn_id": "demo-a-s03-t040"
+    },
+    {
+      "_id": "40",
+      "session_id": "demo-a-s03",
+      "sequence_id": 41,
+      "role": "TUTOR",
+      "content": "That line is right.",
+      "turn_id": "demo-a-s03-t041"
+    },
+    {
+      "_id": "41",
+      "session_id": "demo-a-s03",
+      "sequence_id": 42,
+      "role": "STUDENT_1",
+      "content": "I would solve 6w = 36 for the width, double it for the length, then multiply the two.",
+      "turn_id": "demo-a-s03-t042"
+    },
+    {
+      "_id": "42",
+      "session_id": "demo-a-s03",
+      "sequence_id": 43,
+      "role": "TUTOR",
+      "content": "Before we compute anything, what is the order of steps?",
+      "turn_id": "demo-a-s03-t043"
+    },
+    {
+      "_id": "43",
+      "session_id": "demo-a-s03",
+      "sequence_id": 44,
+      "role": "STUDENT_1",
+      "content": "Hold on, let me look at where I am.",
+      "turn_id": "demo-a-s03-t044"
+    },
+    {
+      "_id": "44",
+      "session_id": "demo-a-s03",
+      "sequence_id": 45,
+      "role": "TUTOR",
+      "content": "Are we still going somewhere with this?",
+      "turn_id": "demo-a-s03-t045"
+    },
+    {
+      "_id": "45",
+      "session_id": "demo-a-s03",
+      "sequence_id": 46,
+      "role": "STUDENT_1",
+      "content": "This is taking longer than I expected; let me back up.",
+      "turn_id": "demo-a-s03-t046"
+    }
+  ],
+  "lead_role": "TUTOR"
+}

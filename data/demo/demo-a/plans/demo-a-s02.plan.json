@@ -1,0 +1,659 @@
+{
+  "$comment": "The planted episode plan this session was generated from. It is not a labelling run, nothing is scored against it, and no report reads it (SPEC-gate0 §8). It is here so a reader can see what the transcript was built to contain.",
+  "set_id": "demo-a",
+  "session_id": "demo-a-s02",
+  "seed": 20260102,
+  "turn_count": 72,
+  "episodes": [
+    {
+      "ordinal": 1,
+      "code": "reading",
+      "turns": 3
+    },
+    {
+      "ordinal": 2,
+      "code": "planning",
+      "turns": 5
+    },
+    {
+      "ordinal": 3,
+      "code": "analysis",
+      "turns": 3
+    },
+    {
+      "ordinal": 4,
+      "code": "implementation",
+      "turns": 4
+    },
+    {
+      "ordinal": 5,
+      "code": "analysis",
+      "turns": 8
+    },
+    {
+      "ordinal": 6,
+      "code": "planning",
+      "turns": 8
+    },
+    {
+      "ordinal": 7,
+      "code": "monitor",
+      "turns": 5
+    },
+    {
+      "ordinal": 8,
+      "code": "reading",
+      "turns": 3
+    },
+    {
+      "ordinal": 9,
+      "code": "planning",
+      "turns": 7
+    },
+    {
+      "ordinal": 10,
+      "code": "analysis",
+      "turns": 3
+    },
+    {
+      "ordinal": 11,
+      "code": "implementation",
+      "turns": 4
+    },
+    {
+      "ordinal": 12,
+      "code": "verification",
+      "turns": 8
+    },
+    {
+      "ordinal": 13,
+      "code": "planning",
+      "turns": 6
+    },
+    {
+      "ordinal": 14,
+      "code": "verification",
+      "turns": 5
+    }
+  ],
+  "$comment_schedule": "[OURS] The same plan turn by turn: speaker, planted code, boundary cue and problem. scripts/write-dialogue.ts writes the session's lines from it, and schedule_hash (sha256 of its canonical JSON) ties the stored lines at src/generator/dialogue/demo-a-s02.json to it.",
+  "schedule_hash": "aed6063c7fe56be67c3a67e43b268ad070ab11325af1dbdcb1f1792115a31aef",
+  "schedule": [
+    {
+      "index": 0,
+      "turn_id": "demo-a-s02-t001",
+      "role": "TUTOR",
+      "code": "reading",
+      "cue": null,
+      "problem_topic": "Perimeter and area of a rectangle"
+    },
+    {
+      "index": 1,
+      "turn_id": "demo-a-s02-t002",
+      "role": "STUDENT_1",
+      "code": "reading",
+      "cue": null,
+      "problem_topic": "Perimeter and area of a rectangle"
+    },
+    {
+      "index": 2,
+      "turn_id": "demo-a-s02-t003",
+      "role": "TUTOR",
+      "code": "reading",
+      "cue": "handoff",
+      "problem_topic": "Perimeter and area of a rectangle"
+    },
+    {
+      "index": 3,
+      "turn_id": "demo-a-s02-t004",
+      "role": "STUDENT_1",
+      "code": "planning",
+      "cue": "opening",
+      "problem_topic": "Perimeter and area of a rectangle"
+    },
+    {
+      "index": 4,
+      "turn_id": "demo-a-s02-t005",
+      "role": "TUTOR",
+      "code": "planning",
+      "cue": "follow",
+      "problem_topic": "Perimeter and area of a rectangle"
+    },
+    {
+      "index": 5,
+      "turn_id": "demo-a-s02-t006",
+      "role": "STUDENT_1",
+      "code": "planning",
+      "cue": null,
+      "problem_topic": "Perimeter and area of a rectangle"
+    },
+    {
+      "index": 6,
+      "turn_id": "demo-a-s02-t007",
+      "role": "TUTOR",
+      "code": "planning",
+      "cue": null,
+      "problem_topic": "Perimeter and area of a rectangle"
+    },
+    {
+      "index": 7,
+      "turn_id": "demo-a-s02-t008",
+      "role": "STUDENT_1",
+      "code": "planning",
+      "cue": null,
+      "problem_topic": "Perimeter and area of a rectangle"
+    },
+    {
+      "index": 8,
+      "turn_id": "demo-a-s02-t009",
+      "role": "TUTOR",
+      "code": "analysis",
+      "cue": null,
+      "problem_topic": "Perimeter and area of a rectangle"
+    },
+    {
+      "index": 9,
+      "turn_id": "demo-a-s02-t010",
+      "role": "STUDENT_1",
+      "code": "analysis",
+      "cue": null,
+      "problem_topic": "Perimeter and area of a rectangle"
+    },
+    {
+      "index": 10,
+      "turn_id": "demo-a-s02-t011",
+      "role": "TUTOR",
+      "code": "analysis",
+      "cue": "handoff",
+      "problem_topic": "Perimeter and area of a rectangle"
+    },
+    {
+      "index": 11,
+      "turn_id": "demo-a-s02-t012",
+      "role": "STUDENT_1",
+      "code": "implementation",
+      "cue": "opening",
+      "problem_topic": "Perimeter and area of a rectangle"
+    },
+    {
+      "index": 12,
+      "turn_id": "demo-a-s02-t013",
+      "role": "TUTOR",
+      "code": "implementation",
+      "cue": "follow",
+      "problem_topic": "Perimeter and area of a rectangle"
+    },
+    {
+      "index": 13,
+      "turn_id": "demo-a-s02-t014",
+      "role": "STUDENT_1",
+      "code": "implementation",
+      "cue": null,
+      "problem_topic": "Perimeter and area of a rectangle"
+    },
+    {
+      "index": 14,
+      "turn_id": "demo-a-s02-t015",
+      "role": "TUTOR",
+      "code": "implementation",
+      "cue": "handoff",
+      "problem_topic": "Perimeter and area of a rectangle"
+    },
+    {
+      "index": 15,
+      "turn_id": "demo-a-s02-t016",
+      "role": "STUDENT_1",
+      "code": "analysis",
+      "cue": "opening",
+      "problem_topic": "Perimeter and area of a rectangle"
+    },
+    {
+      "index": 16,
+      "turn_id": "demo-a-s02-t017",
+      "role": "TUTOR",
+      "code": "analysis",
+      "cue": "follow",
+      "problem_topic": "Perimeter and area of a rectangle"
+    },
+    {
+      "index": 17,
+      "turn_id": "demo-a-s02-t018",
+      "role": "STUDENT_1",
+      "code": "analysis",
+      "cue": null,
+      "problem_topic": "Perimeter and area of a rectangle"
+    },
+    {
+      "index": 18,
+      "turn_id": "demo-a-s02-t019",
+      "role": "TUTOR",
+      "code": "analysis",
+      "cue": null,
+      "problem_topic": "Perimeter and area of a rectangle"
+    },
+    {
+      "index": 19,
+      "turn_id": "demo-a-s02-t020",
+      "role": "STUDENT_1",
+      "code": "analysis",
+      "cue": null,
+      "problem_topic": "Perimeter and area of a rectangle"
+    },
+    {
+      "index": 20,
+      "turn_id": "demo-a-s02-t021",
+      "role": "TUTOR",
+      "code": "analysis",
+      "cue": null,
+      "problem_topic": "Perimeter and area of a rectangle"
+    },
+    {
+      "index": 21,
+      "turn_id": "demo-a-s02-t022",
+      "role": "STUDENT_1",
+      "code": "analysis",
+      "cue": null,
+      "problem_topic": "Perimeter and area of a rectangle"
+    },
+    {
+      "index": 22,
+      "turn_id": "demo-a-s02-t023",
+      "role": "TUTOR",
+      "code": "analysis",
+      "cue": "handoff",
+      "problem_topic": "Perimeter and area of a rectangle"
+    },
+    {
+      "index": 23,
+      "turn_id": "demo-a-s02-t024",
+      "role": "STUDENT_1",
+      "code": "planning",
+      "cue": "opening",
+      "problem_topic": "Perimeter and area of a rectangle"
+    },
+    {
+      "index": 24,
+      "turn_id": "demo-a-s02-t025",
+      "role": "TUTOR",
+      "code": "planning",
+      "cue": "follow",
+      "problem_topic": "Perimeter and area of a rectangle"
+    },
+    {
+      "index": 25,
+      "turn_id": "demo-a-s02-t026",
+      "role": "STUDENT_1",
+      "code": "planning",
+      "cue": null,
+      "problem_topic": "Perimeter and area of a rectangle"
+    },
+    {
+      "index": 26,
+      "turn_id": "demo-a-s02-t027",
+      "role": "TUTOR",
+      "code": "planning",
+      "cue": null,
+      "problem_topic": "Perimeter and area of a rectangle"
+    },
+    {
+      "index": 27,
+      "turn_id": "demo-a-s02-t028",
+      "role": "STUDENT_1",
+      "code": "planning",
+      "cue": null,
+      "problem_topic": "Perimeter and area of a rectangle"
+    },
+    {
+      "index": 28,
+      "turn_id": "demo-a-s02-t029",
+      "role": "TUTOR",
+      "code": "planning",
+      "cue": null,
+      "problem_topic": "Perimeter and area of a rectangle"
+    },
+    {
+      "index": 29,
+      "turn_id": "demo-a-s02-t030",
+      "role": "STUDENT_1",
+      "code": "planning",
+      "cue": null,
+      "problem_topic": "Perimeter and area of a rectangle"
+    },
+    {
+      "index": 30,
+      "turn_id": "demo-a-s02-t031",
+      "role": "TUTOR",
+      "code": "planning",
+      "cue": null,
+      "problem_topic": "Perimeter and area of a rectangle"
+    },
+    {
+      "index": 31,
+      "turn_id": "demo-a-s02-t032",
+      "role": "STUDENT_1",
+      "code": "monitor",
+      "cue": null,
+      "problem_topic": "Perimeter and area of a rectangle"
+    },
+    {
+      "index": 32,
+      "turn_id": "demo-a-s02-t033",
+      "role": "TUTOR",
+      "code": "monitor",
+      "cue": null,
+      "problem_topic": "Perimeter and area of a rectangle"
+    },
+    {
+      "index": 33,
+      "turn_id": "demo-a-s02-t034",
+      "role": "STUDENT_1",
+      "code": "monitor",
+      "cue": null,
+      "problem_topic": "Perimeter and area of a rectangle"
+    },
+    {
+      "index": 34,
+      "turn_id": "demo-a-s02-t035",
+      "role": "TUTOR",
+      "code": "monitor",
+      "cue": null,
+      "problem_topic": "Perimeter and area of a rectangle"
+    },
+    {
+      "index": 35,
+      "turn_id": "demo-a-s02-t036",
+      "role": "STUDENT_1",
+      "code": "monitor",
+      "cue": null,
+      "problem_topic": "Perimeter and area of a rectangle"
+    },
+    {
+      "index": 36,
+      "turn_id": "demo-a-s02-t037",
+      "role": "TUTOR",
+      "code": "reading",
+      "cue": null,
+      "problem_topic": "Scaling a ratio"
+    },
+    {
+      "index": 37,
+      "turn_id": "demo-a-s02-t038",
+      "role": "STUDENT_1",
+      "code": "reading",
+      "cue": null,
+      "problem_topic": "Scaling a ratio"
+    },
+    {
+      "index": 38,
+      "turn_id": "demo-a-s02-t039",
+      "role": "TUTOR",
+      "code": "reading",
+      "cue": "handoff",
+      "problem_topic": "Scaling a ratio"
+    },
+    {
+      "index": 39,
+      "turn_id": "demo-a-s02-t040",
+      "role": "STUDENT_1",
+      "code": "planning",
+      "cue": "opening",
+      "problem_topic": "Scaling a ratio"
+    },
+    {
+      "index": 40,
+      "turn_id": "demo-a-s02-t041",
+      "role": "TUTOR",
+      "code": "planning",
+      "cue": "follow",
+      "problem_topic": "Scaling a ratio"
+    },
+    {
+      "index": 41,
+      "turn_id": "demo-a-s02-t042",
+      "role": "STUDENT_1",
+      "code": "planning",
+      "cue": null,
+      "problem_topic": "Scaling a ratio"
+    },
+    {
+      "index": 42,
+      "turn_id": "demo-a-s02-t043",
+      "role": "TUTOR",
+      "code": "planning",
+      "cue": null,
+      "problem_topic": "Scaling a ratio"
+    },
+    {
+      "index": 43,
+      "turn_id": "demo-a-s02-t044",
+      "role": "STUDENT_1",
+      "code": "planning",
+      "cue": null,
+      "problem_topic": "Scaling a ratio"
+    },
+    {
+      "index": 44,
+      "turn_id": "demo-a-s02-t045",
+      "role": "TUTOR",
+      "code": "planning",
+      "cue": null,
+      "problem_topic": "Scaling a ratio"
+    },
+    {
+      "index": 45,
+      "turn_id": "demo-a-s02-t046",
+      "role": "STUDENT_1",
+      "code": "planning",
+      "cue": null,
+      "problem_topic": "Scaling a ratio"
+    },
+    {
+      "index": 46,
+      "turn_id": "demo-a-s02-t047",
+      "role": "TUTOR",
+      "code": "analysis",
+      "cue": null,
+      "problem_topic": "Scaling a ratio"
+    },
+    {
+      "index": 47,
+      "turn_id": "demo-a-s02-t048",
+      "role": "STUDENT_1",
+      "code": "analysis",
+      "cue": null,
+      "problem_topic": "Scaling a ratio"
+    },
+    {
+      "index": 48,
+      "turn_id": "demo-a-s02-t049",
+      "role": "TUTOR",
+      "code": "analysis",
+      "cue": "handoff",
+      "problem_topic": "Scaling a ratio"
+    },
+    {
+      "index": 49,
+      "turn_id": "demo-a-s02-t050",
+      "role": "STUDENT_1",
+      "code": "implementation",
+      "cue": "opening",
+      "problem_topic": "Scaling a ratio"
+    },
+    {
+      "index": 50,
+      "turn_id": "demo-a-s02-t051",
+      "role": "TUTOR",
+      "code": "implementation",
+      "cue": "follow",
+      "problem_topic": "Scaling a ratio"
+    },
+    {
+      "index": 51,
+      "turn_id": "demo-a-s02-t052",
+      "role": "STUDENT_1",
+      "code": "implementation",
+      "cue": null,
+      "problem_topic": "Scaling a ratio"
+    },
+    {
+      "index": 52,
+      "turn_id": "demo-a-s02-t053",
+      "role": "TUTOR",
+      "code": "implementation",
+      "cue": "handoff",
+      "problem_topic": "Scaling a ratio"
+    },
+    {
+      "index": 53,
+      "turn_id": "demo-a-s02-t054",
+      "role": "STUDENT_1",
+      "code": "verification",
+      "cue": "opening",
+      "problem_topic": "Scaling a ratio"
+    },
+    {
+      "index": 54,
+      "turn_id": "demo-a-s02-t055",
+      "role": "TUTOR",
+      "code": "verification",
+      "cue": "follow",
+      "problem_topic": "Scaling a ratio"
+    },
+    {
+      "index": 55,
+      "turn_id": "demo-a-s02-t056",
+      "role": "STUDENT_1",
+      "code": "verification",
+      "cue": null,
+      "problem_topic": "Scaling a ratio"
+    },
+    {
+      "index": 56,
+      "turn_id": "demo-a-s02-t057",
+      "role": "TUTOR",
+      "code": "verification",
+      "cue": null,
+      "problem_topic": "Scaling a ratio"
+    },
+    {
+      "index": 57,
+      "turn_id": "demo-a-s02-t058",
+      "role": "STUDENT_1",
+      "code": "verification",
+      "cue": null,
+      "problem_topic": "Scaling a ratio"
+    },
+    {
+      "index": 58,
+      "turn_id": "demo-a-s02-t059",
+      "role": "TUTOR",
+      "code": "verification",
+      "cue": null,
+      "problem_topic": "Scaling a ratio"
+    },
+    {
+      "index": 59,
+      "turn_id": "demo-a-s02-t060",
+      "role": "STUDENT_1",
+      "code": "verification",
+      "cue": null,
+      "problem_topic": "Scaling a ratio"
+    },
+    {
+      "index": 60,
+      "turn_id": "demo-a-s02-t061",
+      "role": "TUTOR",
+      "code": "verification",
+      "cue": "handoff",
+      "problem_topic": "Scaling a ratio"
+    },
+    {
+      "index": 61,
+      "turn_id": "demo-a-s02-t062",
+      "role": "STUDENT_1",
+      "code": "planning",
+      "cue": "opening",
+      "problem_topic": "Scaling a ratio"
+    },
+    {
+      "index": 62,
+      "turn_id": "demo-a-s02-t063",
+      "role": "TUTOR",
+      "code": "planning",
+      "cue": "follow",
+      "problem_topic": "Scaling a ratio"
+    },
+    {
+      "index": 63,
+      "turn_id": "demo-a-s02-t064",
+      "role": "STUDENT_1",
+      "code": "planning",
+      "cue": null,
+      "problem_topic": "Scaling a ratio"
+    },
+    {
+      "index": 64,
+      "turn_id": "demo-a-s02-t065",
+      "role": "TUTOR",
+      "code": "planning",
+      "cue": null,
+      "problem_topic": "Scaling a ratio"
+    },
+    {
+      "index": 65,
+      "turn_id": "demo-a-s02-t066",
+      "role": "STUDENT_1",
+      "code": "planning",
+      "cue": null,
+      "problem_topic": "Scaling a ratio"
+    },
+    {
+      "index": 66,
+      "turn_id": "demo-a-s02-t067",
+      "role": "TUTOR",
+      "code": "planning",
+      "cue": "handoff",
+      "problem_topic": "Scaling a ratio"
+    },
+    {
+      "index": 67,
+      "turn_id": "demo-a-s02-t068",
+      "role": "STUDENT_1",
+      "code": "verification",
+      "cue": "opening",
+      "problem_topic": "Scaling a ratio"
+    },
+    {
+      "index": 68,
+      "turn_id": "demo-a-s02-t069",
+      "role": "TUTOR",
+      "code": "verification",
+      "cue": "follow",
+      "problem_topic": "Scaling a ratio"
+    },
+    {
+      "index": 69,
+      "turn_id": "demo-a-s02-t070",
+      "role": "STUDENT_1",
+      "code": "verification",
+      "cue": null,
+      "problem_topic": "Scaling a ratio"
+    },
+    {
+      "index": 70,
+      "turn_id": "demo-a-s02-t071",
+      "role": "TUTOR",
+      "code": "verification",
+      "cue": null,
+      "problem_topic": "Scaling a ratio"
+    },
+    {
+      "index": 71,
+      "turn_id": "demo-a-s02-t072",
+      "role": "STUDENT_1",
+      "code": "verification",
+      "cue": null,
+      "problem_topic": "Scaling a ratio"
+    }
+  ]
+}

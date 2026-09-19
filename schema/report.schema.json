@@ -1,0 +1,390 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://reasoning-trajectory.local/schema/report.schema.json",
+  "title": "Problem-solving process report",
+  "description": "One student's report, written from docs/SPEC-gate0.md §5. The schema is the contract; src/contract/types.ts mirrors it for the editor. Everything a JSON Schema cannot express — tiling, duplicate ids, the agreement-gate consistency rules, the learner-facing-number rule — is in scripts/validate.ts (§9.1).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "data_provenance",
+    "student_id",
+    "source_run_id",
+    "codebook_version",
+    "domain",
+    "sessions",
+    "runs",
+    "agreement",
+    "session_gate",
+    "claims",
+    "summary",
+    "provenance_card"
+  ],
+  "properties": {
+    "report_version": {
+      "type": "string",
+      "minLength": 1,
+      "$comment": "Optional: §5 defines no report version, and §11 O-8 records that the deleted 0.1.0 contract was the only thing that gave one meaning."
+    },
+    "data_provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "ui_label"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "synthetic",
+            "authentic"
+          ]
+        },
+        "ui_label": {
+          "type": "string",
+          "minLength": 1,
+          "$comment": "[SOURCE: CLAUDE.md rule 6 — synthetic data is marked persistently in every view that renders it, so the label travels in the file rather than being written into a component.]"
+        }
+      }
+    },
+    "student_id": {
+      "type": "string",
+      "minLength": 1,
+      "$comment": "[SOURCE: docs/SPEC-gate0.md §5.1 — identity is supplied upstream, never inferred. §5 names an `identity` field but leaves its shape to the deleted 0.1.0 contract; src/contract/types.ts carries student_id, which §5.8 also names, so that is what the contract asserts.]"
+    },
+    "identity": {
+      "$comment": "Accepted but unconstrained: §5.1 carries `identity` over from 0.1.0 without restating its shape."
+    },
+    "setting": {
+      "$comment": "Accepted but unconstrained, for the same reason (§5.1). The setting extrapolation the provenance card must state is §11 O-14 and docs/DEVIATIONS.md D-022."
+    },
+    "source_run_id": {
+      "type": "string",
+      "minLength": 1,
+      "$comment": "[SOURCE: docs/SPEC-gate0.md D12 and PLAN-gate0.md P7 — which run the report was generated from, explicit per report, named on the provenance card. No silent default.]"
+    },
+    "codebook_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "domain": {
+      "type": "string",
+      "minLength": 1
+    },
+    "sessions": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "https://reasoning-trajectory.local/schema/transcript.schema.json"
+      }
+    },
+    "runs": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "https://reasoning-trajectory.local/schema/run.schema.json"
+      }
+    },
+    "agreement": {
+      "$ref": "#/definitions/agreement"
+    },
+    "session_gate": {
+      "$ref": "#/definitions/session_gate"
+    },
+    "claims": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/claim"
+      }
+    },
+    "summary": {
+      "type": "string",
+      "$comment": "Written by a separate model call from aggregates computed in code (D10). Its subject is the session or the work, never the student; the wording lint of §9.2 is what enforces that."
+    },
+    "provenance_card": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "$comment": "[SOURCE: docs/SPEC-gate0.md §5.6 — the sources, the setting extrapolation, the simulated-data statement, which run the report came from, the agreement state in words, that no inter-rater reliability has been established, and the domain caveat.]"
+    },
+    "quote_descriptions": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string",
+        "minLength": 1
+      },
+      "$comment": "[OURS: optional. Keyed by the turn_id of a student turn that opens a model-run episode carrying tutor_prompting; one plain line describing what was done in that exchange, written by one batched model call per report build from that turn, the turn before it and the turn after it, and nothing else (src/pipeline/describe.ts). Every line passed the wording lint of §9.2 when written; a line that failed was dropped, not rewritten, so a key may be absent. Nothing checks a line's accuracy against a person.]"
+    }
+  },
+  "definitions": {
+    "agreement": {
+      "type": "object",
+      "description": "The agreement gate (§5.4). Computed, internal, and never shown to a learner or a parent (D11).",
+      "additionalProperties": false,
+      "required": [
+        "threshold",
+        "statistic",
+        "unit",
+        "compared_runs",
+        "n_turns",
+        "value",
+        "band",
+        "measured",
+        "state",
+        "simulated",
+        "refusal",
+        "statement"
+      ],
+      "properties": {
+        "threshold": {
+          "type": "number",
+          "$comment": "config.agreement.threshold. The validator checks the file against config; no literal appears here."
+        },
+        "statistic": {
+          "const": "Cohen's kappa"
+        },
+        "unit": {
+          "const": "turn"
+        },
+        "compared_runs": {
+          "oneOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "array",
+              "minItems": 2,
+              "maxItems": 2,
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          ],
+          "$comment": "One annotation run against one LLM run over the same sessions (§5.4)."
+        },
+        "n_turns": {
+          "oneOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "integer",
+              "minimum": 0
+            }
+          ]
+        },
+        "value": {
+          "oneOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "number",
+              "minimum": -1,
+              "maximum": 1
+            }
+          ],
+          "$comment": "null when there is nothing to compare, or when §5.4's degenerate input was refused. A refusal is never recorded as a kappa of 0."
+        },
+        "band": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "$comment": "getKappaInterpretation(value), from vendor/sandpiper. Internal only."
+        },
+        "measured": {
+          "type": "boolean"
+        },
+        "state": {
+          "enum": [
+            "shown",
+            "suppressed",
+            "unmeasured"
+          ]
+        },
+        "simulated": {
+          "type": "boolean",
+          "$comment": "True when the annotation run compared against was generated (§8)."
+        },
+        "refusal": {
+          "oneOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "reason",
+                "detail"
+              ],
+              "properties": {
+                "reason": {
+                  "enum": [
+                    "no_annotation_run",
+                    "length_mismatch",
+                    "degenerate_single_code",
+                    "too_few_turns",
+                    "codebook_version_mismatch"
+                  ]
+                },
+                "detail": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              }
+            }
+          ],
+          "$comment": "[SOURCE: docs/SPEC-gate0.md §5.4 — a refusal records its reason for the internal view. The reasons are §5.4's three degenerate inputs, the no-annotation-run case, and two runs labelled under different codebook versions, which §4 says must not be compared.]"
+        },
+        "statement": {
+          "type": "string",
+          "$comment": "The provenance-card text (§5.6): the state in words. Never the value, the band or the threshold (D11) — the validator enforces that.",
+          "description": "Optional. src/agreement/gate.ts deliberately leaves this empty: the gate produces the state and the facts, and the view writes the words, so that no learner-facing sentence is composed where the value lives (D11). The words a reader sees are in provenance_card."
+        },
+        "per_code": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "n_turns",
+              "agreed"
+            ],
+            "properties": {
+              "n_turns": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "agreed": {
+                "type": "integer",
+                "minimum": 0
+              }
+            }
+          },
+          "$comment": "Internal agreement view only (§7.3), including the non-content codes so what the model infers for them can be tracked (D4)."
+        },
+        "per_session": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "session_id",
+              "session_index",
+              "value",
+              "band",
+              "n_turns",
+              "state",
+              "refusal"
+            ],
+            "properties": {
+              "session_id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "session_index": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "value": {
+                "$ref": "#/definitions/agreement/properties/value"
+              },
+              "band": {
+                "$ref": "#/definitions/agreement/properties/band"
+              },
+              "n_turns": {
+                "$ref": "#/definitions/agreement/properties/n_turns"
+              },
+              "state": {
+                "$ref": "#/definitions/agreement/properties/state"
+              },
+              "refusal": {
+                "$ref": "#/definitions/agreement/properties/refusal"
+              }
+            }
+          },
+          "$comment": "[OURS: the pooled comparison above, one session at a time, so annotating a single session shows what that session scores. Internal agreement view only (§7.3); the gate acts on the pooled figure, not on these.]"
+        }
+      }
+    },
+    "session_gate": {
+      "type": "object",
+      "description": "The session gate (§5.5). Independent of the agreement gate, and never merged with it.",
+      "additionalProperties": false,
+      "required": [
+        "min_turns",
+        "sessions"
+      ],
+      "properties": {
+        "min_turns": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "sessions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "session_id",
+              "turn_count",
+              "reportable"
+            ],
+            "properties": {
+              "session_id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "turn_count": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "reportable": {
+                "type": "boolean"
+              }
+            }
+          }
+        }
+      }
+    },
+    "claim": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "claim_id",
+        "text",
+        "evidence_episode_ids",
+        "provenance"
+      ],
+      "properties": {
+        "claim_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "text": {
+          "type": "string",
+          "minLength": 1,
+          "$comment": "Subject is the session or the work, never the student (§5.6, INTENT.md)."
+        },
+        "evidence_episode_ids": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "$comment": "[SOURCE: CLAUDE.md rule 7 — no claim reaches a learner-facing surface without an evidence link to the turns behind it. The validator resolves every id to an episode in a reportable session.]"
+        },
+        "provenance": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    }
+  }
+}
