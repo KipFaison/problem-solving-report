@@ -1,4 +1,4 @@
-# reasoning-trajectory
+# problem-solving-report
 
 A product prototype. It turns tutoring session transcripts into a learner- and
 parent-facing report showing how the problem-solving process in a student's
@@ -492,6 +492,20 @@ Further directions, and what running it for real would take:
     - a cost per session. Every model run already records its token usage and
       its cache reads and writes; what is missing is turning that into a cost
       per session and a budget.
+
+17. **Integrate specific tutor and student dialogue moves.** Code what is said
+    inside a stretch at the level of single moves: for example, a student turn
+    that asks a clarifying question or explains reasoning, and the tutor moves
+    around it. Layer 2 already does this for one tutor turn per boundary, with
+    three codes from the NTO Tutor Move Taxonomy (Zhou et al., 2026). Student
+    moves would be a separate layer, with its own codebook, where every code
+    names the paper it comes from, and its own agreement gate; nothing is
+    combined across layers (`CLAUDE.md` rules 1 and 12). Its sentences describe
+    the move in the exchange, never a trait of the person, and `INTENT.md`'s
+    ban on an elicited-versus-spontaneous split still holds outside Layer 2's
+    one exception. What has to hold first: a published move scheme whose
+    licence allows this use (share-alike sources were removed on 2026-09-18),
+    and its reliability stated as its authors report it (`CLAUDE.md` rule 3).
 
 The remaining open questions — O-5, O-8, O-10, O-11, O-13, O-14, O-18, O-27,
 O-29 and O-30, and O-33 to O-35, raised on 2026-09-18 — are listed in
