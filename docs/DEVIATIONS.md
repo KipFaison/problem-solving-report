@@ -1689,6 +1689,8 @@ session); `SessionDetail` and `SessionSummary.locked` in `app/api.ts`;
 `app/Annotate.tsx` (the card, the panel, Layer 2 beside it);
 `src/generator/sets.ts` `poolLineSessions` for the pool lines.
 
+**Resolved 2026-09-18.** The owner locked Layer 2 marking on the locked sessions as well: the Tutor Annotation page shows no tutor moves for them, and `putMoves` refuses marks on them (409). Consequence: tutor marks can come only from unlocked sessions, at most 5 per session (D-037), so Layer 2 stays below its pooled floor of 15 in the demo and does not surface.
+
 ## D-037 · OURS · At most five tutor turns per session for a tutor to mark
 
 **What.** The Tutor Annotation screen's "Tutor moves" section asks a tutor to

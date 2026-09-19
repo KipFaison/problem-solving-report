@@ -559,8 +559,8 @@ export function Annotate() {
             </p>
           </div>
 
-          {/* SPEC D19: no transcript, no code buttons, no Save and no Generate
-              for a locked session. Layer 2 below stays open. */}
+          {/* SPEC D19: no transcript, no code buttons, no Save, no Generate and
+              no tutor moves for a locked session. */}
           <section className="mb-4 rounded-xl border p-4 text-sm" style={{ borderColor: 'var(--rule)', background: '#fbfaf8' }}>
             <p className="mb-1 text-xs uppercase tracking-widest" style={{ color: 'var(--muted)' }}>
               Locked
@@ -582,51 +582,6 @@ export function Annotate() {
             )}
           </section>
 
-          {model && movesError && (
-            <p className="mb-4 rounded-lg p-3 text-sm" style={ERROR_STYLE}>
-              The tutor turns for this session could not be loaded: {movesError}
-            </p>
-          )}
-          {movesShown && moves && model && (
-            <div className="grid gap-6 md:grid-cols-[minmax(0,20rem)_minmax(0,1fr)] md:items-start lg:grid-cols-[minmax(0,26rem)_minmax(0,1fr)] xl:grid-cols-[minmax(0,30rem)_minmax(0,1fr)]">
-              <aside className="min-w-0 md:sticky md:top-6 md:max-h-[calc(100vh-3rem)] md:overflow-y-auto">
-                {shownMove ? (
-                  <DefinitionPanel shown={shownMove} preview code="" origin={shownMove.origin} />
-                ) : (
-                  <div
-                    className="rounded-xl border p-5"
-                    style={{ background: '#f3f8fa', borderColor: 'var(--rule)', borderLeftWidth: '5px', minHeight: '14rem' }}
-                  >
-                    <p className="mb-1 text-xs uppercase tracking-widest" style={{ color: MOVES_ACCENT }}>
-                      Codebook
-                    </p>
-                    <p className="text-[1.0625rem] leading-relaxed" style={{ color: 'var(--muted)' }}>
-                      Hover a code on a tutor turn to read it here.
-                    </p>
-                  </div>
-                )}
-              </aside>
-              <div className="min-w-0">
-                <TutorMoves
-                  moves={moves}
-                  draft={movesDraft}
-                  figure={movesFigure}
-                  session={session}
-                  notice={movesNotice && movesNotice.sessionId === session.session_id ? movesNotice : null}
-                  classifying={classifying === session.session_id}
-                  canClassify={classifying === null && running === null}
-                  canSave={canSaveMoves}
-                  complete={movesComplete}
-                  dirty={movesDirty}
-                  saving={movesSaving}
-                  onMark={(turnId, move) => setMovesDraft((d) => ({ ...d, [turnId]: move }))}
-                  onHover={setMoveHovered}
-                  onClassify={() => void classify()}
-                  onSave={() => void saveMarks()}
-                />
-              </div>
-            </div>
-          )}
         </>
       )}
 

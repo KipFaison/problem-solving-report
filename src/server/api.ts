@@ -486,6 +486,7 @@ interface MovesBody {
  * one of the five layer codes; anything else refuses the whole save.
  */
 export function putMoves(sessionId: string, body: MovesBody): ApiResult {
+  if (isLocked(sessionId)) return lockedRefusal();
   let session: Session;
   try {
     session = loadSession(sessionId);
