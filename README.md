@@ -217,6 +217,5 @@ Current as of 2026-09-18.
 4. **Finish sampling**: smaller units, problem markers for uploads, Layer 2 on shown turns only, empty markings (O-34).
 5. **Read the demo dialogue against its plans**; nothing in code checks it (D-034).
 6. **Validate the model against tutors held out, measure episode boundaries, build the review screen** (O-18, `docs/SPEC-review.md`).
-7. **Run it on real sessions**: consent and de-identification, hosting with authentication, cost per session (O-22, O-23).
 8. **Add a second domain** after the codebook's domain split; an EXTRAPOLATION until validated (O-4).
 9. **Integrate specific tutor and student dialogue moves**: a separate layer with its own codebook and gate, from a licence-compatible published scheme.
