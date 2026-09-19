@@ -17,6 +17,9 @@ import { config } from '../config.ts';
 import { agreementKappa } from '../agreement/kappa.ts';
 import { perCodeAgreement } from '../agreement/gate.ts';
 import { listSessions, loadMovesMarks, loadRun } from '../server/workspace.ts';
+import { problemProcessCodes } from '../codebook/load.ts';
+import { selectItems } from './items.ts';
+import { drawMoveItems } from './draw.ts';
 
 export interface MovesAgreementInput {
   session_id: string;
@@ -24,6 +27,13 @@ export interface MovesAgreementInput {
   /** The model run's episodes; the model's labels are read from their tutor_prompting. */
   modelEpisodes: Episode[];
   marks: MovesMarks | null;
+  /**
+   * The items the tutor is shown for marking (src/moves/draw.ts). When given,
+   * only marks on these are compared: a mark saved on a turn that is no longer
+   * shown is left out. [OURS: the draw decides what is judged; marks saved
+   * before it existed would otherwise count turns the page does not list.]
+   */
+  shownIds?: Set<string>;
 }
 
 type Pair = { annotation: string; llm: string };
@@ -43,6 +53,7 @@ function modelLabels(episodes: Episode[]): Array<{ id: string; code: string; ver
 function pairsFor(input: MovesAgreementInput, marks: MovesMarks): Pair[] {
   const pairs: Pair[] = [];
   for (const label of modelLabels(input.modelEpisodes)) {
+    if (input.shownIds && !input.shownIds.has(label.id)) continue;
     const mark = marks.marks[label.id];
     if (mark !== undefined) pairs.push({ annotation: mark, llm: label.code });
   }
@@ -177,11 +188,17 @@ export function movesAgreement(inputs: MovesAgreementInput[]): Agreement {
 /** The layer's agreement over the live workspace. */
 export function computeMovesAgreement(): Agreement {
   return movesAgreement(
-    listSessions().map((session) => ({
-      session_id: session.session_id,
-      session_index: session.session_index,
-      modelEpisodes: loadRun(session.session_id, 'llm')?.episodes ?? [],
-      marks: loadMovesMarks(session.session_id),
-    })),
+    listSessions().map((session) => {
+      const modelEpisodes = loadRun(session.session_id, 'llm')?.episodes ?? [];
+      const items = selectItems(session, modelEpisodes, problemProcessCodes());
+      const shown = drawMoveItems(items, session.session_id, config);
+      return {
+        session_id: session.session_id,
+        session_index: session.session_index,
+        modelEpisodes,
+        marks: loadMovesMarks(session.session_id),
+        shownIds: new Set(shown.map((item) => item.preceding_turn.turn_id)),
+      };
+    }),
   );
 }
