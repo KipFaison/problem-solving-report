@@ -1688,3 +1688,33 @@ session), `putAnnotation` and `generate` (the 409), `getState` (`locked` per
 session); `SessionDetail` and `SessionSummary.locked` in `app/api.ts`;
 `app/Annotate.tsx` (the card, the panel, Layer 2 beside it);
 `src/generator/sets.ts` `poolLineSessions` for the pool lines.
+
+## D-037 · OURS · At most five tutor turns per session for a tutor to mark
+
+**What.** The Tutor Annotation screen's "Tutor moves" section asks a tutor to
+mark at most `moves.maxItemsPerSession` (5) of a session's classifiable items,
+drawn without replacement with `sampling.seed` hashed with the session id and
+"moves", and shown in session order. A session with five or fewer shows them
+all. The server recomputes the shown set, refuses a mark on any other item,
+and records `shown_item_ids` on the saved marks. The model still classifies
+every item, and the Internal view still shows every one. [OURS: placeholder;
+no source. The owner asked for fewer items than the 5 to 14 per session the
+screen listed; the number five is ours.]
+
+**Why five.** Four seeded sessions of five or more items give 20 marks, above
+the pooled floor of 15 (D-031), and each such session clears its floor of 4.
+
+**Would support.** Tutors completing the marks on every session, and, where a
+tutor has once marked every item, the pooled κ over the drawn items staying
+close to the pooled κ over all of them.
+
+**Would refute.** A pooled κ over five drawn items per session that moves
+materially when the draw's seed changes, which would say five is too few to
+stand for the session.
+
+**Where.** `config/gate0.json` `moves.maxItemsPerSession`; `src/moves/draw.ts`
+`drawMoveItems`; `sessionSeed` exported from `src/sampling/draw.ts`;
+`src/server/api.ts` `movesView` (`shown_item_ids`) and `putMoves`;
+`MovesMarks.shown_item_ids` in `src/contract/types.ts`; `app/Annotate.tsx`
+(`movesToMark`, `TutorMoves`, `savedMarks`); checks I to M in
+`scripts/check-moves.ts`.

@@ -151,6 +151,11 @@ export interface MovesMarks {
   created_at: string;
   /** preceding_turn_id to one of the five layer codes. */
   marks: Record<string, string>;
+  /**
+   * The preceding_turn_ids the tutor was shown for marking when this was
+   * saved (src/moves/draw.ts). Absent on marks saved before the draw existed.
+   */
+  shown_item_ids?: string[];
 }
 
 export type AgreementState = 'shown' | 'suppressed' | 'unmeasured';

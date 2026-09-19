@@ -8,6 +8,7 @@
 import { rmSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { selectItems } from '../src/moves/items.ts';
+import { drawMoveItems } from '../src/moves/draw.ts';
 import { checkLabels, movesCodebookBlock, movesInstruction } from '../src/moves/classify.ts';
 import { loadMovesCodebook, moveCodes } from '../src/moves/codebook.ts';
 import { movesAgreement, type MovesAgreementInput } from '../src/moves/agreement.ts';
@@ -338,6 +339,61 @@ check(
   'H. marks with no model labels: suppressed with a reason, not unmeasured',
   H.state === 'suppressed' && H.refusal?.reason === 'too_few_turns' && H.n_turns === 0,
   `state=${H.state} ${H.refusal?.detail}`,
+);
+
+// --- what the tutor is shown -----------------------------------------------
+
+const MAX = config.moves.maxItemsPerSession;
+/** n classifiable items in session order, plus one not classifiable in the middle. */
+const drawItems = (n: number) => {
+  const list = Array.from({ length: n }, (_, i) => ({ id: `d${String(i + 1).padStart(2, '0')}`, classifiable: true }));
+  list.splice(Math.floor(n / 2), 0, { id: 'd-student', classifiable: false });
+  return list;
+};
+const fourteen = drawItems(14);
+const drawnA = drawMoveItems(fourteen, 'chk-draw', config).map((i) => i.id);
+const drawnB = drawMoveItems(fourteen, 'chk-draw', config).map((i) => i.id);
+check(
+  `I. the draw is repeatable and takes min(${MAX}, count) classifiable items, in session order`,
+  drawnA.length === Math.min(MAX, 14) &&
+    drawnA.join() === drawnB.join() &&
+    drawnA.join() === [...drawnA].sort().join() &&
+    !drawnA.includes('d-student') &&
+    new Set(drawnA).size === drawnA.length,
+  `14 classifiable items -> ${drawnA.join(', ')}; again -> ${drawnB.join(', ')}`,
+);
+const otherSession = drawMoveItems(fourteen, 'chk-draw-2', config).map((i) => i.id);
+check(
+  'J. the draw is seeded per session',
+  otherSession.length === drawnA.length && otherSession.join() !== drawnA.join(),
+  `chk-draw -> ${drawnA.join(', ')}; chk-draw-2 -> ${otherSession.join(', ')}`,
+);
+const few = drawItems(MAX);
+const fewDrawn = drawMoveItems(few, 'chk-draw', config).map((i) => i.id);
+const fewer = drawMoveItems(drawItems(2), 'chk-draw', config).map((i) => i.id);
+check(
+  `K. a session with ${MAX} or fewer classifiable items shows them all`,
+  fewDrawn.join() === few.filter((i) => i.classifiable).map((i) => i.id).join() && fewer.join() === 'd01,d02',
+  `${MAX} -> ${fewDrawn.join(', ')}; 2 -> ${fewer.join(', ')}`,
+);
+check(
+  'L. a limit that is not a whole number of 1 or more is refused',
+  throws(() => drawMoveItems(fourteen, 'chk-draw', { ...config, moves: { ...config.moves, maxItemsPerSession: 0 } })) !== '',
+  'maxItemsPerSession 0 throws',
+);
+
+// M. Fourteen model labels, five of them marked (the shown items): only the
+// five are compared, per session and in the pool.
+const M = movesAgreement([
+  labelled('m1', 1, cycle(14), [...cycle(5), ...Array<undefined>(9).fill(undefined)]),
+  labelled('m2', 2, cycle(14), [undefined, undefined, ...cycle(5, 2), ...Array<undefined>(7).fill(undefined)]),
+  labelled('m3', 3, cycle(9), [...cycle(5), ...Array<undefined>(4).fill(undefined)]),
+]);
+const mSessions = (M.per_session ?? []).map((p) => p.n_turns);
+check(
+  'M. agreement over a partial marking counts only the marked items',
+  M.n_turns === 15 && mSessions.join() === '5,5,5' && M.value === 1,
+  `37 model labels, 15 marks: pooled n=${M.n_turns}, per session n=${mSessions.join(', ')}, kappa=${M.value}`,
 );
 
 console.log('');

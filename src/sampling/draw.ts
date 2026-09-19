@@ -31,7 +31,7 @@ export interface SampleView {
  * it is a few lines and needs no dependency (CLAUDE.md VIII). Nothing here
  * needs a strong hash, only that the same inputs give the same number.]
  */
-function sessionSeed(seed: number, sessionId: string): number {
+export function sessionSeed(seed: number, sessionId: string): number {
   let hash = (0x811c9dc5 ^ seed) >>> 0;
   for (let i = 0; i < sessionId.length; i++) {
     hash ^= sessionId.charCodeAt(i);

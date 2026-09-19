@@ -7,7 +7,7 @@ export const REPO_ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 
 export interface Gate0Config {
   agreement: { threshold: number; minTurnsForAgreement: number; minTurnsForSessionAgreement: number };
-  moves: { codebookPath: string; minItemsForAgreement: number; minItemsForSessionAgreement: number };
+  moves: { codebookPath: string; minItemsForAgreement: number; minItemsForSessionAgreement: number; maxItemsPerSession: number };
   session: { minTurnsReportable: number; requiredTranscriptScope: string };
   sampling: { enabled: boolean; problemsPerSession: number; seed: number };
   codebook: { path: string; domainsDir: string; domain: string };

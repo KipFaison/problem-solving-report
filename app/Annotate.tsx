@@ -310,7 +310,7 @@ export function Annotate() {
   // Every tutor turn is marked before any is saved, so no model code comes into
   // view while a mark is still to be made. [OURS: the blinding above, applied
   // across the session's items rather than one item at a time.]
-  const movesToMark = (moves?.items ?? []).filter((i) => i.classifiable);
+  const movesToMark = (moves?.items ?? []).filter((i) => i.classifiable && moves?.shown_item_ids.includes(i.preceding_turn_id));
   const movesComplete = movesToMark.length > 0 && movesToMark.every((i) => movesDraft[i.preceding_turn_id] !== undefined);
   const canSaveMoves = movesComplete && movesDirty && !movesSaving;
   const movesFigure = session ? figureFor(state.moves_agreement, session.session_id) : null;
@@ -1445,8 +1445,8 @@ function TutorMoves({
   onTurn?: (index: number) => void;
 }) {
   const turnIndex = new Map(session.turns.map((t, i) => [t.turn_id, i] as const));
-  const toMark = moves.items.filter((i) => i.classifiable);
-  const others = moves.items.length - toMark.length;
+  const toMark = moves.items.filter((i) => i.classifiable && moves.shown_item_ids.includes(i.preceding_turn_id));
+  const others = moves.items.filter((i) => !i.classifiable).length;
   const marked = toMark.filter((i) => draft[i.preceding_turn_id] !== undefined).length;
   const stale = moves.classified && moves.model_codebook_version !== moves.codebook_version;
   const compared = moves.classified && moves.marks !== null;
@@ -1835,10 +1835,12 @@ function sameSpans(a: Draft[], b: Draft[]): boolean {
   );
 }
 
-/** The tutor's saved tutor-move marks, as the draft holds them: preceding_turn_id to code. */
+/** The tutor's saved tutor-move marks on the shown items, as the draft holds them: preceding_turn_id to code. */
 function savedMarks(moves: SessionMoves): Record<string, string> {
   const marks: Record<string, string> = {};
-  for (const item of moves.items) if (item.tutor_mark !== null) marks[item.preceding_turn_id] = item.tutor_mark;
+  for (const item of moves.items) {
+    if (item.tutor_mark !== null && moves.shown_item_ids.includes(item.preceding_turn_id)) marks[item.preceding_turn_id] = item.tutor_mark;
+  }
   return marks;
 }
 

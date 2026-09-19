@@ -335,3 +335,8 @@ Most consequential first. Each has a recommendation; the owner decides.
 - **L2-O8. Should the tutor ever see the model's code?** As built, no.
   **Recommended:** keep it that way until the tutor's marks for that session
   are saved.
+
+- **L2-O9. How many items does a tutor mark?** As built, at most
+  `moves.maxItemsPerSession` (5) per session, drawn with a seed; all of them
+  where there are five or fewer. The model classifies every item. The owner
+  asked for fewer; five is ours (docs/DEVIATIONS.md D-037).

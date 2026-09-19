@@ -25,6 +25,8 @@
     "codebookPath": "codebook.tutor-moves.json",
     "minItemsForAgreement": 15,
     "minItemsForSessionAgreement": 4,
+    "maxItemsPerSession": 5,
+    "$comment_maxItems": "How many of a session's tutor turns the Tutor Annotation screen asks a tutor to mark, drawn with sampling.seed hashed with the session_id and \"moves\" (src/moves/draw.ts); a session with this many or fewer shows them all. The owner found 5 to 14 per session too many to mark. At five, four sessions of five or more items give 20 marks, above the pooled floor of 15, and each such session clears its own floor of 4. The model still classifies every item and the Internal view still shows every one. [OURS: placeholder; no source. docs/DEVIATIONS.md]",
     "$comment": "Layer 2 counts items (tutor turns before student-opened episodes), not turns, so the episode floors do not transfer. A session yields a handful of items. Both floors are placeholders with no source. [OURS: docs/SPEC-layer2.md]"
   },
   "codebook": {

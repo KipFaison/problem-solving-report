@@ -34,6 +34,7 @@ import {
   type StoredRun,
 } from './workspace.ts';
 import { selectItems } from '../moves/items.ts';
+import { drawMoveItems } from '../moves/draw.ts';
 import { classifySession } from '../moves/classify.ts';
 import { loadMovesCodebook, moveCodes } from '../moves/codebook.ts';
 import { computeMovesAgreement } from '../moves/agreement.ts';
@@ -371,8 +372,14 @@ export interface SessionMoves {
   /** The layer codebook version the model's labels were made under; null when unclassified. */
   model_codebook_version: string | null;
   /** Who marked and when; the marks themselves are on the items. */
-  marks: Omit<MovesMarks, 'marks'> | null;
+  marks: Omit<MovesMarks, 'marks' | 'shown_item_ids'> | null;
   items: MoveItemView[];
+  /**
+   * The preceding_turn_ids of the items a tutor is asked to mark, in session
+   * order: at most moves.maxItemsPerSession of the classifiable ones
+   * (src/moves/draw.ts). Empty when there are no items.
+   */
+  shown_item_ids: string[];
 }
 
 function movesView(session: Session, run: StoredRun | null): SessionMoves {
@@ -382,7 +389,7 @@ function movesView(session: Session, run: StoredRun | null): SessionMoves {
     ? { session_id: stored.session_id, codebook_version: stored.codebook_version, annotator_id: stored.annotator_id, simulated: stored.simulated, created_at: stored.created_at }
     : null;
   if (!run) {
-    return { session_id: session.session_id, codebook_version, model_run_id: null, classified: false, model_codebook_version: null, marks, items: [] };
+    return { session_id: session.session_id, codebook_version, model_run_id: null, classified: false, model_codebook_version: null, marks, items: [], shown_item_ids: [] };
   }
   const items = selectItems(session, run.episodes, problemProcessCodes());
   const byEpisode = new Map(run.episodes.map((e) => [e.episode_id, e]));
@@ -407,6 +414,7 @@ function movesView(session: Session, run: StoredRun | null): SessionMoves {
       model_move: prompting[i]?.tutor_move ?? null,
       tutor_mark: item.classifiable ? (stored?.marks[item.preceding_turn.turn_id] ?? null) : null,
     })),
+    shown_item_ids: drawMoveItems(items, session.session_id, config).map((item) => item.preceding_turn.turn_id),
   };
 }
 
@@ -473,9 +481,9 @@ interface MovesBody {
 
 /**
  * PUT /api/session/:id/moves: save a tutor's marks for this session's items,
- * replacing any saved before. Every key must be a classifiable item's
- * preceding turn id and every value one of the five layer codes; anything
- * else refuses the whole save.
+ * replacing any saved before. Every key must be the preceding turn id of an
+ * item the tutor is shown (drawMoveItems, recomputed here) and every value
+ * one of the five layer codes; anything else refuses the whole save.
  */
 export function putMoves(sessionId: string, body: MovesBody): ApiResult {
   let session: Session;
@@ -494,14 +502,14 @@ export function putMoves(sessionId: string, body: MovesBody): ApiResult {
   const entries = Object.entries(raw);
   if (entries.length === 0) return bad('mark at least one tutor turn before saving');
 
-  const classifiable = new Set(
-    selectItems(session, run.episodes, problemProcessCodes())
-      .filter((item) => item.classifiable)
-      .map((item) => item.preceding_turn.turn_id),
-  );
+  const items = selectItems(session, run.episodes, problemProcessCodes());
+  const classifiable = new Set(items.filter((item) => item.classifiable).map((item) => item.preceding_turn.turn_id));
+  const shown = drawMoveItems(items, sessionId, config).map((item) => item.preceding_turn.turn_id);
+  const shownSet = new Set(shown);
   const codes = moveCodes();
   for (const [id, code] of entries) {
     if (!classifiable.has(id)) return bad(`${id} is not a tutor turn this layer classifies in ${sessionId}`);
+    if (!shownSet.has(id)) return bad(`${id} is not one of the ${shown.length} tutor turns shown for marking in ${sessionId}`);
     if (typeof code !== 'string' || !codes.has(code)) return bad(`${id}: "${String(code)}" is not a tutor-move code`);
   }
 
@@ -512,6 +520,7 @@ export function putMoves(sessionId: string, body: MovesBody): ApiResult {
     simulated: false,
     created_at: new Date().toISOString(),
     marks: Object.fromEntries(entries),
+    shown_item_ids: shown,
   };
   saveMovesMarks(marks);
   const moves_agreement: Agreement = computeMovesAgreement();
