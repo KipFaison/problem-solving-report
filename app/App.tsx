@@ -16,8 +16,14 @@ const SURFACES: Array<{ id: Surface; label: string; note: string }> = [
   { id: 'internal', label: 'Internal Feature', note: 'Working figures, not shown to families' },
 ];
 
+/** The surface named by the address bar, so a screen can be linked to. */
+function surfaceInHash(): Surface | null {
+  const name = window.location.hash.replace('#', '');
+  return SURFACES.some((s) => s.id === name) ? (name as Surface) : null;
+}
+
 function Shell() {
-  const [surface, setSurface] = useState<Surface>('annotate');
+  const [surface, setSurface] = useState<Surface>(() => surfaceInHash() ?? 'annotate');
   const { state, error, refresh } = useWorkspace();
   const [resetting, setResetting] = useState(false);
   // Bumped on reset. Used as the key of the surfaces, so a reset remounts them
@@ -32,9 +38,20 @@ function Shell() {
     undefined,
   );
   const reportReady = newest?.modelled === true;
+  // Only once the workspace has loaded: before that nothing is known about the
+  // newest session, and the report tab would close itself on every reload.
   useEffect(() => {
-    if (!reportReady && surface === 'report') setSurface('annotate');
-  }, [reportReady, surface]);
+    if (state && !reportReady && surface === 'report') setSurface('annotate');
+  }, [state, reportReady, surface]);
+  // The address bar follows the open surface, and the Back button follows it.
+  useEffect(() => {
+    if (surfaceInHash() !== surface) window.location.hash = surface;
+  }, [surface]);
+  useEffect(() => {
+    const onHash = () => setSurface(surfaceInHash() ?? 'annotate');
+    window.addEventListener('hashchange', onHash);
+    return () => window.removeEventListener('hashchange', onHash);
+  }, []);
 
   const onReset = async () => {
     if (

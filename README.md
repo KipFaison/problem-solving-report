@@ -26,6 +26,26 @@ Three screens:
   (Cohen's kappa) between the tutor's marking and the model's, and the gate it
   decides.
 
+### The three screens
+
+All data in these is simulated, as the banner in each says.
+
+**Tutor Annotation** — a tutor marks the problem-solving stretches in one
+sampled problem, then compares them with the model's reading turn by turn.
+
+![The Tutor Annotation screen](docs/screenshots/annotate.png)
+
+**Student Report** — what a student and a parent read: each problem's route
+through the kinds of work, most recent session first, every step linked to the
+turns behind it.
+
+![The Student Report screen](docs/screenshots/report.png)
+
+**Internal Feature** — the two gates, the pooled and per-session kappa, and the
+per-code counts. None of it reaches the report.
+
+![The Internal Feature screen](docs/screenshots/internal.png)
+
 **The analysis.** The unit is the episode: a contiguous span of turns, spanning
 both speakers, during which the participants are doing one kind of
 problem-solving work. There are nine codes, defined only in

@@ -93,9 +93,11 @@ the distinction reaches the reader.
    only the flattering number.
 
 4. Agreement is computed, internally, and never shown to a learner or a
-   parent. One Cohen's kappa per report, at the turn level, pooled over the
-   turns of the student's reportable sessions, between one annotation run and
-   one LLM run: each run's tiling gives every turn exactly one code, so the
+   parent. One gating Cohen's kappa per report, at the turn level, pooled
+   over the turns of the student's reportable sessions, plus one per session,
+   between one annotation run and one LLM run: the LLM run's tiling gives
+   every turn exactly one code and, across the turns the tutor was shown, an
+   unmarked turn counts as not problem solving (SPEC-gate0 D17, D18), so the
    two label sequences are equal-length and positionally aligned. It is
    computed by Sandpiper's calculateCohensKappa.ts, vendored verbatim with
    attribution beside getKappaInterpretation.ts (NOTICE). Vendoring it does
@@ -108,8 +110,8 @@ the distinction reaches the reader.
    worse than a refusal]. The value reaches only the internal,
    non-learner-facing view. `AGREEMENT_THRESHOLD = 0.61` is now compared
    against it: below 0.61 the episode layer does not surface. Where there is
-   no annotation run, nothing is computed and the suppression state comes
-   from config instead — a third state, visibly distinct from computed and
+   no annotation run, nothing is computed and the state follows from the
+   absence of that run — a third state, visibly distinct from computed and
    below threshold. A kappa is a number about two label sequences: not
    evidence about a learner, and not a validation of the model. This repo is
    the apparatus that would do the validation, not the validation, and makes
@@ -156,9 +158,9 @@ the distinction reaches the reader.
 12. The two gates stay separate and are never merged: whether a construct's
     agreement is known and reaches 0.61 (the suppression state), and whether
     a session has enough turns to report on. The first acts on a computed
-    value where there is an annotation run and on config where there is none;
-    the second counts turns and has nothing to do with agreement. Different
-    reasons, different states, different UI copy.
+    value where there is an annotation run and on the absence of that run
+    where there is none; the second counts turns and has nothing to do with
+    agreement. Different reasons, different states, different UI copy.
 
 13. No tutor-confound adjustment, and no elicited-versus-spontaneous split.
     Both presuppose that a behaviour belongs to the student, which the
@@ -193,7 +195,7 @@ seems reasonable but contradicts INTENT.md, raise it rather than working
 around it.
 
 INTENT.md                 why the repo exists and what it may claim
-codebook.v2.json          the ten codes; the single definition of each
+codebook.v2.json          the nine codes; the single definition of each
 domains/math.json         domain wording (not yet present; SPEC-gate0 O-4)
 docs/SPEC-gate0.md        the Gate 0 spec, the current design artifact
 docs/SPEC-review.md       the episode review screen, recorded for a later
@@ -205,7 +207,9 @@ docs/LAY-OF-THE-LAND.md   what Sandpiper provides, with file paths, and what
 docs/DEVIATIONS.md        the audit trail
 docs/reference/           transcribed reference material, such as Rott et al.
                           (2021) Fig. 5
-docs/*.pdf                the bundled CC BY paper, attributed in NOTICE
+docs/*.pdf                local paper copies kept for reading only; the
+                          papers are cited, not redistributed (NOTICE), and
+                          docs/**/*.pdf is gitignored
 vendor/sandpiper/         the two files copied verbatim from Sandpiper: the
                           kappa computation and the Landis & Koch bands
 NOTICE                    third-party notices for copied files

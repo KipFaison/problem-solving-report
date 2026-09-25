@@ -117,19 +117,22 @@ dropped. Kept for the record.
 
 **Levin, H., Padwal, M., & Mwiinga, N.** (2026). *Classification of Student
 Struggle in Mathematics.* BEA 2026.
+https://doi.org/10.18653/v1/2026.bea-1.36
 Four mutually exclusive states, from grade 4–5 mathematics classrooms. Fleiss'
 κ 0.534 pre-discussion and 0.961 post-consensus on a 98-item set, as the
 authors report them. Considered as a layer and dropped.
 
 ## Read before Gate 1 and Gate 2
 
-**Lee, J., Vanacore, K., Zhou, Z., Ahtisham, B., & Kizilcec, R.** (2026).
-*Codebook-injected segmentation.* arXiv:2601.12061 / ACL 2026.
+**Lee, J., Vanacore, K., Zhou, Z., Ahtisham, B., Grutter, J., &
+Kizilcec, R.** (2026). *Codebook-injected segmentation.* arXiv:2601.12061,
+under review for ACL 2026.
 The span-versus-utterance argument, and gold-label-free segmentation metrics —
 the live candidate for the boundary question in `docs/SPEC-gate0.md` §11, O-18.
 
-**Kizilcec, R., Vanacore, K., Zhou, Z., Pietrzak, D., Dias, J., Zhang, Y.,
-Ahtisham, B., & Marland, J.** *Million Tutoring Moves (MTM v1).*
+**Kizilcec, R., Vanacore, K., Zhou, Z., Pietrzak, D., Dias, J., Zhang, H.,
+Ahtisham, B., Marland, J., Slama, R., Reich, J., & Koedinger, K.**
+*Million Tutoring Moves (MTM v1).*
 arXiv:2605.08092.
 
 ## Datasets
@@ -149,7 +152,7 @@ Social Psychology, 75*(1), 33–52.
 **Kamins, M. L., & Dweck, C. S.** (1999). Person versus process praise and
 criticism. *Developmental Psychology, 35*(3), 835–847.
 
-**Jivet, I., Scheffel, M., Drachsler, H., & Specht, M.** (2018). License to
+**Jivet, I., Scheffel, M., Specht, M., & Drachsler, H.** (2018). License to
 evaluate: Preparing learning analytics dashboards for educational practice.
 LAK 2018. — the comparison-harm finding behind the ban on "typical", "average"
 and "on track".

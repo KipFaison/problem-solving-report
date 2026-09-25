@@ -286,8 +286,9 @@ are a run like any other. No inter-rater reliability has been established, and
 no claim about validity or reliability is made anywhere in this repo or its UI.
 
 The threshold is 0.61 — the floor of Landis & Koch's "substantial" band, and
-the one Sandpiper's own getKappaInterpretation.ts implements. It lives in
-config as `AGREEMENT_THRESHOLD = 0.61` and is not re-litigated.
+inside the "Substantial" band of Sandpiper's own getKappaInterpretation.ts,
+which begins just above 0.60 rather than at 0.61. It lives in config as
+`AGREEMENT_THRESHOLD = 0.61` and is not re-litigated.
 
 Every layer's provenance card states plainly: no inter-rater reliability has
 been established for this layer in this project, and a construct does not

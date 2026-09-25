@@ -1,5 +1,7 @@
 // A seeded pseudo-random generator, so a demo set regenerates byte-identically.
 //
+// The algorithm is mulberry32, by Tommy Ettinger (2017), public domain (CC0).
+//
 // [OURS: mulberry32. Chosen because it is ten lines and needs no dependency
 // (CLAUDE.md VIII). Nothing here needs statistical quality beyond "varied
 // enough to read as dialogue"; what it does need is that the same seed gives
