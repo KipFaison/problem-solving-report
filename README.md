@@ -5,6 +5,13 @@ parent-facing report showing how the problem-solving process in a student's
 sessions changed over time. It is meant to be read by a student and a parent
 together, in about two minutes.
 
+**Every transcript, annotation and report in this repo is simulated.** The
+sessions were generated for the demo, and the annotations that arrive with them
+come from a simulated annotator, not a person. What runs over them is real: the
+model calls, the agreement figures, the counts and the report. Nothing here is
+evidence about real tutoring, and no session of a real student has ever been
+through it.
+
 ## What it does
 
 Sizing a problem up, planning, trying something, checking it, backing out and
@@ -139,6 +146,16 @@ Steps 3 and 5 need a key.
 7. Back in **Tutor Annotation**, change one stretch and press **Save
    annotation**. **Internal Feature** recomputes without running the model
    again, and Student Report lists what has changed since it was built.
+
+## What it is not
+
+Not a study, and not a result. The data is simulated, so nothing here measures
+tutoring; what the repo provides is the apparatus for asking, later and on real
+sessions, whether episode boundaries and labels can be placed consistently
+enough to carry a claim. No reliability or validity is claimed for either
+layer, and there is no annotator corps. The report says nothing about a
+student's knowledge, understanding, traits or progress, or about whether the
+tutor is good.
 
 ## Run it
 
