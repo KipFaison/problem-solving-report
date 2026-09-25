@@ -97,19 +97,7 @@ it" only where that turn is coded NONE and the layer's pooled kappa reaches
   so this project parts from it at the unit of analysis, on purpose
   (`docs/LAY-OF-THE-LAND.md` §3, `docs/DEVIATIONS.md`).
 
-The code and documentation were written with heavy generative-AI assistance
-(Claude Code). The project owner directed the work, reviewed it and made every
-decision, each recorded in the repo's intent, spec and deviation log. At
-runtime the app calls Claude, model id `claude-sonnet-5`.
-
-## Built
-
-14 to 18 September 2026. The earliest dated document is the Gate 0 brief of
-2026-09-14; the spec, the plan and the deviation log carry dates up to
-2026-09-18. The vendored Sandpiper files come from an upstream commit of
-2026-09-08, which is Sandpiper's work, not this project's (`NOTICE`).
-
-## Try it without an API key
+## Quick start
 
 Needs Node 22 (`.nvmrc`) and Yarn.
 
@@ -133,7 +121,7 @@ Generate, Classify for Layer 2, and Build or Rebuild the report. A clean seed
 carries no built report, so without a key, Student Report shows only that none
 has been built yet.
 
-## Guided walk (3 minutes)
+## Guided walk
 
 Steps 3 and 5 need a key.
 
@@ -151,17 +139,6 @@ Steps 3 and 5 need a key.
 7. Back in **Tutor Annotation**, change one stretch and press **Save
    annotation**. **Internal Feature** recomputes without running the model
    again, and Student Report lists what has changed since it was built.
-
-## What it is not
-
-Not a study. It is the apparatus for asking whether episode boundaries and
-labels can be placed consistently enough to carry a claim, not an answer to
-it. There is no annotator corps, and no reliability or validity is claimed for
-either layer. The report makes no claim about a student's knowledge,
-understanding, traits or progress, or about whether the tutor is good. Out of
-scope: recommendations to students or parents, tutor evaluation or coaching,
-predicting assessment outcomes, comparison or norming across students, and
-inferring affect or engagement.
 
 ## Run it
 
@@ -227,7 +204,7 @@ licence and its use are in `docs/CITATIONS.md`.
 
 ## Next steps
 
-Current as of 2026-09-18.
+Current as of 2026-09-24.
 
 1. **Map the problem-solving trajectory across sessions**, session by session,
    never as a change in the person (needs a session floor and each layer's gate).
@@ -237,5 +214,10 @@ Current as of 2026-09-18.
 4. **Finish sampling**: smaller units, problem markers for uploads, Layer 2 on shown turns only, empty markings (O-34).
 5. **Read the demo dialogue against its plans**; nothing in code checks it (D-034).
 6. **Validate the model against tutors held out, measure episode boundaries, build the review screen** (O-18, `docs/SPEC-review.md`).
+7. **Deploy the server**: the API exists only inside the Vite dev server
+   (`configureServer` in `vite.config.ts`), so a deployment needs a real server
+   process, the key held server-side, sign-in, and storage that keeps one saved
+   run per annotator instead of one per session. The origin check guards a local
+   server against cross-site requests; it is not authentication.
 8. **Add a second domain** after the codebook's domain split; an EXTRAPOLATION until validated (O-4).
 9. **Integrate specific tutor and student dialogue moves**: a separate layer with its own codebook and gate, from a licence-compatible published scheme.
