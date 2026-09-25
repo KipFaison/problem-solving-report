@@ -49,7 +49,7 @@ later decision amends it. The rows after it win where they differ.
 ## 1. What the layer answers
 
 The episode layer shows where a stretch of problem-solving work began and whose
-turn opened it. That supports "This stretch of <kind of work> opened on the
+turn opened it. That supports "This stretch of `<kind of work>` opened on the
 student's turn", and no more. It does not support any claim about prompting:
 that no prompt came before cannot be observed from the fact that a student
 turn opened the stretch.
@@ -241,8 +241,8 @@ The subject is the stretch of work, never the student (CLAUDE.md rule 8).
 
 | Sentence | Where | Evidence link (rule 7) |
 | --- | --- | --- |
-| "This stretch of <kind of work> opened on the student's turn." | Episode layer alone, where that layer surfaces; needs no Layer 2 | The episode's turn span in the run the report was built from |
-| "This stretch of <kind of work> opened on the student's turn, with no prompt in the turn before it." | Only when Layer 2 is `shown`, only on an item whose model `tutor_move` is `NONE`, and only on a stretch the episode layer surfaces | The preceding tutor turn and the opening student turn, in the model run |
+| "This stretch of `<kind of work>` opened on the student's turn." | Episode layer alone, where that layer surfaces; needs no Layer 2 | The episode's turn span in the run the report was built from |
+| "This stretch of `<kind of work>` opened on the student's turn, with no prompt in the turn before it." | Only when Layer 2 is `shown`, only on an item whose model `tutor_move` is `NONE`, and only on a stretch the episode layer surfaces | The preceding tutor turn and the opening student turn, in the model run |
 
 The other four codes add nothing to the report. [OURS: L2-S licenses one
 clause, on NONE]

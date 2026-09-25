@@ -1133,7 +1133,7 @@ separate layers with separate provenance, and the report never combines them
 into a single statement about the student. INTENT.md ("Layer 2") and CLAUDE.md
 rule 13 were amended on 2026-09-18 to permit one boundary sentence, inside this
 layer and behind its own agreement gate, and nothing wider. Rule 8 still holds
-for it, so the stretch of work is the subject: "This stretch of <kind of work>
+for it, so the stretch of work is the subject: "This stretch of `<kind of work>`
 opened on the student's turn." and, only where the turn before is coded NONE
 (D-030), "…opened on the student's turn, with no prompt in the turn before it."
 

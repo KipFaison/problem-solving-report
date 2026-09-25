@@ -203,7 +203,7 @@ own, separate from the episode codebook's.
 
 What it adds. The episode layer shows where a stretch of problem-solving work
 began and whose turn opened it, and no more: on its own it supports "This
-stretch of <kind of work> opened on the student's turn." Layer 2 looks at the
+stretch of `<kind of work>` opened on the student's turn." Layer 2 looks at the
 one turn immediately before each problem-solving episode, in the model's run,
 that a student's turn opens. If that turn is the tutor's, it gets one of five
 codes: PROMPTING_SELF_EXPLANATION, PROMPTING_SELF_CORRECTION or

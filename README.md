@@ -78,7 +78,7 @@ round and .78 in the second, after clarifications and minor alterations.
 Neither figure is this layer's, and no agreement has been established for it
 here. The layer has its own version, provenance card, kappa and gate, and is
 never combined with the episode layer. On the report it adds "This stretch of
-<kind> opened on the student's turn", and "with no prompt in the turn before
+`<kind>` opened on the student's turn", and "with no prompt in the turn before
 it" only where that turn is coded NONE and the layer's pooled kappa reaches
 0.61.
 
