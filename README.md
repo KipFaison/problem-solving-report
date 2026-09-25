@@ -104,6 +104,13 @@ it" only where that turn is coded NONE and the layer's pooled kappa reaches
   so this project parts from it at the unit of analysis, on purpose
   (`docs/LAY-OF-THE-LAND.md` §3, `docs/DEVIATIONS.md`).
 
+**AI assistance.** The code, documentation and demo transcripts were written
+with Claude Code from the owner's instructions; the design decisions are
+recorded in `INTENT.md` and `docs/DEVIATIONS.md`. At runtime the app calls
+Claude (`claude-sonnet-5`) for segmentation, Layer 2, the report summary and
+the quote descriptions. Counts are computed in code, never by the model, and a
+wording check drops model sentences that break the report's rules.
+
 ## Quick start
 
 Needs Node 22 (`.nvmrc`) and Yarn.
