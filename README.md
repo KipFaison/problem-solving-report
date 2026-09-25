@@ -228,20 +228,24 @@ licence and its use are in `docs/CITATIONS.md`.
 
 ## Next steps
 
-Current as of 2026-09-24.
+Current as of 2026-09-25. Five goals; the open questions and smaller items
+behind them are in `docs/SPEC-gate0.md` §11 and `docs/DEVIATIONS.md`.
 
-1. **Map the problem-solving trajectory across sessions**, session by session,
-   never as a change in the person (needs a session floor and each layer's gate).
-2. **Open decisions for the owner**: `CLAUDE.md` and intent corrections,
-   codebook edits, thresholds, the schematic, a second Generate (`docs/SPEC-gate0.md` §11).
-3. **Get tutor marks for Layer 2**; it stays `unmeasured` until then (D-027, D-031).
-4. **Finish sampling**: smaller units, problem markers for uploads, Layer 2 on shown turns only, empty markings (O-34).
-5. **Read the demo dialogue against its plans**; nothing in code checks it (D-034).
-6. **Validate the model against tutors held out, measure episode boundaries, build the review screen** (O-18, `docs/SPEC-review.md`).
-7. **Deploy the server**: the API exists only inside the Vite dev server
-   (`configureServer` in `vite.config.ts`), so a deployment needs a real server
-   process, the key held server-side, sign-in, and storage that keeps one saved
-   run per annotator instead of one per session. The origin check guards a local
-   server against cross-site requests; it is not authentication.
-8. **Add a second domain** after the codebook's domain split; an EXTRAPOLATION until validated (O-4).
-9. **Integrate specific tutor and student dialogue moves**: a separate layer with its own codebook and gate, from a licence-compatible published scheme.
+1. **Establish whether the labelling holds.** Tutors marking sessions the
+   prompt and codebook were not tuned on, the figure reported held out, and
+   boundaries measured as well as labels. Layer 2 needs tutor marks before it
+   can surface at all. This is what the agreement apparatus exists for, and
+   nothing here has done it yet.
+2. **Show the trajectory across sessions.** How the route through kinds of
+   work differs from session to session, described as sessions and work, never
+   as a change in the person.
+3. **Read more of the dialogue.** Specific tutor and student moves, such as a
+   clarifying question or an explanation, each as its own layer with its own
+   published source and its own gate.
+4. **Run it outside the demo.** A deployed server rather than the Vite dev
+   plugin, the key held server-side, sign-in, and storage that keeps one saved
+   run per annotator. The origin check guards a local server against
+   cross-site requests; it is not authentication.
+5. **Beyond mathematics.** A second domain, once the codebook's domain split
+   exists; applying the codes elsewhere is an extrapolation until it is
+   validated there.
