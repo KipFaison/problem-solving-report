@@ -48,6 +48,11 @@ turns behind it.
 
 ![The Student Report screen](docs/screenshots/report.png)
 
+Selecting a step opens what was said there: the turn, the quote, the path that
+led to it, and what that kind of work means.
+
+![A step of the diagram open, showing the turn behind it](docs/screenshots/report-step.png)
+
 **Internal Feature** — the two gates, the pooled and per-session kappa, and the
 per-code counts. None of it reaches the report.
 
@@ -69,9 +74,9 @@ is `unmeasured`, shown as itself and never as a below-threshold result. The
 figure stays in the internal view. It validates nothing: it is a number about
 two label sequences, not evidence about the model or about a student.
 
-**Layer 2** is separate. It codes one tutor turn: the turn immediately before a
-problem-solving episode, in the model's run, that a student's turn opens. Its
-five codes live in `codebook.tutor-moves.json`: three are taken by name from the
+**Layer 2** is separate. It codes the tutor's turn just before a student opens
+a problem-solving episode, as the model's run marks those episodes. Its five
+codes live in `codebook.tutor-moves.json`: three are taken by name from the
 NTO Tutor Move Taxonomy (Zhou et al., 2026), two are ours. The authors report
 Cohen's kappa for their full scheme of twenty-eight moves: .65 in the first
 round and .78 in the second, after clarifications and minor alterations.
@@ -94,7 +99,8 @@ it" only where that turn is coded NONE and the layer's pooled kappa reaches
   the demo sessions' dialogue, once and offline. Each run records its token
   usage and cache reads and writes. Counts are computed in code, never by the
   model.
-- From NTO Sandpiper (MIT), two files vendored verbatim in `vendor/sandpiper/`:
+- From NTO Sandpiper (National Tutoring Observatory), under the MIT licence,
+  two files vendored verbatim in `vendor/sandpiper/`:
   `calculateCohensKappa.ts`, wrapped by `src/agreement/kappa.ts`, which refuses
   unequal-length input and the degenerate single-code case instead of returning
   a wrong number; and `getKappaInterpretation.ts`, the Landis & Koch bands
@@ -228,24 +234,14 @@ licence and its use are in `docs/CITATIONS.md`.
 
 ## Next steps
 
-Current as of 2026-09-25. Five goals; the open questions and smaller items
-behind them are in `docs/SPEC-gate0.md` §11 and `docs/DEVIATIONS.md`.
+1. **Show the trajectory across sessions.** How the route through kinds of work
+   differs from session to session, described as sessions and work, never as a
+   change in the person.
+2. **Get tutor marks for Layer 2.** Nobody has marked its tutor turns, so the
+   layer stays unmeasured and never surfaces on the report.
+3. **Validate against held-out tutors.** Tutors marking sessions the prompt and
+   the codebook were not tuned on, with the figure reported held out. This is
+   what the agreement apparatus exists for, and nothing here has done it.
 
-1. **Establish whether the labelling holds.** Tutors marking sessions the
-   prompt and codebook were not tuned on, the figure reported held out, and
-   boundaries measured as well as labels. Layer 2 needs tutor marks before it
-   can surface at all. This is what the agreement apparatus exists for, and
-   nothing here has done it yet.
-2. **Show the trajectory across sessions.** How the route through kinds of
-   work differs from session to session, described as sessions and work, never
-   as a change in the person.
-3. **Read more of the dialogue.** Specific tutor and student moves, such as a
-   clarifying question or an explanation, each as its own layer with its own
-   published source and its own gate.
-4. **Run it outside the demo.** A deployed server rather than the Vite dev
-   plugin, the key held server-side, sign-in, and storage that keeps one saved
-   run per annotator. The origin check guards a local server against
-   cross-site requests; it is not authentication.
-5. **Beyond mathematics.** A second domain, once the codebook's domain split
-   exists; applying the codes elsewhere is an extrapolation until it is
-   validated there.
+Open questions and smaller items are in `docs/SPEC-gate0.md` §11 and
+`docs/DEVIATIONS.md`.

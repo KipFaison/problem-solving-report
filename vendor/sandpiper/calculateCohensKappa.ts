@@ -1,4 +1,4 @@
-// Copied from NTO Sandpiper (MIT). See NOTICE.
+// Copied from NTO Sandpiper (National Tutoring Observatory), MIT licence. See NOTICE.
 // Upstream: https://github.com/National-Tutoring-Observatory/sandpiper
 // Path:     app/modules/evaluations/helpers/calculateCohensKappa.ts
 // Commit:   b437988 (2026-09-08). Content below this header is unchanged.

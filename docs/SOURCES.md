@@ -122,7 +122,7 @@ Reich, Koedinger, Kizilcec (2026). *Sandpiper: Orchestrated AI-Annotation for
 Educational Discourse at Scale.* arXiv:2603.08406v2 [cs.HC], 5 Apr 2026, 7 pp.
 Cite as a preprint; no venue is printed. Section and figure numbers below are
 v2's.
-Code: github.com/National-Tutoring-Observatory/sandpiper (MIT)
+Code: github.com/National-Tutoring-Observatory/sandpiper, under the MIT licence
 Read 2026-09-17. It corroborates, from the authors' side, what
 docs/LAY-OF-THE-LAND.md established from the code: the unit of annotation is
 the utterance (Fig. 2, p. 4), and segmentation is listed as future work (§5,
