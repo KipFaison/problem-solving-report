@@ -29,6 +29,11 @@ docs/reference/2509.14662v1.pdf
 # Paper PDFs are cited, not redistributed (NOTICE §3, docs/CITATIONS.md).
 docs/**/*.pdf
 
+# Photos and other local images kept beside the reference material. The one
+# tracked image is docs/reference/rott-2021-fig5.png, the CC BY figure.
+docs/**/*.jpeg
+docs/**/*.jpg
+
 # The live workspace the dev server reads and writes, seeded by `yarn seed:live`
 # from data/demo and data/out. Those two are tracked, so the demo seeds
 # without an API key.
