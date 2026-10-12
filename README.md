@@ -2,8 +2,7 @@
 
 A product prototype. It turns tutoring session transcripts into a learner- and
 parent-facing report showing how the problem-solving process in a student's
-sessions changed over time. It is meant to be read by a student and a parent
-together, in about two minutes.
+sessions changed over time.
 
 **Every transcript, annotation and report in this repo is simulated.** The
 sessions were generated for the demo, and the annotations that arrive with them
@@ -14,24 +13,20 @@ through it.
 
 ## What it does
 
-Sizing a problem up, planning, trying something, checking it, backing out and
-trying again: none of that survives a tutoring session. What is left is an
-answer and, eventually, a grade. This project reads a session's transcript and
-shows the work itself: which kinds of problem-solving work the session moved
-through, in what order, for how long. Every step in the report links to the
-turns behind it. The report describes the sessions and the work, never the
-person, and draws no comparison across students.
+This project reads a session's transcript and shows the work itself: which
+kinds of problem-solving work the session moved through, in what order, for
+how long. Every step in the report links to the
+turns behind it.
 
 Three screens:
 
 - **Tutor Annotation.** A tutor marks the stretches of problem-solving work in
   a session, then has the model read the same session. Transcripts can be
   uploaded as CSV, JSONL or JSON.
-- **Student Report.** What a student and a parent read together: the route each
-  problem took through the kinds of work, each step linked to its turns.
-- **Internal Feature.** The working figures a family never sees: agreement
-  (Cohen's kappa) between the tutor's marking and the model's, and the gate it
-  decides.
+- **Student Report.** The route each problem took through the kinds of work,
+  each step linked to its turns.
+- **Internal Feature.** Agreement (Cohen's kappa) between the tutor's marking
+  and the model's, and the gate it decides. None of it reaches a family.
 
 ### The three screens
 
@@ -86,6 +81,27 @@ never combined with the episode layer. On the report it adds "This stretch of
 `<kind>` opened on the student's turn", and "with no prompt in the turn before
 it" only where that turn is coded NONE and the layer's pooled kappa reaches
 0.61.
+
+## Next steps
+
+1. **Validate against real tutors.** Recruit real tutors to annotate
+   de-identified tutoring transcript data, to calculate model agreement and
+   inter-rater reliability.
+2. **Refine the model to improve agreement.** Once sufficient data is
+   collected, unfreeze the codebook to adjust system prompts and examples,
+   then refreeze and evaluate agreement on fresh transcript data.
+3. **Show a longitudinal trajectory across sessions.** How the route through
+   different problem-solving tasks differs from session to session.
+4. **Have the model distinguish routine from non-routine processes.** Rott et
+   al. found (§6.2.1) that routine processes are linear and carry no
+   Exploration, most of them starting straight into Planning or Implementation
+   with no Analysis, while non-routine processes are often non-linear and hold
+   at least one Exploration episode. Their setting was written mathematics
+   tasks, so reading it onto tutoring transcripts is an extrapolation, to be
+   tagged and logged as one.
+
+Open questions and smaller items are in `docs/SPEC-gate0.md` §11 and
+`docs/DEVIATIONS.md`.
 
 ## How it was built
 
@@ -232,16 +248,3 @@ node --experimental-strip-types scripts/check-moves.ts
 Third-party files, their commit and licence are in `NOTICE`. Every source, its
 licence and its use are in `docs/CITATIONS.md`.
 
-## Next steps
-
-1. **Show the trajectory across sessions.** How the route through kinds of work
-   differs from session to session, described as sessions and work, never as a
-   change in the person.
-2. **Get tutor marks for Layer 2.** Nobody has marked its tutor turns, so the
-   layer stays unmeasured and never surfaces on the report.
-3. **Validate against held-out tutors.** Tutors marking sessions the prompt and
-   the codebook were not tuned on, with the figure reported held out. This is
-   what the agreement apparatus exists for, and nothing here has done it.
-
-Open questions and smaller items are in `docs/SPEC-gate0.md` §11 and
-`docs/DEVIATIONS.md`.
