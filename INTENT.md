@@ -20,15 +20,12 @@ problem-solving process from session transcripts and demonstrate it as a
 feature an online tutoring company could ship. The measurement question is
 real and deferred, not answered here.
 
-The aim is to capture domain-general problem-solving skills, starting with
-math as the substrate: the domain structured enough to leave visible traces in
-a transcript, and the one the source definitions were written on. Schoenfeld's
-framework provides a useful initial model, not a finished account. Price et
-al. (2021) found the same split in expert work: 29 decisions recurring across
-52 scientists and engineers, each made through domain-specific knowledge
-(`docs/CITATIONS.md`). Their setting is expert practice, not tutoring, so it
-motivates the direction and settles nothing: applying these codes outside
-mathematics remains an EXTRAPOLATION ("Domain generality" below).
+The substrate is mathematics, where Schoenfeld's episodes are a useful model
+of the problem-solving process. A motivation behind this is understanding
+problem solving that is domain-general; Price et al. (2021) describe such a
+process in expert science and engineering work (`docs/CITATIONS.md`). This
+project does not test that, and applying these codes outside mathematics
+remains an EXTRAPOLATION ("Domain generality" below).
 
 ## The demo is the system
 

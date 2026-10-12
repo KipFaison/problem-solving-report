@@ -15,14 +15,9 @@ through it.
 
 This project reads a session's transcript and shows the work itself: which
 kinds of problem-solving work the session moved through, in what order, for
-how long. Every step in the report links to the
-turns behind it.
-
-The aim is to capture domain-general problem-solving skills, starting with
-math as the substrate. Schoenfeld's framework provides a useful initial model.
-Price et al. (2021) found the same split in expert work: 29 decisions that
-recurred across 52 scientists and engineers, each made through domain-specific
-knowledge (`docs/CITATIONS.md`).
+how long. Every step in the report links to the turns behind it. The substrate
+is mathematics, where Schoenfeld's episodes are a useful model of the
+problem-solving process.
 
 Three screens:
 
@@ -33,6 +28,10 @@ Three screens:
   each step linked to its turns.
 - **Internal Feature.** Agreement (Cohen's kappa) between the tutor's marking
   and the model's, and the gate it decides. None of it reaches a family.
+
+A motivation behind this is understanding problem solving that is
+domain-general. Price et al. (2021) describe such a process in expert science
+and engineering work (`docs/CITATIONS.md`). This project does not test that.
 
 ### The three screens
 
