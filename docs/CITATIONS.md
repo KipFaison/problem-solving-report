@@ -140,6 +140,23 @@ arXiv:2605.08092.
 **MathDial.** https://github.com/eth-nlped/mathdial
 2,861 semi-synthetic dialogues.
 
+## Behind the motivation
+
+**Price, A. M., Kim, C. J., Burkholder, E. W., Fritz, A. V., & Wieman, C. E.**
+(2021). A detailed characterization of the expert problem-solving process in
+science and engineering: Guidance for teaching and assessment. *CBE—Life
+Sciences Education, 20*(3), ar43. https://doi.org/10.1187/cbe.20-12-0276
+(PMID 34388005; PMCID PMC8715817).
+Interviews with 52 scientists and engineers about a problem from their own
+work; the authors report that the process was framed around 29 decisions that
+recurred across disciplines, and that making those decisions rested on
+domain-specific predictive models. Used in `INTENT.md` ("The product") for why
+this project treats problem solving as a general process studied through one
+domain. It is not a source for any code definition, and it says nothing about
+tutoring or about school-age learners.
+*Licence:* CC BY-NC-SA 4.0 — share-alike and non-commercial. Cited here, not
+redistributed; no file from it is in this repository.
+
 ## Evidence behind the wording rules
 
 The wording rules in `INTENT.md` and `CLAUDE.md` rule 8 are evidence-based, not

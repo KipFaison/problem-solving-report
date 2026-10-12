@@ -20,6 +20,25 @@ problem-solving process from session transcripts and demonstrate it as a
 feature an online tutoring company could ship. The measurement question is
 real and deferred, not answered here.
 
+What the report is about, underneath, is problem solving as a general
+capability rather than mathematics. Mathematics is the substrate: a domain
+structured enough that the work leaves visible traces in a transcript, and the
+one the source definitions were written on. Schoenfeld's episodes, as Li et
+al. (2025) operationalise them, are the initial model of that process — a
+first approximation to build the apparatus around, not a finished account of
+it.
+
+That a problem-solving process can be described in domain-general terms while
+the knowledge it draws on stays domain-specific is itself a research finding,
+not an assumption of ours. Price, Kim, Burkholder, Fritz and Wieman (2021)
+interviewed 52 scientists and engineers about a problem from their own work
+and found the process framed around 29 decisions that recurred across every
+discipline, with the making of each decision resting on domain-specific
+predictive models (`docs/CITATIONS.md`). Their setting is expert practice in
+science and engineering, not school tutoring, so it motivates the direction
+and settles nothing about these codes: applying them outside mathematics
+remains an EXTRAPOLATION ("Domain generality" below).
+
 ## The demo is the system
 
 The demo must be the working system, not a set of screens showing what a

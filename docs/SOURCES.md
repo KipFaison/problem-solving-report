@@ -108,6 +108,16 @@ The authors' agreement is not established for that subset.
 → arXiv; local copy at docs/2603.05778v1.pdf (CC BY 4.0), cited, not
   redistributed.
 
+## Motivation
+
+**Expert problem solving in science and engineering**
+Price, Kim, Burkholder, Fritz & Wieman (2021). *CBE—Life Sciences Education*
+20(3):ar43. doi:10.1187/cbe.20-12-0276
+52 expert interviews; 29 decisions recurring across disciplines, made through
+domain-specific predictive models. Behind INTENT.md's domain-general framing.
+→ https://pmc.ncbi.nlm.nih.gov/articles/PMC8715817/ (CC BY-NC-SA 4.0; cited,
+  not redistributed)
+
 ## Tier 2 — read before Gate 1 and Gate 2
 
 **Codebook-injected segmentation**
