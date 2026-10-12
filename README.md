@@ -18,18 +18,11 @@ kinds of problem-solving work the session moved through, in what order, for
 how long. Every step in the report links to the
 turns behind it.
 
-What it is really after is problem solving as a general capability, not
-mathematics. Mathematics is the substrate: a domain structured enough that the
-work leaves visible traces in a transcript, and the one the source definitions
-were written on. Schoenfeld's episodes, as Li et al. (2025) operationalise
-them, are a useful initial model of that process rather than a finished
-account of it. That a process can be described in domain-general terms while
-the knowledge it draws on stays domain-specific is a research finding, not an
-assumption here: Price et al. (2021) interviewed 52 scientists and engineers
-and found the work framed around 29 decisions that recurred across every
-discipline, each made through domain-specific predictive models
-(`docs/CITATIONS.md`). Applying these codes outside mathematics would still be
-an extrapolation, and this project has not tested it.
+The aim is to capture domain-general problem-solving skills, starting with
+math as the substrate. Schoenfeld's framework provides a useful initial model.
+Price et al. (2021) found the same split in expert work: 29 decisions that
+recurred across 52 scientists and engineers, each made through domain-specific
+knowledge (`docs/CITATIONS.md`).
 
 Three screens:
 
